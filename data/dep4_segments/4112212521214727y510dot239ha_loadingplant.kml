@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>Loadingplant</name>
+    <Schema name="Loading_plant" id="S_Loading_plant_DSSSSSSS">
+      <SimpleField type="double" name="AREA">
+        <displayName>&lt;b&gt;AREA&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Compartmen">
+        <displayName>&lt;b&gt;Compartmen&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Facility">
+        <displayName>&lt;b&gt;Facility&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="ForestType">
+        <displayName>&lt;b&gt;ForestType&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Old_Compar">
+        <displayName>&lt;b&gt;Old_Compar&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Division">
+        <displayName>&lt;b&gt;Division&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Range">
+        <displayName>&lt;b&gt;Range&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="RF">
+        <displayName>&lt;b&gt;RF&lt;/b&gt;</displayName>
+      </SimpleField>
+    </Schema>
+    <StyleMap id="falseColor6">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor50</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor70</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="falseColor50">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:692 NewComp:1811</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Loading_plant/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Loading_plant/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Loading_plant/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Loading_plant/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Loading_plant/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Loading_plant/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Loading_plant/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Loading_plant/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor7">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:690 NewComp:1824</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Loading_plant/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Loading_plant/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Loading_plant/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Loading_plant/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Loading_plant/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Loading_plant/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Loading_plant/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Loading_plant/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor5">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:690 NewComp:1824</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Loading_plant/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Loading_plant/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Loading_plant/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Loading_plant/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Loading_plant/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Loading_plant/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Loading_plant/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Loading_plant/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="falseColor60">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor5</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor7</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="falseColor70">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:692 NewComp:1811</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Loading_plant/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Loading_plant/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Loading_plant/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Loading_plant/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Loading_plant/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Loading_plant/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Loading_plant/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Loading_plant/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Folder>
+      <name>1824</name>
+      <Placemark>
+        <name>1824</name>
+        <open>1</open>
+        <styleUrl>#falseColor60</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Loading_plant_DSSSSSSS">
+            <SimpleData name="AREA">10.083</SimpleData>
+            <SimpleData name="Compartmen">1824</SimpleData>
+            <SimpleData name="Facility">Loading_plant</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">690</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.26152168758055,18.76810831074406,0 81.26156441557039,18.76825513874822,0 81.26194988843186,18.7698184444878,0 81.26249240559581,18.77178150059075,0 81.26316212902827,18.77397931297736,0 81.26266244200923,18.77423629528251,0 81.26240853089486,18.7743135722656,0 81.26094699436898,18.77431561856825,0 81.26094458007493,18.77274667110562,0 81.26093744522954,18.76810912711308,0 81.26152168758055,18.76810831074406,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122285906LoadingPlant.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>1811</name>
+      <Placemark>
+        <name>1811</name>
+        <open>1</open>
+        <styleUrl>#falseColor6</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Loading_plant_DSSSSSSS">
+            <SimpleData name="AREA">0.156</SimpleData>
+            <SimpleData name="Compartmen">1811</SimpleData>
+            <SimpleData name="Facility">Loading_plant</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">692</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.26329035777211,18.77431233208836,0 81.26240853089486,18.7743135722656,0 81.26266244200923,18.77423629528251,0 81.26316212902827,18.77397931297736,0 81.26329035777211,18.77431233208836,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122285906LoadingPlant.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

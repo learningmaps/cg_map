@@ -1,0 +1,1131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>Road</name>
+    <open>1</open>
+    <Schema name="Road" id="S_Road_DSSSSSSS">
+      <SimpleField type="double" name="AREA">
+        <displayName>&lt;b&gt;AREA&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Compartmen">
+        <displayName>&lt;b&gt;Compartmen&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Facility">
+        <displayName>&lt;b&gt;Facility&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="ForestType">
+        <displayName>&lt;b&gt;ForestType&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Old_Compar">
+        <displayName>&lt;b&gt;Old_Compar&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Division">
+        <displayName>&lt;b&gt;Division&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Range">
+        <displayName>&lt;b&gt;Range&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="RF">
+        <displayName>&lt;b&gt;RF&lt;/b&gt;</displayName>
+      </SimpleField>
+    </Schema>
+    <Schema name="Slurry_line" id="S_Slurry_line_DSSSSSSS">
+      <SimpleField type="double" name="AREA">
+        <displayName>&lt;b&gt;AREA&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Compartmen">
+        <displayName>&lt;b&gt;Compartmen&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Facility">
+        <displayName>&lt;b&gt;Facility&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="ForestType">
+        <displayName>&lt;b&gt;ForestType&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Old_Compar">
+        <displayName>&lt;b&gt;Old_Compar&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Division">
+        <displayName>&lt;b&gt;Division&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Range">
+        <displayName>&lt;b&gt;Range&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="RF">
+        <displayName>&lt;b&gt;RF&lt;/b&gt;</displayName>
+      </SimpleField>
+    </Schema>
+    <StyleMap id="falseColor">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor01</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor1</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="falseColor0">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor00</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor10</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="falseColor00">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:689 NewComp:1825</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Slurry_line/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Slurry_line/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Slurry_line/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Slurry_line/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Slurry_line/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Slurry_line/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Slurry_line/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Slurry_line/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor01">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:690 NewComp:1824</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Slurry_line/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Slurry_line/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Slurry_line/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Slurry_line/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Slurry_line/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Slurry_line/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Slurry_line/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Slurry_line/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor1">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:690 NewComp:1824</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Slurry_line/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Slurry_line/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Slurry_line/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Slurry_line/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Slurry_line/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Slurry_line/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Slurry_line/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Slurry_line/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor10">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:689 NewComp:1825</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Slurry_line/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Slurry_line/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Slurry_line/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Slurry_line/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Slurry_line/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Slurry_line/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Slurry_line/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Slurry_line/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor11">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:690 NewComp:1824</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Road/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Road/Compartmen]</td></tr>
+<tr><td><b>Old Compartment No</b></td><td>$[Road/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Road/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Road/ForestType]</td></tr>
+    <tr><td><b>Division</b></td><td>$[Road/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Road/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Road/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor110">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:689 NewComp:1825</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Road/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Road/Compartmen]</td></tr>
+<tr><td><b>Old Compartment No</b></td><td>$[Road/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Road/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Road/ForestType]</td></tr>
+    <tr><td><b>Division</b></td><td>$[Road/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Road/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Road/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor111">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:676 NewComp:1826</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Road/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Road/Compartmen]</td></tr>
+<tr><td><b>Old Compartment No</b></td><td>$[Road/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Road/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Road/ForestType]</td></tr>
+    <tr><td><b>Division</b></td><td>$[Road/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Road/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Road/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor112">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:688 NewComp:1822</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Road/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Road/Compartmen]</td></tr>
+<tr><td><b>Old Compartment No</b></td><td>$[Road/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Road/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Road/ForestType]</td></tr>
+    <tr><td><b>Division</b></td><td>$[Road/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Road/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Road/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="falseColor12">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor112</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor132</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="falseColor120">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor11</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor13</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="falseColor121">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor110</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor130</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="falseColor122">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor111</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor131</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="falseColor13">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:690 NewComp:1824</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Road/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Road/Compartmen]</td></tr>
+<tr><td><b>Old Compartment No</b></td><td>$[Road/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Road/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Road/ForestType]</td></tr>
+    <tr><td><b>Division</b></td><td>$[Road/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Road/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Road/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor130">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:689 NewComp:1825</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Road/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Road/Compartmen]</td></tr>
+<tr><td><b>Old Compartment No</b></td><td>$[Road/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Road/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Road/ForestType]</td></tr>
+    <tr><td><b>Division</b></td><td>$[Road/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Road/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Road/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor131">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:676 NewComp:1826</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Road/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Road/Compartmen]</td></tr>
+<tr><td><b>Old Compartment No</b></td><td>$[Road/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Road/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Road/ForestType]</td></tr>
+    <tr><td><b>Division</b></td><td>$[Road/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Road/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Road/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor132">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:688 NewComp:1822</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Road/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Road/Compartmen]</td></tr>
+<tr><td><b>Old Compartment No</b></td><td>$[Road/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Road/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Road/ForestType]</td></tr>
+    <tr><td><b>Division</b></td><td>$[Road/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Road/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Road/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Folder>
+      <name>1822</name>
+      <Placemark>
+        <name>1822</name>
+        <open>1</open>
+        <styleUrl>#falseColor12</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">0.153</SimpleData>
+            <SimpleData name="Compartmen">1822</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">688</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.23287662981585,18.76155940538982,0 81.2326745849186,18.76158817305539,0 81.23249372259947,18.76152231996201,0 81.23236012235849,18.76143753824068,0 81.23227450288198,18.76138678354196,0 81.23213774426982,18.76130874058315,0 81.2323038886649,18.76119428244977,0 81.23237700122451,18.76123442828179,0 81.23252217652293,18.761323182754,0 81.2325812784494,18.76136068837278,0 81.23269652220034,18.76140264934451,0 81.23281595258437,18.76138527978168,0 81.23285080721975,18.76136480611169,0 81.23286750131554,18.76143873693667,0 81.23290448414106,18.76154352199026,0 81.23287662981585,18.76155940538982,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1822</name>
+        <styleUrl>#falseColor12</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">0.76</SimpleData>
+            <SimpleData name="Compartmen">1822</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">688</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.22949264818426,18.75678843582476,0 81.22977133304948,18.75756519120885,0 81.23000027494184,18.75799194201043,0 81.23020849733986,18.75814002934563,0 81.23063321388179,18.75839356248694,0 81.23090839030611,18.75856637637962,0 81.23103518685798,18.75872221550303,0 81.23088099932659,18.75882843641777,0 81.23077177555409,18.75870512873946,0 81.2301011816167,18.75828928279962,0 81.22985139413413,18.75811163434316,0 81.22959617981326,18.75763591058901,0 81.22930369955536,18.75682070198183,0 81.2292862208085,18.75575554146304,0 81.22943848686391,18.75610177063034,0 81.22947641599775,18.75608663324699,0 81.22949264818426,18.75678843582476,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>1825</name>
+      <Placemark>
+        <name>1825</name>
+        <styleUrl>#falseColor121</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">0.574</SimpleData>
+            <SimpleData name="Compartmen">1825</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">689</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.23625318578708,18.76196204512125,0 81.23625295035352,18.76195990730213,0 81.23642116462763,18.76142772726254,0 81.23666548285445,18.76070202611468,0 81.23726167800201,18.76011448080963,0 81.23761875226238,18.75965301852513,0 81.23761765120393,18.75969147832235,0 81.23767681350263,18.75988262807714,0 81.23740690898461,18.76023143725136,0 81.23683266178477,18.7607973536792,0 81.23660237172273,18.76148138881973,0 81.2364456512335,18.76197720771843,0 81.23644905694637,18.76200813244765,0 81.23625318578708,18.76196204512125,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1825</name>
+        <styleUrl>#falseColor121</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">0.391</SimpleData>
+            <SimpleData name="Compartmen">1825</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">689</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.24306387442414,18.76105421440165,0 81.24269083398963,18.76136892844376,0 81.24233782813492,18.76171860719787,0 81.24230181184457,18.76187794007073,0 81.24234377441803,18.76218866929576,0 81.24235551520849,18.76219852725693,0 81.24221110908503,18.76216340118703,0 81.24218556232044,18.76215047758308,0 81.24214792420514,18.76187176862641,0 81.24219850737283,18.76164799402672,0 81.24258141555096,18.76126869512048,0 81.24291927996273,18.76096492224574,0 81.24311557023533,18.76045357180088,0 81.24333492511083,18.76038355162114,0 81.24306387442414,18.76105421440165,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1825</name>
+        <styleUrl>#falseColor121</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">0.599</SimpleData>
+            <SimpleData name="Compartmen">1825</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">689</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.23985544265275,18.76130679568386,0 81.2397023741281,18.76134672712794,0 81.23952527164147,18.7612843788179,0 81.23947225713607,18.76115873748224,0 81.23949059808467,18.76098755088834,0 81.23958955639051,18.76083215052732,0 81.23973396907964,18.76068180702772,0 81.23973492546844,18.76066116821126,0 81.23960134150759,18.76057061457247,0 81.23940881833511,18.76040409748955,0 81.2392777210291,18.76021002952001,0 81.23921516207507,18.75996786946585,0 81.23925240301361,18.75974743607782,0 81.2394149649259,18.75959826790917,0 81.23962574047148,18.759512693464,0 81.23987162291644,18.75939984839327,0 81.23995642516111,18.75956766520216,0 81.23952146962569,18.75975151656401,0 81.23942967699327,18.7598357463249,0 81.23940862875007,18.7599603340896,0 81.23945441410829,18.76013756432221,0 81.23956142472304,18.76029597567872,0 81.23971945208838,18.76042882665882,0 81.23992904566184,18.76057090538561,0 81.23992049735274,18.76075538189156,0 81.23974212873082,18.76094107609829,0 81.23967462813891,18.76104707663499,0 81.23966497377121,18.76113079252114,0 81.23966996018142,18.76114261000113,0 81.2397903200699,18.76118498223314,0 81.24003443058611,18.76120469467573,0 81.24023434471768,18.76126048546025,0 81.23985544265275,18.76130679568386,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1825</name>
+        <styleUrl>#falseColor121</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">1.214</SimpleData>
+            <SimpleData name="Compartmen">1825</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">689</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.25639081636142,18.76208210862631,0 81.25652755412786,18.76231774015032,0 81.25662751224364,18.76268759981646,0 81.25658574617016,18.7629286901711,0 81.25646384023985,18.76309468741253,0 81.25620500596403,18.76327435682779,0 81.25586451166468,18.76344059658088,0 81.25513776145023,18.76402351079965,0 81.25502099929393,18.76427064480995,0 81.25500303507194,18.76436152219433,0 81.2556062184272,18.76452996662381,0 81.25597236866565,18.76466472981402,0 81.25639476685188,18.76485737837336,0 81.25727570912528,18.76485127100331,0 81.25819989364983,18.76487042074259,0 81.25823464974336,18.76488547519251,0 81.25753007947799,18.76492833552244,0 81.25634100598404,18.76499319863892,0 81.25591765601548,18.76479961666451,0 81.25555150552655,18.76466485337202,0 81.25502162451109,18.76451735045486,0 81.25505687136156,18.76458891245435,0 81.25516183607273,18.76471201661161,0 81.25545404429339,18.76490981413538,0 81.25566387913169,18.76500245231718,0 81.25569386372223,18.76502849659435,0 81.25539836465117,18.76504461365048,0 81.25537751549973,18.76503540911919,0 81.25523681137513,18.76494016574336,0 81.25505704117553,18.76481847801891,0 81.25492732791827,18.76466634828434,0 81.25482812107657,18.76446492727638,0 81.25487515712626,18.76422698258407,0 81.25501185450456,18.76393765497808,0 81.25544867854002,18.76354913215153,0 81.25578487488831,18.76331698512381,0 81.25612519951403,18.76315082827433,0 81.25635396956261,18.76299202796894,0 81.25644158439417,18.76287272446191,0 81.25647252370163,18.76269413140749,0 81.25638535758479,18.76237160295814,0 81.25626631648765,18.76216646670711,0 81.25595776972604,18.76198788052767,0 81.25620891648634,18.76186774286701,0 81.25639081636142,18.76208210862631,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1825</name>
+        <styleUrl>#falseColor121</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">4.921</SimpleData>
+            <SimpleData name="Compartmen">1825</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">689</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.24085328321861,18.76040167012812,0 81.24103400700335,18.76005014335199,0 81.24108751259998,18.75956464577393,0 81.24125426978668,18.75927266946,0 81.24144010762052,18.75921335040545,0 81.24186359197654,18.75921280323471,0 81.24227327519588,18.75969963355432,0 81.24236394465227,18.76072006948652,0 81.2424379295026,18.76076695043544,0 81.24257500893732,18.76076677268047,0 81.24264405988684,18.76074473088644,0 81.24268252967863,18.76056005801696,0 81.24284882730035,18.76034808294659,0 81.24329439815584,18.76020585274781,0 81.24394441899123,18.76014089408807,0 81.24418813933183,18.76002432703075,0 81.24516790250793,18.75914173798578,0 81.24532837388948,18.75900802051604,0 81.24548390054866,18.75899476832466,0 81.24560844335673,18.75903903567904,0 81.24588986013498,18.75924888165044,0 81.24610559460406,18.75934264504581,0 81.24657073978551,18.75940196998885,0 81.24695324934898,18.75946455214698,0 81.24785264989394,18.75976448875853,0 81.2485458159353,18.76002157724299,0 81.24928548376282,18.76039556181738,0 81.24961355476275,18.76057598522895,0 81.25010057338649,18.76062482853927,0 81.25049925688711,18.76061480878768,0 81.25098837941034,18.76066487297967,0 81.25122869520872,18.76072170937135,0 81.25141893619337,18.76080732375613,0 81.25169181314777,18.76091125883823,0 81.25200388634373,18.760983610413,0 81.2523554655251,18.76106010147896,0 81.25279748593901,18.76114243369512,0 81.25312762774398,18.76119724978951,0 81.2534856447712,18.76120573212127,0 81.25418096263242,18.76116059524407,0 81.25506392269068,18.76146933585778,0 81.25533125954645,18.76158064123574,0 81.25564957460381,18.76180754520755,0 81.25591267281219,18.76180718534781,0 81.2562295188912,18.76165561985029,0 81.25678991245523,18.76073371275039,0 81.25717739894081,18.76045583916126,0 81.25744393830895,18.76035377737308,0 81.25767362869338,18.76040818153277,0 81.25789096420824,18.76056310142904,0 81.2582595363646,18.76139420270868,0 81.25842218261583,18.76158743855389,0 81.25848617054123,18.7617238981362,0 81.25850944032221,18.76185917346694,0 81.25859669831333,18.76213090832807,0 81.25875745428982,18.76232189678328,0 81.2589606807673,18.7624377535095,0 81.25899209793329,18.76244950151886,0 81.25901175277556,18.76260182738714,0 81.25889770899742,18.76255984469582,0 81.25866242246188,18.76242571091317,0 81.25847329598137,18.76220101630957,0 81.25831919855472,18.76178925243022,0 81.25829547375015,18.76172585716346,0 81.25809500041849,18.76148767970374,0 81.25773615615303,18.76067851255594,0 81.2575906379957,18.76057478505583,0 81.25745773847768,18.76054330666166,0 81.25727146485815,18.7606146335216,0 81.25693481672386,18.76085605014529,0 81.25636532678526,18.76179292274331,0 81.25620891648634,18.76186774286701,0 81.25595776972604,18.76198788052767,0 81.25558655863057,18.76198838824813,0 81.25523514894621,18.76173789351789,0 81.25499316808934,18.76163714505248,0 81.25415352851884,18.76134355218646,0 81.25348974504793,18.76138664191413,0 81.2531088750643,18.76137761813748,0 81.2527629839655,18.76132018707678,0 81.25231612384363,18.7612369534029,0 81.25196032284693,18.76115954382424,0 81.25163386253929,18.76108385670683,0 81.2513431140859,18.76097311461205,0 81.25116468098093,18.76089281414401,0 81.25095522804916,18.76084327703616,0 81.25049158899343,18.76079582121317,0 81.25009310970334,18.76080583581048,0 81.24955359497541,18.76075172760928,0 81.24919353779046,18.76055371332946,0 81.24846664369979,18.76018618724346,0 81.24778685906847,18.75993406175094,0 81.24690551006721,18.7596401450745,0 81.24654207988794,18.7595806844741,0 81.24605247558344,18.75951823996074,0 81.24579062107217,18.75940443167215,0 81.24551460175304,18.75919861043041,0 81.24545791351534,18.75917846122835,0 81.24540680859401,18.75918281580457,0 81.24529560376239,18.75927548050584,0 81.24429823069937,18.76017393332266,0 81.24399863427413,18.76031722493556,0 81.24333492511083,18.76038355162114,0 81.24311557023533,18.76045357180088,0 81.2429653330679,18.76050152876396,0 81.24286027978007,18.76063543748315,0 81.24280875220774,18.76088279486069,0 81.24260608186115,18.76094748943927,0 81.24238070005487,18.76094778168513,0 81.24218259233383,18.76082224945388,0 81.24208907383264,18.75976973682507,0 81.24177260859159,18.75939367797709,0 81.24147117830539,18.75939406740059,0 81.24138529557678,18.75942148100633,0 81.2412722762631,18.75961936760628,0 81.24121921089545,18.76010087532717,0 81.24095598658106,18.76060473715207,0 81.24085328321861,18.76040167012812,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1825</name>
+        <styleUrl>#falseColor121</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">0.15</SimpleData>
+            <SimpleData name="Compartmen">1825</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">689</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.24049894528684,18.76079409089584,0 81.24049920501857,18.76097736268986,0 81.24071268793728,18.76125011642586,0 81.24049789713952,18.76122827305051,0 81.24046314629987,18.76123252045621,0 81.24030953731607,18.76103782346948,0 81.24030903147366,18.76068060872882,0 81.24048103188433,18.7606058112251,0 81.24056164667081,18.76076533881592,0 81.24049894528684,18.76079409089584,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1825</name>
+        <styleUrl>#falseColor121</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">0.061</SimpleData>
+            <SimpleData name="Compartmen">1825</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">689</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2402535164486,18.75898780752028,0 81.24034230156418,18.75903953784639,0 81.24039151686281,18.75914811200257,0 81.24039043671725,18.75926017429662,0 81.24034082319339,18.75938841622821,0 81.24027184722557,18.75925203347684,0 81.24018067629653,18.7590717653487,0 81.24011524315451,18.75894238710629,0 81.2402535164486,18.75898780752028,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1825</name>
+        <styleUrl>#falseColor121</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">0.745</SimpleData>
+            <SimpleData name="Compartmen">1825</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">689</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.23925085561707,18.758482516927,0 81.23926164767521,18.75857081042419,0 81.2392491308858,18.75869559450746,0 81.23915079857994,18.75863655568103,0 81.23910486097186,18.75860897465769,0 81.23912213902442,18.75845844268628,0 81.23895534405598,18.75811895561894,0 81.23877428359248,18.75775043145372,0 81.23845884148024,18.7574935351315,0 81.23809274926218,18.75755234705363,0 81.23789556988328,18.75774772596864,0 81.23803946097608,18.75818131571934,0 81.2382423297246,18.75857700808322,0 81.23820097857298,18.75896312448931,0 81.23802925033267,18.75938379571628,0 81.23784900634321,18.75966009494022,0 81.23777572779511,18.75975479644286,0 81.23775100122519,18.75967490656942,0 81.23775484580273,18.75954061232294,0 81.23790040653512,18.7593155877524,0 81.23804543378868,18.75893643448622,0 81.23808879435423,18.75859026158032,0 81.2379261258006,18.7582339971604,0 81.23775805360572,18.75770910633399,0 81.23803303041308,18.75743112234948,0 81.23847099068341,18.75735549374214,0 81.23856382512106,18.75741104273503,0 81.23844866117508,18.75717816431812,0 81.23836778099844,18.75701661471311,0 81.23847887880197,18.75694007106712,0 81.23925085561707,18.758482516927,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1825</name>
+        <styleUrl>#falseColor121</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">0.367</SimpleData>
+            <SimpleData name="Compartmen">1825</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">689</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2340589254773,18.7627564891726,0 81.23401277795102,18.76265711663472,0 81.23379027743037,18.76217798963053,0 81.23361697958154,18.76180481231392,0 81.23321725801826,18.76164781579773,0 81.23291346430307,18.76156896585416,0 81.23290448414106,18.76154352199026,0 81.23302761893666,18.76147330662802,0 81.23312236365881,18.76143583939158,0 81.23327860501753,18.76147639190013,0 81.23375970772749,18.76166535193192,0 81.23396381086711,18.76210486419234,0 81.23413153742796,18.76246604182826,0 81.2340589254773,18.7627564891726,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1825</name>
+        <styleUrl>#falseColor121</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">2.685</SimpleData>
+            <SimpleData name="Compartmen">1825</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">689</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.23302761893666,18.76147330662802,0 81.23290448414106,18.76154352199026,0 81.23286750131554,18.76143873693667,0 81.23285080721975,18.76136480611169,0 81.23294628510938,18.76130872218418,0 81.23319723417639,18.76121380089539,0 81.2333185918399,18.76098148689448,0 81.23348059021635,18.76084764053956,0 81.23370884214206,18.7607128988647,0 81.23394597129953,18.76060628247738,0 81.23417341933681,18.76054189617054,0 81.23445774129243,18.76054153993845,0 81.23455507448638,18.76055802539273,0 81.23494334176858,18.76049598761358,0 81.23506862341981,18.76049221934728,0 81.23514569017154,18.76058678992693,0 81.23516246128987,18.76072863678667,0 81.23505405920424,18.76081416693047,0 81.23487032086977,18.76091430234228,0 81.23474787846425,18.76101500832683,0 81.23465618371824,18.76114727999745,0 81.23461247201539,18.76129866449406,0 81.23461266234922,18.76143633371596,0 81.23462372355169,18.76157081800811,0 81.23466190519046,18.76162904743019,0 81.23487819474121,18.7616638237437,0 81.23506201346673,18.76173138118902,0 81.2351705393943,18.76175468994147,0 81.23523082636716,18.76175629999704,0 81.23525647410729,18.76173534133731,0 81.23531671865747,18.76159926781118,0 81.2353557826039,18.76145522568048,0 81.23537681532535,18.7613215384918,0 81.23535696128251,18.76124021906053,0 81.23547994176026,18.76096430140996,0 81.23585213989794,18.76038344843264,0 81.23602808661997,18.76013995456734,0 81.23611899280867,18.75997085925906,0 81.23619355076131,18.75960497061823,0 81.2362018163668,18.75930801058731,0 81.23619912313292,18.75893222215198,0 81.236183727197,18.75873386150567,0 81.23615223006709,18.75861473475301,0 81.23614643834287,18.75854703671136,0 81.23632532509045,18.75842379242906,0 81.23636938001027,18.75842897236102,0 81.2364409993403,18.75855201527088,0 81.2364806146917,18.75873286574939,0 81.23659623800067,18.75915088972623,0 81.23668287746024,18.75959181732258,0 81.23669847681276,18.75970339688621,0 81.23670155687533,18.75971214416019,0 81.23671123287278,18.7597020408333,0 81.23674173465791,18.7595853834872,0 81.23691212947266,18.75867573391157,0 81.23699338408237,18.75845490907128,0 81.23720367009457,18.75842131074695,0 81.23727784598357,18.75856189871494,0 81.2373251045077,18.75913499945677,0 81.23734300170911,18.75917314964246,0 81.23736890473855,18.75917188533524,0 81.23743158080276,18.75909103495465,0 81.23750541661083,18.75889363189899,0 81.23758974126461,18.75868972713927,0 81.23772778793311,18.75859466404839,0 81.23789318309139,18.75865917558822,0 81.23788004040178,18.75887658473067,0 81.23779247798542,18.75919665351466,0 81.23775790441482,18.75943377237193,0 81.23775484580273,18.75954061232294,0 81.23775100122519,18.75967490656942,0 81.23777572779511,18.75975479644286,0 81.23783141227737,18.7599347089396,0 81.23798891701263,18.76008135023427,0 81.23818103655709,18.7601301635226,0 81.23844446399556,18.76009527417363,0 81.23860412672788,18.76001640013485,0 81.23869521505328,18.75988339501381,0 81.23884134728064,18.75943057360708,0 81.23889555303036,18.75933628948489,0 81.23891854984721,18.75915475781184,0 81.23890628683114,18.75896095395527,0 81.23891113085052,18.75875515265791,0 81.23898886247501,18.75864396639124,0 81.23910486097186,18.75860897465769,0 81.23915079857994,18.75863655568103,0 81.2392491308858,18.75869559450746,0 81.23934541064476,18.75889155669885,0 81.23943310164032,18.7589908014653,0 81.23949861406403,18.75901218674433,0 81.23966377475608,18.75898853203238,0 81.23972450632397,18.75910871561398,0 81.23948626314667,18.7591419076318,0 81.23935520012539,18.75909912460895,0 81.23923252510157,18.7589602864007,0 81.23914534589132,18.7587828467385,0 81.23908618980278,18.75874732934124,0 81.23907351203258,18.75875115367636,0 81.23904305857326,18.75879471393229,0 81.23903920216111,18.75895856152254,0 81.23905319298633,18.75917966877329,0 81.23902391416154,18.75937643464121,0 81.23896433808646,18.75948005991893,0 81.23881668124626,18.75993760664004,0 81.23869628614773,18.76011340500366,0 81.23848535640849,18.76021760518087,0 81.23817274133131,18.76025900913014,0 81.23792100508287,18.76019504856166,0 81.23771380253095,18.76000213712192,0 81.23767681350263,18.75988262807714,0 81.23761765120393,18.75969147832235,0 81.23761875226238,18.75965301852513,0 81.23762532848082,18.75942331195596,0 81.23766198468405,18.75917191094,0 81.23774819073327,18.75885680102447,0 81.23775512749005,18.75874205326318,0 81.23774577579199,18.75873840567998,0 81.23769943728911,18.75877031577092,0 81.23754988283984,18.75915142565037,0 81.23743843731245,18.75929518736422,0 81.23725887829842,18.75930395149133,0 81.23719433394793,18.75916636675648,0 81.23714752941875,18.75859666244724,0 81.23712899777557,18.75856153879161,0 81.23709276741158,18.75856732747514,0 81.23704096580185,18.75870810842184,0 81.23687179058886,18.75961149885998,0 81.23683200177781,18.75976367585051,0 81.23672565012465,18.75987472442093,0 81.23660745642866,18.75984277947676,0 81.23656849477247,18.75973212951033,0 81.23655165168763,18.75961165308138,0 81.236466620771,18.75917887968857,0 81.236351294231,18.75876192749392,0 81.23631508297041,18.75859661668612,0 81.23628600436274,18.75854665922815,0 81.23628198980005,18.75854618719902,0 81.23627985869028,18.75854884417633,0 81.23628372212062,18.75859400245253,0 81.23631534211732,18.75871359354828,0 81.23633191529387,18.75892711958105,0 81.2363346543208,18.75930925583401,0 81.23632603877104,18.75961879707405,0 81.23624579834421,18.76001257358329,0 81.23614279520724,18.76020417078004,0 81.23559839009386,18.7610223106638,0 81.2354961408427,18.76125171637659,0 81.23551193414073,18.76131640332798,0 81.23548611807752,18.76148049499188,0 81.23544288958477,18.76163989367321,0 81.23536670476489,18.76181197152458,0 81.23531475371738,18.76185442458149,0 81.23499606719805,18.76184276501614,0 81.23484287557754,18.76178646370217,0 81.2345808978986,18.76174434659617,0 81.23449384135489,18.7616115797313,0 81.23447984157436,18.76144136603996,0 81.23447962090152,18.76128166206284,0 81.23453371102143,18.76109433501492,0 81.2346471641972,18.76093067649207,0 81.23479322556319,18.76081054452582,0 81.23497815452335,18.76070976027491,0 81.23502243207601,18.76067482494588,0 81.23501787576436,18.76063628828674,0 81.23500518923134,18.76062072030923,0 81.23495654006308,18.76062218358905,0 81.23455438191674,18.76068642241759,0 81.2344461115302,18.76066808452758,0 81.23419282341432,18.76066840188384,0 81.2339935118125,18.76072482328847,0 81.23377237885204,18.76082424758898,0 81.23355833654388,18.76095060107525,0 81.23347093637618,18.76109806589313,0 81.23333366718587,18.76135227820737,0 81.23312236365881,18.76143583939158,0 81.23302761893666,18.76147330662802,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>1824</name>
+      <Placemark>
+        <name>1824</name>
+        <styleUrl>#falseColor120</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">0.162</SimpleData>
+            <SimpleData name="Compartmen">1824</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">690</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.26012819069116,18.76512335979757,0 81.26026074486072,18.76499192139133,0 81.26040225902578,18.76486925187119,0 81.26070499278732,18.76509995143036,0 81.26055995248623,18.76521960476009,0 81.26042509848475,18.76534962002349,0 81.26012819069116,18.76512335979757,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1824</name>
+        <styleUrl>#falseColor120</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">0.79</SimpleData>
+            <SimpleData name="Compartmen">1824</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">690</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.24397109276835,18.7659808083634,0 81.24367834023717,18.76504309990679,0 81.24346020462563,18.76415350577572,0 81.24345903309428,18.76333703677303,0 81.24308683865956,18.76283615495065,0 81.24267903323106,18.76266292334051,0 81.24220050632904,18.76226113718521,0 81.24218556232044,18.76215047758308,0 81.24221110908503,18.76216340118703,0 81.24235551520849,18.76219852725693,0 81.24276202515783,18.76253984546107,0 81.2431866893419,18.76272023838407,0 81.24361077166223,18.76329094792013,0 81.24361198605885,18.76413676501002,0 81.24382384822411,18.76500187985898,0 81.24414222326016,18.76602165581638,0 81.24397109276835,18.7659808083634,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1824</name>
+        <styleUrl>#falseColor120</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">0.009</SimpleData>
+            <SimpleData name="Compartmen">1824</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">690</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.23531475371738,18.76185442458149,0 81.23527837840838,18.76188414952516,0 81.23515391524124,18.7618808255603,0 81.23502329280218,18.76185277101157,0 81.23499606719805,18.76184276501614,0 81.23531475371738,18.76185442458149,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1824</name>
+        <styleUrl>#falseColor120</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">3.114</SimpleData>
+            <SimpleData name="Compartmen">1824</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">690</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.258835459883,18.7681120491417,0 81.25884100319716,18.76764773615576,0 81.25878948796377,18.76732640258381,0 81.25867763156394,18.76707446772559,0 81.25842226061184,18.7666840668564,0 81.25839646344519,18.76663139658921,0 81.25811902708688,18.76613126715878,0 81.25789987874691,18.76597435168181,0 81.25752223175523,18.76576153246152,0 81.25649048129101,18.76546764794672,0 81.25617382602616,18.76543851011301,0 81.25671616931136,18.76585756600944,0 81.25766816026515,18.76684698543055,0 81.25771013312226,18.7675268730364,0 81.25705498515094,18.76826263037558,0 81.2563684698023,18.76893950313982,0 81.25619851623856,18.76889894916919,0 81.25693618765187,18.76817163976269,0 81.2575556086088,18.76748712115698,0 81.25751978257462,18.76690679305976,0 81.25725568315249,18.76663231161679,0 81.25626772401263,18.76656520799564,0 81.25536599360078,18.76658944968826,0 81.25441851402002,18.76651152112234,0 81.25352005283013,18.76629711693282,0 81.25020631506334,18.76666609687997,0 81.249505873442,18.76677969649624,0 81.24899374609299,18.76717960112486,0 81.24881034410771,18.76713582993706,0 81.24944075790904,18.76664355946648,0 81.25023938475864,18.76651682510379,0 81.2535300072668,18.76615041833247,0 81.25444364813836,18.766368445032,0 81.25537039620833,18.76644466846829,0 81.25627098930399,18.7664204573204,0 81.25710644178957,18.76647720285563,0 81.25661183055205,18.76596314313987,0 81.25597005909812,18.76545837666466,0 81.25557769627385,18.76512378524928,0 81.25539836465117,18.76504461365048,0 81.25569386372223,18.76502849659435,0 81.25597789495284,18.76527520227452,0 81.25651738009265,18.76532484465936,0 81.25758522365953,18.76562897732258,0 81.25823738394331,18.76603511070526,0 81.258554877748,18.7666133647673,0 81.25881279433213,18.76700765680319,0 81.25893669318218,18.76728671442185,0 81.25899291427061,18.76763739951557,0 81.25898847374198,18.76811183723045,0 81.258835459883,18.7681120491417,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1824</name>
+        <styleUrl>#falseColor120</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">0.434</SimpleData>
+            <SimpleData name="Compartmen">1824</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">690</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.25890035080823,18.76517381892133,0 81.25960465221283,18.765923840866,0 81.25957376474936,18.76600026730897,0 81.259545311449,18.76607754646129,0 81.2588084736219,18.76529287594253,0 81.25816543050773,18.76501434622532,0 81.25727461060545,18.76499588776424,0 81.25636074239355,18.76500222332028,0 81.25634100598404,18.76499319863892,0 81.25753007947799,18.76492833552244,0 81.25823464974336,18.76488547519251,0 81.25890035080823,18.76517381892133,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1824</name>
+        <styleUrl>#falseColor120</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">0.457</SimpleData>
+            <SimpleData name="Compartmen">1824</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">690</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.25995327064639,18.76645746111211,0 81.26017405644643,18.76696481612747,0 81.26029889121979,18.76740423618317,0 81.26037764479793,18.76769042051061,0 81.26061806273981,18.76781414042376,0 81.26097385177201,18.7676856204519,0 81.26140304317681,18.76772606160888,0 81.26141319561371,18.76773549397101,0 81.261491686116,18.76800521527578,0 81.26133638030363,18.76786509125587,0 81.2609943648402,18.76783286436184,0 81.26060698248061,18.76797279652798,0 81.2602475076045,18.7677878094713,0 81.26015219677504,18.76744145644033,0 81.26003007438787,18.76701158274229,0 81.25981694720134,18.76652182592723,0 81.25983115453529,18.76645239208895,0 81.25984754647277,18.76638339641725,0 81.25986610819733,18.76631490126486,0 81.25995327064639,18.76645746111211,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1824</name>
+        <styleUrl>#falseColor120</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">1.206</SimpleData>
+            <SimpleData name="Compartmen">1824</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">690</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.25984754647277,18.76638339641725,0 81.25983115453529,18.76645239208895,0 81.25981694720134,18.76652182592723,0 81.25980293791316,18.76660471503085,0 81.25979204167713,18.76668802741656,0 81.25978427236809,18.76677165703259,0 81.25969846859222,18.76811085230882,0 81.25931820682366,18.76811138015227,0 81.25940556405351,18.76674798681628,0 81.25941398678638,18.76665580438248,0 81.25942570272996,18.76656394893163,0 81.25944069826704,18.76647252718386,0 81.25945895597012,18.7663816453552,0 81.25948045462178,18.76629140903414,0 81.25950516923933,18.76620192305919,0 81.25953307110363,18.76611329139682,0 81.25956412779306,18.76602561702078,0 81.25959830322041,18.76593900179255,0 81.25963555767549,18.76585354634287,0 81.25967584787104,18.76576934995486,0 81.25971912699305,18.76568651044876,0 81.25976534475502,18.76560512406812,0 81.25981444745673,18.76552528536831,0 81.25986637804635,18.76544708710625,0 81.25992107618686,18.76537062013293,0 81.2602180354537,18.76559691977928,0 81.26017159919219,18.76566311509407,0 81.26012754025841,18.76573076885334,0 81.26008590908746,18.76579980361685,0 81.2600467533357,18.76587014036367,0 81.2600101178262,18.76594169858235,0 81.25997604449732,18.7660143963631,0 81.25994457235463,18.76608815049178,0 81.25991573742665,18.76616287654485,0 81.25988957272305,18.76623848898616,0 81.25986610819733,18.76631490126486,0 81.25984754647277,18.76638339641725,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1824</name>
+        <styleUrl>#falseColor120</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">1.307</SimpleData>
+            <SimpleData name="Compartmen">1824</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">690</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.23985544265275,18.76130679568386,0 81.24023434471768,18.76126048546025,0 81.24032995660228,18.7612871681376,0 81.24048435165902,18.76142760995809,0 81.24054132894999,18.76167007851448,0 81.24058268472707,18.76210633809938,0 81.24059179070868,18.76309212737894,0 81.2405677720714,18.76342308605097,0 81.24058091325234,18.76365473667362,0 81.2406453917955,18.76375520293529,0 81.24075795601335,18.76376390428101,0 81.24079987698981,18.76364054248056,0 81.24080948134691,18.7622048841184,0 81.24073062726721,18.76175861099051,0 81.24059832563161,18.76140385766519,0 81.24046314629987,18.76123252045621,0 81.24049789713952,18.76122827305051,0 81.24071268793728,18.76125011642586,0 81.24076936887569,18.76132253391466,0 81.24091499258482,18.76171300793886,0 81.24099931594355,18.76219348728385,0 81.24098925754812,18.76369726660947,0 81.24094909424532,18.76390647483113,0 81.24079167844741,18.76397065104036,0 81.24052797023593,18.7639150147358,0 81.2403945098665,18.7637187198688,0 81.24037766210404,18.76342172446645,0 81.2404019956429,18.76308643187899,0 81.24035352428689,18.76169835733609,0 81.24031173600849,18.76152052529859,0 81.24023022879072,18.76144638412491,0 81.24003532249105,18.76138617192017,0 81.23974866530983,18.76136302374091,0 81.2397023741281,18.76134672712794,0 81.23985544265275,18.76130679568386,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1824</name>
+        <styleUrl>#falseColor120</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">1.853</SimpleData>
+            <SimpleData name="Compartmen">1824</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">690</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.23644905694637,18.76200813244765,0 81.23650813689862,18.76254459135454,0 81.23670478386033,18.76324504915583,0 81.23721497796161,18.76351003360917,0 81.23765834634115,18.76374030832199,0 81.23801645241423,18.76430012936091,0 81.23811413160512,18.76464113103765,0 81.23800165198435,18.76492051292863,0 81.23788082591967,18.76499003108726,0 81.23773958890627,18.76491935505871,0 81.23751507810232,18.76458969880325,0 81.23711152851945,18.76419036649663,0 81.23663233707276,18.76398760273865,0 81.23605768604892,18.76379426934431,0 81.23520898583804,18.76263570566756,0 81.23482285675374,18.76265203560592,0 81.23447412368309,18.76283589842429,0 81.23409393114163,18.76278342707938,0 81.23406012038248,18.7627590622396,0 81.2340589254773,18.7627564891726,0 81.23413153742796,18.76246604182826,0 81.23420097007035,18.76261555561301,0 81.23443811874193,18.76264828509933,0 81.23476994032946,18.76247333845185,0 81.23530486019889,18.76245071586336,0 81.23617839473532,18.76364318065271,0 81.23670255845826,18.76381952816651,0 81.23722248978918,18.76403953040302,0 81.23766438414276,18.76447680647449,0 81.23786089047549,18.76476534264329,0 81.2379147188805,18.76463164157187,0 81.23784044971221,18.764372364127,0 81.2375228006191,18.7638757881262,0 81.23712414098596,18.76366873391946,0 81.23654249497149,18.7633666385439,0 81.23632097278345,18.76257757230012,0 81.23625318578708,18.76196204512125,0 81.23644905694637,18.76200813244765,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>1826</name>
+      <Placemark>
+        <name>1826</name>
+        <styleUrl>#falseColor122</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">0.491</SimpleData>
+            <SimpleData name="Compartmen">1826</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">676</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.21849372819831,18.7286281837333,0 81.21854183663658,18.72846398602603,0 81.21849510965774,18.72832292102807,0 81.21817595353457,18.72765368161706,0 81.21809636459136,18.72754222437666,0 81.21800673906529,18.72747975267765,0 81.21781975636269,18.72736815150446,0 81.21801229896418,18.72736877246679,0 81.21801825548482,18.72727421861528,0 81.21811179916243,18.72732453869806,0 81.21823757231516,18.72741220633437,0 81.21834429849777,18.72756166668914,0 81.21867629048495,18.72825729280621,0 81.21874368999325,18.72846076579363,0 81.21868850106142,18.7286491305551,0 81.21873178341804,18.72942350467309,0 81.21879059736968,18.72966401724167,0 81.21851545775814,18.72903818470919,0 81.21849372819831,18.7286281837333,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1826</name>
+        <styleUrl>#falseColor122</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">3.284</SimpleData>
+            <SimpleData name="Compartmen">1826</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">676</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.22102571750361,18.73605478414662,0 81.22088732762877,18.73630625435292,0 81.2207536663546,18.73671381157965,0 81.22077490616918,18.73721319431753,0 81.22087014381204,18.73789114443841,0 81.22094589478901,18.73831880403626,0 81.22129154214463,18.73868524854016,0 81.22149260740663,18.73922521753109,0 81.22156713628482,18.73965726943062,0 81.22189764163026,18.74028888717705,0 81.22226477603998,18.7407963360118,0 81.22255814605705,18.74098825087972,0 81.22281963865716,18.7410500962023,0 81.22332241542246,18.74219354613284,0 81.223332146654,18.74218966249363,0 81.22363989472677,18.74359991446791,0 81.22383314160744,18.74455758031957,0 81.22408167452464,18.74498543660973,0 81.224432429844,18.74565666824284,0 81.22476162364234,18.74618040534405,0 81.22491144704453,18.74630545660819,0 81.22514866028155,18.74633805936049,0 81.22523177706933,18.74652707742761,0 81.22520548498018,18.7465284980904,0 81.22482870457431,18.74647671316309,0 81.22461416008041,18.74629764186302,0 81.22426586092854,18.74574350797817,0 81.2239136634641,18.74506951531748,0 81.22365448533151,18.74462333217629,0 81.22357840941966,18.74431637001416,0 81.2234535737246,18.74363420335056,0 81.2231016295396,18.74202377057319,0 81.22307670448066,18.7417873953988,0 81.22305993578091,18.74172570429541,0 81.22282396532258,18.7412410884528,0 81.22247749753052,18.74115914576056,0 81.22212573828659,18.74092903412266,0 81.22169440050118,18.74037299630639,0 81.22138126354157,18.73971667482595,0 81.2213071322243,18.73928692499994,0 81.22112355502782,18.73880073853785,0 81.2207306591128,18.7384244652277,0 81.22067909134967,18.737921008187,0 81.2205819062973,18.73722918984939,0 81.2205589457954,18.73668933642123,0 81.22070782422666,18.73623538089809,0 81.22083817847114,18.73599851285464,0 81.22085580287184,18.7358673245712,0 81.22071167985496,18.73557764806382,0 81.2204983892874,18.73520471539659,0 81.22032758414689,18.73464512155784,0 81.22011950398263,18.73403001022913,0 81.21994829713628,18.73369332912405,0 81.21966176609679,18.73298585026048,0 81.21948556382046,18.73271724255121,0 81.21930655963331,18.73228009470169,0 81.21932137199285,18.73200049816704,0 81.22104750717926,18.73589259005678,0 81.22102571750361,18.73605478414662,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1826</name>
+        <styleUrl>#falseColor122</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Road_DSSSSSSS">
+            <SimpleData name="AREA">1.511</SimpleData>
+            <SimpleData name="Compartmen">1826</SimpleData>
+            <SimpleData name="Facility">Road</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">676</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2261105431338,18.74866756002798,0 81.22604253854672,18.74905246492629,0 81.22613113327814,18.74986163109848,0 81.22628580902848,18.75002002718121,0 81.22647680489727,18.75012868188148,0 81.22657657738051,18.7502003621046,0 81.22669126885135,18.75033113376498,0 81.22679121031673,18.75078425062857,0 81.22685695999009,18.75123049238887,0 81.2269457986681,18.75153133653847,0 81.22692012420838,18.75181913929813,0 81.22694768594999,18.75222164645206,0 81.22700798726486,18.7523848064925,0 81.22718851130765,18.75265379705916,0 81.22782707512052,18.75325238589222,0 81.22852667169127,18.75392758931315,0 81.22848894889187,18.753942644313,0 81.22864661888109,18.75430116967008,0 81.22704017404612,18.75276833887323,0 81.2268363010068,18.7524645566218,0 81.22676004372023,18.75225822318534,0 81.2267298559749,18.75181735916201,0 81.22675382189857,18.7515487119887,0 81.22667083950235,18.75126769851254,0 81.2266044016843,18.75081678300265,0 81.22651479244614,18.75041183294592,0 81.22644493779001,18.75033218430776,0 81.22637073350789,18.75027887319319,0 81.22616530770132,18.75016200945279,0 81.22595030048161,18.74994183055703,0 81.22591668244546,18.7496808704029,0 81.22585123828173,18.74904619011574,0 81.22592529277439,18.74862704549657,0 81.22601443293844,18.74830691271612,0 81.22625016121414,18.74821283503512,0 81.2261105431338,18.74866756002798,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+    <Folder id="layer 0">
+      <name>1825</name>
+      <Placemark>
+        <name>1825</name>
+        <styleUrl>#falseColor0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Slurry_line_DSSSSSSS">
+            <SimpleData name="AREA">0.101</SimpleData>
+            <SimpleData name="Compartmen">1825</SimpleData>
+            <SimpleData name="Facility">Slurry_line</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">689</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.26051857361962,18.76477008967673,0 81.26081262827313,18.76451939712625,0 81.26092727306307,18.76447273513318,0 81.26099203624621,18.76457347802473,0 81.26102772829869,18.76476383559516,0 81.26051857361962,18.76477008967673,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>1824</name>
+      <Placemark>
+        <name>1824</name>
+        <open>1</open>
+        <styleUrl>#falseColor</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Slurry_line_DSSSSSSS">
+            <SimpleData name="AREA">0.177</SimpleData>
+            <SimpleData name="Compartmen">1824</SimpleData>
+            <SimpleData name="Facility">Slurry_line</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">690</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.26040225902578,18.76486925187119,0 81.26051857361962,18.76477008967673,0 81.26102772829869,18.76476383559516,0 81.2611147848058,18.76491342073496,0 81.26070499278732,18.76509995143036,0 81.26040225902578,18.76486925187119,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122289044Roads.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

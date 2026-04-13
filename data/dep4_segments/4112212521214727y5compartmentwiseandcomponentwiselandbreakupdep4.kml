@@ -1,0 +1,2881 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>Component wise land break up Dep-4</name>
+    <open>1</open>
+    <Document>
+      <name>1 Area under Mining Insitu 94dot11 ha</name>
+      <open>1</open>
+      <Schema name="2" id="kml_schema_ft_2">
+        <SimpleField type="xsd:double" name="AREA">
+          <displayName>AREA</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Facility">
+          <displayName>Facility</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="New_compartment_no">
+          <displayName>New_compartment_no</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Old_compartment_no">
+          <displayName>Old_compartment_no</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Forest_Type">
+          <displayName>Forest_Type</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Division">
+          <displayName>Division</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Range">
+          <displayName>Range</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="RF">
+          <displayName>RF</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Village">
+          <displayName>Village</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Khasra_no">
+          <displayName>Khasra_no</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Land_Type">
+          <displayName>Land_Type</displayName>
+        </SimpleField>
+      </Schema>
+      <StyleMap id="msn_ylw-pushpin">
+        <Pair>
+          <key>normal</key>
+          <styleUrl>#sn_ylw-pushpin</styleUrl>
+        </Pair>
+        <Pair>
+          <key>highlight</key>
+          <styleUrl>#sh_ylw-pushpin</styleUrl>
+        </Pair>
+      </StyleMap>
+      <Style id="sh_ylw-pushpin">
+        <IconStyle>
+          <scale>1.3</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+          </Icon>
+          <hotSpot x="20" y="2" xunits="pixels" yunits="pixels" />
+        </IconStyle>
+        <BalloonStyle>
+        </BalloonStyle>
+        <LineStyle>
+          <color>ff0000ff</color>
+        </LineStyle>
+        <PolyStyle>
+          <fill>0</fill>
+        </PolyStyle>
+      </Style>
+      <Style id="sn_ylw-pushpin">
+        <IconStyle>
+          <scale>1.1</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+          </Icon>
+          <hotSpot x="20" y="2" xunits="pixels" yunits="pixels" />
+        </IconStyle>
+        <BalloonStyle>
+        </BalloonStyle>
+        <LineStyle>
+          <color>ff0000ff</color>
+        </LineStyle>
+        <PolyStyle>
+          <fill>0</fill>
+        </PolyStyle>
+      </Style>
+      <Placemark id="kml_1">
+        <name>kml 1</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>28456.92665173711</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Insitu)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1832</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>665</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#msn_ylw-pushpin</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_2">
+            <SimpleData name="AREA">28456.92665173711</SimpleData>
+            <SimpleData name="Facility">Area under mining (Insitu)</SimpleData>
+            <SimpleData name="New_compartment_no">1832</SimpleData>
+            <SimpleData name="Old_compartment_no">665</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.21374098842649,18.725775141469,0 81.21371497260699,18.7259257096511,0 81.213303558752,18.7260398573346,0 81.2129441681159,18.7261117560573,0 81.2128543944138,18.7260202454052,0 81.212752548338,18.726029575254,0 81.2126604885695,18.7260213739642,0 81.2126121932879,18.7259124136167,0 81.2124701941909,18.7258989636624,0 81.21243156060321,18.7257940683998,0 81.2122418313144,18.7257744723954,0 81.2121942601041,18.7256677705895,0 81.21205690168451,18.7256558695815,0 81.2118982299472,18.7256295861679,0 81.2116542513517,18.7253268899206,0 81.21302939380359,18.7239151190405,0 81.21374098842649,18.725775141469,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_2">
+        <name>kml 2</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>124862.63443547684</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Insitu)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1833</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>664</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#msn_ylw-pushpin</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_2">
+            <SimpleData name="AREA">124862.63443547684</SimpleData>
+            <SimpleData name="Facility">Area under mining (Insitu)</SimpleData>
+            <SimpleData name="New_compartment_no">1833</SimpleData>
+            <SimpleData name="Old_compartment_no">664</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.21302939380359,18.7239151190405,0 81.2116542513517,18.7253268899206,0 81.21159390448121,18.7252520193177,0 81.21146755785919,18.72516266868,0 81.21142333177011,18.7250072417686,0 81.2114024316203,18.724928100145,0 81.2112866364495,18.7248717438941,0 81.2112725222398,18.7247762219331,0 81.211250419367,18.7245809269232,0 81.2110269861716,18.7242914687476,0 81.21084793413149,18.7240150472272,0 81.2107553242852,18.7237304212897,0 81.2107390543249,18.7235449682255,0 81.2107031214031,18.7233545328804,0 81.2106883124014,18.7232894740108,0 81.21066102037349,18.7232648673732,0 81.2105575632059,18.7231132553266,0 81.21048690942359,18.7228254141609,0 81.210442257553,18.7227805188189,0 81.2103449447024,18.7226688201721,0 81.21029473452199,18.7224744440644,0 81.2101972759399,18.722183207484,0 81.21003479049,18.7218056865526,0 81.2097219545397,18.7212236704039,0 81.2090852938106,18.7203105311679,0 81.2090401234303,18.7202303799561,0 81.2090802435884,18.7199191690123,0 81.2089623480982,18.7197325682882,0 81.20887787464,18.7193374617971,0 81.2085922363504,18.7184182819044,0 81.20914081834491,18.7184050840201,0 81.21018959009329,18.7184219850555,0 81.2103513478297,18.7198644663556,0 81.21174244053221,18.7219120195964,0 81.212011230166,18.722330381613,0 81.2121031794039,18.7224734975066,0 81.21302939380359,18.7239151190405,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_3">
+        <name>kml 3</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>42994.278566709516</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Insitu)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1886</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>663</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#msn_ylw-pushpin</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_2">
+            <SimpleData name="AREA">42994.278566709516</SimpleData>
+            <SimpleData name="Facility">Area under mining (Insitu)</SimpleData>
+            <SimpleData name="New_compartment_no">1886</SimpleData>
+            <SimpleData name="Old_compartment_no">663</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.21018959009329,18.7184219850555,0 81.20914081834491,18.7184050840201,0 81.2085922363504,18.7184182819044,0 81.2085660891635,18.7183341401026,0 81.2077815532012,18.7169890316178,0 81.2077892552873,18.7164517429751,0 81.2078029577746,18.7164699113567,0 81.2091650785412,18.7166212198298,0 81.2101017423366,18.7167455049459,0 81.21018959009329,18.7184219850555,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_4">
+        <name>kml 4</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>300938.93676547054</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Insitu)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1885</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>662</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#msn_ylw-pushpin</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_2">
+            <SimpleData name="AREA">300938.93676547054</SimpleData>
+            <SimpleData name="Facility">Area under mining (Insitu)</SimpleData>
+            <SimpleData name="New_compartment_no">1885</SimpleData>
+            <SimpleData name="Old_compartment_no">662</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2103482093283,18.7148857840415,0 81.2101017423366,18.7167455049459,0 81.2091650785412,18.7166212198298,0 81.2078029577746,18.7164699113567,0 81.2077892552873,18.7164517429751,0 81.2077931475135,18.7161802249492,0 81.20788374264259,18.7157142312625,0 81.2080841110686,18.7153006667122,0 81.2087054253648,18.7135608731102,0 81.20872748883821,18.7130863579553,0 81.2089567256468,18.7123975578985,0 81.2089435913342,18.7122527128116,0 81.2090417103602,18.7120380025858,0 81.2090434668311,18.7118888614386,0 81.20915764365419,18.7116935602398,0 81.2090583194699,18.7114385093495,0 81.20929334831889,18.7111451686833,0 81.2094469014436,18.71098150123,0 81.2094638810337,18.7106742201596,0 81.20926525135221,18.7104564504565,0 81.2092299797384,18.7102541006984,0 81.2086792606954,18.7093179433175,0 81.2081049340583,18.7085706938893,0 81.2079536014418,18.7079430245623,0 81.20784071571219,18.7070433977261,0 81.2077461650663,18.7061805799882,0 81.20762129275229,18.7056629171375,0 81.207369329063,18.7051367866239,0 81.2072107777273,18.7046125589349,0 81.20723776808801,18.7042441794278,0 81.207107409868,18.7037894763051,0 81.2066653546331,18.7026663244948,0 81.206653147605,18.7022674800173,0 81.20663286530529,18.7014703661697,0 81.2065432103401,18.7012168290379,0 81.20647488527079,18.700820616964,0 81.206466663269,18.700744490192,0 81.20627806079401,18.700457071737,0 81.2061478230425,18.7001051243276,0 81.2058882830225,18.6996088294206,0 81.20577880916569,18.6993600991964,0 81.20572001470801,18.6991781759265,0 81.2056582132508,18.6990899792757,0 81.2056209689202,18.6987998974547,0 81.2056269449273,18.6987374800196,0 81.2055173070088,18.698705678224,0 81.20552090627081,18.6986074410028,0 81.2055342723058,18.6984840133997,0 81.2054665346691,18.6984827680845,0 81.2054283554637,18.6984783632459,0 81.2054226098474,18.6984484087958,0 81.2054343145773,18.6983472163291,0 81.2054460764723,18.6982962565566,0 81.2054847399598,18.6982438437232,0 81.2070955024101,18.7001426346645,0 81.2082491974745,18.7023670491469,0 81.2084631933272,18.7030736519292,0 81.208609618518,18.7035571400245,0 81.20899292604911,18.704822800852,0 81.2098970975271,18.7082310599095,0 81.2100002309466,18.7121296272322,0 81.2103993975041,18.7144995427848,0 81.2103482093283,18.7148857840415,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_5">
+        <name>kml 5</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>443846.9651069429</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Insitu)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1834</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>666</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#msn_ylw-pushpin</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_2">
+            <SimpleData name="AREA">443846.9651069429</SimpleData>
+            <SimpleData name="Facility">Area under mining (Insitu)</SimpleData>
+            <SimpleData name="New_compartment_no">1834</SimpleData>
+            <SimpleData name="Old_compartment_no">666</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.21334868248771,18.7214503584398,0 81.2135515108036,18.7220777556644,0 81.2136918106934,18.7221681464562,0 81.21376640355859,18.7224086865376,0 81.21390026483461,18.7225079506978,0 81.2139798611347,18.7228573013367,0 81.2140022887168,18.7230374237429,0 81.2138950200801,18.7234211374889,0 81.2138615327335,18.7238774284457,0 81.2138354383447,18.7240978688233,0 81.2138481497191,18.7242341594478,0 81.21392687410361,18.7244364914709,0 81.213912902581,18.72466337234,0 81.213947089173,18.7250638835737,0 81.21394460207421,18.7252238352044,0 81.2138445156241,18.725440190334,0 81.2137526131946,18.7257078623118,0 81.21374098842649,18.725775141469,0 81.21302939380359,18.7239151190405,0 81.2121031794039,18.7224734975066,0 81.212011230166,18.722330381613,0 81.21174244053221,18.7219120195964,0 81.2103513478297,18.7198644663556,0 81.21018959009329,18.7184219850555,0 81.2101017423366,18.7167455049459,0 81.2103993975041,18.7144995427848,0 81.2100002309466,18.7121296272322,0 81.2098970975271,18.7082310599095,0 81.2093514593508,18.7061742860544,0 81.2092530679562,18.7058034013609,0 81.20899292604911,18.704822800852,0 81.208609618518,18.7035571400245,0 81.2084631933272,18.7030736519292,0 81.2082491974745,18.7023670491469,0 81.2070955024101,18.7001426346645,0 81.2054847399598,18.6982438437232,0 81.2055337264011,18.698177436873,0 81.2056203356093,18.6980888482499,0 81.205700197536,18.6980319465173,0 81.20574823142729,18.697999367023,0 81.20578679778031,18.6979810376805,0 81.20602333888711,18.6979232244382,0 81.2060742346456,18.6979263046846,0 81.2061950384912,18.6980314728532,0 81.20621703329481,18.6980323072739,0 81.2063257489705,18.6980624828522,0 81.20641134836529,18.6981009303446,0 81.20643788963589,18.6981170931642,0 81.20649772645061,18.6982588414735,0 81.2066034267559,18.6983206258543,0 81.2067286361618,18.6984215138749,0 81.20738829517759,18.6991343392316,0 81.20758023130681,18.6991918611799,0 81.20785333573281,18.6995541287981,0 81.2080513864356,18.6998922259924,0 81.20816293847111,18.7001194829373,0 81.2082129615675,18.7001839672536,0 81.208327018624,18.7003091726805,0 81.2084372943536,18.700448131682,0 81.2084819788724,18.7006140500061,0 81.2084934431515,18.7006896711624,0 81.2086450858571,18.7008892497492,0 81.2089204617015,18.7013439937691,0 81.2091491442533,18.7016880522372,0 81.2092552541821,18.7018799852808,0 81.2094593400128,18.7021081277487,0 81.2097657061525,18.7028750871035,0 81.2100360894044,18.703583122762,0 81.21015787427029,18.7041205168506,0 81.21022571154001,18.7044809816611,0 81.2103825850409,18.7047951808324,0 81.2106817409168,18.7055570129436,0 81.2110269704621,18.7059548987942,0 81.2112915316881,18.7063846432042,0 81.21135477814261,18.7066047085607,0 81.2115902538609,18.7070476083527,0 81.2116687792584,18.7072588217697,0 81.21170713812189,18.707669077435,0 81.2116567758295,18.7079372532327,0 81.2117020395663,18.7081376631788,0 81.21156603021331,18.7085129446072,0 81.2115373719831,18.7088410714861,0 81.21158121295839,18.7091443616744,0 81.2115230347206,18.7094355477237,0 81.2114144034755,18.7096479167463,0 81.21145545885859,18.7098123424708,0 81.2112504319124,18.7101385442307,0 81.2113153011141,18.7102932273765,0 81.2112117088592,18.7106764162646,0 81.2111619648982,18.711023803985,0 81.21119443938861,18.7116592030446,0 81.2112085442935,18.7117949704826,0 81.2112199687224,18.7120431930117,0 81.2112441905907,18.7126981434599,0 81.2112916115626,18.7132029479409,0 81.21131088651489,18.7133606604167,0 81.21137265870389,18.7134645312957,0 81.2114099741322,18.713511405021,0 81.2114001945429,18.7136961720744,0 81.2113949024527,18.7137274125438,0 81.2113650470334,18.7139036559852,0 81.2114496837339,18.7140117804949,0 81.21141275797871,18.7141793941148,0 81.2113796274127,18.714227494547,0 81.2113493073022,18.7142711971308,0 81.21128988305141,18.714358411076,0 81.2113632733179,18.7144457972476,0 81.2113011828872,18.7145303061092,0 81.21112379586251,18.7147149089594,0 81.211256917893,18.7148437118897,0 81.2111278077129,18.7149767190783,0 81.2110960060707,18.7150296132915,0 81.2113359414094,18.7152891286373,0 81.2112790218299,18.7155188371418,0 81.2111147354984,18.7159821972277,0 81.21118627446231,18.7160906438691,0 81.2111476608694,18.7162706999938,0 81.2111406609875,18.7165727503739,0 81.211359351567,18.7170993733957,0 81.21175532493061,18.7177418245538,0 81.2117398161504,18.7179091880238,0 81.2118439113174,18.7181253900904,0 81.2117902146591,18.7182470223655,0 81.2118932497136,18.7184648866992,0 81.21189260132989,18.7186753938986,0 81.2127184447841,18.7199378854358,0 81.2129483581032,18.7207082911308,0 81.21334868248771,18.7214503584398,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Document>
+    <Document>
+      <name>2 Area under mining Float ore 70dot52 ha</name>
+      <open>1</open>
+      <Schema name="7" id="kml_schema_ft_7">
+        <SimpleField type="xsd:double" name="AREA">
+          <displayName>AREA</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Facility">
+          <displayName>Facility</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="New_compartment_no">
+          <displayName>New_compartment_no</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Old_compartment_no">
+          <displayName>Old_compartment_no</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Forest_Type">
+          <displayName>Forest_Type</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Division">
+          <displayName>Division</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Range">
+          <displayName>Range</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="RF">
+          <displayName>RF</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Village">
+          <displayName>Village</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Khasra_no">
+          <displayName>Khasra_no</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Land_Type">
+          <displayName>Land_Type</displayName>
+        </SimpleField>
+      </Schema>
+      <StyleMap id="m_ylw-pushpin0">
+        <Pair>
+          <key>normal</key>
+          <styleUrl>#s_ylw-pushpin0</styleUrl>
+        </Pair>
+        <Pair>
+          <key>highlight</key>
+          <styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+        </Pair>
+      </StyleMap>
+      <StyleMap id="msn_ylw-pushpin0">
+        <Pair>
+          <key>normal</key>
+          <styleUrl>#sn_ylw-pushpin0</styleUrl>
+        </Pair>
+        <Pair>
+          <key>highlight</key>
+          <styleUrl>#sh_ylw-pushpin0</styleUrl>
+        </Pair>
+      </StyleMap>
+      <Style id="s_ylw-pushpin0">
+        <IconStyle>
+          <scale>1.1</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+          </Icon>
+          <hotSpot x="20" y="2" xunits="pixels" yunits="pixels" />
+        </IconStyle>
+        <LineStyle>
+          <color>ff00aaff</color>
+        </LineStyle>
+        <PolyStyle>
+          <fill>0</fill>
+        </PolyStyle>
+      </Style>
+      <Style id="s_ylw-pushpin_hl0">
+        <IconStyle>
+          <scale>1.3</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+          </Icon>
+          <hotSpot x="20" y="2" xunits="pixels" yunits="pixels" />
+        </IconStyle>
+        <LineStyle>
+          <color>ff00aaff</color>
+        </LineStyle>
+        <PolyStyle>
+          <fill>0</fill>
+        </PolyStyle>
+      </Style>
+      <Style id="sh_ylw-pushpin0">
+        <IconStyle>
+          <scale>1.3</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+          </Icon>
+          <hotSpot x="20" y="2" xunits="pixels" yunits="pixels" />
+        </IconStyle>
+        <BalloonStyle>
+        </BalloonStyle>
+        <LineStyle>
+          <color>ff00aaff</color>
+        </LineStyle>
+        <PolyStyle>
+          <fill>0</fill>
+        </PolyStyle>
+      </Style>
+      <Style id="sn_ylw-pushpin0">
+        <IconStyle>
+          <scale>1.1</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+          </Icon>
+          <hotSpot x="20" y="2" xunits="pixels" yunits="pixels" />
+        </IconStyle>
+        <BalloonStyle>
+        </BalloonStyle>
+        <LineStyle>
+          <color>ff00aaff</color>
+        </LineStyle>
+        <PolyStyle>
+          <fill>0</fill>
+        </PolyStyle>
+      </Style>
+      <Placemark id="kml_1">
+        <name>kml 1</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>18876.396600280714</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1832</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>665</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#msn_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">18876.396600280714</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1832</SimpleData>
+            <SimpleData name="Old_compartment_no">665</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2122483471599,18.7270013434752,0 81.212424100002,18.7272828858268,0 81.20767620970619,18.7272673741401,0 81.2077294490785,18.727218291299,0 81.20957067463659,18.7272400389408,0 81.21067306277379,18.7268876746361,0 81.2111886197457,18.7260245026447,0 81.2112602600737,18.7260632156626,0 81.2114894783488,18.7262468118115,0 81.2116351733804,18.7263799586941,0 81.2118689865126,18.7265887587469,0 81.21202852033031,18.7267556057323,0 81.2122483471599,18.7270013434752,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_2">
+        <name>kml 2</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>38869.359070728664</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1833</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>664</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#msn_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">38869.359070728664</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1833</SimpleData>
+            <SimpleData name="Old_compartment_no">664</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.21067306277379,18.7268876746361,0 81.20957067463659,18.7272400389408,0 81.2077294490785,18.727218291299,0 81.20799859643969,18.7269701562816,0 81.208279759723,18.7267168467169,0 81.2085268487606,18.7264922730354,0 81.2087902380391,18.7262753847042,0 81.2090040699581,18.7261067511543,0 81.2092777715288,18.725889161504,0 81.2094292034751,18.7257981978728,0 81.2095991220299,18.7257102424537,0 81.20977483124589,18.7256442217899,0 81.2100092526796,18.7256160893941,0 81.210337540643,18.725650526548,0 81.21053649780499,18.7257158223998,0 81.2108806443938,18.7258580783318,0 81.2111886197457,18.7260245026447,0 81.21067306277379,18.7268876746361,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_3">
+        <name>kml 3</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>217.1469936948156</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1841</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>667</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#msn_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">217.1469936948156</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1841</SimpleData>
+            <SimpleData name="Old_compartment_no">667</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2152432067556,18.7203564027435,0 81.2151176305876,18.7202666552046,0 81.214984887395,18.7201993038587,0 81.2148715391251,18.7201545189183,0 81.2149246419181,18.7200571082921,0 81.2152432067556,18.7203564027435,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_4">
+        <name>kml 4</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>11770.874791016286</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1834</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td></td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#msn_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">11770.874791016286</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1834</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2145828854447,18.7197360232995,0 81.2149246419181,18.7200571082921,0 81.2148715391251,18.7201545189183,0 81.2148488331426,18.7201455475653,0 81.2147047181891,18.7201094691659,0 81.2145926744422,18.7201095975286,0 81.2138761406983,18.7184848052281,0 81.21399166216391,18.7184851265594,0 81.21399589702909,18.7171027456301,0 81.2137933254551,18.7169288865529,0 81.21361817192491,18.7160120106687,0 81.21371149019539,18.7159958254287,0 81.21364354545911,18.7156401534453,0 81.2135502273765,18.71565633865,0 81.2135268843586,18.7155341436674,0 81.21347949132679,18.7152860521816,0 81.2135728092139,18.7152698670134,0 81.21363760851879,18.7152577203894,0 81.2145828854447,18.7197360232995,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_5">
+        <name>kml 5</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>13328.808831416041</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1834</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td></td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#msn_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">13328.808831416041</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1834</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2141230354277,18.7202161961507,0 81.2140800797826,18.7202189147397,0 81.2140263418565,18.7202117274132,0 81.2139659318823,18.7201923154744,0 81.2139221658618,18.7201746966932,0 81.2138655460495,18.7201444073128,0 81.2137571208638,18.7200650694793,0 81.21366182950911,18.7199752008831,0 81.21354183398689,18.7198579657661,0 81.2134265904825,18.7196932219084,0 81.21335940307721,18.7195773188855,0 81.21328066432061,18.7194390824311,0 81.2132026427616,18.7192832110753,0 81.21313462330539,18.7191338895255,0 81.2130832747703,18.7189968512276,0 81.21303860370411,18.7188822929589,0 81.2129870887497,18.7187514214774,0 81.2129335776509,18.7186016474049,0 81.21289090578919,18.7184410552141,0 81.2128550032772,18.7182792827287,0 81.2128271516607,18.7181567819342,0 81.2127925985001,18.7180262838363,0 81.2127607093946,18.7179025924835,0 81.2127763727364,18.7178522903082,0 81.2128171550783,18.7177061571834,0 81.21285779980261,18.7175775738635,0 81.21289968285301,18.7174759672878,0 81.2129175905505,18.7173846550119,0 81.2129333105913,18.7173264149325,0 81.2129605056533,18.7172292326874,0 81.2130292096998,18.7171285324377,0 81.2131236066718,18.7169946843531,0 81.2131230755373,18.7184827087778,0 81.2133613264307,18.7184833723693,0 81.2141230354277,18.7202161961507,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_6">
+        <name>kml 6</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>183.99146904877094</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1834</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td></td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#msn_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">183.99146904877094</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1834</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2133164658626,18.7169560749991,0 81.2131511607912,18.7169556145545,0 81.21318014043079,18.7169145234449,0 81.2132684103148,18.7167812277063,0 81.2132786540557,18.7167581395143,0 81.2133164658626,18.7169560749991,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_7">
+        <name>kml 7</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>27472.790933672484</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1833</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>664</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#msn_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">27472.790933672484</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1833</SimpleData>
+            <SimpleData name="Old_compartment_no">664</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.20887787464,18.7193374617971,0 81.2089623480982,18.7197325682882,0 81.2090802435884,18.7199191690123,0 81.2090401234303,18.7202303799561,0 81.2090852938082,18.7203105311635,0 81.2089620441166,18.7203655017078,0 81.2088151607413,18.7203973786322,0 81.2086145428627,18.7204247848289,0 81.20845098269579,18.7204281381909,0 81.2083030705393,18.7203965895351,0 81.2081066459515,18.7203537685235,0 81.20791880495941,18.720331324813,0 81.2075952371069,18.720302634334,0 81.2076234638637,18.7201894047152,0 81.2076885649906,18.7199741670418,0 81.2077090886971,18.7198243770833,0 81.20770618234501,18.7196503463068,0 81.20769674181869,18.7194617898103,0 81.2076873845148,18.7192015354718,0 81.20765670196781,18.7189472155545,0 81.2076466634155,18.7187892891842,0 81.2076343885183,18.7186564545303,0 81.20761189264771,18.7185425836991,0 81.2075752655704,18.7184427441176,0 81.2085922363504,18.7184182819044,0 81.20887787464,18.7193374617971,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_8">
+        <name>kml 8</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>1845.1438243861658</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1833</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>664</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#msn_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">1845.1438243861658</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1833</SimpleData>
+            <SimpleData name="Old_compartment_no">664</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2074399316456,18.7201434694776,0 81.2074047142291,18.7202847478629,0 81.2073089929401,18.7202684708472,0 81.2072228545973,18.7202481118361,0 81.20731066837681,18.7199987167762,0 81.20737511751329,18.7198630677636,0 81.2074145755515,18.7197376411578,0 81.20742550188061,18.7195736090641,0 81.2074340148436,18.7194918065495,0 81.2074470001791,18.7193516955206,0 81.2074352987664,18.7191990129736,0 81.2074271322428,18.719098186043,0 81.2074188761959,18.7189939428795,0 81.2074093967945,18.7188510007332,0 81.2074041434641,18.7187900277614,0 81.2074019940172,18.718567462536,0 81.2073927429732,18.718518433068,0 81.2073907798078,18.7184875526973,0 81.2073979067867,18.7184874763127,0 81.20742546162811,18.7185760135364,0 81.207446229891,18.718681155681,0 81.2074574569555,18.7188026850814,0 81.2074676500304,18.7189630153763,0 81.2074980448607,18.7192149767505,0 81.20750718583341,18.719469194016,0 81.2075165482495,18.7196560966726,0 81.20751918818399,18.7198140583443,0 81.20750231216959,18.7199372275987,0 81.2074399316456,18.7201434694776,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_9">
+        <name>kml 9</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>18178.106581739372</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1833</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>664</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#msn_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">18178.106581739372</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1833</SimpleData>
+            <SimpleData name="Old_compartment_no">664</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.20719704686761,18.719799565578,0 81.2071338748695,18.7199325288601,0 81.2070117822078,18.7202792785988,0 81.2069368247659,18.720294684546,0 81.2067419223158,18.7203302372405,0 81.2065470093297,18.7203571818853,0 81.2063263908544,18.7203596901954,0 81.206301700701,18.7203587333032,0 81.2062246799828,18.7202054282966,0 81.20617551843939,18.7200656568886,0 81.2061492401151,18.7199373203592,0 81.2061648340047,18.7197494140738,0 81.20619187892849,18.719578992578,0 81.20622213301,18.7195050653208,0 81.2063089785152,18.7192214323654,0 81.20627965351041,18.7190211122322,0 81.206248399828,18.7188981072546,0 81.20720278806139,18.7185199984527,0 81.2072040589053,18.7185399622495,0 81.20721244114119,18.7185844014289,0 81.2072145133413,18.718798263235,0 81.20722018039601,18.7188640981514,0 81.2072296209714,18.7190064438493,0 81.20723797328689,18.719111943185,0 81.20724612045321,18.7192125441983,0 81.2072566842681,18.7193503245019,0 81.2072451311617,18.719474942956,0 81.2072363931576,18.71955896,0 81.20722662158229,18.7197055476401,0 81.20719704686761,18.719799565578,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_10">
+        <name>kml_10</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>5536.0997976186545</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1833</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>664</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">5536.0997976186545</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1833</SimpleData>
+            <SimpleData name="Old_compartment_no">664</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2059580746017,18.7199476982459,0 81.2059916999617,18.720111889155,0 81.2060485234979,18.7202734335497,0 81.2060871852441,18.7203503876346,0 81.2059131658266,18.7203320576543,0 81.20573480451969,18.7202846838445,0 81.2056979552102,18.7202685555178,0 81.2056812663089,18.7202176574299,0 81.2056575321387,18.7201456603733,0 81.20560192550511,18.7199860667077,0 81.20557184254039,18.719832988467,0 81.2055732732406,18.719713939532,0 81.2055882482651,18.7196256317464,0 81.2056144299716,18.7195724149085,0 81.2056982382589,18.7194118457648,0 81.20574909169051,18.7192256179905,0 81.2057527653056,18.7190756838496,0 81.2058159193697,18.7190694448813,0 81.2060710626624,18.7189683638377,0 81.2060930609334,18.7190549476327,0 81.20611547056031,18.719208016165,0 81.20604235265991,18.7194468058987,0 81.2060074549259,18.7195320717744,0 81.2059762490841,18.7197287529516,0 81.2059580746017,18.7199476982459,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_11">
+        <name>kml_11</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>5071.688425625672</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1833</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>664</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">5071.688425625672</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1833</SimpleData>
+            <SimpleData name="Old_compartment_no">664</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.20538373659021,18.7196984033523,0 81.2053819356651,18.7198487419414,0 81.2054178212874,18.7200313858966,0 81.20546275884369,18.7201603459308,0 81.20528565722449,18.7200373590921,0 81.2051461772261,18.7199002391479,0 81.2050352396143,18.7197744139956,0 81.2049237186272,18.7195588864449,0 81.2048578521572,18.7193505576345,0 81.204829878355,18.7191440531067,0 81.20489350514789,18.7191605677056,0 81.2055625460309,18.7190944754149,0 81.2055599517651,18.7192004200205,0 81.20551960884249,18.7193481618278,0 81.2054435888431,18.7194938007624,0 81.2054052104039,18.7195718219397,0 81.20538373659021,18.7196984033523,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_12">
+        <name>kml_12</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>149095.77771811973</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1886</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>663</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">149095.77771811973</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1886</SimpleData>
+            <SimpleData name="Old_compartment_no">663</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2085660891635,18.7183341401026,0 81.2085922363504,18.7184182819044,0 81.2075752655704,18.7184427441176,0 81.20756849527869,18.7184242893663,0 81.20755492999309,18.718392129428,0 81.2075279000067,18.7183713721705,0 81.2074832094582,18.7183437114254,0 81.2074406022417,18.7183210011386,0 81.2073761945535,18.718311175919,0 81.20732011648219,18.718318161015,0 81.2072692484133,18.7183350458823,0 81.2072237132288,18.7183777136441,0 81.20720050405539,18.7184326952076,0 81.20720141890131,18.7184984901927,0 81.20720278806139,18.7185199984527,0 81.206248399828,18.7188981072546,0 81.2062190089442,18.718782433513,0 81.2061768570973,18.7186266934132,0 81.2060700771071,18.7183965158405,0 81.2059889292574,18.7180901384957,0 81.2058675893806,18.7177497413714,0 81.205741287595,18.7175648740112,0 81.20561052531539,18.7174405564359,0 81.2055152485258,18.717324912399,0 81.20548070873311,18.7172744735306,0 81.2054455489497,18.7172290152255,0 81.2054215608464,18.7171976528501,0 81.2053563517841,18.7171678449817,0 81.2052493542202,18.7171644645376,0 81.20517931919809,18.7171992197115,0 81.20513368665419,18.7172550697514,0 81.2051280786273,18.7173476060509,0 81.20513530961949,18.7174210854106,0 81.2051644043127,18.7174947125526,0 81.2052417751718,18.7176752324464,0 81.2053719257985,18.71785081399,0 81.2054363867511,18.7179756743993,0 81.2054713336554,18.7181117651242,0 81.2054922871166,18.7182613376769,0 81.205493021216,18.7184371784978,0 81.20549135814559,18.7186151820055,0 81.20553085835731,18.7187985179193,0 81.2055646160257,18.7190099409129,0 81.2055625460309,18.7190944754149,0 81.20489350514789,18.7191605677056,0 81.204829878355,18.7191440531067,0 81.20482091227019,18.7190778647411,0 81.20483730561671,18.7188717111978,0 81.2049015709966,18.7185404647907,0 81.20493919011901,18.7181929378647,0 81.2048647193398,18.7179461095759,0 81.2047745430209,18.7176866131425,0 81.2046777523894,18.7174620083769,0 81.2045395380094,18.7171889729151,0 81.2043803861031,18.716901462723,0 81.20429158961799,18.7166020965129,0 81.2041999401136,18.7163022803119,0 81.2041001390165,18.7159449361554,0 81.2039852321453,18.7156782174731,0 81.2038746183764,18.7154228201771,0 81.2037926189625,18.7152394259304,0 81.2036824768971,18.7149804036269,0 81.20366487301899,18.7147141327975,0 81.2037393275144,18.7144122227038,0 81.2039538250088,18.7140694869401,0 81.2040439268968,18.7139720985139,0 81.20449589824329,18.7142665079229,0 81.2046512576985,18.714288645119,0 81.2044560042349,18.7144180016041,0 81.2044616543369,18.7146523034293,0 81.2046797911628,18.7147614783299,0 81.2048932094401,18.7148352204626,0 81.2054144589478,18.7148628300687,0 81.2057914371309,18.7148095808282,0 81.20643105270091,18.7146584954923,0 81.20643557306769,18.7146568462142,0 81.2077892552873,18.7164517429751,0 81.2077815532012,18.7169890316178,0 81.2085660891635,18.7183341401026,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_13">
+        <name>kml_13</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>3353.3268389848213</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1886</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>663</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">3353.3268389848213</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1886</SimpleData>
+            <SimpleData name="Old_compartment_no">663</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.20603496131331,18.7188262710218,0 81.2060710626624,18.7189683638377,0 81.2058159193697,18.7190694448813,0 81.2057527653056,18.7190756838496,0 81.20575465979149,18.718998362625,0 81.2057176714036,18.7187667254053,0 81.2056812329923,18.7185976208826,0 81.20568272792551,18.7184376210806,0 81.205681940194,18.718248964561,0 81.2056580205433,18.7180782284948,0 81.2056157353108,18.7179135770156,0 81.2055355297752,18.7177582038686,0 81.205409217346,18.7175877969546,0 81.205366990193,18.7174945267841,0 81.2054867193156,18.7175782040955,0 81.2055931808835,18.7176794113619,0 81.205695613343,18.7178293463773,0 81.2058068547524,18.7181414027728,0 81.2058900700607,18.7184555866818,0 81.20599704956319,18.7186861979578,0 81.20603496131331,18.7188262710218,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_14">
+        <name>kml_14</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>5951.133089742047</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1885</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>662</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">5951.133089742047</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1885</SimpleData>
+            <SimpleData name="Old_compartment_no">662</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.20491460477901,18.7139820538965,0 81.20473202782711,18.7142351343512,0 81.2046512576985,18.714288645119,0 81.20449589824329,18.7142665079229,0 81.2040439268968,18.7139720985139,0 81.2042710206385,18.713726639019,0 81.204469518325,18.7135234581386,0 81.2046066194638,18.7132686968864,0 81.20472589271689,18.7129554713605,0 81.2047503732814,18.7134207632145,0 81.2048730971706,18.7137685332946,0 81.20491460477901,18.7139820538965,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_15">
+        <name>kml_15</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>2587.0888722662994</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1885</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>662</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">2587.0888722662994</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1885</SimpleData>
+            <SimpleData name="Old_compartment_no">662</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2043538002861,18.705257534991,0 81.20433837600319,18.7053740958527,0 81.20427109986321,18.7054119476927,0 81.20414138490079,18.7056777045671,0 81.20409290817319,18.7060013199737,0 81.2040585014601,18.7061859835591,0 81.2040221679911,18.7060341927335,0 81.2040138645915,18.7058498120593,0 81.20402267690049,18.7056654127561,0 81.2040462065093,18.7054633286386,0 81.20409161637851,18.7052698285714,0 81.20412351721551,18.7051546485997,0 81.204196398359,18.7050286940056,0 81.2043212983116,18.7049125781552,0 81.2044665498988,18.7048459776448,0 81.2045014599056,18.7050079995439,0 81.2043538002861,18.705257534991,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_16">
+        <name>kml_16</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>2920.5574995779916</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1834</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td></td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">2920.5574995779916</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1834</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.20926507201619,18.6975221217236,0 81.20932738133099,18.697540055012,0 81.20932963768919,18.6975467251409,0 81.2093625831934,18.6976622151611,0 81.20939032202951,18.6977962858826,0 81.2093917897171,18.6978092695469,0 81.2092593383969,18.6977618418293,0 81.20913231528679,18.697607657968,0 81.2089246872554,18.697558019465,0 81.20875265960289,18.6975032446905,0 81.2085966166504,18.6974783154456,0 81.20857506632549,18.6974248160965,0 81.2086550122313,18.697273176025,0 81.2086681026782,18.6970777891306,0 81.20866570162499,18.6970452481852,0 81.2087875491809,18.6970634759629,0 81.2088636364749,18.6970828014962,0 81.20926507201619,18.6975221217236,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_17">
+        <name>kml_17</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>235506.09175978834</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1885</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>662</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">235506.09175978834</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1885</SimpleData>
+            <SimpleData name="Old_compartment_no">662</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2072107777273,18.7046125589349,0 81.207369329063,18.7051367866239,0 81.20762129275229,18.7056629171375,0 81.2077461650663,18.7061805799882,0 81.20784071571219,18.7070433977261,0 81.2079536014418,18.7079430245623,0 81.2081049340583,18.7085706938893,0 81.2086792606954,18.7093179433175,0 81.2092299797384,18.7102541006984,0 81.20926525135221,18.7104564504565,0 81.2094638810337,18.7106742201596,0 81.2094469014436,18.71098150123,0 81.20929334831889,18.7111451686833,0 81.2090583194699,18.7114385093495,0 81.20915764365419,18.7116935602398,0 81.2090434668311,18.7118888614386,0 81.2090417103602,18.7120380025858,0 81.2089435913342,18.7122527128116,0 81.2089567256468,18.7123975578985,0 81.20872748883821,18.7130863579553,0 81.2087054253648,18.7135608731102,0 81.2080841110686,18.7153006667122,0 81.20788374264259,18.7157142312625,0 81.2077931475135,18.7161802249492,0 81.2077892552873,18.7164517429751,0 81.20643557306769,18.7146568462142,0 81.2076076200277,18.7142292143515,0 81.2081569278287,18.7139258167971,0 81.20851643147149,18.713648025453,0 81.2084930974727,18.7128422669679,0 81.2086305864979,18.7124587165122,0 81.2087008360605,18.7121389942951,0 81.20867308175561,18.7117801204667,0 81.208590805322,18.711668440124,0 81.2076066211948,18.7108197063968,0 81.206708906971,18.7101557237494,0 81.2060654357978,18.7096996907647,0 81.2055309026361,18.7093476605368,0 81.2051055458395,18.7091476699055,0 81.20475377398451,18.7090215868327,0 81.2044437189038,18.7089605125643,0 81.20424733602719,18.7089798689609,0 81.20402649914929,18.7090369670185,0 81.2040119725728,18.7092275353012,0 81.20406177515861,18.709489647167,0 81.20419105734911,18.7098055077585,0 81.204238831846,18.710089326755,0 81.2042065806761,18.7104548479088,0 81.2042559631704,18.7108140604811,0 81.2043889265349,18.7110861286582,0 81.2044404638294,18.7113103008864,0 81.20435931086411,18.7112302612478,0 81.2042069370351,18.7110392420253,0 81.2040926549867,18.7108943918643,0 81.2040097979083,18.7107871102258,0 81.2039397639646,18.7106680354078,0 81.2038607009213,18.7105525947475,0 81.20378924245949,18.7104348805551,0 81.2037253972432,18.7103221415622,0 81.2036357749021,18.7101233518536,0 81.2035361082325,18.7098742849202,0 81.2034526032607,18.7096220290633,0 81.2033680556234,18.7092927565018,0 81.20330343696661,18.7089299368828,0 81.2033325443666,18.7086200219513,0 81.2034250583319,18.7084545598418,0 81.2035095545847,18.7083434718936,0 81.2037375331025,18.7081475084446,0 81.2039060936538,18.7080677171625,0 81.2040659063411,18.7079954925541,0 81.20418150541499,18.7079437535908,0 81.2043001377521,18.7078929865622,0 81.20441620767581,18.7082422233395,0 81.204594793585,18.7083429098086,0 81.20477145759649,18.7083753799657,0 81.20509553138611,18.7083705428755,0 81.20534489878609,18.7082990826888,0 81.2057572722007,18.7079738482668,0 81.20615849157841,18.707595898182,0 81.2067627688602,18.7067565220609,0 81.2070741634294,18.7060275186133,0 81.2072797231511,18.7057312090769,0 81.2071983336005,18.7050717439503,0 81.20713811068759,18.7045246580624,0 81.20719879234851,18.7044152411571,0 81.20719970684161,18.7041722095952,0 81.20708910520671,18.7039524443185,0 81.2068262631756,18.7036534480422,0 81.2067068708534,18.7034752810692,0 81.206688860528,18.7033085681268,0 81.206602499848,18.7032113108343,0 81.20605932861331,18.7027715937398,0 81.2053888358446,18.7023966978749,0 81.20475429452949,18.7021726885631,0 81.20433868097339,18.7021312692065,0 81.203986237078,18.7021600118519,0 81.20361999197399,18.7022090270704,0 81.20350332285609,18.7014097001252,0 81.20378613869801,18.7016417196522,0 81.2044811944145,18.7017961668434,0 81.20538277981071,18.7017608464334,0 81.20594937407409,18.7015351453399,0 81.2061427687334,18.7010936776593,0 81.20622019649841,18.7006995406437,0 81.20647488527079,18.7008206169639,0 81.2065432103401,18.7012168290379,0 81.20663286530529,18.7014703661697,0 81.206653147605,18.7022674800173,0 81.2066653546331,18.7026663244948,0 81.207107409868,18.7037894763051,0 81.20723776808801,18.7042441794278,0 81.2072107777273,18.7046125589349,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_18">
+        <name>kml_18</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>164435.957091002</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Area under mining (Float ore)</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1834</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td></td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin0</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_7">
+            <SimpleData name="AREA">164435.957091002</SimpleData>
+            <SimpleData name="Facility">Area under mining (Float ore)</SimpleData>
+            <SimpleData name="New_compartment_no">1834</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2123183560858,18.7069883603868,0 81.2122853492946,18.7071325736216,0 81.2122304112403,18.7073034340601,0 81.2121355812347,18.7075105832824,0 81.21204453195629,18.7076996063497,0 81.2119928815146,18.7078382967489,0 81.21195927634879,18.707959750994,0 81.21193187839739,18.708102491362,0 81.211922575993,18.7082683165976,0 81.2119346600589,18.7084273219676,0 81.21198280540921,18.7086263493112,0 81.2116157724309,18.708625707754,0 81.2116149027014,18.7093506478099,0 81.21187660350979,18.7093503521926,0 81.21201803883621,18.7093501922751,0 81.2122788377055,18.7093498971164,0 81.2122787014749,18.7092406676349,0 81.2122879969842,18.7092555426429,0 81.21235276045429,18.7093379235902,0 81.2123980363537,18.7094248570521,0 81.2124267095641,18.7095421633728,0 81.2124407146522,18.7097161170113,0 81.2124285662089,18.7098869289669,0 81.2123755778488,18.7100967491147,0 81.2123405947937,18.7102571668808,0 81.2123393295392,18.7103862863011,0 81.2123399366878,18.7104918452294,0 81.2123567062884,18.7105951206186,0 81.21238201374911,18.7106829792001,0 81.21209847277549,18.7107099249527,0 81.21208061406379,18.7105300077906,0 81.21205714708459,18.7105321227807,0 81.2119152235106,18.7105449137519,0 81.2118917597451,18.7105470284313,0 81.21192748433759,18.7109069385933,0 81.2119504043135,18.7109048729227,0 81.21209273247089,18.7108920454856,0 81.21211633905131,18.7108899179133,0 81.21209847653751,18.7107099628547,0 81.2123820147807,18.7106829827814,0 81.2124177939388,18.7107794409393,0 81.2124835762697,18.7109157330868,0 81.21256506781521,18.7110674109416,0 81.2126631674586,18.7111927932746,0 81.21276364790199,18.7113208911238,0 81.21282122457831,18.7113898548559,0 81.2130551635744,18.7124982305058,0 81.2129628498385,18.7125815047625,0 81.2127610584235,18.7115251297083,0 81.21119443938861,18.7116592030446,0 81.2111619648982,18.711023803985,0 81.2112117088592,18.7106764162646,0 81.2113153011141,18.7102932273765,0 81.2112504319124,18.7101385442307,0 81.21145545885859,18.7098123424708,0 81.2114144034755,18.7096479167463,0 81.2115230347206,18.7094355477237,0 81.21158121295839,18.7091443616744,0 81.2115373719831,18.7088410714861,0 81.21156603021331,18.7085129446072,0 81.2117020395663,18.7081376631788,0 81.2116567758295,18.7079372532327,0 81.21170713812189,18.707669077435,0 81.2116687792584,18.7072588217697,0 81.2115902538609,18.7070476083527,0 81.21135477814261,18.7066047085607,0 81.2112915316881,18.7063846432042,0 81.2110269704621,18.7059548987942,0 81.2106817409168,18.7055570129436,0 81.2103825850409,18.7047951808324,0 81.21022571154001,18.7044809816611,0 81.21015787427029,18.7041205168506,0 81.2100360894044,18.703583122762,0 81.2097657061525,18.7028750871035,0 81.2094593400128,18.7021081277487,0 81.2092552541821,18.7018799852808,0 81.2091491442533,18.7016880522372,0 81.2089204617015,18.7013439937691,0 81.2086450858571,18.7008892497492,0 81.2084934431515,18.7006896711624,0 81.2084819788724,18.7006140500061,0 81.2084372943536,18.700448131682,0 81.208327018624,18.7003091726805,0 81.2083118961678,18.7001879720265,0 81.20826979175639,18.7000666682868,0 81.2082068777577,18.6998778930176,0 81.2081338181419,18.6996559814916,0 81.2080712111328,18.6993883006679,0 81.208008160448,18.6991464439399,0 81.20794879711261,18.6988094433877,0 81.20791438956989,18.6985743110154,0 81.2078811057369,18.6983663213424,0 81.2078631791251,18.6981428482445,0 81.20788218029141,18.6979408859106,0 81.2079201220313,18.6977452956687,0 81.2079848335662,18.6975635262274,0 81.2080322160581,18.6974334493929,0 81.2080939156464,18.6973482082438,0 81.20819787591159,18.6972212399079,0 81.2083403593351,18.697106460976,0 81.20847573534679,18.6970477448875,0 81.20847799517919,18.6970783723628,0 81.2084681765737,18.6972249216187,0 81.20836794806451,18.6974150329068,0 81.20845837067441,18.6976395103806,0 81.20870664218469,18.6976791740379,0 81.2088714749604,18.6977316579066,0 81.2090232004208,18.6977679315798,0 81.2091429234799,18.6979132545054,0 81.2093532793259,18.6979885780326,0 81.20941252314969,18.6980016570333,0 81.20941924291979,18.6981183694628,0 81.20942755616051,18.6983063743611,0 81.2094649366381,18.6985487123373,0 81.2095384154306,18.6987638271987,0 81.2095823037094,18.698885647582,0 81.20964996234601,18.6990069883356,0 81.20975758348079,18.6991504836318,0 81.209853722196,18.699235095711,0 81.2099536693765,18.699323780891,0 81.2100240556863,18.6993887097873,0 81.2098162125281,18.6998216138319,0 81.2112046555422,18.7050624495605,0 81.2123183560858,18.7069883603868,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Document>
+    <Document>
+      <name>3 Waste dumping 74dot05 ha</name>
+      <Schema name="6" id="kml_schema_ft_6">
+        <SimpleField type="xsd:double" name="AREA">
+          <displayName>AREA</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Facility">
+          <displayName>Facility</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="New_compartment_no">
+          <displayName>New_compartment_no</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Old_compartment_no">
+          <displayName>Old_compartment_no</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Forest_Type">
+          <displayName>Forest_Type</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Division">
+          <displayName>Division</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Range">
+          <displayName>Range</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="RF">
+          <displayName>RF</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Village">
+          <displayName>Village</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Khasra_no">
+          <displayName>Khasra_no</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Land_Type">
+          <displayName>Land_Type</displayName>
+        </SimpleField>
+      </Schema>
+      <StyleMap id="m_ylw-pushpin1">
+        <Pair>
+          <key>normal</key>
+          <styleUrl>#s_ylw-pushpin1</styleUrl>
+        </Pair>
+        <Pair>
+          <key>highlight</key>
+          <styleUrl>#s_ylw-pushpin_hl1</styleUrl>
+        </Pair>
+      </StyleMap>
+      <Style id="s_ylw-pushpin1">
+        <IconStyle>
+          <scale>1.1</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+          </Icon>
+          <hotSpot x="20" y="2" xunits="pixels" yunits="pixels" />
+        </IconStyle>
+        <LineStyle>
+          <color>ff7faa55</color>
+        </LineStyle>
+        <PolyStyle>
+          <fill>0</fill>
+        </PolyStyle>
+      </Style>
+      <Style id="s_ylw-pushpin_hl1">
+        <IconStyle>
+          <scale>1.3</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+          </Icon>
+          <hotSpot x="20" y="2" xunits="pixels" yunits="pixels" />
+        </IconStyle>
+        <LineStyle>
+          <color>ff7faa55</color>
+        </LineStyle>
+        <PolyStyle>
+          <fill>0</fill>
+        </PolyStyle>
+      </Style>
+      <Placemark id="kml_1">
+        <name>kml_1</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>200622.17219478736</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Overburden/Waste dumping</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1833</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>664</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin1</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_6">
+            <SimpleData name="AREA">200622.17219478736</SimpleData>
+            <SimpleData name="Facility">Overburden/Waste dumping</SimpleData>
+            <SimpleData name="New_compartment_no">1833</SimpleData>
+            <SimpleData name="Old_compartment_no">664</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2047833804174,18.7224172091349,0 81.20506356513479,18.7228325925544,0 81.2050938059448,18.7237482076466,0 81.2052295157218,18.7242079409036,0 81.2055552355734,18.7246728190505,0 81.2058624667058,18.7251092943359,0 81.2062151263283,18.7253550792652,0 81.206507284548,18.7257915322412,0 81.2068708339428,18.7260756924949,0 81.2079822305143,18.7260414794355,0 81.2087245646677,18.7258485906203,0 81.20957698103619,18.7255799735511,0 81.2097183742159,18.7249795616232,0 81.20954080767061,18.7248153802477,0 81.20933950974511,18.7243383755173,0 81.20953266398671,18.7239793256952,0 81.2092938220176,18.7236445684989,0 81.20897829767149,18.7234169431331,0 81.2087854828418,18.723075639204,0 81.2086455875709,18.7227568834902,0 81.2084894438127,18.7225386802181,0 81.2081957359476,18.7224938385952,0 81.20785738366069,18.7224096466092,0 81.2076550813313,18.7223011223335,0 81.2075988130663,18.7222092598846,0 81.2075682688353,18.7221457066005,0 81.2075665498636,18.7221431519541,0 81.207502143691,18.7220266512178,0 81.2074270870165,18.7218155172307,0 81.20734545786689,18.7217355792498,0 81.2072274941373,18.7216179732866,0 81.2071008246545,18.721500484544,0 81.2068452068477,18.7212918449342,0 81.20665753064119,18.7211668665113,0 81.2066135264715,18.7211401751013,0 81.2065464432668,18.7210896137113,0 81.2063745767778,18.7209656307765,0 81.2061588434732,18.7208100022328,0 81.20592217505479,18.7207145776433,0 81.2057643428532,18.7206599294566,0 81.2057048611215,18.7206393343204,0 81.2055747523969,18.720598124229,0 81.2052660551043,18.7205412515828,0 81.20492077393411,18.7206179856308,0 81.20481145679921,18.7210393160394,0 81.20481940027901,18.7217056853963,0 81.2047399718311,18.7221472869934,0 81.2047833804174,18.7224172091349,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_2">
+        <name>kml_2</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>16722.407730794388</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Overburden/Waste dumping</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1834</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>666</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin1</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_6">
+            <SimpleData name="AREA">16722.407730794388</SimpleData>
+            <SimpleData name="Facility">Overburden/Waste dumping</SimpleData>
+            <SimpleData name="New_compartment_no">1834</SimpleData>
+            <SimpleData name="Old_compartment_no">666</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.212411885828,18.7163524036168,0 81.21249940768401,18.7163388288634,0 81.21256658515961,18.7163415273121,0 81.21267428347301,18.7163594899748,0 81.21274661943509,18.7163913568812,0 81.2127717944315,18.7164096349852,0 81.2128369949838,18.7164569732884,0 81.2129051779233,18.7165781684852,0 81.2129767206273,18.7167247028687,0 81.212988485213,18.7169922206861,0 81.21297987401699,18.7171600192783,0 81.2129605056533,18.7172292326873,0 81.2129333105913,18.7173264149325,0 81.2129175905505,18.7173846550119,0 81.21289968285301,18.7174759672878,0 81.21285779980261,18.7175775738635,0 81.2128171550783,18.7177061571834,0 81.2127763727364,18.7178522903082,0 81.2127607093946,18.7179025924835,0 81.2127511209947,18.7179333852185,0 81.2127431069466,18.7179591219817,0 81.2127143069148,18.7180859023211,0 81.2126783347196,18.7181585808321,0 81.2126432326197,18.718267184038,0 81.21260755919531,18.7183892362937,0 81.2125832180183,18.718463627828,0 81.2125091881034,18.7187013365084,0 81.2124827213075,18.7188054470831,0 81.2124528894014,18.7188050019016,0 81.2124038622586,18.7188070096734,0 81.2123213135212,18.7188010568714,0 81.21219653970211,18.7187675591209,0 81.21210234318011,18.7187160954646,0 81.21201046721509,18.7186466798467,0 81.2119609593677,18.718574974858,0 81.2119420758671,18.7185002527079,0 81.2119812715214,18.7183955764912,0 81.2120104634934,18.7183240355233,0 81.21205497129679,18.7182273427914,0 81.2120988505592,18.7181438912976,0 81.21214887806229,18.7180466861715,0 81.2121817120272,18.7179673594116,0 81.21222466271399,18.7178771937716,0 81.2122519882075,18.7177846959645,0 81.2122763259655,18.7176847181481,0 81.2122830349663,18.7176034416602,0 81.2122911859224,18.7174919226902,0 81.21229662381,18.7173801808447,0 81.2122942393452,18.7172708248305,0 81.2123073456591,18.717109374824,0 81.2123159886459,18.7169513190877,0 81.2123193958045,18.7168768880321,0 81.21231099097569,18.7168229412274,0 81.2122983927152,18.7167378093422,0 81.2123083632937,18.7166478979454,0 81.2123264810952,18.7165423417299,0 81.2123472960504,18.7164394938286,0 81.21237363762761,18.7163796601187,0 81.212411885828,18.7163524036168,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_3">
+        <name>kml_3</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>202684.59577938128</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Overburden/Waste dumping</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1885</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>662</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin1</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_6">
+            <SimpleData name="AREA">202684.59577938128</SimpleData>
+            <SimpleData name="Facility">Overburden/Waste dumping</SimpleData>
+            <SimpleData name="New_compartment_no">1885</SimpleData>
+            <SimpleData name="Old_compartment_no">662</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2081569278287,18.7139258167971,0 81.2076076200277,18.7142292143515,0 81.20643557306769,18.7146568462142,0 81.20633927759491,18.7145291626816,0 81.2046512576985,18.714288645119,0 81.20473202782711,18.7142351343512,0 81.20491460477901,18.7139820538965,0 81.2048730971706,18.7137685332946,0 81.2047503732814,18.7134207632145,0 81.20472589271689,18.7129554713605,0 81.20472553352739,18.712656908644,0 81.2045070416825,18.7121987800953,0 81.20442125064061,18.7119701555864,0 81.2044033102695,18.7117691266386,0 81.2044445811641,18.7114075467702,0 81.2044404638294,18.7113103008864,0 81.2043889265349,18.7110861286582,0 81.2042559631704,18.7108140604811,0 81.2042065806761,18.7104548479088,0 81.204238831846,18.710089326755,0 81.20419105734911,18.7098055077585,0 81.20406177515861,18.709489647167,0 81.2040119725728,18.7092275353012,0 81.20402649914929,18.7090369670185,0 81.20424733602719,18.7089798689609,0 81.2044437189038,18.7089605125643,0 81.20475377398451,18.7090215868327,0 81.2051055458395,18.7091476699055,0 81.2055309026361,18.7093476605368,0 81.2060654357978,18.7096996907647,0 81.206708906971,18.7101557237494,0 81.2076066211948,18.7108197063968,0 81.208590805322,18.711668440124,0 81.20867308175561,18.7117801204667,0 81.2087008360605,18.7121389942951,0 81.2086305864979,18.7124587165122,0 81.2084930974727,18.7128422669679,0 81.20851643147149,18.713648025453,0 81.2081569278287,18.7139258167971,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_4">
+        <name>kml_4</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>8650.112016220439</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Overburden/Waste dumping</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1886</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>663</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin1</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_6">
+            <SimpleData name="AREA">8650.112016220439</SimpleData>
+            <SimpleData name="Facility">Overburden/Waste dumping</SimpleData>
+            <SimpleData name="New_compartment_no">1886</SimpleData>
+            <SimpleData name="Old_compartment_no">663</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.20643557306769,18.7146568462142,0 81.20643105270091,18.7146584954923,0 81.2057914371309,18.7148095808282,0 81.2054144589478,18.7148628300687,0 81.2048932094401,18.7148352204626,0 81.2046797911628,18.7147614783299,0 81.2044616543369,18.7146523034293,0 81.2044560042349,18.7144180016041,0 81.2046512576985,18.714288645119,0 81.20633927759491,18.7145291626816,0 81.20643557306769,18.7146568462142,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_5">
+        <name>kml_5</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>184984.4339585818</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Overburden/Waste dumping</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1885</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>662</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin1</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_6">
+            <SimpleData name="AREA">184984.4339585818</SimpleData>
+            <SimpleData name="Facility">Overburden/Waste dumping</SimpleData>
+            <SimpleData name="New_compartment_no">1885</SimpleData>
+            <SimpleData name="Old_compartment_no">662</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2037995674311,18.703279216401,0 81.20394435681069,18.7036628590839,0 81.2039709491895,18.7040490162658,0 81.2041178631377,18.7043210516267,0 81.2043928955996,18.7046017411398,0 81.2044665498988,18.7048459776448,0 81.2045014599056,18.7050079995439,0 81.2043538002861,18.705257534991,0 81.20433837600319,18.7053740958527,0 81.20427109986321,18.7054119476927,0 81.20414138490079,18.7056777045671,0 81.20409290817319,18.7060013199737,0 81.2040585014601,18.7061859835591,0 81.2039708150763,18.7065019591784,0 81.2040431943674,18.7070416794847,0 81.20420503889871,18.7075460634326,0 81.2043001377521,18.7078929865622,0 81.20441620767581,18.7082422233395,0 81.204594793585,18.7083429098086,0 81.20477145759649,18.7083753799657,0 81.20509553138611,18.7083705428755,0 81.20534489878609,18.7082990826888,0 81.2057572722007,18.7079738482668,0 81.20615849157841,18.707595898182,0 81.2067627688602,18.7067565220609,0 81.2070741634294,18.7060275186133,0 81.2072797231511,18.7057312090769,0 81.2071983336005,18.7050717439503,0 81.20713811068759,18.7045246580624,0 81.20719879234851,18.7044152411571,0 81.20719970684161,18.7041722095952,0 81.20708910520671,18.7039524443185,0 81.2068262631756,18.7036534480422,0 81.2067068708534,18.7034752810692,0 81.206688860528,18.7033085681268,0 81.206602499848,18.7032113108343,0 81.20605932861331,18.7027715937398,0 81.2053888358446,18.7023966978749,0 81.20475429452949,18.7021726885631,0 81.20433868097339,18.7021312692065,0 81.203986237078,18.7021600118519,0 81.20361999197399,18.7022090270704,0 81.2033011199091,18.7022576898046,0 81.20324292050211,18.7024140277246,0 81.20344164189279,18.7027348032986,0 81.20355014884591,18.7028183406052,0 81.2037814642194,18.7029525466142,0 81.2038128356244,18.7030766936484,0 81.2037995674311,18.703279216401,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_6">
+        <name>kml_6</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>127036.21435424779</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Overburden/Waste dumping</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1885</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>662</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin1</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_6">
+            <SimpleData name="AREA">127036.21435424779</SimpleData>
+            <SimpleData name="Facility">Overburden/Waste dumping</SimpleData>
+            <SimpleData name="New_compartment_no">1885</SimpleData>
+            <SimpleData name="Old_compartment_no">662</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2018420201813,18.6994635208531,0 81.2022481650682,18.7002387637816,0 81.20267977712351,18.7007967126958,0 81.20312789031649,18.7009781234041,0 81.20350332285609,18.7014097001253,0 81.20378613869801,18.7016417196522,0 81.2044811944145,18.7017961668434,0 81.20538277981071,18.7017608464334,0 81.20594937407409,18.7015351453399,0 81.2061427687334,18.7010936776593,0 81.20622019649841,18.7006995406437,0 81.206246596372,18.7004928123481,0 81.2061150656981,18.7002245033407,0 81.205651578217,18.6995259011729,0 81.2055276380129,18.6992351602811,0 81.20516993309801,18.6989263824065,0 81.2046786683008,18.6986295531775,0 81.2041837174628,18.6982905511394,0 81.2035206174946,18.6982637649424,0 81.2030557758701,18.6983012610593,0 81.20254865149739,18.6984965588163,0 81.2022450262142,18.6987337345575,0 81.201993831341,18.6989569891558,0 81.20182228799651,18.6993233029215,0 81.2018420201813,18.6994635208531,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Document>
+    <Document>
+      <name>4 Infrastructure inside ML 65dot90 ha</name>
+      <Schema name="5" id="kml_schema_ft_5">
+        <SimpleField type="xsd:double" name="AREA">
+          <displayName>AREA</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Facility">
+          <displayName>Facility</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="New_compartment_no">
+          <displayName>New_compartment_no</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Old_compartment_no">
+          <displayName>Old_compartment_no</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Forest_Type">
+          <displayName>Forest_Type</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Division">
+          <displayName>Division</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Range">
+          <displayName>Range</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="RF">
+          <displayName>RF</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Village">
+          <displayName>Village</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Khasra_no">
+          <displayName>Khasra_no</displayName>
+        </SimpleField>
+        <SimpleField type="xsd:string" name="Land_Type">
+          <displayName>Land_Type</displayName>
+        </SimpleField>
+      </Schema>
+      <StyleMap id="m_ylw-pushpin2">
+        <Pair>
+          <key>normal</key>
+          <styleUrl>#s_ylw-pushpin2</styleUrl>
+        </Pair>
+        <Pair>
+          <key>highlight</key>
+          <styleUrl>#s_ylw-pushpin_hl2</styleUrl>
+        </Pair>
+      </StyleMap>
+      <Style id="s_ylw-pushpin2">
+        <IconStyle>
+          <scale>1.1</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+          </Icon>
+          <hotSpot x="20" y="2" xunits="pixels" yunits="pixels" />
+        </IconStyle>
+        <LineStyle>
+          <color>ffff55aa</color>
+        </LineStyle>
+        <PolyStyle>
+          <fill>0</fill>
+        </PolyStyle>
+      </Style>
+      <Style id="s_ylw-pushpin_hl2">
+        <IconStyle>
+          <scale>1.3</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+          </Icon>
+          <hotSpot x="20" y="2" xunits="pixels" yunits="pixels" />
+        </IconStyle>
+        <LineStyle>
+          <color>ffff55aa</color>
+        </LineStyle>
+        <PolyStyle>
+          <fill>0</fill>
+        </PolyStyle>
+      </Style>
+      <Placemark id="kml_1">
+        <name>kml_1</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>1000.0000001009794</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Infrastructure inside Mine Lease</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1834</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>666</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin2</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_5">
+            <SimpleData name="AREA">1000.0000001009794</SimpleData>
+            <SimpleData name="Facility">Infrastructure inside Mine Lease</SimpleData>
+            <SimpleData name="New_compartment_no">1834</SimpleData>
+            <SimpleData name="Old_compartment_no">666</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.21645775211741,18.7270379121574,0 81.2164550883568,18.7272186521855,0 81.21692933092559,18.7272249965514,0 81.2169319941821,18.7270442565217,0 81.21645775211741,18.7270379121574,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_2">
+        <name>kml_2</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>174.43209727648093</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Infrastructure inside Mine Lease</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1834</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>666</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin2</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_5">
+            <SimpleData name="AREA">174.43209727648093</SimpleData>
+            <SimpleData name="Facility">Infrastructure inside Mine Lease</SimpleData>
+            <SimpleData name="New_compartment_no">1834</SimpleData>
+            <SimpleData name="Old_compartment_no">666</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2176800700077,18.7271100963429,0 81.21771512848061,18.7271895858117,0 81.2178220606267,18.7272570414886,0 81.2178845426527,18.7273005766565,0 81.2179447084234,18.7273007706958,0 81.217946029214,18.727276133966,0 81.2178545864531,18.7272125238575,0 81.2177440978907,18.7271428247041,0 81.2176800700077,18.7271100963429,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_3">
+        <name>kml_3</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>5957.758107475355</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Infrastructure inside Mine Lease</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1833</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>664</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin2</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_5">
+            <SimpleData name="AREA">5957.758107475355</SimpleData>
+            <SimpleData name="Facility">Infrastructure inside Mine Lease</SimpleData>
+            <SimpleData name="New_compartment_no">1833</SimpleData>
+            <SimpleData name="Old_compartment_no">664</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.21029473452199,18.7224744440644,0 81.2103449447024,18.7226688201721,0 81.210442257553,18.7227805188189,0 81.21048690942359,18.7228254141609,0 81.2105575632059,18.7231132553266,0 81.21066102037349,18.7232648673732,0 81.2106883124014,18.7232894740108,0 81.2107031214031,18.7233545328804,0 81.2105861359792,18.7232471790672,0 81.21040255703829,18.7230130816167,0 81.21023677222991,18.7227810460556,0 81.210098714065,18.7225115161932,0 81.2098766839447,18.7219183416406,0 81.20960019762541,18.7213169988079,0 81.2094927739896,18.7211139301622,0 81.2091544128203,18.7206991808852,0 81.2090888863201,18.7204505522718,0 81.2090852938082,18.7203105311644,0 81.2097219545397,18.7212236704039,0 81.21003479049,18.7218056865526,0 81.2101972759399,18.722183207484,0 81.21029473452199,18.7224744440644,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_4">
+        <name>kml_4</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>8659.987506262392</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Infrastructure inside Mine Lease</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1834</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>666</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin2</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_5">
+            <SimpleData name="AREA">8659.987506262392</SimpleData>
+            <SimpleData name="Facility">Infrastructure inside Mine Lease</SimpleData>
+            <SimpleData name="New_compartment_no">1834</SimpleData>
+            <SimpleData name="Old_compartment_no">666</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.212084498922,18.7158085052053,0 81.21200556119121,18.7157001395814,0 81.2119590774517,18.7156111777667,0 81.2119086062245,18.7155191837095,0 81.2118796715468,18.7154161571116,0 81.21185377908159,18.7152958465798,0 81.2118324106704,18.7151980805209,0 81.2118055564855,18.7150823442501,0 81.2117686744987,18.7149573192931,0 81.2117356300643,18.7148824594461,0 81.2116911673148,18.7148013582549,0 81.2116541641528,18.714738929994,0 81.2115745063209,18.7146076719482,0 81.2115324271559,18.7145439840839,0 81.2114932279009,18.714477409865,0 81.2113683599102,18.7143043300863,0 81.2113493073022,18.7142711971308,0 81.21128988305141,18.714358411076,0 81.2113632733179,18.7144457972476,0 81.2113011828872,18.7145303061092,0 81.2113320053659,18.7145730321048,0 81.21136933204519,18.7146364090478,0 81.21141206689011,18.7147010994171,0 81.2114894625395,18.7148286183882,0 81.2115244601041,18.7148876687656,0 81.2115638272208,18.7149594757363,0 81.21158923354599,18.7150170456722,0 81.2116214860927,18.7151263499243,0 81.2116469288195,18.7152360233766,0 81.21166800139289,18.7153324250665,0 81.211694962263,18.7154577143074,0 81.21173077556981,18.7155852168672,0 81.2117900879818,18.7156933336537,0 81.2118418675189,18.7157924390989,0 81.2119346202297,18.715919759745,0 81.2120116783545,18.7160040053359,0 81.21209059271921,18.7160935088573,0 81.2121236623214,18.7161349825548,0 81.21214295701409,18.7161821024596,0 81.2121444017434,18.7162187698035,0 81.2121380478786,18.7162615331834,0 81.2121265042655,18.7163146710944,0 81.21210879552839,18.7163680148172,0 81.212077080732,18.7164470601336,0 81.2120577122185,18.7165039572016,0 81.2120346193899,18.7165768866639,0 81.2120169535106,18.716644498078,0 81.2120099415439,18.7166806305423,0 81.21199062793841,18.7167477588824,0 81.21197570617259,18.7168074350135,0 81.21196732739359,18.7168732766352,0 81.2119557958531,18.7169666332231,0 81.21194624455831,18.7170430324489,0 81.2119310809156,18.7170989310019,0 81.21191454396021,18.7171640949649,0 81.2118997705462,18.7172286965814,0 81.21188921117751,18.7172801613472,0 81.2118775629708,18.7173332089776,0 81.21186952639439,18.717392072938,0 81.2118667042928,18.7174413869685,0 81.2118626194063,18.7174973181769,0 81.21186228739251,18.717535377193,0 81.21185944572549,18.7175994501523,0 81.21185640885621,18.7176514938734,0 81.2118567501616,18.7177275294263,0 81.2118453642708,18.7177915342433,0 81.2118302722135,18.717807653321,0 81.2117879763472,18.7178525291654,0 81.21176113873889,18.7178799805163,0 81.2117431299809,18.7179016101447,0 81.2117410930387,18.7179062763739,0 81.2117398161504,18.7179091880238,0 81.2118303870664,18.7180973007232,0 81.2118344948548,18.7180908604949,0 81.2118559322693,18.7180609298144,0 81.21188197290969,18.7180256886732,0 81.211905072954,18.7179979432812,0 81.21192796023389,18.7179745363237,0 81.2119716106839,18.7179282128504,0 81.21198743005949,18.7179113302142,0 81.2120032388429,18.7178935618734,0 81.2120171796585,18.7178686918476,0 81.2120264698538,18.71784915945,0 81.21203574566189,18.7178180856572,0 81.212042212254,18.7177781398151,0 81.21204589460601,18.7177417490221,0 81.2120486396512,18.7176991412074,0 81.2120463617379,18.7176523183726,0 81.2120490455558,18.7176062491072,0 81.2120495014444,18.7175838978393,0 81.2120519521288,18.7175410372955,0 81.212052276316,18.7175043430128,0 81.21205605332069,18.717452578626,0 81.2120585596065,18.717408669621,0 81.2120647444826,18.717363409804,0 81.21207514762401,18.7173160122658,0 81.2120855560987,18.7172652887696,0 81.2120994426903,18.7172045834826,0 81.21211512062671,18.7171427916172,0 81.2121385395515,18.7170438090221,0 81.2121517516096,18.7169442324394,0 81.2121627375107,18.7168393621595,0 81.21217377067519,18.7167952175483,0 81.21219543459721,18.7167189220869,0 81.21221187837089,18.7166476124234,0 81.2122291978575,18.7165787781538,0 81.21225318139849,18.7165143197211,0 81.2122733223259,18.7164641907272,0 81.2122864847185,18.7164313320472,0 81.212301252673,18.7163929313076,0 81.21231845006579,18.7163251184508,0 81.2123260477216,18.7162871325389,0 81.21233106948939,18.7162372195022,0 81.2123308022154,18.716184309294,0 81.2123253773776,18.7161300092081,0 81.21231092627541,18.7160954555694,0 81.2122910881746,18.7160461581608,0 81.2122388284987,18.7159806292311,0 81.21215582020599,18.7158864758815,0 81.212084498922,18.7158085052053,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_5">
+        <name>kml_5</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>7772.75134607698</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Infrastructure inside Mine Lease</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1834</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>666</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin2</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_5">
+            <SimpleData name="AREA">7772.75134607698</SimpleData>
+            <SimpleData name="Facility">Infrastructure inside Mine Lease</SimpleData>
+            <SimpleData name="New_compartment_no">1834</SimpleData>
+            <SimpleData name="Old_compartment_no">666</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2116840988668,18.7136713149467,0 81.2114877408569,18.713688507039,0 81.2114810030683,18.7137154009908,0 81.2114761441043,18.7137509115372,0 81.21147151880101,18.7137847144189,0 81.2114776497133,18.7138585341468,0 81.2114789139802,18.7138737566421,0 81.2115143276656,18.7139472491462,0 81.21156933892649,18.7140142483737,0 81.21158797233581,18.7140255201624,0 81.2116318830378,18.714052082768,0 81.21168324616021,18.7140761740656,0 81.21168989490531,18.7140780194485,0 81.2117291033053,18.714088901874,0 81.211740691423,18.7140944109472,0 81.2117633752141,18.7141060532639,0 81.2117718151857,18.7141122798875,0 81.2117918802839,18.7141308843533,0 81.2118051725071,18.7141490536137,0 81.2118138817643,18.7141658723659,0 81.2118361479356,18.7142153749657,0 81.2118625452285,18.714261357144,0 81.2118835070617,18.7142916827595,0 81.2118951137238,18.7143120682075,0 81.2119099182767,18.7143412077768,0 81.21192308635349,18.7143739101333,0 81.2119341928999,18.7144039847873,0 81.2119483222649,18.7144545540092,0 81.2119606784853,18.7144867047125,0 81.2120005266752,18.7145903890248,0 81.21201039833019,18.7146494225438,0 81.2120101829798,18.714664098422,0 81.21200983879621,18.7146875541321,0 81.21200990339079,18.7147393955281,0 81.212020058606,18.7148052342732,0 81.21204115126829,18.7148719644336,0 81.2120655254199,18.714930782704,0 81.2120840387535,18.714975155981,0 81.21210724521811,18.7150255251181,0 81.21211682448001,18.7150553936151,0 81.2121243731935,18.7150998877525,0 81.2121324060147,18.715152280477,0 81.21213819503591,18.715200409846,0 81.2121456312799,18.7152688003496,0 81.2121125739837,18.7152142397396,0 81.21205290672781,18.7150878036026,0 81.21198799685131,18.7149329672146,0 81.21192763577839,18.7148052484334,0 81.2118215220337,18.714634497617,0 81.2117204572198,18.7144582550183,0 81.21163219976209,18.7142762317088,0 81.21157770139379,18.7141793706566,0 81.21148721417541,18.7140499052576,0 81.21144968373029,18.7140117805112,0 81.21141275797871,18.7141793941148,0 81.2113796274127,18.714227494547,0 81.21141676485109,18.7142758874,0 81.2114623464784,18.7143569150974,0 81.21155092709959,18.7145395888515,0 81.2116566210866,18.7147239152454,0 81.2117590090977,18.7148886691902,0 81.2118133501191,18.7150036332968,0 81.2118782313533,18.7151584245881,0 81.21194349051331,18.7152967031598,0 81.2119813286287,18.7153591575271,0 81.2120248487352,18.7154142937865,0 81.2120733518734,18.7154644716203,0 81.21212613724801,18.7155105775333,0 81.2121774633016,18.7155349579424,0 81.2122316044255,18.7155348966348,0 81.2122899882458,18.7155130964197,0 81.2123184329791,18.7154601270503,0 81.2123340441173,18.7154058005484,0 81.2123382541315,18.7153514869636,0 81.2123343241734,18.7152501854574,0 81.212326782289,18.7151808099491,0 81.21232054271221,18.7151289122872,0 81.2123118691897,18.7150723990089,0 81.21230202709999,18.7150143596465,0 81.2122854109525,18.7149625641164,0 81.21225908487681,18.7149054201002,0 81.2122418938792,18.7148642086124,0 81.21222050699031,18.7148125992366,0 81.2122057182805,18.7147658176702,0 81.212199588768,18.7147260758697,0 81.212199542161,18.7146887041525,0 81.21220030266571,18.7146368256708,0 81.21219071522751,18.7145775749306,0 81.2121843926478,18.7145427318963,0 81.2121653719056,18.7144945723158,0 81.2121451808148,18.7144434496224,0 81.212129791075,18.7144014497841,0 81.21211560445749,18.7143506456551,0 81.21210114785229,18.7143115188142,0 81.21208416440901,18.7142693309789,0 81.2120639495545,18.7142295418454,0 81.212046382694,18.7141986882099,0 81.2120252403123,18.7141681097551,0 81.2120069323361,18.714136217594,0 81.21198625453179,18.714090247042,0 81.211968978584,18.7140568624536,0 81.2119371494593,18.7140133718583,0 81.21189639250819,18.7139755671614,0 81.2118670757647,18.7139539725781,0 81.211828038774,18.7139339254223,0 81.2117985038212,18.7139198958086,0 81.2117521912774,18.7139070420004,0 81.2117248868377,18.7138942299731,0 81.211698602952,18.7138783348604,0 81.211677447684,18.7138525645492,0 81.2116653704895,18.7138274979782,0 81.2116622024144,18.7137893163693,0 81.2116678327511,18.7137481513496,0 81.21167660082359,18.7137131556811,0 81.2116841071478,18.713677971641,0 81.2116840988668,18.7136713149467,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_6">
+        <name>kml_6</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>877.7211488243083</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Infrastructure inside Mine Lease</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1834</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>666</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin2</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_5">
+            <SimpleData name="AREA">877.7211488243083</SimpleData>
+            <SimpleData name="Facility">Infrastructure inside Mine Lease</SimpleData>
+            <SimpleData name="New_compartment_no">1834</SimpleData>
+            <SimpleData name="Old_compartment_no">666</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.21284318838291,18.716436297934,0 81.2128252492037,18.716335317136,0 81.21272295743471,18.7160504131706,0 81.2124826737017,18.7154874511896,0 81.2123370493331,18.7151535610808,0 81.2123183347807,18.7151145262736,0 81.21232054271221,18.7151289122872,0 81.212326782289,18.7151808099491,0 81.2123343241734,18.7152501854574,0 81.2123360108928,18.7152936636011,0 81.2124300373989,18.7155080712259,0 81.21266963217271,18.7160694194494,0 81.2127700695502,18.7163491587965,0 81.21277678035349,18.7163857844935,0 81.2127717944315,18.7164096349852,0 81.2128369949838,18.7164569732884,0 81.21284318838291,18.716436297934,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_7">
+        <name>kml_7</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>421.33506312851165</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Infrastructure inside Mine Lease</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1834</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>666</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin2</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_5">
+            <SimpleData name="AREA">421.33506312851165</SimpleData>
+            <SimpleData name="Facility">Infrastructure inside Mine Lease</SimpleData>
+            <SimpleData name="New_compartment_no">1834</SimpleData>
+            <SimpleData name="Old_compartment_no">666</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.21168989490531,18.7140780194485,0 81.21168324616021,18.7140761740656,0 81.2116318830378,18.714052082768,0 81.21158797233581,18.7140255201624,0 81.2118297183934,18.7143913511408,0 81.2120101829798,18.714664098422,0 81.21201039833019,18.7146494225438,0 81.2120005266752,18.7145903890248,0 81.2119606784853,18.7144867047125,0 81.2118778752903,18.7143624541314,0 81.21168989490531,18.7140780194485,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_8">
+        <name>kml_8</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>77.16110960065114</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Infrastructure inside Mine Lease</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1834</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>666</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin2</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#kml_schema_ft_5">
+            <SimpleData name="AREA">77.16110960065114</SimpleData>
+            <SimpleData name="Facility">Infrastructure inside Mine Lease</SimpleData>
+            <SimpleData name="New_compartment_no">1834</SimpleData>
+            <SimpleData name="Old_compartment_no">666</SimpleData>
+            <SimpleData name="Forest_Type">Reserved forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Village">NA</SimpleData>
+            <SimpleData name="Khasra_no">NA</SimpleData>
+            <SimpleData name="Land_Type">RF</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2114761441043,18.7137509115372,0 81.2114397214757,18.713692711336,0 81.2114001945429,18.7136961720744,0 81.2113949024527,18.7137274125438,0 81.2114189441489,18.7137653845705,0 81.21144214819211,18.7138020543576,0 81.2114776497133,18.7138585341468,0 81.21147151880101,18.7137847144189,0 81.2114761441043,18.7137509115372,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>4112212521214727Y5CompartmentwiseandComponentwiselandbreakupDep4.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark id="kml_9">
+        <name>kml_9</name>
+        <snippet>
+        </snippet>
+        <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>800.0000002344623</td>
+</tr><tr bgcolor="">
+<th>Facility</th>
+<td>Infrastructure inside Mine Lease</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>New_compartment_no</th>
+<td>1834</td>
+</tr><tr bgcolor="">
+<th>Old_compartment_no</th>
+<td>666</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Forest_Type</th>
+<td>Reserved forest</td>
+</tr><tr bgcolor="">
+<th>Division</th>
+<td>Dantewada</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Range</th>
+<td>Bacheli</td>
+</tr><tr bgcolor="">
+<th>RF</th>
+<td>Bailadila</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Village</th>
+<td>NA</td>
+</tr><tr bgcolor="">
+<th>Khasra_no</th>
+<td>NA</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_Type</th>
+<td>RF</td>
+</tr></table></center>]]></description>
+        <styleUrl>#m_ylw-pushpin2</styleUrl>
+        <ExtendedData>
+          <SchemaData schema

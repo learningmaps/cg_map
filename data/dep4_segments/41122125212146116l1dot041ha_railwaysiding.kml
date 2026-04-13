@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>Railwaysiding</name>
+    <Schema name="Railway_siding" id="S_Railway_siding_DSSSSSSS">
+      <SimpleField type="double" name="AREA">
+        <displayName>&lt;b&gt;AREA&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Compartmen">
+        <displayName>&lt;b&gt;Compartmen&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Facility">
+        <displayName>&lt;b&gt;Facility&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="ForestType">
+        <displayName>&lt;b&gt;ForestType&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Old_Compar">
+        <displayName>&lt;b&gt;Old_Compar&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Division">
+        <displayName>&lt;b&gt;Division&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Range">
+        <displayName>&lt;b&gt;Range&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="RF">
+        <displayName>&lt;b&gt;RF&lt;/b&gt;</displayName>
+      </SimpleField>
+    </Schema>
+    <StyleMap id="falseColor101">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor9</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor8</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="falseColor9">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:692 NewComp:1811</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Railway_siding/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Railway_siding/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Railway_siding/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Railway_siding/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Railway_siding/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Railway_siding/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Railway_siding/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Railway_siding/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor91">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:689 NewComp:1825</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Railway_siding/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Railway_siding/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Railway_siding/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Railway_siding/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Railway_siding/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Railway_siding/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Railway_siding/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Railway_siding/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor81">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:689 NewComp:1825</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Railway_siding/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Railway_siding/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Railway_siding/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Railway_siding/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Railway_siding/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Railway_siding/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Railway_siding/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Railway_siding/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor80">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:690 NewComp:1824</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Railway_siding/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Railway_siding/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Railway_siding/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Railway_siding/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Railway_siding/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Railway_siding/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Railway_siding/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Railway_siding/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor8">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:692 NewComp:1811</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Railway_siding/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Railway_siding/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Railway_siding/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Railway_siding/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Railway_siding/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Railway_siding/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Railway_siding/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Railway_siding/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor90">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:690 NewComp:1824</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Railway_siding/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Railway_siding/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Railway_siding/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Railway_siding/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Railway_siding/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Railway_siding/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Railway_siding/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Railway_siding/RF]</td></tr>
+</table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="falseColor102">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor91</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor81</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="falseColor100">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor90</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor80</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>1824</name>
+      <Placemark>
+        <name>1824</name>
+        <open>1</open>
+        <styleUrl>#falseColor100</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Railway_siding_DSSSSSSS">
+            <SimpleData name="AREA">0.701</SimpleData>
+            <SimpleData name="Compartmen">1824</SimpleData>
+            <SimpleData name="Facility">Railway_siding</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">690</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.26042509848475,18.76534962002349,0 81.26056670899959,18.76545753471607,0 81.26110323931572,18.76577372162352,0 81.26106349483193,18.76612225161923,0 81.26037482862664,18.76571640454756,0 81.2602180354537,18.76559691977928,0 81.25992107618686,18.76537062013293,0 81.25982495773538,18.76529737223915,0 81.2594440495517,18.76481189889934,0 81.25983973613,18.76478782479191,0 81.26006554372566,18.76507561919202,0 81.26012819069116,18.76512335979757,0 81.26042509848475,18.76534962002349,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122231477RailwaySiding.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>1811</name>
+      <Placemark>
+        <name>1811</name>
+        <styleUrl>#falseColor101</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Railway_siding_DSSSSSSS">
+            <SimpleData name="AREA">0.082</SimpleData>
+            <SimpleData name="Compartmen">1811</SimpleData>
+            <SimpleData name="Facility">Railway_siding</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">692</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.26444364699158,18.77725848690495,0 81.26427591616699,18.77700788483042,0 81.26395795634669,18.77623386661718,0 81.2638650406077,18.77580480641701,0 81.26433889138411,18.77703539418541,0 81.26444364699158,18.77725848690495,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122231477RailwaySiding.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+      <Placemark>
+        <name>1811</name>
+        <styleUrl>#falseColor101</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Railway_siding_DSSSSSSS">
+            <SimpleData name="AREA">0.032</SimpleData>
+            <SimpleData name="Compartmen">1811</SimpleData>
+            <SimpleData name="Facility">Railway_siding</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">692</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.26329094908645,18.77469284311441,0 81.26329035826403,18.77431233336598,0 81.26343679478066,18.77469263759601,0 81.26329094908645,18.77469284311441,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122231477RailwaySiding.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>1825</name>
+      <Placemark>
+        <name>1825</name>
+        <styleUrl>#falseColor102</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Railway_siding_DSSSSSSS">
+            <SimpleData name="AREA">0.226</SimpleData>
+            <SimpleData name="Compartmen">1825</SimpleData>
+            <SimpleData name="Facility">Railway_siding</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Old_Compar">689</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2594440495517,18.76481189889934,0 81.2593828803187,18.76473393743389,0 81.25919838246818,18.76433352850252,0 81.25914260896333,18.76405172115511,0 81.25920744032074,18.76415707282813,0 81.25931451634438,18.76431173715412,0 81.25949297556066,18.76434742945355,0 81.2595693972865,18.76435167517648,0 81.2596716575531,18.76457360587075,0 81.25983973613,18.76478782479191,0 81.2594440495517,18.76481189889934,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>411291236122231477RailwaySiding.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

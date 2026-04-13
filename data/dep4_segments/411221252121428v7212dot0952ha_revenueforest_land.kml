@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>d4 land</name>
+    <Schema name="aa" id="kml_schema_ft_aa">
+      <SimpleField type="xsd:double" name="AREA">
+        <displayName>AREA</displayName>
+      </SimpleField>
+      <SimpleField type="xsd:string" name="Village">
+        <displayName>Village</displayName>
+      </SimpleField>
+      <SimpleField type="xsd:string" name="Khasra_No">
+        <displayName>Khasra_No</displayName>
+      </SimpleField>
+      <SimpleField type="xsd:string" name="Land_breakup">
+        <displayName>Land_breakup</displayName>
+      </SimpleField>
+      <SimpleField type="xsd:string" name="Land_type">
+        <displayName>Land_type</displayName>
+      </SimpleField>
+    </Schema>
+    <StyleMap id="m_ylw-pushpin">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#s_ylw-pushpin</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="s_ylw-pushpin">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>0.7</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LineStyle>
+        <color>ff00ffff</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <fill>0</fill>
+      </PolyStyle>
+    </Style>
+    <Style id="s_ylw-pushpin_hl0">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>0.827273</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+        </Icon>
+      </IconStyle>
+      <LineStyle>
+        <color>ff00ffff</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <fill>0</fill>
+      </PolyStyle>
+    </Style>
+    <Placemark id="kml_6">
+      <name>Railway siding</name>
+      <snippet>
+      </snippet>
+      <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.601 ha</td>
+</tr><tr bgcolor="">
+<th>Village</th>
+<td>Poro kameli</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Khasra_No</th>
+<td>13/2</td>
+</tr><tr bgcolor="">
+<th>Land_breakup</th>
+<td>Railway siding</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_type</th>
+<td>Bade jhad ke jungle</td>
+</tr></table></center>]]></description>
+      <styleUrl>#m_ylw-pushpin</styleUrl>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_ft_aa">
+          <SimpleData name="AREA">6011.1874314578745</SimpleData>
+          <SimpleData name="Village">Poro kameli</SimpleData>
+          <SimpleData name="Khasra_No">13/2</SimpleData>
+          <SimpleData name="Land_breakup">Railway siding</SimpleData>
+          <SimpleData name="Land_type">Bade jhad ke jungle</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+						81.2595693971663,18.7643516754248,0 81.2594912960659,18.7639156421461,0 81.25945487346,18.7636596892463,0 81.2595656906214,18.7633398526692,0 81.25957265026121,18.76295744424,0 81.2594720079509,18.7627217143053,0 81.25927805631309,18.7628657870787,0 81.2593436092329,18.7632636178351,0 81.2591003645741,18.7632885692392,0 81.2591122622237,18.7640024075684,0 81.25920744032111,18.764157073338,0 81.25931451613999,18.7643117373682,0 81.259492975561,18.7643474299634,0 81.2595693971663,18.7643516754248,0 
+					</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+      <id>FP/CG/MIN/146694/2021</id>
+      <id1>411291236122239184d4land.kml</id1>
+      <id2>Pno_Inserted</id2>
+    </Placemark>
+    <Placemark id="kml_8">
+      <name>Loading plant</name>
+      <snippet>
+      </snippet>
+      <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.095 ha</td>
+</tr><tr bgcolor="">
+<th>Village</th>
+<td>Poro kameli</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Khasra_No</th>
+<td>9</td>
+</tr><tr bgcolor="">
+<th>Land_breakup</th>
+<td>Loading plant</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_type</th>
+<td>Bade jhad ke jungle</td>
+</tr></table></center>]]></description>
+      <styleUrl>#m_ylw-pushpin</styleUrl>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_ft_aa">
+          <SimpleData name="AREA">948.1869223649326</SimpleData>
+          <SimpleData name="Village">Poro kameli</SimpleData>
+          <SimpleData name="Khasra_No">9</SimpleData>
+          <SimpleData name="Land_breakup">Loading plant</SimpleData>
+          <SimpleData name="Land_type">Bade jhad ke jungle</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+						81.2610633305532,18.7661236927339,0 81.2610433139766,18.7662992226641,0 81.2610231310687,18.7664808700357,0 81.2611331132557,18.7664725850133,0 81.2612819513806,18.7664179585646,0 81.26142100124321,18.7662948530233,0 81.2610633305532,18.7661236927339,0 
+					</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+      <id>FP/CG/MIN/146694/2021</id>
+      <id1>411291236122239184d4land.kml</id1>
+      <id2>Pno_Inserted</id2>
+    </Placemark>
+    <Placemark id="kml_12">
+      <name>Loading plant</name>
+      <snippet>
+      </snippet>
+      <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.537 ha</td>
+</tr><tr bgcolor="">
+<th>Village</th>
+<td>Poro kameli</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Khasra_No</th>
+<td>3</td>
+</tr><tr bgcolor="">
+<th>Land_breakup</th>
+<td>Loading plant</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_type</th>
+<td>Bade jhad ke jungle</td>
+</tr></table></center>]]></description>
+      <styleUrl>#m_ylw-pushpin</styleUrl>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_ft_aa">
+          <SimpleData name="AREA">5375.642456611934</SimpleData>
+          <SimpleData name="Village">Poro kameli</SimpleData>
+          <SimpleData name="Khasra_No">3</SimpleData>
+          <SimpleData name="Land_breakup">Loading plant</SimpleData>
+          <SimpleData name="Land_type">Bade jhad ke jungle</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <gx:balloonVisibility>1</gx:balloonVisibility>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+						81.2620102337475,18.7700368022236,0 81.2619498884323,18.7698184449978,0 81.2618300395156,18.7693323943618,0 81.26221836673361,18.7693563978852,0 81.26259303139609,18.7695525079448,0 81.2627985341844,18.7694666604948,0 81.2627616067626,18.7699299389762,0 81.26236557470619,18.7697152138119,0 81.26235289655889,18.7701573508576,0 81.2621632884548,18.7701222074207,0 81.2620102337475,18.7700368022236,0 
+					</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+      <id>FP/CG/MIN/146694/2021</id>
+      <id1>411291236122239184d4land.kml</id1>
+      <id2>Pno_Inserted</id2>
+    </Placemark>
+    <Placemark id="kml_14">
+      <name>Railway siding</name>
+      <snippet>
+      </snippet>
+      <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.1 ha</td>
+</tr><tr bgcolor="">
+<th>Village</th>
+<td>Poro kameli</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Khasra_No</th>
+<td>13/1</td>
+</tr><tr bgcolor="">
+<th>Land_breakup</th>
+<td>Railway siding</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_type</th>
+<td>Bade jhad ke jungle</td>
+</tr></table></center>]]></description>
+      <styleUrl>#m_ylw-pushpin</styleUrl>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_ft_aa">
+          <SimpleData name="AREA">1000.0048109325214</SimpleData>
+          <SimpleData name="Village">Poro kameli</SimpleData>
+          <SimpleData name="Khasra_No">13/1</SimpleData>
+          <SimpleData name="Land_breakup">Railway siding</SimpleData>
+          <SimpleData name="Land_type">Bade jhad ke jungle</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+						81.2591003645741,18.7632885692392,0 81.2593436092329,18.7632636178351,0 81.25927805631309,18.7628657870787,0 81.259256137573,18.762882068912,0 81.25905902023911,18.7629681513078,0 81.2590590203252,18.7629681513653,0 81.2591003645741,18.7632885692392,0 
+					</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+      <id>FP/CG/MIN/146694/2021</id>
+      <id1>411291236122239184d4land.kml</id1>
+      <id2>Pno_Inserted</id2>
+    </Placemark>
+    <Placemark id="kml_18">
+      <name>Loading plant</name>
+      <snippet>
+      </snippet>
+      <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.149 ha</td>
+</tr><tr bgcolor="">
+<th>Village</th>
+<td>Poro kameli</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Khasra_No</th>
+<td>7</td>
+</tr><tr bgcolor="">
+<th>Land_breakup</th>
+<td>Loading plant</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_type</th>
+<td>Bade jhad ke jungle</td>
+</tr></table></center>]]></description>
+      <styleUrl>#m_ylw-pushpin</styleUrl>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_ft_aa">
+          <SimpleData name="AREA">1493.6857581225352</SimpleData>
+          <SimpleData name="Village">Poro kameli</SimpleData>
+          <SimpleData name="Khasra_No">7</SimpleData>
+          <SimpleData name="Land_breakup">Loading plant</SimpleData>
+          <SimpleData name="Land_type">Bade jhad ke jungle</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+						81.26328521101961,18.7709970924863,0 81.2632849102434,18.770803328324,0 81.26311092155829,18.7708215424615,0 81.2624730886299,18.7709154063631,0 81.2622797018506,18.7710118549573,0 81.26328521101961,18.7709970924863,0 
+					</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+      <id>FP/CG/MIN/146694/2021</id>
+      <id1>411291236122239184d4land.kml</id1>
+      <id2>Pno_Inserted</id2>
+    </Placemark>
+    <Placemark id="kml_19">
+      <name>Railway siding</name>
+      <snippet>
+      </snippet>
+      <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>4.078 ha</td>
+</tr><tr bgcolor="">
+<th>Village</th>
+<td>Poro kameli</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Khasra_No</th>
+<td>7</td>
+</tr><tr bgcolor="">
+<th>Land_breakup</th>
+<td>Railway siding</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_type</th>
+<td>Bade jhad ke jungle</td>
+</tr></table></center>]]></description>
+      <styleUrl>#m_ylw-pushpin</styleUrl>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_ft_aa">
+          <SimpleData name="AREA">40772.67270035587</SimpleData>
+          <SimpleData name="Village">Poro kameli</SimpleData>
+          <SimpleData name="Khasra_No">7</SimpleData>
+          <SimpleData name="Land_breakup">Railway siding</SimpleData>
+          <SimpleData name="Land_type">Bade jhad ke jungle</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+						81.2615613168055,18.7656400455867,0 81.2618471679955,18.7657816159486,0 81.262313633863,18.7660272128613,0 81.2627855991729,18.7662900398992,0 81.2632436065789,18.7666043195074,0 81.26343152297591,18.7667834526577,0 81.2635849162405,18.766959043033,0 81.26375457408651,18.7672339213235,0 81.26385900353721,18.7674615899675,0 81.2639256265138,18.7677278936738,0 81.2639626058598,18.7680052908474,0 81.2639853140474,18.7689372475725,0 81.2639761667769,18.7695641796774,0 81.2639509599681,18.7704051988888,0 81.263933856595,18.7708667380341,0 81.2639022129937,18.770988031108,0 81.26328521101961,18.7709970924863,0 81.2632849102434,18.770803328324,0 81.263831678504,18.7707460883953,0 81.2638551270836,18.770154884697,0 81.2638482233898,18.7699042036067,0 81.2638005232818,18.769872173151,0 81.2637344853466,18.7698220601783,0 81.2633467338102,18.7698803439006,0 81.26328337196961,18.769812314349,0 81.26328072337201,18.7681058423078,0 81.2632199785004,18.7676829675395,0 81.2631020655173,18.767452521474,0 81.2628974411698,18.7671868136297,0 81.2626219519876,18.7669593745122,0 81.2622874601103,18.7667646336296,0 81.2617275690733,18.7664415576443,0 81.2615195518475,18.7663420134007,0 81.26162264106389,18.7662520339983,0 81.2616376594822,18.7659878258748,0 81.2615613168055,18.7656400455867,0 
+					</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+      <id>FP/CG/MIN/146694/2021</id>
+      <id1>411291236122239184d4land.kml</id1>
+      <id2>Pno_Inserted</id2>
+    </Placemark>
+    <Placemark id="kml_23">
+      <name>Loading plant</name>
+      <snippet>
+      </snippet>
+      <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>5.475 ha</td>
+</tr><tr bgcolor="">
+<th>Village</th>
+<td>Poro kameli</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Khasra_No</th>
+<td>7</td>
+</tr><tr bgcolor="">
+<th>Land_breakup</th>
+<td>Loading plant</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_type</th>
+<td>Bade jhad ke jungle</td>
+</tr></table></center>]]></description>
+      <styleUrl>#m_ylw-pushpin</styleUrl>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_ft_aa">
+          <SimpleData name="AREA">54746.033781393315</SimpleData>
+          <SimpleData name="Village">Poro kameli</SimpleData>
+          <SimpleData name="Khasra_No">7</SimpleData>
+          <SimpleData name="Land_breakup">Loading plant</SimpleData>
+          <SimpleData name="Land_type">Bade jhad ke jungle</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+						81.2611194772833,18.7665660334148,0 81.2610147606725,18.7665562039911,0 81.26117180506699,18.7669059846191,0 81.26152168765491,18.768108311254,0 81.26152168758099,18.7681083112541,0 81.2615644155706,18.7682551390032,0 81.2618300395156,18.7693323943618,0 81.26221836673361,18.7693563978852,0 81.26259303139609,18.7695525079448,0 81.2627985341844,18.7694666604948,0 81.2629069795173,18.7694451975887,0 81.2631024202044,18.7696180318867,0 81.26328337196961,18.769812314349,0 81.26328072337201,18.7681058423078,0 81.2632199785004,18.7676829675395,0 81.2631020655173,18.767452521474,0 81.2628974411698,18.7671868136297,0 81.2626219519876,18.7669593745122,0 81.2622874601103,18.7667646336296,0 81.2617275690733,18.7664415576443,0 81.2615195518475,18.7663420134007,0 81.2614261294837,18.766423555149,0 81.2612886479822,18.7665344599255,0 81.2611194772833,18.7665660334148,0 
+					</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+      <id>FP/CG/MIN/146694/2021</id>
+      <id1>411291236122239184d4land.kml</id1>
+      <id2>Pno_Inserted</id2>
+    </Placemark>
+    <Placemark id="kml_26">
+      <name>Railway siding</name>
+      <snippet>
+      </snippet>
+      <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.341 ha</td>
+</tr><tr bgcolor="">
+<th>Village</th>
+<td>Poro kameli</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Khasra_No</th>
+<td>9</td>
+</tr><tr bgcolor="">
+<th>Land_breakup</th>
+<td>Railway siding</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_type</th>
+<td>Bade jhad ke jungle</td>
+</tr></table></center>]]></description>
+      <styleUrl>#m_ylw-pushpin</styleUrl>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_ft_aa">
+          <SimpleData name="AREA">3408.9292805650184</SimpleData>
+          <SimpleData name="Village">Poro kameli</SimpleData>
+          <SimpleData name="Khasra_No">9</SimpleData>
+          <SimpleData name="Land_breakup">Railway siding</SimpleData>
+          <SimpleData name="Land_type">Bade jhad ke jungle</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+						81.26142100124321,18.7662948530233,0 81.2610633305532,18.7661236927339,0 81.2611361125894,18.7654854463285,0 81.26113611265281,18.7654087597588,0 81.2614358767577,18.7655718138119,0 81.2615406646845,18.7659802650307,0 81.2615218305761,18.7662055852323,0 81.26142100124321,18.7662948530233,0 
+					</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+      <id>FP/CG/MIN/146694/2021</id>
+      <id1>411291236122239184d4land.kml</id1>
+      <id2>Pno_Inserted</id2>
+    </Placemark>
+    <Placemark id="kml_31">
+      <name>Pipeline</name>
+      <snippet>
+      </snippet>
+      <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.078 ha</td>
+</tr><tr bgcolor="">
+<th>Village</th>
+<td>Bhansi</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Khasra_No</th>
+<td>88/1</td>
+</tr><tr bgcolor="">
+<th>Land_breakup</th>
+<td>Pipe line</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_type</th>
+<td>Bade jhad ke jungle</td>
+</tr></table></center>]]></description>
+      <styleUrl>#m_ylw-pushpin</styleUrl>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_ft_aa">
+          <SimpleData name="AREA">777.7588302025919</SimpleData>
+          <SimpleData name="Village">Bhansi</SimpleData>
+          <SimpleData name="Khasra_No">88/1</SimpleData>
+          <SimpleData name="Land_breakup">Pipe line</SimpleData>
+          <SimpleData name="Land_type">Bade jhad ke jungle</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+						81.2810891432139,18.7650585525905,0 81.2810793753232,18.7650484333931,0 81.2809895310556,18.7651041403721,0 81.28077045909249,18.7652269774439,0 81.2805552466893,18.7653883932179,0 81.2803004440797,18.7656263228592,0 81.2800919451992,18.7658588801967,0 81.2799972444333,18.7660845369456,0 81.2799647284579,18.7662376540877,0 81.2800026354751,18.7664797012986,0 81.2800377294225,18.7668952358687,0 81.280022687659,18.7671543447693,0 81.279950827959,18.7672952290085,0 81.2797234352409,18.7675168635122,0 81.27943510033271,18.7677882792002,0 81.27909164252659,18.7681415164142,0 81.2788736569908,18.7683148649026,0 81.27852161678371,18.7684247803857,0 81.27836222373161,18.7684489884055,0 81.2783652271264,18.76846226022,0 81.27852497475649,18.7684379983473,0 81.2788806830373,18.7683269375998,0 81.2791014639831,18.7681513661138,0 81.27944532797861,18.7677977111248,0 81.27973352704829,18.7675264232884,0 81.27996262004029,18.7673031315505,0 81.28003673983901,18.767157816262,0 81.2800519929806,18.7668950657925,0 81.28001678284051,18.766478155841,0 81.2799791733424,18.7662380085065,0 81.28001093811881,18.7660884286879,0 81.2801042900129,18.7658659860443,0 81.28031085698611,18.7656355835161,0 81.28056465780161,18.7653985893174,0 81.2807785075405,18.7652381955764,0 81.2809970264973,18.7651156685798,0 81.2810891432139,18.7650585525905,0 
+					</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+      <id>FP/CG/MIN/146694/2021</id>
+      <id1>411291236122239184d4land.kml</id1>
+      <id2>Pno_Inserted</id2>
+    </Placemark>
+    <Placemark id="kml_32">
+      <name>Pump house</name>
+      <snippet>
+      </snippet>
+      <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.4 ha</td>
+</tr><tr bgcolor="">
+<th>Village</th>
+<td>Bade kameli</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Khasra_No</th>
+<td>508</td>
+</tr><tr bgcolor="">
+<th>Land_breakup</th>
+<td>Pump house</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_type</th>
+<td>Bade jhad ke jungle</td>
+</tr></table></center>]]></description>
+      <styleUrl>#m_ylw-pushpin</styleUrl>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_ft_aa">
+          <SimpleData name="AREA">3999.999831958275</SimpleData>
+          <SimpleData name="Village">Bade kameli</SimpleData>
+          <SimpleData name="Khasra_No">508</SimpleData>
+          <SimpleData name="Land_breakup">Pump house</SimpleData>
+          <SimpleData name="Land_type">Bade jhad ke jungle</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+						81.2926597555294,18.7464464160181,0 81.29267204422629,18.7464394158042,0 81.29269668070719,18.7464184708998,0 81.2928538466079,18.7461548695431,0 81.2929689435088,18.7460929970028,0 81.29287539652481,18.745906583718,0 81.292800775248,18.7459728475719,0 81.29276947758029,18.7459964956433,0 81.29273023860409,18.7460084077729,0 81.29241846531259,18.7460658876566,0 81.29228388336961,18.7461524630927,0 81.29215029622139,18.7462160918656,0 81.2920165932685,18.7462876287687,0 81.29203216134751,18.7464682818518,0 81.2921081357178,18.7465118328171,0 81.2922160445636,18.7465537366958,0 81.2923922545061,18.7466132197742,0 81.29256303426691,18.7465227699969,0 81.2926597555294,18.7464464160181,0 
+					</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+      <id>FP/CG/MIN/146694/2021</id>
+      <id1>411291236122239184d4land.kml</id1>
+      <id2>Pno_Inserted</id2>
+    </Placemark>
+    <Placemark id="kml_36">
+      <name>Loading plant</name>
+      <snippet>
+      </snippet>
+      <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.154 ha</td>
+</tr><tr bgcolor="">
+<th>Village</th>
+<td>Poro kameli</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Khasra_No</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>Land_breakup</th>
+<td>Loading plant</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_type</th>
+<td>Bade jhad ke jungle</td>
+</tr></table></center>]]></description>
+      <styleUrl>#m_ylw-pushpin</styleUrl>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_ft_aa">
+          <SimpleData name="AREA">1542.9460909298652</SimpleData>
+          <SimpleData name="Village">Poro kameli</SimpleData>
+          <SimpleData name="Khasra_No">1</SimpleData>
+          <SimpleData name="Land_breakup">Loading plant</SimpleData>
+          <SimpleData name="Land_type">Bade jhad ke jungle</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+						81.26206723532469,18.7702430597086,0 81.262329647787,18.7704183152705,0 81.2623686892121,18.7706222692886,0 81.2624730886299,18.7709154063631,0 81.2622797018506,18.7710118549573,0 81.2622020491454,18.7707308749449,0 81.26206723532469,18.7702430597086,0 
+					</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+      <id>FP/CG/MIN/146694/2021</id>
+      <id1>411291236122239184d4land.kml</id1>
+      <id2>Pno_Inserted</id2>
+    </Placemark>
+    <Placemark id="kml_39">
+      <name>Pipeline</name>
+      <snippet>
+      </snippet>
+      <description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.088 ha</td>
+</tr><tr bgcolor="">
+<th>Village</th>
+<td>Bhansi</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Khasra_No</th>
+<td>83/1/ka</td>
+</tr><tr bgcolor="">
+<th>Land_breakup</th>
+<td>Pipe line</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>Land_type</th>
+<td>Bade jhad ke jungle</td>
+</tr></table></center>]]></description>
+      <styleUrl>#m_ylw-pushpin</styleUrl>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_ft_aa">
+          <SimpleData name="AREA">875.0337752847964</SimpleData>
+          <SimpleData name="Village">Bhansi</SimpleData>
+          <SimpleData name="Khasra_No">83/1/ka</SimpleData>
+          <SimpleData name="Land_breakup">Pipe line</SimpleData>
+          <SimpleData name="Land_type">Bade jhad ke jungle</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+						81.2755056286536,18.7724798352264,0 81.27556644363951,18.7723761941912,0 81.2756160520418,18.7721138293134,0 81.27575832227301,18.7714571193156,0 81.2759059986373,18.7707183151359,0 81.276036462256,18.7701121750098,0 81.2761948645947,18.7698089992341,0 81.27641912314721,18.7693623542099,0 81.2765922590701,18.7690184861517,0 81.2769852472576,18.768564681373,0 81.2771933353572,18.7683807674796,0 81.27739857307,18.7683109356847,0 81.2775769404841,18.7683357852178,0 81.2777998483967,18.7684113104314,0 81.2780190028527,18.7684547657775,0 81.2780216636108,18.7684414460398,0 81.2778037013157,18.7683982270833,0 81.2775803882556,18.7683225645971,0 81.277397124527,18.768297032925,0 81.2771857967236,18.7683689368629,0 81.2769748718553,18.768555357962,0 81.2765801765221,18.7690111340381,0 81.2764062871955,18.7693564983946,0 81.27618207341879,18.7698030541737,0 81.2760228931247,18.7701077188779,0 81.2758920362612,18.770715685811,0 81.2757443615419,18.7714544814562,0 81.27560207694439,18.7721112575178,0 81.27555608869901,18.7723720787534,0 81.27550074589669,18.7724636763698,0 81.2755056286536,18.7724798352264,0 
+					</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+      <id>FP/CG/MIN/146694/2021</id>
+      <id1>411291236122239184d4land.kml</id1>
+      <id2>Pno_Inserted</id2>
+    </Placemark>
+  </Document>
+</kml>

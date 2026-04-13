@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>Conveyorpipelinepowerline</name>
+    <Schema name="Conveyor_pipeline_powerline" id="S_Conveyor_pipeline_powerline_DSSSSSSS">
+      <SimpleField type="double" name="AREA">
+        <displayName>&lt;b&gt;AREA&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Compartmen">
+        <displayName>&lt;b&gt;Compartmen&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Facility">
+        <displayName>&lt;b&gt;Facility&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="ForestType">
+        <displayName>&lt;b&gt;ForestType&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Division">
+        <displayName>&lt;b&gt;Division&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Range">
+        <displayName>&lt;b&gt;Range&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="RF">
+        <displayName>&lt;b&gt;RF&lt;/b&gt;</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="Old_Compar">
+        <displayName>&lt;b&gt;Old_Compar&lt;/b&gt;</displayName>
+      </SimpleField>
+    </Schema>
+    <StyleMap id="falseColor2">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor42</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor32</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="falseColor42">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:690 NewComp:1824</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Conveyor_pipeline_powerline/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Conveyor_pipeline_powerline/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Conveyor_pipeline_powerline/ForestType]</td></tr>
+  <tr><td><b>Division</b></td><td>$[Conveyor_pipeline_powerline/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Conveyor_pipeline_powerline/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Conveyor_pipeline_powerline/RF]</td></tr>
+ </table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor33">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:688 NewComp:1822</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Conveyor_pipeline_powerline/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Conveyor_pipeline_powerline/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Conveyor_pipeline_powerline/ForestType]</td></tr>
+  <tr><td><b>Division</b></td><td>$[Conveyor_pipeline_powerline/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Conveyor_pipeline_powerline/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Conveyor_pipeline_powerline/RF]</td></tr>
+ </table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor31">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:689 NewComp:1825</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Conveyor_pipeline_powerline/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Conveyor_pipeline_powerline/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Conveyor_pipeline_powerline/ForestType]</td></tr>
+  <tr><td><b>Division</b></td><td>$[Conveyor_pipeline_powerline/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Conveyor_pipeline_powerline/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Conveyor_pipeline_powerline/RF]</td></tr>
+ </table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor3">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:666 NewComp:1834</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Conveyor_pipeline_powerline/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Conveyor_pipeline_powerline/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Conveyor_pipeline_powerline/ForestType]</td></tr>
+  <tr><td><b>Division</b></td><td>$[Conveyor_pipeline_powerline/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Conveyor_pipeline_powerline/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Conveyor_pipeline_powerline/RF]</td></tr>
+ </table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="falseColor20">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor4</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor30</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="falseColor21">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor41</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor33</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="falseColor4">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:676 NewComp:1826</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Conveyor_pipeline_powerline/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Conveyor_pipeline_powerline/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Conveyor_pipeline_powerline/ForestType]</td></tr>
+  <tr><td><b>Division</b></td><td>$[Conveyor_pipeline_powerline/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Conveyor_pipeline_powerline/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Conveyor_pipeline_powerline/RF]</td></tr>
+ </table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor32">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:690 NewComp:1824</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Conveyor_pipeline_powerline/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Conveyor_pipeline_powerline/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Conveyor_pipeline_powerline/ForestType]</td></tr>
+  <tr><td><b>Division</b></td><td>$[Conveyor_pipeline_powerline/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Conveyor_pipeline_powerline/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Conveyor_pipeline_powerline/RF]</td></tr>
+ </table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor40">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:666 NewComp:1834</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Conveyor_pipeline_powerline/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Conveyor_pipeline_powerline/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Conveyor_pipeline_powerline/ForestType]</td></tr>
+  <tr><td><b>Division</b></td><td>$[Conveyor_pipeline_powerline/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Conveyor_pipeline_powerline/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Conveyor_pipeline_powerline/RF]</td></tr>
+ </table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="falseColor23">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor43</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor31</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="falseColor22">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#falseColor40</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#falseColor3</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="falseColor41">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:688 NewComp:1822</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Conveyor_pipeline_powerline/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Conveyor_pipeline_powerline/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Conveyor_pipeline_powerline/ForestType]</td></tr>
+  <tr><td><b>Division</b></td><td>$[Conveyor_pipeline_powerline/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Conveyor_pipeline_powerline/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Conveyor_pipeline_powerline/RF]</td></tr>
+ </table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor30">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:676 NewComp:1826</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Conveyor_pipeline_powerline/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Conveyor_pipeline_powerline/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Conveyor_pipeline_powerline/ForestType]</td></tr>
+  <tr><td><b>Division</b></td><td>$[Conveyor_pipeline_powerline/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Conveyor_pipeline_powerline/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Conveyor_pipeline_powerline/RF]</td></tr>
+ </table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Style id="falseColor43">
+      <BalloonStyle>
+        <text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:689 NewComp:1825</b>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Conveyor_pipeline_powerline/AREA]</td></tr>
+  <tr><td><b>New Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Conveyor_pipeline_powerline/Old_Compar]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Conveyor_pipeline_powerline/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Conveyor_pipeline_powerline/ForestType]</td></tr>
+  <tr><td><b>Division</b></td><td>$[Conveyor_pipeline_powerline/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Conveyor_pipeline_powerline/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Conveyor_pipeline_powerline/RF]</td></tr>
+ </table>]]></text>
+      </BalloonStyle>
+      <LineStyle>
+        <color>80ffffff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>80ffffff</color>
+        <colorMode>random</colorMode>
+      </PolyStyle>
+    </Style>
+    <Folder>
+      <name>1822</name>
+      <Placemark>
+        <name>1822</name>
+        <open>1</open>
+        <styleUrl>#falseColor21</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Conveyor_pipeline_powerline_DSSSSSSS">
+            <SimpleData name="AREA">5.714</SimpleData>
+            <SimpleData name="Compartmen">1822</SimpleData>
+            <SimpleData name="Facility">Conveyor_pipeline_powerline</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Old_Compar">688</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.23240424989511,18.76062322831971,0 81.23269366637849,18.76042384548639,0 81.23276146329653,18.7608790542581,0 81.2323038886649,18.76119428244977,0 81.23213774426982,18.76130874058315,0 81.23182367318348,18.76152510571176,0 81.23069423973851,18.75895709611207,0 81.23088099932659,18.75882843641777,0 81.23103518685798,18.75872221550303,0 81.23108897048513,18.75868516350899,0 81.22987601097977,18.7559271556708,0 81.22947641599775,18.75608663324699,0 81.22943848686391,18.75610177063034,0 81.2292862208085,18.75575554146304,0 81.22907077996395,18.75526566003306,0 81.22922343618357,18.75510282683801,0 81.2296933798828,18.75455555078602,0 81.2297216443289,18.75452362872298,0 81.23240424989511,18.76062322831971,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>41129123612222A618DownHillConveyor.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>1826</name>
+      <Placemark>
+        <name>1826</name>
+        <open>1</open>
+        <styleUrl>#falseColor20</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Conveyor_pipeline_powerline_DSSSSSSS">
+            <SimpleData name="AREA">17.165</SimpleData>
+            <SimpleData name="Compartmen">1826</SimpleData>
+            <SimpleData name="Facility">Conveyor_pipeline_powerline</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Old_Compar">676</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2296933798828,18.75455555078602,0 81.22922343618357,18.75510282683801,0 81.22907077996395,18.75526566003306,0 81.22864661888109,18.75430116967008,0 81.22848894889187,18.753942644313,0 81.22852667169127,18.75392758931315,0 81.22892646847198,18.75376803158312,0 81.22644868017768,18.74813360704735,0 81.22625016121414,18.74821283503512,0 81.22601443293844,18.74830691271612,0 81.22523177706933,18.74652707742761,0 81.22514866028155,18.74633805936049,0 81.22558290341676,18.74616475570822,0 81.2237599103272,18.74201894552743,0 81.223332146654,18.74218966249363,0 81.22332241542246,18.74219354613284,0 81.22281963865716,18.7410500962023,0 81.22277220578241,18.74094222017187,0 81.2232096980598,18.74076762085691,0 81.22104750717926,18.73589259005678,0 81.21932137199285,18.73200049816704,0 81.2178846144388,18.72876074401042,0 81.21792785340652,18.72865194940677,0 81.21804206710266,18.72839972603014,0 81.21807062106222,18.72831882439419,0 81.2180801244172,18.72804796507079,0 81.21851545775814,18.72903818470919,0 81.21879059736968,18.72966401724167,0 81.2297216443289,18.75452362872298,0 81.2296933798828,18.75455555078602,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>41129123612222A618DownHillConveyor.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>1824</name>
+      <Placemark>
+        <name>1824</name>
+        <open>1</open>
+        <styleUrl>#falseColor2</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Conveyor_pipeline_powerline_DSSSSSSS">
+            <SimpleData name="AREA">12.006</SimpleData>
+            <SimpleData name="Compartmen">1824</SimpleData>
+            <SimpleData name="Facility">Conveyor_pipeline_powerline</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Old_Compar">690</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.24091906197573,18.76127110361205,0 81.24104041476095,18.761371041467,0 81.24130453505495,18.76162802299513,0 81.24157947694532,18.76183750215775,0 81.24363445238417,18.76590045453221,0 81.24397109276835,18.7659808083634,0 81.24414222326016,18.76602165581638,0 81.24881034410771,18.76713582993706,0 81.24899374609299,18.76717960112486,0 81.25619851623856,18.76889894916919,0 81.2563684698023,18.76893950313982,0 81.25755753750796,18.76922323115194,0 81.2575588820394,18.77010867380918,0 81.25518584379917,18.76953653972295,0 81.25530518450022,18.76908939830781,0 81.24371654217838,18.76629275092046,0 81.24361182184417,18.76677481099852,0 81.24300572918276,18.76663552186285,0 81.24171808132054,18.76405657008728,0 81.24212019843435,18.76384947016227,0 81.24081171141908,18.76126018663756,0 81.24091906197573,18.76127110361205,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>41129123612222A618DownHillConveyor.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>1825</name>
+      <Placemark>
+        <name>1825</name>
+        <open>1</open>
+        <styleUrl>#falseColor23</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Conveyor_pipeline_powerline_DSSSSSSS">
+            <SimpleData name="AREA">7.468</SimpleData>
+            <SimpleData name="Compartmen">1825</SimpleData>
+            <SimpleData name="Facility">Conveyor_pipeline_powerline</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Old_Compar">689</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.23836778099844,18.75701661471311,0 81.23632532509045,18.75842379242906,0 81.23614643834287,18.75854703671136,0 81.23276146329653,18.7608790542581,0 81.23269366637849,18.76042384548639,0 81.2363711644213,18.7578902888945,0 81.23622837613654,18.75759112826607,0 81.23856492204993,18.75587693559239,0 81.24011524315451,18.75894238710629,0 81.24018067629653,18.7590717653487,0 81.24027184722557,18.75925203347684,0 81.24034082319339,18.75938841622821,0 81.24085328321861,18.76040167012812,0 81.24095598658106,18.76060473715207,0 81.24157947694532,18.76183750215775,0 81.24130453505495,18.76162802299513,0 81.24104041476095,18.761371041467,0 81.24091906197573,18.76127110361205,0 81.24081171141908,18.76126018663756,0 81.24056164667081,18.76076533881592,0 81.24048103188433,18.7606058112251,0 81.23995642516111,18.75956766520216,0 81.23987162291644,18.75939984839327,0 81.23972450632397,18.75910871561398,0 81.23966377475608,18.75898853203238,0 81.23858997650497,18.75686352735559,0 81.23847887880197,18.75694007106712,0 81.23836778099844,18.75701661471311,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>41129123612222A618DownHillConveyor.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>1834</name>
+      <Placemark>
+        <name>1834</name>
+        <open>1</open>
+        <styleUrl>#falseColor22</styleUrl>
+        <ExtendedData>
+          <SchemaData schemaUrl="#S_Conveyor_pipeline_powerline_DSSSSSSS">
+            <SimpleData name="AREA">0.647</SimpleData>
+            <SimpleData name="Compartmen">1834</SimpleData>
+            <SimpleData name="Facility">Conveyor_pipeline_powerline</SimpleData>
+            <SimpleData name="ForestType">Reserved Forest</SimpleData>
+            <SimpleData name="Division">Dantewada</SimpleData>
+            <SimpleData name="Range">Bacheli</SimpleData>
+            <SimpleData name="RF">Bailadila</SimpleData>
+            <SimpleData name="Old_Compar">666</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.21807062106222,18.72831882439419,0 81.21804206710266,18.72839972603014,0 81.21792785340652,18.72865194940677,0 81.2178846144388,18.72876074401042,0 81.21726626187096,18.72736637438397,0 81.21777791542405,18.72736802557628,0 81.21778845870706,18.72738452809035,0 81.2180801244172,18.72804796507079,0 81.21807062106222,18.72831882439419,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+        <id>FP/CG/MIN/146694/2021</id>
+        <id1>41129123612222A618DownHillConveyor.kml</id1>
+        <id2>Pno_Inserted</id2>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
