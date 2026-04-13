@@ -385,3 +385,36 @@ body {
     letter-spacing: 0.04em;
     text-transform: uppercase;
 }
+
+/* ── Zoom Controls ── */
+#zoom-controls {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#zoom-controls button {
+    width: 28px;
+    height: 28px;
+    background: #FEFBE3;
+    border: 1px solid #CFD8B3;
+    border-radius: 4px;
+    color: #7a5530;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(130, 100, 60, 0.14);
+    transition: background 0.15s, color 0.15s;
+}
+
+#zoom-controls button:hover {
+    background: #EFE3C3;
+    color: #5c3d18;
+}
