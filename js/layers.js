@@ -35,11 +35,10 @@ const majorMiningNgdr = L.vectorGrid.protobuf(
     {
         maxNativeZoom: 11, maxZoom: 22,
         rendererFactory: L.svg.tile,
-        padding: 0.5, // Helps with overzooming sharpness
         vectorTileLayerStyles: {
             'NGDR_Major_Mining_Leases_2022': {
                 fillColor: 'rgba(255,81,0,0.5)', fill: true, fillOpacity: 0.3,
-                stroke: true, color: 'rgba(255,81,0)', weight: isRetina ? 0.5 : 0.1
+                stroke: true, color: 'rgba(255,81,0)', weight: 0.1
             }
         },
         interactive: true,
@@ -89,11 +88,10 @@ const minorMining = L.vectorGrid.protobuf(
     {
         maxNativeZoom: 11, maxZoom: 22,
         rendererFactory: L.svg.tile,
-        padding: 0.5,
         vectorTileLayerStyles: {
             'NCOG_Minor_Mining_Leases': {
                 fillColor: '#0000ff', fill: true, fillOpacity: 0.3,
-                stroke: true, color: '#0000ff', weight: isRetina ? 0.5 : 0.1
+                stroke: true, color: '#0000ff', weight: 0.1
             }
         },
         interactive: true,
