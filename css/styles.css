@@ -418,3 +418,11 @@ body {
     background: #EFE3C3;
     color: #5c3d18;
 }
+
+/* ── Safari / Retina Sharpness Fix ── */
+svg.leaflet-tile {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
