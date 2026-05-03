@@ -211,6 +211,27 @@ body {
 
 #legend-body {
     padding: 4px 0 8px;
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#legend-body::-webkit-scrollbar {
+    width: 5px;
+}
+
+#legend-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#legend-body::-webkit-scrollbar-thumb {
+    background-color: #a08a60;
+    border-radius: 3px;
+}
+
+#legend-body {
+    scrollbar-width: thin;
+    scrollbar-color: #a08a60 transparent;
 }
 
 .legend-group {
