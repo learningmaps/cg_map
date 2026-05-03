@@ -190,3 +190,11 @@ const cgVillagesWMS = L.tileLayer.wms('https://cfr.atree.org/geoserver/cfr/wms',
 const forestCompartments = L.tileLayer.wms('https://cfr.atree.org/geoserver/cfr/wms', {
     layers: 'cfr:cg_forest_compartments', format: 'image/png', transparent: true, version: '1.3.0', CRS: 'EPSG:4326', opacity: 0.6
 });
+
+/* ── Hybrid Labels (OSM) ── */
+const hybridLabels = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+    subdomains: 'abcd',
+    maxZoom: 20,
+    pane: 'markerPane' // Use markerPane to keep labels above polygons
+}).addTo(map);

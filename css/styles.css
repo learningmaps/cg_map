@@ -367,8 +367,9 @@ body {
     border-radius: 8px;
     padding: 10px 14px;
     backdrop-filter: blur(6px);
-    pointer-events: none;
-    opacity: 0.50;
+    pointer-events: auto;
+    opacity: 0.85;
+    z-index: 1000;
 }
 
 #map-title h1 {

@@ -26,7 +26,8 @@ const layerMap = {
     dep4: kmlLayer, dep4c: kmlLayerCompWise, dep4screenbenplant: kmlLayerScreenBenPlant,
     bacheli: kmlLayerBacheli,
     dist: cgDistrictsWMS, vil: cgVillagesWMS, bhuvan: bhuvanVillages,
-    forest: forestCompartments, forest_bijapur: kmlLayercgforc_bijapur
+    forest: forestCompartments, forest_bijapur: kmlLayercgforc_bijapur,
+    hybrid: hybridLabels
 };
 
 function toggleLayer(key) {

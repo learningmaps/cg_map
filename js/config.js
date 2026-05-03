@@ -8,6 +8,7 @@ const LAYER_META = {
     dep4screenbenplant: { label: 'Screening Cum Ben. Plant', color: 'rgba(255,161,106,0.25)', border: 'rgba(200,100,40,0.7)', text: '#6a3200' },
     bacheli: { label: 'Bacheli Airport', color: 'rgba(120, 250, 200, 0.25)', border: 'rgba(120, 250, 200, 0.85)', text: '#064d2c' },
     bhuvan: { label: 'Villages (Bhuvan)', color: 'rgba(255,255,0,0.18)', border: 'rgba(180,180,0,0.7)', text: '#545400' },
+    hybrid: { label: 'Place Names & Roads (OSM)', color: 'rgba(255,255,255,0.2)', border: 'rgba(0,0,0,0.4)', text: '#000' },
 };
 
 const activeState = {
@@ -15,7 +16,8 @@ const activeState = {
     dep4: true, dep4c: true, dep4screenbenplant: true,
     bacheli: true,
     dist: true, vil: false, bhuvan: false, forest: false,
-    forest_bijapur: false
+    forest_bijapur: false,
+    hybrid: true
 };
 
 const dpr = window.devicePixelRatio || 1;
