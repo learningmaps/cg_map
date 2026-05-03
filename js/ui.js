@@ -47,3 +47,52 @@ function toggleLayer(key) {
 L.DomEvent.disableClickPropagation(document.getElementById('legend'));
 L.DomEvent.disableScrollPropagation(document.getElementById('legend'));
 L.DomEvent.disableClickPropagation(document.getElementById('map-title'));
+
+/* ── Search Geocoder (Photon) ── */
+const geocoder = L.Control.geocoder({
+    defaultMarkGeocode: false,
+    placeholder: 'Search location...',
+    geocoder: L.Control.Geocoder.photon(),
+    position: 'topleft'
+})
+.on('markgeocode', function(e) {
+    const center = e.geocode.center;
+    map.setView(center, 14);
+    
+    // Optional: Add a temporary marker or highlight
+    L.circle(center, {
+        radius: 200,
+        color: '#CD9C69',
+        fillColor: '#CD9C69',
+        fillOpacity: 0.2,
+        weight: 2
+    }).addTo(map).fadeOut(3000);
+})
+.addTo(map);
+
+// Move the geocoder container to a custom position if needed, 
+// or just style it to match the zoom controls.
+const geocoderContainer = geocoder.getContainer();
+// We'll apply styles in CSS to position it correctly relative to map-title.
+
+// Helper for fading out the highlight circle
+L.Layer.prototype.fadeOut = function(duration) {
+    const self = this;
+    let opacity = self.options.opacity || 1;
+    let fillOpacity = self.options.fillOpacity || 0.2;
+    const interval = 50;
+    const steps = duration / interval;
+    const opacityStep = opacity / steps;
+    const fillOpacityStep = fillOpacity / steps;
+
+    const timer = setInterval(() => {
+        opacity -= opacityStep;
+        fillOpacity -= fillOpacityStep;
+        if (opacity <= 0) {
+            clearInterval(timer);
+            map.removeLayer(self);
+        } else {
+            self.setStyle({ opacity, fillOpacity });
+        }
+    }, interval);
+};

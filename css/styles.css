@@ -392,31 +392,112 @@ body {
     top: 12px;
     left: 12px;
     z-index: 1000;
+    background: #FEFBE3;
+    border: 1px solid #CFD8B3;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    box-shadow: 0 4px 15px rgba(130, 100, 60, 0.12);
+    overflow: hidden;
 }
 
 #zoom-controls button {
-    width: 28px;
-    height: 28px;
-    background: #FEFBE3;
-    border: 1px solid #CFD8B3;
-    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
     color: #7a5530;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 500;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 10px rgba(130, 100, 60, 0.14);
-    transition: background 0.15s, color 0.15s;
+    transition: background 0.2s, color 0.2s;
+    outline: none;
+}
+
+#zoom-controls button:first-child {
+    border-bottom: 1px solid #CFD8B3;
 }
 
 #zoom-controls button:hover {
     background: #EFE3C3;
     color: #5c3d18;
+}
+
+#zoom-controls button:active {
+    background: #CFD8B3;
+}
+
+/* ── Search Geocoder ── */
+.leaflet-control-geocoder {
+    border: 1px solid #CFD8B3 !important;
+    border-radius: 8px !important;
+    background: #FEFBE3 !important;
+    box-shadow: 0 4px 15px rgba(130, 100, 60, 0.12) !important;
+    overflow: hidden;
+    margin-left: 12px !important;
+    margin-top: 84px !important; /* Positioned below zoom controls (12px + 66px + 6px gap) */
+    z-index: 1001 !important;
+}
+
+.leaflet-control-geocoder-icon {
+    background-color: transparent !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%237a5530' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 32px !important;
+    height: 32px !important;
+}
+
+.leaflet-control-geocoder-form input {
+    font-size: 12px !important;
+    color: #4a3520 !important;
+    border: none !important;
+    background: transparent !important;
+    padding: 0 10px !important;
+    width: 200px !important;
+    height: 32px !important;
+    outline: none !important;
+}
+
+.leaflet-control-geocoder-form input::placeholder {
+    color: #a08a60 !important;
+    opacity: 0.7;
+}
+
+.leaflet-control-geocoder-results {
+    background: #FEFBE3 !important;
+    border-top: 1px solid #CFD8B3 !important;
+    max-height: 200px !important;
+    overflow-y: auto !important;
+}
+
+.leaflet-control-geocoder-result {
+    padding: 8px 12px !important;
+    font-size: 11px !important;
+    color: #5c3d18 !important;
+    cursor: pointer !important;
+    border-bottom: 1px solid rgba(207, 216, 179, 0.4) !important;
+}
+
+.leaflet-control-geocoder-result:hover {
+    background: #EFE3C3 !important;
+}
+
+.leaflet-control-geocoder-result:last-child {
+    border-bottom: none !important;
+}
+
+.leaflet-control-geocoder-throbber .leaflet-control-geocoder-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23CD9C69' viewBox='0 0 16 16'%3E%3Cpath d='M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z'/%3E%3Cpath fill-rule='evenodd' d='M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9a5.002 5.002 0 0 0-9.457-2.182h.001A5.002 5.002 0 0 0 8 3zm5.857 8.182a.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9h1.017a5.002 5.002 0 0 0 9.457 2.182h-.001A5.002 5.002 0 0 0 8 13c1.552 0 2.94-.707 3.857-1.818z'/%3E%3C/svg%3E") !important;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 /* ── Safari / Retina Sharpness Fix ── */
