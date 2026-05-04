@@ -348,6 +348,24 @@ body {
     margin: 6px 16px;
 }
 
+/* ── Legend Footer ── */
+.legend-footer {
+    padding: 8px 16px 12px;
+    text-align: center;
+}
+
+.satellite-link {
+    font-size: 11px;
+    color: #CD9C69;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.satellite-link:hover {
+    color: #a08a60;
+}
+
 .leaflet-control-scale-line {
     background: rgba(254, 251, 227, 0.88) !important;
     border: 1px solid #CFD8B3 !important;
@@ -355,6 +373,8 @@ body {
     color: #7a5530 !important;
     font-size: 10px !important;
     padding: 2px 5px !important;
+    margin-left: 16px !important; /* Align with left-aligned controls */
+    margin-bottom: 16px !important;
 }
 
 #coords-bar {
@@ -379,40 +399,10 @@ body {
     color: #5c3d18;
 }
 
-#map-title {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    background: rgba(239, 227, 195, 0.95);
-    border: 1px solid #CFD8B3;
-    border-radius: 12px;
-    padding: 12px 16px;
-    backdrop-filter: blur(6px);
-    pointer-events: auto;
-    opacity: 0.95;
-    z-index: 1000;
-    box-shadow: 0 4px 15px rgba(130, 100, 60, 0.12);
-}
-
-#map-title h1 {
-    font-size: 15px;
-    font-weight: 700;
-    color: #5c3d18;
-    letter-spacing: 0.02em;
-    margin-bottom: 2px;
-}
-
-#map-title p {
-    font-size: 11px;
-    color: #9a845a;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-}
-
 /* ── Zoom Controls ── */
 #zoom-controls {
     position: absolute;
-    bottom: 32px;
+    bottom: 64px; /* Increased space above the scale bar */
     left: 16px;
     z-index: 1000;
     background: #FEFBE3;
@@ -461,7 +451,7 @@ body {
     box-shadow: 0 4px 15px rgba(130, 100, 60, 0.12) !important;
     overflow: hidden;
     margin-left: 16px !important;
-    margin-top: 100px !important; /* Standardized space below map-title */
+    margin-top: 16px !important; /* Move to the top-left edge */
     z-index: 1001 !important;
 }
 
