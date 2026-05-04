@@ -356,10 +356,10 @@ body {
 
 /* ── Sentinel FAB ── */
 #sentinel-fab {
-    position: absolute;
-    bottom: 24px;
-    right: 24px;
-    z-index: 1000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2000;
     width: 48px;
     height: 48px;
     background: #FEFBE3;
@@ -429,24 +429,21 @@ body {
 
 /* ── Zoom Controls ── */
 #zoom-controls {
-    position: absolute;
+    position: fixed;
     bottom: 96px; /* High enough to be clear of the scale bar */
-    left: 16px;
+    left: 20px;
     z-index: 1000;
-    background: #FEFBE3;
-    border: 1px solid #CFD8B3;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 15px rgba(130, 100, 60, 0.12);
-    overflow: hidden;
+    gap: 10px;
 }
 
 #zoom-controls button {
-    width: 36px;
-    height: 36px;
-    background: transparent;
-    border: none;
+    width: 40px;
+    height: 40px;
+    background: #FEFBE3;
+    border: 1px solid #CFD8B3;
+    border-radius: 50%;
     color: #7a5530;
     font-size: 20px;
     font-weight: 500;
@@ -454,21 +451,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.2s, color 0.2s;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(130, 100, 60, 0.12);
     outline: none;
-}
-
-#zoom-controls button:first-child {
-    border-bottom: 1px solid #CFD8B3;
 }
 
 #zoom-controls button:hover {
     background: #EFE3C3;
     color: #5c3d18;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(130, 100, 60, 0.18);
 }
 
 #zoom-controls button:active {
     background: #CFD8B3;
+    transform: translateY(0);
 }
 
 /* ── Search Geocoder ── */
@@ -548,4 +545,54 @@ svg.leaflet-tile {
     backface-visibility: hidden;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
+}
+
+/* ── Mobile Responsiveness ── */
+@media (max-width: 768px) {
+    #legend-container {
+        top: auto;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        max-width: none;
+        z-index: 3000;
+    }
+
+    #legend {
+        border-radius: 12px 12px 0 0;
+        border-bottom: none;
+    }
+
+    #legend-body {
+        max-height: 40vh;
+    }
+
+    .leaflet-control-geocoder {
+        width: calc(100% - 32px) !important;
+        left: 16px !important;
+        top: 16px !important;
+    }
+
+    .leaflet-control-geocoder-form input {
+        width: 100% !important;
+    }
+
+    #zoom-controls {
+        bottom: 80px;
+        left: 12px;
+    }
+
+    #sentinel-fab {
+        bottom: 80px;
+        right: 12px;
+    }
+
+    #coords-bar {
+        display: none;
+    }
+
+    .leaflet-control-scale {
+        display: none !important;
+    }
 }

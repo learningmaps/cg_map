@@ -22,61 +22,62 @@
                 <span class="legend-toggle">▼</span>
             </div>
             <div id="legend-body">
-            <div class="legend-group" id="grp-mining">
-                <div class="legend-group-header" onclick="toggleGroup('grp-mining')">
-                    <span class="group-chevron">▼</span>
-                    <span class="group-label">Mining Leases (NCOG/NGDR Data)</span>
+                <div class="legend-group" id="grp-mining">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-mining')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Mining Leases (NCOG/NGDR Data)</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item inactive" id="item-major" onclick="toggleLayer('major')">
+                            <div class="legend-swatch"
+                                style="background:rgba(255,165,0,0.5); border-color:rgba(255,165,0,0.6);"></div>
+                            <span class="legend-item-label">Major Mining NCOG</span>
+                        </div>
+                        <div class="legend-item" id="item-majorngdr" onclick="toggleLayer('majorngdr')">
+                            <div class="legend-swatch"
+                                style="background:rgba(255,81,0,0.5); border-color:rgba(255,81,0,0.5);"></div>
+                            <span class="legend-item-label">Major Mining NGDR 2022</span>
+                        </div>
+                        <div class="legend-item inactive" id="item-minor" onclick="toggleLayer('minor')">
+                            <div class="legend-swatch"
+                                style="background:rgba(0,0,255,0.5); border-color:rgba(0,0,255,0.6);"></div>
+                            <span class="legend-item-label">Minor Mining NCOG</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="legend-group-items">
-                    <div class="legend-item inactive" id="item-major" onclick="toggleLayer('major')">
-                        <div class="legend-swatch"
-                            style="background:rgba(255,165,0,0.5); border-color:rgba(255,165,0,0.6);"></div>
-                        <span class="legend-item-label">Major Mining NCOG</span>
-                    </div>
-                    <div class="legend-item" id="item-majorngdr" onclick="toggleLayer('majorngdr')">
-                        <div class="legend-swatch"
-                            style="background:rgba(255,81,0,0.5); border-color:rgba(255,81,0,0.5);"></div>
-                        <span class="legend-item-label">Major Mining NGDR 2022</span>
-                    </div>
-                    <div class="legend-item inactive" id="item-minor" onclick="toggleLayer('minor')">
-                        <div class="legend-swatch"
-                            style="background:rgba(0,0,255,0.5); border-color:rgba(0,0,255,0.6);"></div>
-                        <span class="legend-item-label">Minor Mining NCOG</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="legend-divider"></div>
+                <div class="legend-divider"></div>
 
-            <div class="legend-group" id="grp-dep4">
-                <div class="legend-group-header" onclick="toggleGroup('grp-dep4')">
-                    <span class="group-chevron">▼</span>
-                    <span class="group-label">Deposit 4</span>
-                </div>
-                <div class="legend-group-items">
-                    <div class="legend-item" id="item-dep4" onclick="toggleLayer('dep4')">
-                        <div class="legend-swatch"
-                            style="background:rgba(255,255,255,0.12); border-color:rgba(41,41,41,0.685);"></div>
-                        <span class="legend-item-label">Dep-04 ML Area</span>
-                        <div class="legend-item-extra">
-                            <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayer)">⊕ Zoom</button>
-                        </div>
+                <div class="legend-group" id="grp-dep4">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-dep4')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Deposit 4</span>
                     </div>
-                    <div class="legend-item" id="item-dep4c" onclick="toggleLayer('dep4c')">
-                        <div class="legend-swatch" style="background:rgb(255,251,41); border-color:rgb(255,251,41);">
+                    <div class="legend-group-items">
+                        <div class="legend-item" id="item-dep4" onclick="toggleLayer('dep4')">
+                            <div class="legend-swatch"
+                                style="background:rgba(255,255,255,0.12); border-color:rgba(41,41,41,0.685);"></div>
+                            <span class="legend-item-label">Dep-04 ML Area</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayer)">⊕ Zoom</button>
+                            </div>
                         </div>
-                        <span class="legend-item-label">Component wise Breakdown</span>
-                        <div class="legend-item-extra">
-                            <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerCompWise)">⊕ Zoom</button>
+                        <div class="legend-item" id="item-dep4c" onclick="toggleLayer('dep4c')">
+                            <div class="legend-swatch" style="background:rgb(255,251,41); border-color:rgb(255,251,41);">
+                            </div>
+                            <span class="legend-item-label">Component wise Breakdown</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerCompWise)">⊕ Zoom</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="legend-item" id="item-dep4screenbenplant" onclick="toggleLayer('dep4screenbenplant')">
-                        <div class="legend-swatch" style="background:rgb(255,161,106); border-color:rgb(255,161,106);">
-                        </div>
-                        <span class="legend-item-label">Screening Cum Beneficiation Plant</span>
-                        <div class="legend-item-extra">
-                            <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerScreenBenPlant)">⊕
-                                Zoom</button>
+                        <div class="legend-item" id="item-dep4screenbenplant" onclick="toggleLayer('dep4screenbenplant')">
+                            <div class="legend-swatch" style="background:rgb(255,161,106); border-color:rgb(255,161,106);">
+                            </div>
+                            <span class="legend-item-label">Screening Cum Beneficiation Plant</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerScreenBenPlant)">⊕
+                                    Zoom</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,8 +165,16 @@
     </a>
 
     <div id="zoom-controls">
-        <button onclick="map.zoomIn()" title="Zoom In">＋</button>
-        <button onclick="map.zoomOut()" title="Zoom Out">－</button>
+        <button onclick="map.zoomIn()" title="Zoom In">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+                <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+            </svg>
+        </button>
+        <button onclick="map.zoomOut()" title="Zoom Out">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+                <path fill="currentColor" d="M19,13H5V11H19V13Z" />
+            </svg>
+        </button>
     </div>
 
     <div id="coords-bar">
