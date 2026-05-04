@@ -15,151 +15,151 @@
 <body>
     <div id="map"></div>
 
-    <div id="legend-container">
-        <div id="legend">
-            <div id="legend-header">
-                <span class="legend-title">Layers</span>
-                <span class="legend-toggle">▼</span>
-            </div>
-            <div id="legend-body">
-                <div class="legend-group" id="grp-mining">
-                    <div class="legend-group-header" onclick="toggleGroup('grp-mining')">
-                        <span class="group-chevron">▼</span>
-                        <span class="group-label">Mining Leases (NCOG/NGDR Data)</span>
+    <div id="legend">
+        <div id="legend-header">
+            <span class="legend-title">Layers</span>
+            <span class="legend-toggle">▼</span>
+        </div>
+        <div id="legend-body">
+            <div class="legend-group" id="grp-mining">
+                <div class="legend-group-header" onclick="toggleGroup('grp-mining')">
+                    <span class="group-chevron">▼</span>
+                    <span class="group-label">Mining Leases (NCOG/NGDR Data)</span>
+                </div>
+                <div class="legend-group-items">
+                    <div class="legend-item inactive" id="item-major" onclick="toggleLayer('major')">
+                        <div class="legend-swatch"
+                            style="background:rgba(255,165,0,0.5); border-color:rgba(255,165,0,0.6);"></div>
+                        <span class="legend-item-label">Major Mining NCOG</span>
                     </div>
-                    <div class="legend-group-items">
-                        <div class="legend-item inactive" id="item-major" onclick="toggleLayer('major')">
-                            <div class="legend-swatch"
-                                style="background:rgba(255,165,0,0.5); border-color:rgba(255,165,0,0.6);"></div>
-                            <span class="legend-item-label">Major Mining NCOG</span>
+                    <div class="legend-item" id="item-majorngdr" onclick="toggleLayer('majorngdr')">
+                        <div class="legend-swatch"
+                            style="background:rgba(255,81,0,0.5); border-color:rgba(255,81,0,0.5);"></div>
+                        <span class="legend-item-label">Major Mining NGDR 2022</span>
+                    </div>
+                    <div class="legend-item inactive" id="item-minor" onclick="toggleLayer('minor')">
+                        <div class="legend-swatch"
+                            style="background:rgba(0,0,255,0.5); border-color:rgba(0,0,255,0.6);"></div>
+                        <span class="legend-item-label">Minor Mining NCOG</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="legend-divider"></div>
+
+            <div class="legend-group" id="grp-dep4">
+                <div class="legend-group-header" onclick="toggleGroup('grp-dep4')">
+                    <span class="group-chevron">▼</span>
+                    <span class="group-label">Deposit 4</span>
+                </div>
+                <div class="legend-group-items">
+                    <div class="legend-item" id="item-dep4" onclick="toggleLayer('dep4')">
+                        <div class="legend-swatch"
+                            style="background:rgba(255,255,255,0.12); border-color:rgba(41,41,41,0.685);"></div>
+                        <span class="legend-item-label">Dep-04 ML Area</span>
+                        <div class="legend-item-extra">
+                            <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayer)">⊕ Zoom</button>
                         </div>
-                        <div class="legend-item" id="item-majorngdr" onclick="toggleLayer('majorngdr')">
-                            <div class="legend-swatch"
-                                style="background:rgba(255,81,0,0.5); border-color:rgba(255,81,0,0.5);"></div>
-                            <span class="legend-item-label">Major Mining NGDR 2022</span>
+                    </div>
+                    <div class="legend-item" id="item-dep4c" onclick="toggleLayer('dep4c')">
+                        <div class="legend-swatch" style="background:rgb(255,251,41); border-color:rgb(255,251,41);">
                         </div>
-                        <div class="legend-item inactive" id="item-minor" onclick="toggleLayer('minor')">
-                            <div class="legend-swatch"
-                                style="background:rgba(0,0,255,0.5); border-color:rgba(0,0,255,0.6);"></div>
-                            <span class="legend-item-label">Minor Mining NCOG</span>
+                        <span class="legend-item-label">Component wise Breakdown</span>
+                        <div class="legend-item-extra">
+                            <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerCompWise)">⊕ Zoom</button>
+                        </div>
+                    </div>
+                    <div class="legend-item" id="item-dep4screenbenplant" onclick="toggleLayer('dep4screenbenplant')">
+                        <div class="legend-swatch" style="background:rgb(255,161,106); border-color:rgb(255,161,106);">
+                        </div>
+                        <span class="legend-item-label">Screening Cum Beneficiation Plant</span>
+                        <div class="legend-item-extra">
+                            <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerScreenBenPlant)">⊕
+                                Zoom</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="legend-divider"></div>
 
-                <div class="legend-group" id="grp-dep4">
-                    <div class="legend-group-header" onclick="toggleGroup('grp-dep4')">
+                <div class="legend-group" id="grp-bacheli">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-bacheli')">
                         <span class="group-chevron">▼</span>
-                        <span class="group-label">Deposit 4</span>
+                        <span class="group-label">Bacheli Airport</span>
                     </div>
                     <div class="legend-group-items">
-                        <div class="legend-item" id="item-dep4" onclick="toggleLayer('dep4')">
+                        <div class="legend-item" id="item-bacheli" onclick="toggleLayer('bacheli')">
                             <div class="legend-swatch"
-                                style="background:rgba(255,255,255,0.12); border-color:rgba(41,41,41,0.685);"></div>
-                            <span class="legend-item-label">Dep-04 ML Area</span>
+                                style="background:rgba(120, 250, 200, 0.884); border-color:rgba(120, 250, 200, 0.884);">
+                            </div>
+                            <span class="legend-item-label">Bacheli Airport</span>
                             <div class="legend-item-extra">
-                                <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayer)">⊕ Zoom</button>
-                            </div>
-                        </div>
-                        <div class="legend-item" id="item-dep4c" onclick="toggleLayer('dep4c')">
-                            <div class="legend-swatch" style="background:rgb(255,251,41); border-color:rgb(255,251,41);">
-                            </div>
-                            <span class="legend-item-label">Component wise Breakdown</span>
-                            <div class="legend-item-extra">
-                                <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerCompWise)">⊕ Zoom</button>
-                            </div>
-                        </div>
-                        <div class="legend-item" id="item-dep4screenbenplant" onclick="toggleLayer('dep4screenbenplant')">
-                            <div class="legend-swatch" style="background:rgb(255,161,106); border-color:rgb(255,161,106);">
-                            </div>
-                            <span class="legend-item-label">Screening Cum Beneficiation Plant</span>
-                            <div class="legend-item-extra">
-                                <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerScreenBenPlant)">⊕
-                                    Zoom</button>
+                                <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerBacheli)">⊕ Zoom</button>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="legend-divider"></div>
+                <div class="legend-divider"></div>
 
-                    <div class="legend-group" id="grp-bacheli">
-                        <div class="legend-group-header" onclick="toggleGroup('grp-bacheli')">
-                            <span class="group-chevron">▼</span>
-                            <span class="group-label">Bacheli Airport</span>
+                <div class="legend-group" id="grp-admin">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-admin')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Administrative</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item" id="item-dist" onclick="toggleLayer('dist')">
+
+                            <div class="legend-swatch line" style="background:#888; width:14px; height:2px;"></div>
+                            <span class="legend-item-label">Districts (ATREE)</span>
                         </div>
-                        <div class="legend-group-items">
-                            <div class="legend-item" id="item-bacheli" onclick="toggleLayer('bacheli')">
-                                <div class="legend-swatch"
-                                    style="background:rgba(120, 250, 200, 0.884); border-color:rgba(120, 250, 200, 0.884);">
-                                </div>
-                                <span class="legend-item-label">Bacheli Airport</span>
-                                <div class="legend-item-extra">
-                                    <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerBacheli)">⊕ Zoom</button>
-                                </div>
-                            </div>
+                        <div class="legend-item inactive" id="item-vil" onclick="toggleLayer('vil')">
+                            <div class="legend-swatch line" style="background:#e55; width:14px; height:2px;"></div>
+                            <span class="legend-item-label">Villages (ATREE)</span>
+                        </div>
+                        <div class="legend-item inactive" id="item-bhuvan" onclick="toggleLayer('bhuvan')">
+                            <div class="legend-swatch"
+                                style="background:rgba(255,255,0,0.35); border-color:rgba(255,255,0,0.5);"></div>
+                            <span class="legend-item-label">Villages (Bhuvan)</span>
                         </div>
                     </div>
+                </div>
 
-                    <div class="legend-divider"></div>
+                <div class="legend-divider"></div>
 
-                    <div class="legend-group" id="grp-admin">
-                        <div class="legend-group-header" onclick="toggleGroup('grp-admin')">
-                            <span class="group-chevron">▼</span>
-                            <span class="group-label">Administrative</span>
-                        </div>
-                        <div class="legend-group-items">
-                            <div class="legend-item" id="item-dist" onclick="toggleLayer('dist')">
-
-                                <div class="legend-swatch line" style="background:#888; width:14px; height:2px;"></div>
-                                <span class="legend-item-label">Districts (ATREE)</span>
-                            </div>
-                            <div class="legend-item inactive" id="item-vil" onclick="toggleLayer('vil')">
-                                <div class="legend-swatch line" style="background:#e55; width:14px; height:2px;"></div>
-                                <span class="legend-item-label">Villages (ATREE)</span>
-                            </div>
-                            <div class="legend-item inactive" id="item-bhuvan" onclick="toggleLayer('bhuvan')">
-                                <div class="legend-swatch"
-                                    style="background:rgba(255,255,0,0.35); border-color:rgba(255,255,0,0.5);"></div>
-                                <span class="legend-item-label">Villages (Bhuvan)</span>
-                            </div>
-                        </div>
+                <div class="legend-group" id="grp-forest">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-forest')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Forest</span>
                     </div>
-
-                    <div class="legend-divider"></div>
-
-                    <div class="legend-group" id="grp-forest">
-                        <div class="legend-group-header" onclick="toggleGroup('grp-forest')">
-                            <span class="group-chevron">▼</span>
-                            <span class="group-label">Forest</span>
+                    <div class="legend-group-items">
+                        <div class="legend-item inactive" id="item-forest" onclick="toggleLayer('forest')">
+                            <div class="legend-swatch line"
+                                style="background:rgb(36, 181, 56); width:14px; height:2px;"></div>
+                            <span class="legend-item-label">Forest Compartments (ATREE)</span>
                         </div>
-                        <div class="legend-group-items">
-                            <div class="legend-item inactive" id="item-forest" onclick="toggleLayer('forest')">
-                                <div class="legend-swatch line"
-                                    style="background:rgb(36, 181, 56); width:14px; height:2px;"></div>
-                                <span class="legend-item-label">Forest Compartments (ATREE)</span>
-                            </div>
-                            <div class="legend-item inactive" id="item-forest_bijapur"
-                                onclick="toggleLayer('forest_bijapur')">
-                                <div class="legend-swatch line"
-                                    style="background:rgb(164, 254, 131); width:14px; height:2px;"></div>
-                                <span class="legend-item-label">
-                                    Bijapur Forest Compts (Chhattisgarh Forest Department)
-                                    <a href="https://forest.cg.gov.in/FMIS_AllApp/Forest%20Working%20Plan/FWP_Indx.html"
-                                        target="_blank">
-                                        Source
-                                    </a>
-                                </span>
-                            </div>
+                        <div class="legend-item inactive" id="item-forest_bijapur"
+                            onclick="toggleLayer('forest_bijapur')">
+                            <div class="legend-swatch line"
+                                style="background:rgb(164, 254, 131); width:14px; height:2px;"></div>
+                            <span class="legend-item-label">
+                                Bijapur Forest Compts (Chhattisgarh Forest Department)
+                                <a href="https://forest.cg.gov.in/FMIS_AllApp/Forest%20Working%20Plan/FWP_Indx.html"
+                                    target="_blank">
+                                    Source
+                                </a>
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="satellite-link-container">
-            <a href="sentinel.html" class="satellite-link">View Satellite Time Series →</a>
-        </div>
-    </div>
+
+    <a href="sentinel.html" id="sentinel-fab" title="View Satellite Time Series">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+            <path fill="currentColor" d="M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L5,8.09V15.91L12,19.85L19,15.91V8.09L12,4.15M12,10.5L17,7.7L18,8.26L12,11.63L6,8.26L7,7.7L12,10.5M12,15.5L17,12.7L18,13.26L12,16.63L6,13.26L7,12.7L12,15.5Z" />
+        </svg>
+    </a>
 
     <div id="zoom-controls">
         <button onclick="map.zoomIn()" title="Zoom In">＋</button>
