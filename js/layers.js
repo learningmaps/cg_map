@@ -2,7 +2,7 @@
 const majorMining = L.vectorGrid.protobuf(
     "https://indianopenmaps.fly.dev/not-so-open/mining/leases/major/ncog/{z}/{x}/{y}.pbf",
     {
-        maxNativeZoom: 14, maxZoom: 22,
+        maxNativeZoom: 11, maxZoom: 22,
         rendererFactory: L.svg.tile,
         vectorTileLayerStyles: {
             'NCOG_Major_Mining_Leases': {
@@ -33,7 +33,7 @@ majorMining.on('click', e => {
 const majorMiningNgdr = L.vectorGrid.protobuf(
     "https://indianopenmaps.com/not-so-open/mining/leases/major/ngdr/{z}/{x}/{y}.pbf",
     {
-        maxNativeZoom: 14, maxZoom: 22,
+        maxNativeZoom: 11, maxZoom: 22,
         rendererFactory: L.svg.tile,
         vectorTileLayerStyles: {
             'NGDR_Major_Mining_Leases_2022': {
@@ -86,7 +86,7 @@ majorMiningNgdr.on('click', e => {
 const minorMining = L.vectorGrid.protobuf(
     "https://indianopenmaps.fly.dev/not-so-open/mining/leases/minor/ncog/{z}/{x}/{y}.pbf",
     {
-        maxNativeZoom: 14, maxZoom: 22,
+        maxNativeZoom: 11, maxZoom: 22,
         rendererFactory: L.svg.tile,
         vectorTileLayerStyles: {
             'NCOG_Minor_Mining_Leases': {
