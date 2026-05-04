@@ -15,12 +15,13 @@
 <body>
     <div id="map"></div>
 
-    <div id="legend">
-        <div id="legend-header">
-            <span class="legend-title">Layers</span>
-            <span class="legend-toggle">▼</span>
-        </div>
-        <div id="legend-body">
+    <div id="legend-container">
+        <div id="legend">
+            <div id="legend-header">
+                <span class="legend-title">Layers</span>
+                <span class="legend-toggle">▼</span>
+            </div>
+            <div id="legend-body">
             <div class="legend-group" id="grp-mining">
                 <div class="legend-group-header" onclick="toggleGroup('grp-mining')">
                     <span class="group-chevron">▼</span>
@@ -154,6 +155,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
     <a href="sentinel.html" id="sentinel-fab" title="View Satellite Time Series">
         <svg viewBox="0 0 24 24" width="24" height="24">

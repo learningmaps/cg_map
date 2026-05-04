@@ -46,7 +46,10 @@ function toggleLayer(key) {
 
 L.DomEvent.disableClickPropagation(document.getElementById('legend'));
 L.DomEvent.disableScrollPropagation(document.getElementById('legend'));
-L.DomEvent.disableClickPropagation(document.getElementById('map-title'));
+const mapTitle = document.getElementById('map-title');
+if (mapTitle) {
+    L.DomEvent.disableClickPropagation(mapTitle);
+}
 
 /* ── Search Geocoder (Photon) ── */
 const geocoder = L.Control.geocoder({
