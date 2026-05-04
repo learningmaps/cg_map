@@ -382,7 +382,7 @@ body {
 #map-title {
     position: absolute;
     top: 12px;
-    left: 52px;
+    left: 12px;
     background: rgba(239, 227, 195, 0.95);
     border: 1px solid #CFD8B3;
     border-radius: 8px;
@@ -411,7 +411,7 @@ body {
 /* ── Zoom Controls ── */
 #zoom-controls {
     position: absolute;
-    top: 12px;
+    bottom: 24px;
     left: 12px;
     z-index: 1000;
     background: #FEFBE3;
@@ -460,7 +460,7 @@ body {
     box-shadow: 0 4px 15px rgba(130, 100, 60, 0.12) !important;
     overflow: hidden;
     margin-left: 12px !important;
-    margin-top: 84px !important; /* Positioned below zoom controls (12px + 66px + 6px gap) */
+    margin-top: 85px !important; /* Increased space below map-title */
     z-index: 1001 !important;
 }
 

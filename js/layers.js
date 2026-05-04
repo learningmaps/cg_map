@@ -6,8 +6,8 @@ const majorMining = L.vectorGrid.protobuf(
         rendererFactory: L.svg.tile,
         vectorTileLayerStyles: {
             'NCOG_Major_Mining_Leases': {
-                fillColor: '#ffa500', fill: true, fillOpacity: 0.3,
-                stroke: true, color: '#ffa500', weight: isRetina ? 0.5 : 0.1
+                fillColor: 'rgba(255,165,0,0.5)', fill: true, fillOpacity: 0.3,
+                stroke: true, color: 'rgba(255,165,0)', weight: 0.1
             }
         },
         interactive: true,
@@ -19,7 +19,7 @@ majorMining.on('click', e => {
     const p = e.layer?.properties || e.propagatedFrom?.properties || {};
     L.popup({ closeButton: true })
         .setLatLng(e.latlng)
-        .setContent(buildPopup(p.mine_name || p.name || 'Major Mine', [
+        .setContent(buildPopup(p.mine_name || p.name || 'Major Mine (NCOG)', [
             ['Mine Code', p.mine_code],
             ['Lessor', p.name_of_le],
             ['Area (Ha)', p.area],
@@ -90,8 +90,8 @@ const minorMining = L.vectorGrid.protobuf(
         rendererFactory: L.svg.tile,
         vectorTileLayerStyles: {
             'NCOG_Minor_Mining_Leases': {
-                fillColor: '#0000ff', fill: true, fillOpacity: 0.3,
-                stroke: true, color: '#0000ff', weight: 0.1
+                fillColor: 'rgba(0,0,255,0.5)', fill: true, fillOpacity: 0.3,
+                stroke: true, color: 'rgba(0,0,255)', weight: 0.1
             }
         },
         interactive: true,
@@ -103,7 +103,7 @@ minorMining.on('click', e => {
     const p = e.layer?.properties || e.propagatedFrom?.properties || {};
     L.popup({ closeButton: true })
         .setLatLng(e.latlng)
-        .setContent(buildPopup(p.mine_name || p.name || 'Minor Mine', [
+        .setContent(buildPopup(p.mine_name || p.name || 'Minor Mine (NCOG)', [
             ['Mine Code', p.mine_code],
             ['Survey No.', p.survey_no],
             ['GID', p.gid]
