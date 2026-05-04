@@ -163,16 +163,22 @@ body {
 }
 
 /* ── Legend Panel ── */
-#legend {
+#legend-container {
     position: absolute;
     top: 16px;
     right: 16px;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 240px;
+}
+
+#legend {
     background: #FEFBE3;
     border: 1px solid #CFD8B3;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(130, 100, 60, 0.14);
-    width: 240px;
     overflow: hidden;
 }
 
@@ -349,9 +355,13 @@ body {
 }
 
 /* ── Legend Footer ── */
-.legend-footer {
-    padding: 8px 16px 12px;
+.satellite-link-container {
+    background: #FEFBE3;
+    border: 1px solid #CFD8B3;
+    border-radius: 10px;
+    padding: 8px 16px;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(130, 100, 60, 0.08);
 }
 
 .satellite-link {
@@ -366,6 +376,11 @@ body {
     color: #a08a60;
 }
 
+.leaflet-control-scale {
+    margin-left: 16px !important;
+    margin-bottom: 24px !important;
+}
+
 .leaflet-control-scale-line {
     background: rgba(254, 251, 227, 0.88) !important;
     border: 1px solid #CFD8B3 !important;
@@ -373,8 +388,6 @@ body {
     color: #7a5530 !important;
     font-size: 10px !important;
     padding: 2px 5px !important;
-    margin-left: 16px !important; /* Align with left-aligned controls */
-    margin-bottom: 16px !important;
 }
 
 #coords-bar {
@@ -402,7 +415,7 @@ body {
 /* ── Zoom Controls ── */
 #zoom-controls {
     position: absolute;
-    bottom: 64px; /* Increased space above the scale bar */
+    bottom: 80px; /* More space between zoom and scale */
     left: 16px;
     z-index: 1000;
     background: #FEFBE3;
@@ -445,13 +458,14 @@ body {
 
 /* ── Search Geocoder ── */
 .leaflet-control-geocoder {
+    position: absolute !important;
+    top: 16px !important;
+    left: 16px !important;
+    margin: 0 !important;
     border: 1px solid #CFD8B3 !important;
     border-radius: 10px !important;
     background: #FEFBE3 !important;
     box-shadow: 0 4px 15px rgba(130, 100, 60, 0.12) !important;
-    overflow: hidden;
-    margin-left: 16px !important;
-    margin-top: 16px !important; /* Move to the top-left edge */
     z-index: 1001 !important;
 }
 
