@@ -86,7 +86,7 @@ majorMiningNgdr.on('click', e => {
 const minorMining = L.vectorGrid.protobuf(
     "https://indianopenmaps.fly.dev/not-so-open/mining/leases/minor/ncog/{z}/{x}/{y}.pbf",
     {
-        maxNativeZoom: 11, maxZoom: 22,
+        maxNativeZoom: 10, maxZoom: 22,
         rendererFactory: L.svg.tile,
         vectorTileLayerStyles: {
             'NCOG_Minor_Mining_Leases': {
