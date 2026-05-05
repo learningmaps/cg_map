@@ -557,42 +557,122 @@ svg.leaflet-tile {
         width: 100%;
         max-width: none;
         z-index: 3000;
+        gap: 0;
     }
 
     #legend {
-        border-radius: 12px 12px 0 0;
-        border-bottom: none;
+        border-radius: 20px 20px 0 0;
+        border: none;
+        border-top: 1px solid #CFD8B3;
+        box-shadow: 0 -4px 20px rgba(130, 100, 60, 0.15);
+    }
+
+    #legend-header {
+        padding: 14px 20px;
+        border-radius: 20px 20px 0 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    /* Bottom sheet handle visual */
+    #legend-header::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 36px;
+        height: 4px;
+        background: rgba(160, 138, 96, 0.3);
+        border-radius: 2px;
+    }
+
+    #legend-header .legend-title {
+        font-size: 13px;
+        margin-top: 4px;
+    }
+
+    #legend-header .legend-toggle {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     #legend-body {
-        max-height: 40vh;
+        max-height: 50vh;
+        padding-bottom: 30px; /* Extra space for bottom safe area */
+    }
+
+    .legend-group-header {
+        padding: 12px 20px;
+    }
+
+    .legend-item {
+        padding: 10px 20px 10px 40px;
+        min-height: 44px; /* Better touch target */
+    }
+
+    .legend-swatch {
+        width: 18px;
+        height: 18px;
+    }
+
+    .legend-item-label {
+        font-size: 13px;
+    }
+
+    .zoom-btn {
+        padding: 6px 12px;
+        font-size: 11px;
     }
 
     .leaflet-control-geocoder {
-        width: calc(100% - 32px) !important;
-        left: 16px !important;
-        top: 16px !important;
+        width: calc(100% - 24px) !important;
+        left: 12px !important;
+        top: 12px !important;
+        border-radius: 12px !important;
     }
 
     .leaflet-control-geocoder-form input {
-        width: 100% !important;
+        font-size: 15px !important; /* Prevent iOS auto-zoom on focus */
+        height: 44px !important;
     }
 
     #zoom-controls {
-        bottom: 80px;
+        bottom: 74px;
         left: 12px;
+        gap: 8px;
+    }
+
+    #zoom-controls button {
+        width: 44px;
+        height: 44px;
     }
 
     #sentinel-fab {
-        bottom: 80px;
+        bottom: 74px;
         right: 12px;
+        width: 52px;
+        height: 52px;
     }
 
-    #coords-bar {
-        display: none;
-    }
-
-    .leaflet-control-scale {
+    #coords-bar, .leaflet-control-scale {
         display: none !important;
+    }
+
+    /* Popup adjustments for mobile */
+    .popup-inner {
+        min-width: 220px;
+        max-width: 280px;
+        padding: 12px;
+    }
+
+    .popup-inner .popup-title {
+        font-size: 14px;
+    }
+
+    .popup-inner td {
+        font-size: 12px;
     }
 }
