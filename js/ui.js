@@ -24,6 +24,7 @@ function toggleGroup(id) {
 const layerMap = {
     major: majorMining, majorngdr: majorMiningNgdr, minor: minorMining,
     dep4: kmlLayer, dep4c: kmlLayerCompWise, dep4screenbenplant: kmlLayerScreenBenPlant,
+    chittalnar: chittalnarTinOre,
     bacheli: kmlLayerBacheli,
     dist: cgDistrictsWMS, vil: cgVillagesWMS, bhuvan: bhuvanVillages,
     forest: forestCompartments, forest_bijapur: kmlLayercgforc_bijapur

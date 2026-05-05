@@ -178,6 +178,38 @@ const kmlLayerScreenBenPlant = omnivore.kml(
     })
 ).addTo(map);
 
+/* ── Chittalnar–Kumakoleng Tin Ore Block ── */
+let chittalnarTinOre;
+fetch('data/chittalnar_tin_ore.geojson')
+    .then(res => res.json())
+    .then(data => {
+        chittalnarTinOre = L.geoJson(data, {
+            style: {
+                color: '#FFD700', // Gold/Tin-like
+                weight: 2,
+                fillColor: '#FFD700',
+                fillOpacity: 0.3
+            },
+            onEachFeature: (feature, layer) => {
+                const p = feature.properties;
+                layer.bindPopup(buildPopup(p.name, [
+                    ['Minerals', p.minerals],
+                    ['Area (Ha)', p.area_ha],
+                    ['Districts', p.districts],
+                    ['Tehsils', p.tehsils],
+                    ['Villages', p.villages],
+                    ['Auction Date', p.auction_date],
+                    ['Preferred Bidder', p.bidder],
+                    ['Resource (G4)', p.resource_g4],
+                    ['Exploration', p.exploration],
+                    ['Status', p.status]
+                ], 'tin'));
+            }
+        }).addTo(map);
+        // Register in UI layer map after loading
+        if (typeof layerMap !== 'undefined') layerMap.chittalnar = chittalnarTinOre;
+    });
+
 /* ── WMS layers ── */
 const cgDistrictsWMS = L.tileLayer.wms('https://cfr.atree.org/geoserver/cfr/wms', {
     layers: 'cfr:cg_district_en', format: 'image/png', transparent: true, version: '1.3.0', opacity: 0.7

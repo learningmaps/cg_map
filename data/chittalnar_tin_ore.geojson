@@ -1,0 +1,37 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chittalnar–Kumakoleng Tin Ore Block",
+        "minerals": "Tin ore (cassiterite), Tantalum, Niobium",
+        "area_ha": 950.07,
+        "districts": "Sukma and Bastar",
+        "tehsils": "Konta and Tongpal",
+        "villages": "Chittalnar, Kumakoleng",
+        "auction_date": "20th January 2026",
+        "bidder": "Harban Singh & Sons Pvt Ltd",
+        "resource_g4": "1,499.71036 tons",
+        "exploration": "G-4 (Reconnaissance Survey)",
+        "status": "Recommended for Composite Licence"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [81.9193303, 18.7404675],
+            [81.9284997, 18.7389197],
+            [81.9168389, 18.7028750],
+            [81.9170167, 18.6837556],
+            [81.9207278, 18.6839750],
+            [81.9212111, 18.6671472],
+            [81.9074306, 18.6665444],
+            [81.9059639, 18.7025083],
+            [81.9193303, 18.7404675]
+          ]
+        ]
+      }
+    }
+  ]
+}
