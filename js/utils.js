@@ -110,9 +110,21 @@ function kmlPopup(p, type) {
     }
 }
 
-function zoomToLayer(e, layer) {
+function zoomToLayer(e, target) {
     if (e && e.stopPropagation) e.stopPropagation();
-    if (!layer || !layer.getBounds) return;
-    const b = layer.getBounds();
-    if (b && b.isValid && b.isValid()) map.fitBounds(b, { padding: [40, 40] });
+    if (!target) return;
+
+    // Handle coordinate array [lat, lng]
+    if (Array.isArray(target) && target.length === 2) {
+        map.setView(target, 11);
+        return;
+    }
+
+    // Handle Leaflet layers with bounds
+    if (target.getBounds) {
+        const b = target.getBounds();
+        if (b && typeof b.isValid === 'function' && b.isValid()) {
+            map.fitBounds(b, { padding: [40, 40] });
+        }
+    }
 }

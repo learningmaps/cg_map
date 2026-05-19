@@ -26,9 +26,37 @@ const layerMap = {
     dep4: kmlLayer, dep4c: kmlLayerCompWise, dep4screenbenplant: kmlLayerScreenBenPlant,
     chittalnar: chittalnarTinOre,
     bacheli: kmlLayerBacheli,
-    dist: cgDistrictsWMS, vil: cgVillagesWMS, bhuvan: bhuvanVillages,
+    dist: cgDistrictsWMS, vil: cgVillagesWMS, bhuvan: bhuvanVillages, shrug: shrugCensus,
+    impacted: impactedVillages,
     forest: forestCompartments, forest_bijapur: kmlLayercgforc_bijapur
 };
+
+const labelStyles = {
+    google: googleLabels
+};
+
+function toggleLabels(event, type = 'google') {
+    if (event) event.stopPropagation();
+    const btn = event.target;
+    
+    const targetLayer = labelStyles[type];
+    if (!targetLayer) return;
+
+    if (map.hasLayer(targetLayer)) {
+        map.removeLayer(targetLayer);
+        btn.classList.remove('active');
+    } else {
+        // Remove any other active label layers first to avoid overlap
+        Object.values(labelStyles).forEach(layer => {
+            if (map.hasLayer(layer)) map.removeLayer(layer);
+        });
+        // Deactivate all label buttons in the UI
+        document.querySelectorAll('.label-btn').forEach(b => b.classList.remove('active'));
+
+        map.addLayer(targetLayer);
+        btn.classList.add('active');
+    }
+}
 
 function toggleLayer(key) {
     const layer = layerMap[key];
@@ -47,10 +75,31 @@ function toggleLayer(key) {
 
 L.DomEvent.disableClickPropagation(document.getElementById('legend'));
 L.DomEvent.disableScrollPropagation(document.getElementById('legend'));
-const mapTitle = document.getElementById('map-title');
-if (mapTitle) {
-    L.DomEvent.disableClickPropagation(mapTitle);
+
+/* ── Initialization ── */
+function initLayersFromConfig() {
+    Object.keys(activeState).forEach(key => {
+        const layer = layerMap[key];
+        const el = document.getElementById('item-' + key);
+        if (!layer || !el) return;
+
+        if (activeState[key]) {
+            if (!map.hasLayer(layer)) map.addLayer(layer);
+            el.classList.remove('inactive');
+        } else {
+            if (map.hasLayer(layer)) map.removeLayer(layer);
+            el.classList.add('inactive');
+        }
+    });
 }
+
+// Run init on DOM content load
+document.addEventListener('DOMContentLoaded', () => {
+    initLayersFromConfig();
+    
+    const satBtn = document.getElementById('base-satellite');
+    if (satBtn) satBtn.classList.remove('inactive');
+});
 
 /* ── Search Geocoder (Photon) ── */
 const geocoder = L.Control.geocoder({
@@ -63,21 +112,11 @@ const geocoder = L.Control.geocoder({
     const center = e.geocode.center;
     map.setView(center, 14);
     
-    // Optional: Add a temporary marker or highlight
     L.circle(center, {
-        radius: 200,
-        color: '#CD9C69',
-        fillColor: '#CD9C69',
-        fillOpacity: 0.2,
-        weight: 2
+        radius: 200, color: '#CD9C69', fillColor: '#CD9C69', fillOpacity: 0.2, weight: 2
     }).addTo(map).fadeOut(3000);
 })
 .addTo(map);
-
-// Move the geocoder container to a custom position if needed, 
-// or just style it to match the zoom controls.
-const geocoderContainer = geocoder.getContainer();
-// We'll apply styles in CSS to position it correctly relative to map-title.
 
 // Helper for fading out the highlight circle
 L.Layer.prototype.fadeOut = function(duration) {
@@ -100,3 +139,58 @@ L.Layer.prototype.fadeOut = function(duration) {
         }
     }, interval);
 };
+
+/* ── Base Layer switching ── */
+window.baseLayers = {
+    osm: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19, attribution: '© OpenStreetMap contributors'
+    }),
+    topo: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+        maxZoom: 17, attribution: 'Map data: © OSM contributors, SRTM | Style: © OpenTopoMap'
+    }),
+    satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 22, maxNativeZoom: 19, attribution: '© Esri'
+    })
+};
+
+window.switchBaseLayer = function(key) {
+    const newBase = window.baseLayers[key];
+    if (!newBase) return;
+
+    // Remove current base layer if it exists
+    if (window.activeBaseLayer && map.hasLayer(window.activeBaseLayer)) {
+        map.removeLayer(window.activeBaseLayer);
+    }
+
+    // Add and track the new base layer
+    window.activeBaseLayer = newBase;
+    newBase.addTo(map);
+    newBase.bringToBack();
+
+    // Whenever user changes base layer, the labels for ESRI layer should toggle off automatically
+    const targetLabelLayer = labelStyles['google'];
+    if (map.hasLayer(targetLabelLayer)) {
+        map.removeLayer(targetLabelLayer);
+        document.querySelectorAll('.label-btn').forEach(b => b.classList.remove('active'));
+    }
+
+    // Update UI
+    document.querySelectorAll('[id^="base-"]').forEach(el => el.classList.add('inactive'));
+    const btn = document.getElementById(`base-${key}`);
+    if (btn) btn.classList.remove('inactive');
+};
+
+// Initialize state
+window.switchBaseLayer('satellite');
+
+document.addEventListener('DOMContentLoaded', () => {
+    initLayersFromConfig();
+
+    const satBtn = document.getElementById('base-satellite');
+    if (satBtn) {
+        satBtn.classList.remove('inactive');
+        // Turn on labels by default for ESRI Satellite
+        const labelBtn = satBtn.querySelector('.label-btn');
+        if (labelBtn) toggleLabels({ target: labelBtn, stopPropagation: () => {} }, 'google');
+    }
+});

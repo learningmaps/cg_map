@@ -33,7 +33,7 @@ majorMining.on('click', e => {
 const majorMiningNgdr = L.vectorGrid.protobuf(
     "https://indianopenmaps.com/not-so-open/mining/leases/major/ngdr/{z}/{x}/{y}.pbf",
     {
-        maxNativeZoom: 11, maxZoom: 22,
+        maxNativeZoom: 9, maxZoom: 22,
         rendererFactory: L.svg.tile,
         vectorTileLayerStyles: {
             'NGDR_Major_Mining_Leases_2022': {
@@ -44,7 +44,7 @@ const majorMiningNgdr = L.vectorGrid.protobuf(
         interactive: true,
         getFeatureId: f => f.properties?.id || f.properties?.lease_id || Math.random()
     }
-).addTo(map);
+);
 
 majorMiningNgdr.on('click', e => {
     const p = e.layer?.properties || e.propagatedFrom?.properties || {};
@@ -132,8 +132,94 @@ bhuvanVillages.on('click', e => {
     L.popup({ closeButton: true })
         .setLatLng(e.latlng)
         .setContent(buildPopup(p.v_name || 'Village', [
-            ['District', p.d_name]
+            ['District', p.d_name],
+            ['Block', p.b_name],
+            ['Gram Panchayat', p.gp_name],
+            ['Village ID', p.v_code]
         ], 'bhuvan')).openOn(map);
+});
+
+/* ── SHRUG Census 2011 ── */
+const shrugCensus = L.vectorGrid.protobuf(
+    "https://indianopenmaps.com/shrug-census2011/villages/{z}/{x}/{y}.pbf",
+    {
+        maxNativeZoom: 9, maxZoom: 22,
+        rendererFactory: L.svg.tile,
+        vectorTileLayerStyles: {
+            'shrug': {
+                fillColor: 'rgba(0,100,255,0.5)', fill: true, fillOpacity: 0.3,
+                stroke: true, color: 'rgba(0,100,255)', weight: 0.05
+            },
+            'village': {
+                fillColor: 'rgba(0,100,255,0.5)', fill: true, fillOpacity: 0.3,
+                stroke: true, color: 'rgba(0,100,255)', weight: 0.05
+            },
+            'pc11': {
+                fillColor: 'rgba(0,100,255,0.5)', fill: true, fillOpacity: 0.3,
+                stroke: true, color: 'rgba(0,100,255)', weight: 0.05
+            }
+        },
+        interactive: true,
+        getFeatureId: f => f.properties?.pc11_tv_id || f.properties?.id || Math.random()
+    }
+);
+
+shrugCensus.on('click', e => {
+    const p = e.layer?.properties || e.propagatedFrom?.properties || {};
+    L.popup({ closeButton: true })
+        .setLatLng(e.latlng)
+        .setContent(buildPopup(p.tv_name || 'Village (Census 2011)', [
+            ['Village ID', p.pc11_tv_id],
+            ['Sub-Dist ID', p.pc11_sd_id],
+            ['District ID', p.pc11_d_id],
+            ['State ID', p.pc11_s_id]
+        ], 'shrug')).openOn(map);
+});
+
+/* ── Impacted villages (Filtered Bhuvan) ── */
+const impactedVillages = L.vectorGrid.protobuf(
+    "https://indianopenmaps.com/not-so-open/villages/bhuvan/{z}/{x}/{y}.pbf",
+    {
+        maxNativeZoom: 11, maxZoom: 22,
+        rendererFactory: L.svg.tile,
+        vectorTileLayerStyles: {
+            'bhuvan_villages': properties => {
+                const vName = (properties.v_name || "").toUpperCase();
+                const dName = (properties.d_name || "").toUpperCase();
+                
+                const isImpacted = IMPACTED_VILLAGES.some(target => {
+                    if (target.id) {
+                        return properties.v_code === target.id;
+                    }
+                    return target.v === vName && dName.includes(target.d);
+                });
+
+                if (isImpacted) {
+                    return {
+                        fillColor: '#ff0032', fill: true, fillOpacity: 0.5,
+                        stroke: true, color: '#ff0032', weight: 1.5
+                    };
+                }
+                // Hide other villages in this specific layer
+                return { fill: false, stroke: false, opacity: 0 };
+            }
+        },
+        interactive: true,
+        getFeatureId: f => f.properties?.village_id || f.properties?.v_name || Math.random()
+    }
+);
+
+impactedVillages.on('click', e => {
+    const p = e.layer?.properties || e.propagatedFrom?.properties || {};
+    L.popup({ closeButton: true })
+        .setLatLng(e.latlng)
+        .setContent(buildPopup(p.v_name || 'Impacted Village', [
+            ['District', p.d_name],
+            ['Block', p.b_name],
+            ['Gram Panchayat', p.gp_name],
+            ['Village ID', p.v_code],
+            ['Status', '<span style="color:#d00; font-weight:bold;">Project Impacted</span>']
+        ], 'impacted')).openOn(map);
 });
 
 /* ── KML layers ── */
@@ -145,7 +231,7 @@ const kmlLayerBacheli = omnivore.kml("data/Bacheli Airport/site 1 - bacheli_airp
         const props = feature.properties || {};
         layer.bindPopup(kmlPopup(props, "bacheli"));
     }
-})).addTo(map);
+}));
 
 const kmlLayercgforc_bijapur = omnivore.kml("data/bijapur.kml", null, L.geoJson(null, {
     style: () => ({ ...kmlStyle, fillColor: 'rgb(164, 254, 131)', color: 'rgb(164, 254, 131)' }),
@@ -160,7 +246,7 @@ const kmlLayercgforc_bijapur = omnivore.kml("data/bijapur.kml", null, L.geoJson(
 const kmlLayer = omnivore.kml('data/Dep4MLArea.kml', null, L.geoJson(null, {
     style: () => kmlStyle,
     onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup(feature.properties || {}, 'main'))
-})).addTo(map);
+}));
 
 const kmlLayerCompWise = omnivore.kml(
     'data/dep4_segments/4112212521214727y5compartmentwiseandcomponentwiselandbreakupdep4.kml',
@@ -168,7 +254,7 @@ const kmlLayerCompWise = omnivore.kml(
         style: () => ({ ...kmlStyle, fillColor: 'rgb(255,251,41)', color: 'rgb(255,251,41)' }),
         onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup(feature.properties || {}, 'comp'))
     })
-).addTo(map);
+);
 
 const kmlLayerScreenBenPlant = omnivore.kml(
     'data/dep4_segments/Dep4OML_Screening Cum Beneficiation Plant.kml',
@@ -176,7 +262,7 @@ const kmlLayerScreenBenPlant = omnivore.kml(
         style: () => ({ ...kmlStyle, fillColor: 'rgb(255,161,106)', color: 'rgb(255,161,106)' }),
         onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup(feature.properties || {}, 'screenbenplant'))
     })
-).addTo(map);
+);
 
 /* ── Chittalnar–Kumakoleng Tin Ore Block ── */
 let chittalnarTinOre;
@@ -205,18 +291,26 @@ fetch('data/chittalnar_tin_ore.geojson')
                     ['Status', p.status]
                 ], 'tin'));
             }
-        }).addTo(map);
+        });
         // Register in UI layer map after loading
-        if (typeof layerMap !== 'undefined') layerMap.chittalnar = chittalnarTinOre;
+        if (typeof layerMap !== 'undefined') {
+            layerMap.chittalnar = chittalnarTinOre;
+            if (typeof initLayersFromConfig === 'function') initLayersFromConfig();
+        }
     });
 
 /* ── WMS layers ── */
 const cgDistrictsWMS = L.tileLayer.wms('https://cfr.atree.org/geoserver/cfr/wms', {
     layers: 'cfr:cg_district_en', format: 'image/png', transparent: true, version: '1.3.0', opacity: 0.7
-}).addTo(map);
+});
 
 const cgVillagesWMS = L.tileLayer.wms('https://cfr.atree.org/geoserver/cfr/wms', {
     layers: 'cfr:cg_village_en', format: 'image/png', transparent: true, version: '1.3.0', opacity: 0.6
+});
+
+/* ── Label Layers ── */
+const googleLabels = L.tileLayer('https://{s}.google.com/vt/lyrs=h&x={x}&y={y}&z={z}', {
+    maxZoom: 20, subdomains: ['mt0', 'mt1', 'mt2', 'mt3'], attribution: '© Google', pane: 'labels'
 });
 
 const forestCompartments = L.tileLayer.wms('https://cfr.atree.org/geoserver/cfr/wms', {

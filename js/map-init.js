@@ -1,13 +1,13 @@
-const map = L.map('map', {
-    center: [18.58, 81.03],
-    zoom: 7,
+var map = L.map('map', {
+    center: [18.95, 81.44],
+    zoom: 10,
     detectRetina: true,
     zoomControl: false,
 });
 
-L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(map);
+// Create a custom pane for labels to ensure they stay on top of everything
+map.createPane('labels');
+map.getPane('labels').style.zIndex = 650;
+map.getPane('labels').style.pointerEvents = 'none';
 
-const satellite = L.tileLayer(
-    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-    { maxZoom: 22, maxNativeZoom: 19, attribution: '© Esri' }
-).addTo(map);
+L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(map);

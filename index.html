@@ -22,6 +22,32 @@
                 <span class="legend-toggle">▼</span>
             </div>
             <div id="legend-body">
+                <div class="legend-group" id="grp-basemaps">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-basemaps')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Base Maps</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item" id="base-satellite" onclick="switchBaseLayer('satellite')">
+                            <div class="legend-swatch" style="background:#222; border-color:#444;"></div>
+                            <span class="legend-item-label">ESRI Satellite</span>
+                            <div class="legend-item-extra">
+                                <button class="label-btn" onclick="toggleLabels(event, 'google')" title="Google Hybrid Labels">Labels</button>
+                            </div>
+                        </div>
+                        <div class="legend-item inactive" id="base-osm" onclick="switchBaseLayer('osm')">
+                            <div class="legend-swatch" style="background:#fff; border-color:#ccc;"></div>
+                            <span class="legend-item-label">OpenStreetMap</span>
+                        </div>
+                        <div class="legend-item inactive" id="base-topo" onclick="switchBaseLayer('topo')">
+                            <div class="legend-swatch" style="background:#e0e0e0; border-color:#999;"></div>
+                            <span class="legend-item-label">OpenTopoMap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
                 <div class="legend-group" id="grp-mining">
                     <div class="legend-group-header" onclick="toggleGroup('grp-mining')">
                         <span class="group-chevron">▼</span>
@@ -123,13 +149,32 @@
 
                 <div class="legend-divider"></div>
 
+                <div class="legend-group" id="grp-bodhghat">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-bodhghat')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Bodhghat Hydro</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item" id="item-impacted" onclick="toggleLayer('impacted')">
+                            <div class="legend-swatch"
+                                style="background:rgba(255,0,50,0.5); border-color:rgba(255,0,50,0.8);"></div>
+                            <span class="legend-item-label">Impacted Villages</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="zoomToLayer(event, [19.21, 81.58])">⊕ Zoom</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
                 <div class="legend-group" id="grp-admin">
                     <div class="legend-group-header" onclick="toggleGroup('grp-admin')">
                         <span class="group-chevron">▼</span>
                         <span class="group-label">Administrative</span>
                     </div>
                     <div class="legend-group-items">
-                        <div class="legend-item" id="item-dist" onclick="toggleLayer('dist')">
+                        <div class="legend-item inactive" id="item-dist" onclick="toggleLayer('dist')">
 
                             <div class="legend-swatch line" style="background:#888; width:14px; height:2px;"></div>
                             <span class="legend-item-label">Districts (ATREE)</span>
@@ -140,9 +185,15 @@
                         </div>
                         <div class="legend-item inactive" id="item-bhuvan" onclick="toggleLayer('bhuvan')">
                             <div class="legend-swatch"
-                                style="background:rgba(255,255,0,0.35); border-color:rgba(255,255,0,0.5);"></div>
+                                style="background:yellow; border-color:rgba(180,180,0,0.7);"></div>
                             <span class="legend-item-label">Villages (Bhuvan)</span>
                         </div>
+                        <div class="legend-item inactive" id="item-shrug" onclick="toggleLayer('shrug')">
+                            <div class="legend-swatch"
+                                style="background:rgba(0,100,255,0.5); border-color:rgba(0,100,255,0.8);"></div>
+                            <span class="legend-item-label">Census of India 2011 (SHRUG)</span>
+                        </div>
+
                     </div>
                 </div>
 

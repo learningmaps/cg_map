@@ -329,7 +329,7 @@ body {
     gap: 6px;
 }
 
-.zoom-btn {
+.zoom-btn, .label-btn {
     font-size: 9.5px;
     font-weight: 600;
     color: #7a5530;
@@ -343,9 +343,22 @@ body {
     letter-spacing: 0.02em;
 }
 
-.zoom-btn:hover {
+.zoom-btn:hover, .label-btn:hover {
     background: rgba(205, 156, 105, 0.35);
     color: #5c3d18;
+}
+
+.zoom-btn.active {
+    background: #28a745;
+    color: white;
+    border-color: #1e7e34;
+}
+
+.label-btn.active {
+    background: #7a5530;
+    color: #FEFBE3;
+    border-color: #5c3d18;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
 }
 
 .legend-divider {
