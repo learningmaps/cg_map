@@ -9,7 +9,7 @@ const LAYER_META = {
     bacheli: { label: 'Bacheli Airport', color: 'rgba(120, 250, 200, 0.25)', border: 'rgba(120, 250, 200, 0.85)', text: '#064d2c' },
     bhuvan: { label: 'Villages (Bhuvan)', color: 'rgba(255,255,0,0.18)', border: 'rgba(255,255,0,0.5)', text: '#545400' },
     shrug: { label: 'Census 2011 (SHRUG)', color: 'rgba(0,100,255,0.15)', border: 'rgba(0,100,255,0.5)', text: '#004080' },
-    impacted: { label: 'Impacted Villages', color: 'rgba(255,0,50,0.25)', border: 'rgba(255,0,50,0.5)', text: '#8b0000' },
+    impacted: { label: 'Impacted Villages', color: 'rgba(255,0,50,0.25)', border: 'rgba(255, 235, 235, 0.8)', text: '#8b0000' },
     tin: { label: 'Tin Ore Block', color: 'rgba(255, 215, 0, 0.2)', border: '#FFD700', text: '#6b5a00' },
 };
 

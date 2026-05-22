@@ -209,7 +209,7 @@ const impactedVillages = L.vectorGrid.protobuf(
                 if (isImpacted) {
                     return {
                         fillColor: '#ff0032', fill: true, fillOpacity: 0.5,
-                        stroke: true, color: 'rgba(255, 102, 102, 0.5)', weight: 0.1,
+                        stroke: true, color: 'rgba(255, 235, 235, 0.8)', weight: 0.1,
                         nonScalingStroke: true
                     };
                 }
