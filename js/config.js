@@ -7,9 +7,9 @@ const LAYER_META = {
     dep4c: { label: 'Component-wise Breakdown', color: 'rgba(255,251,41,0.25)', border: 'rgba(200,196,0,0.8)', text: '#5a5400' },
     dep4screenbenplant: { label: 'Screening Cum Ben. Plant', color: 'rgba(255,161,106,0.25)', border: 'rgba(200,100,40,0.7)', text: '#6a3200' },
     bacheli: { label: 'Bacheli Airport', color: 'rgba(120, 250, 200, 0.25)', border: 'rgba(120, 250, 200, 0.85)', text: '#064d2c' },
-    bhuvan: { label: 'Villages (Bhuvan)', color: 'rgba(255,255,0,0.18)', border: 'rgba(180,180,0,0.7)', text: '#545400' },
-    shrug: { label: 'Census 2011 (SHRUG)', color: 'rgba(0,100,255,0.15)', border: 'rgba(0,100,255,0.7)', text: '#004080' },
-    impacted: { label: 'Impacted Villages', color: 'rgba(255,0,50,0.25)', border: 'rgba(255,0,50,0.8)', text: '#8b0000' },
+    bhuvan: { label: 'Villages (Bhuvan)', color: 'rgba(255,255,0,0.18)', border: 'rgba(255,255,0,0.5)', text: '#545400' },
+    shrug: { label: 'Census 2011 (SHRUG)', color: 'rgba(0,100,255,0.15)', border: 'rgba(0,100,255,0.5)', text: '#004080' },
+    impacted: { label: 'Impacted Villages', color: 'rgba(255,0,50,0.25)', border: 'rgba(255,0,50,0.5)', text: '#8b0000' },
     tin: { label: 'Tin Ore Block', color: 'rgba(255, 215, 0, 0.2)', border: '#FFD700', text: '#6b5a00' },
 };
 

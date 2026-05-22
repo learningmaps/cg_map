@@ -125,7 +125,8 @@ const bhuvanVillages = L.vectorGrid.protobuf(
         vectorTileLayerStyles: {
             'bhuvan_villages': {
                 fillColor: 'yellow', fill: true, fillOpacity: 0.3,
-                stroke: true, color: 'yellow', weight: 0.05
+                stroke: true, color: 'rgba(255, 255, 0, 0.5)', weight: 0.1,
+                nonScalingStroke: true
             }
         },
         interactive: true,
@@ -155,15 +156,18 @@ const shrugCensus = L.vectorGrid.protobuf(
         vectorTileLayerStyles: {
             'shrug': {
                 fillColor: 'rgba(0,100,255,0.5)', fill: true, fillOpacity: 0.3,
-                stroke: true, color: 'rgba(0,100,255)', weight: 0.05
+                stroke: true, color: 'rgba(0,100,255, 0.5)', weight: 0.1,
+                nonScalingStroke: true
             },
             'village': {
                 fillColor: 'rgba(0,100,255,0.5)', fill: true, fillOpacity: 0.3,
-                stroke: true, color: 'rgba(0,100,255)', weight: 0.05
+                stroke: true, color: 'rgba(0,100,255, 0.5)', weight: 0.1,
+                nonScalingStroke: true
             },
             'pc11': {
                 fillColor: 'rgba(0,100,255,0.5)', fill: true, fillOpacity: 0.3,
-                stroke: true, color: 'rgba(0,100,255)', weight: 0.05
+                stroke: true, color: 'rgba(0,100,255, 0.5)', weight: 0.1,
+                nonScalingStroke: true
             }
         },
         interactive: true,
@@ -205,7 +209,8 @@ const impactedVillages = L.vectorGrid.protobuf(
                 if (isImpacted) {
                     return {
                         fillColor: '#ff0032', fill: true, fillOpacity: 0.5,
-                        stroke: true, color: '#ff6666', weight: 0.5
+                        stroke: true, color: 'rgba(255, 102, 102, 0.5)', weight: 0.1,
+                        nonScalingStroke: true
                     };
                 }
                 // Hide other villages in this specific layer
