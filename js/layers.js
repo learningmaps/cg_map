@@ -12,6 +12,7 @@ const majorMining = L.vectorGrid.protobuf(
             }
         },
         interactive: true,
+        detectRetina: true,
         getFeatureId: f => f.properties?.id || f.properties?.lease_id || Math.random()
     }
 );
@@ -44,6 +45,7 @@ const majorMiningNgdr = L.vectorGrid.protobuf(
             }
         },
         interactive: true,
+        detectRetina: true,
         getFeatureId: f => f.properties?.id || f.properties?.lease_id || Math.random()
     }
 );
@@ -98,6 +100,7 @@ const minorMining = L.vectorGrid.protobuf(
             }
         },
         interactive: true,
+        detectRetina: true,
         getFeatureId: f => f.properties?.id || f.properties?.lease_id || Math.random()
     }
 );
@@ -126,6 +129,7 @@ const bhuvanVillages = L.vectorGrid.protobuf(
             }
         },
         interactive: true,
+        detectRetina: true,
         getFeatureId: f => f.properties?.id || f.properties?.village_id || Math.random()
     }
 );
@@ -163,6 +167,7 @@ const shrugCensus = L.vectorGrid.protobuf(
             }
         },
         interactive: true,
+        detectRetina: true,
         getFeatureId: f => f.properties?.pc11_tv_id || f.properties?.id || Math.random()
     }
 );
@@ -208,6 +213,7 @@ const impactedVillages = L.vectorGrid.protobuf(
             }
         },
         interactive: true,
+        detectRetina: true,
         getFeatureId: f => f.properties?.village_id || f.properties?.v_name || Math.random()
     }
 );

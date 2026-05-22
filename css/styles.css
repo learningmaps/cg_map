@@ -554,10 +554,6 @@ body {
 
 /* ── Safari / Retina Sharpness Fix ── */
 svg.leaflet-tile {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
 }
 
 /* ── Mobile Responsiveness ── */
