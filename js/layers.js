@@ -7,7 +7,8 @@ const majorMining = L.vectorGrid.protobuf(
         vectorTileLayerStyles: {
             'NCOG_Major_Mining_Leases': {
                 fillColor: 'rgba(255,165,0,0.5)', fill: true, fillOpacity: 0.3,
-                stroke: true, color: 'rgba(255,165,0)', weight: 0.1
+                stroke: true, color: 'rgba(255,165,0,0.5)', weight: 0.1,
+                nonScalingStroke: true
             }
         },
         interactive: true,
@@ -33,12 +34,13 @@ majorMining.on('click', e => {
 const majorMiningNgdr = L.vectorGrid.protobuf(
     "https://indianopenmaps.com/not-so-open/mining/leases/major/ngdr/{z}/{x}/{y}.pbf",
     {
-        maxNativeZoom: 9, maxZoom: 22,
+        maxNativeZoom: 11, maxZoom: 22,
         rendererFactory: L.svg.tile,
         vectorTileLayerStyles: {
             'NGDR_Major_Mining_Leases_2022': {
                 fillColor: 'rgba(255,81,0,0.5)', fill: true, fillOpacity: 0.3,
-                stroke: true, color: 'rgba(255,81,0)', weight: 0.1
+                stroke: true, color: 'rgba(255,81,0,0.5)', weight: 0.1,
+                nonScalingStroke: true
             }
         },
         interactive: true,
@@ -91,7 +93,8 @@ const minorMining = L.vectorGrid.protobuf(
         vectorTileLayerStyles: {
             'NCOG_Minor_Mining_Leases': {
                 fillColor: 'rgba(0,0,255,0.5)', fill: true, fillOpacity: 0.3,
-                stroke: true, color: 'rgba(0,0,255)', weight: 0.1
+                stroke: true, color: 'rgba(0,0,255,0.5)', weight: 0.1,
+                nonScalingStroke: true
             }
         },
         interactive: true,
@@ -197,7 +200,7 @@ const impactedVillages = L.vectorGrid.protobuf(
                 if (isImpacted) {
                     return {
                         fillColor: '#ff0032', fill: true, fillOpacity: 0.5,
-                        stroke: true, color: '#ff0032', weight: 1.5
+                        stroke: true, color: '#ff6666', weight: 0.5
                     };
                 }
                 // Hide other villages in this specific layer
