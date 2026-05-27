@@ -199,16 +199,26 @@ const impactedVillages = L.vectorGrid.protobuf(
                 const vName = (properties.v_name || "").toUpperCase();
                 const dName = (properties.d_name || "").toUpperCase();
                 
-                const isImpacted = IMPACTED_VILLAGES.some(target => {
-                    if (target.id) {
-                        return properties.v_code === target.id;
+                const target = IMPACTED_VILLAGES.find(t => {
+                    if (t.id) {
+                        return properties.v_code === t.id;
                     }
-                    return target.v === vName && dName.includes(target.d);
+                    return t.v === vName && dName.includes(t.d);
                 });
 
-                if (isImpacted) {
+                if (target) {
+                    const isPartial = target.remarks === 'To be displaced partially';
+                    const isNoPop = target.remarks === 'Population not affected';
+                    
+                    let fillColor = '#b33939'; // Default: Deep Crimson (Fully displaced)
+                    if (isPartial) {
+                        fillColor = '#e67e22'; // Medium: Warm Terracotta Orange (Partially displaced)
+                    } else if (isNoPop) {
+                        fillColor = '#ffd255'; // Low: Soft Golden Yellow (Population not affected)
+                    }
+
                     return {
-                        fillColor: '#ff0032', fill: true, fillOpacity: 0.5,
+                        fillColor: fillColor, fill: true, fillOpacity: 0.5,
                         stroke: true, color: 'rgba(255, 235, 235, 0.8)', weight: 0.1,
                         nonScalingStroke: true
                     };
@@ -225,14 +235,32 @@ const impactedVillages = L.vectorGrid.protobuf(
 
 impactedVillages.on('click', e => {
     const p = e.layer?.properties || e.propagatedFrom?.properties || {};
+    const vName = (p.v_name || "").toUpperCase();
+    const dName = (p.d_name || "").toUpperCase();
+    
+    const target = IMPACTED_VILLAGES.find(t => {
+        if (t.id) {
+            return p.v_code === t.id;
+        }
+        return t.v === vName && dName.includes(t.d);
+    }) || {};
+
     L.popup({ closeButton: true })
         .setLatLng(e.latlng)
         .setContent(buildPopup(p.v_name || 'Impacted Village', [
+            ['Remarks', target.remarks],
             ['District', p.d_name],
             ['Block', p.b_name],
             ['Gram Panchayat', p.gp_name],
             ['Village ID', p.v_code],
-            ['Status', '<span style="color:#d00; font-weight:bold;">Project Impacted</span>']
+            ['Total Population', target.total_population],
+            ['Affected Population', target.affected_population],
+            ['Total Land (ha)', target.total_land_ha],
+            ['Private Land (ha)', target.private_land_ha],
+            ['Forest Land (ha)', target.forest_land_ha],
+            ['Revenue Land (ha)', target.revenue_land_ha],
+            ['Status', target.status ? `<span style="color:#d00; font-weight:bold;">${target.status}</span>` : '<span style="color:#d00; font-weight:bold;">Project Impacted</span>'],
+            ['Left Bank/Right Bank', target.left_bank_right_bank]
         ], 'impacted')).openOn(map);
 });
 
