@@ -189,8 +189,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const satBtn = document.getElementById('base-satellite');
     if (satBtn) {
         satBtn.classList.remove('inactive');
-        // Turn on labels by default for ESRI Satellite
-        const labelBtn = satBtn.querySelector('.label-btn');
-        if (labelBtn) toggleLabels({ target: labelBtn, stopPropagation: () => {} }, 'google');
+        // Labels are off by default
     }
+
+    // Collapse all legend groups on default load
+    document.querySelectorAll('.legend-group').forEach(grp => {
+        const header = grp.querySelector('.legend-group-header');
+        const items = grp.querySelector('.legend-group-items');
+        if (header && items) {
+            header.classList.add('collapsed');
+            items.style.display = 'none';
+        }
+    });
 });
