@@ -552,10 +552,6 @@ body {
     to { transform: rotate(360deg); }
 }
 
-/* ── Safari / Retina Sharpness Fix ── */
-svg.leaflet-tile {
-}
-
 /* ── Mobile Responsiveness ── */
 @media (max-width: 768px) {
     #legend-container {
@@ -685,3 +681,87 @@ svg.leaflet-tile {
         font-size: 12px;
     }
 }
+
+/* ── Photo marker icon ── */
+.photo-marker-icon {
+    background: none !important;
+    border: none !important;
+}
+
+/* ── Gallery popup (multi-image) ── */
+.gallery-popup {
+    max-height: 420px !important;
+}
+
+.gallery-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #e8e0cc;
+}
+
+.gallery-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.gallery-thumb {
+    width: 100%;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 6px;
+    transition: opacity 0.15s;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.gallery-thumb:hover {
+    opacity: 0.8;
+}
+
+.gallery-meta {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.gallery-meta td {
+    font-size: 10.5px;
+    padding: 1.5px 4px;
+    vertical-align: top;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.gallery-meta td:first-child {
+    color: #a08a60;
+    padding-right: 8px;
+    white-space: nowrap;
+    width: 30%;
+}
+
+.gallery-meta td:last-child {
+    color: #4a3520;
+}
+
+/* ── Marker count badge ── */
+.marker-count {
+    position: absolute;
+    top: -4px;
+    right: -6px;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 5px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    min-width: 16px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+/* ── Lightbox z-index override ── */
+#lightbox-js.lightbox-container {
+    z-index: 10000 !important;
+}
+

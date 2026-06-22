@@ -106,7 +106,7 @@ function kmlPopup(p, type) {
             ["Felling Series", p.Felling_Se],
             ["JFMC", p.JFMC],
             ["Others", p.OTHERS]
-        ]);
+        ], 'forest');
     }
 }
 
@@ -124,7 +124,7 @@ function zoomToLayer(e, target) {
     if (target.getBounds) {
         const b = target.getBounds();
         if (b && typeof b.isValid === 'function' && b.isValid()) {
-            map.fitBounds(b, { padding: [40, 40] });
+            map.fitBounds(b, { padding: [40, 40], maxZoom: 19 });
         }
     }
 }

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "photo-1",
+    "filename": "signal-2026-06-17-13-51-30-919.jpg",
+    "url": "https://lmovcgfordnadftfmmwo.supabase.co/storage/v1/object/public/cg_map_data/geotag_images/signal-2026-06-17-13-51-30-919.jpg",
+    "latitude": 18.724273,
+    "longitude": 81.216596,
+    "elevation_m": 1083.96,
+    "elevation_err": 83.6,
+    "accuracy_m": 3.0,
+    "timestamp": "2026-06-13T16:07:00",
+    "caption": ""
+  },
+  {
+    "id": "photo-2",
+    "filename": "signal-2026-06-17-13-51-54-194.jpg",
+    "url": "https://lmovcgfordnadftfmmwo.supabase.co/storage/v1/object/public/cg_map_data/geotag_images/signal-2026-06-17-13-51-54-194.jpg",
+    "latitude": 18.724277,
+    "longitude": 81.216602,
+    "elevation_m": 1082.96,
+    "elevation_err": 64.4,
+    "accuracy_m": 3.0,
+    "timestamp": "2026-06-13T16:07:00",
+    "caption": ""
+  },
+  {
+    "id": "photo-3",
+    "filename": "signal-2026-06-17-13-52-38-615.jpg",
+    "url": "https://lmovcgfordnadftfmmwo.supabase.co/storage/v1/object/public/cg_map_data/geotag_images/signal-2026-06-17-13-52-38-615.jpg",
+    "latitude": 18.724269,
+    "longitude": 81.216601,
+    "elevation_m": 1090.86,
+    "elevation_err": 82.7,
+    "accuracy_m": 3.0,
+    "timestamp": "2026-06-13T16:06:00",
+    "caption": ""
+  }
+]

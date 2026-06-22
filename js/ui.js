@@ -28,6 +28,7 @@ const layerMap = {
     bacheli: kmlLayerBacheli,
     dist: cgDistrictsWMS, vil: cgVillagesWMS, bhuvan: bhuvanVillages, shrug: shrugCensus,
     impacted: impactedVillages,
+    dep4photos: undefined,
     forest: forestCompartments, forest_bijapur: kmlLayercgforc_bijapur
 };
 
@@ -149,7 +150,7 @@ window.baseLayers = {
         maxZoom: 17, attribution: 'Map data: © OSM contributors, SRTM | Style: © OpenTopoMap'
     }),
     satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-        maxZoom: 22, maxNativeZoom: 19, attribution: '© Esri'
+        maxZoom: 22, maxNativeZoom: 18, attribution: '© Esri'
     })
 };
 

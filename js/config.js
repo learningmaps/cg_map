@@ -11,6 +11,7 @@ const LAYER_META = {
     shrug: { label: 'Census 2011 (SHRUG)', color: 'rgba(0,100,255,0.15)', border: 'rgba(0,100,255,0.5)', text: '#004080' },
     impacted: { label: 'Impacted Villages', color: 'rgba(255,0,50,0.25)', border: 'rgba(255, 235, 235, 0.8)', text: '#8b0000' },
     tin: { label: 'Tin Ore Block', color: 'rgba(255, 215, 0, 0.2)', border: '#FFD700', text: '#6b5a00' },
+    dep4photos: { label: 'Geotagged Photos', color: 'rgba(100,200,255,0.2)', border: 'rgba(44,95,138,0.7)', text: '#1a3d5c' },
 };
 
 const activeState = {
@@ -20,7 +21,8 @@ const activeState = {
     bacheli: true,
     dist: false, vil: true, bhuvan: false, shrug: false, forest: false,
     forest_bijapur: false,
-    impacted: true
+    impacted: true,
+    dep4photos: true
 };
 
 const IMPACTED_VILLAGES = [

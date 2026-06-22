@@ -9,6 +9,7 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@2.4.0/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@duccanhole/lightbox@0.0.5/style/index.css" />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -103,6 +104,14 @@
                             <div class="legend-item-extra">
                                 <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerScreenBenPlant)">⊕
                                     Zoom</button>
+                            </div>
+                        </div>
+                        <div class="legend-item" id="item-dep4photos" onclick="toggleLayer('dep4photos')">
+                            <div class="legend-swatch"
+                                style="background:rgba(100,200,255,0.4); border-color:rgba(44,95,138,0.8);"></div>
+                            <span class="legend-item-label">Geotagged Photos</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="event.stopPropagation(); if (geoImagesLayer && geoImagesLayer.getBounds) map.fitBounds(geoImagesLayer.getBounds(), {padding:[40,40], maxZoom:17})">⊕ Zoom</button>
                             </div>
                         </div>
                     </div>
@@ -263,6 +272,33 @@
     <script src="js/map-init.js"></script>
     <script src="js/layers.js"></script>
     <script src="js/ui.js"></script>
+    <script src="js/geo-images.js"></script>
+
+    <!-- Lightbox library -->
+    <script type="module">
+        import Lightbox from 'https://unpkg.com/@duccanhole/lightbox@0.0.5/index.js';
+        window.__lb = new Lightbox();
+        document.getElementById('lightbox-js').style.zIndex = '10000';
+
+        function initGallery() {
+            window.__lb.setGallery(window.PHOTO_LIST.map(img => ({
+                type: 'image',
+                src: img.url,
+                thumbnail: img.url,
+                downloadUrl: img.url,
+            })));
+            window.openPhotoOverlay = (id) => {
+                const idx = window.PHOTO_LIST.findIndex(p => p.id === id);
+                if (idx >= 0) window.__lb.openGalleryItem(idx);
+            };
+        }
+
+        if (window.PHOTO_LIST && window.PHOTO_LIST.length > 0) {
+            initGallery();
+        } else {
+            window.addEventListener('photos-loaded', initGallery);
+        }
+    </script>
 </body>
 
 </html>
