@@ -684,8 +684,9 @@ body {
 
 /* ── Photo marker icon ── */
 .photo-marker-icon {
-    background: none !important;
+    background: rgba(44, 95, 138, 0.2) !important;
     border: none !important;
+    -webkit-transform: translateZ(0);
 }
 
 /* ── Gallery popup (multi-image) ── */
