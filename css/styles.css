@@ -766,3 +766,71 @@ body {
     z-index: 10000 !important;
 }
 
+
+/* ── Police/Military marker & cluster icons ── */
+.police-marker-icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #6B8E23;
+    border: 2px solid #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+.police-cluster-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #6B8E23;
+    color: #fff;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 11px;
+    opacity: 0.6;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+.cluster-item {
+    padding: 4px 0;
+    border-bottom: 1px solid #eee;
+}
+.cluster-item:last-child {
+    border-bottom: none;
+}
+.cluster-item-type {
+    color: #6B8E23;
+    font-size: 0.85em;
+}
+.cluster-popup {
+    max-height: 300px;
+    overflow-y: auto;
+}
+.photo-cluster-icon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo-cluster-icon svg {
+    position: relative;
+    z-index: 0;
+}
+.photo-cluster-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    z-index: 1;
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 8px;
+    padding: 1px 5px;
+    font-size: 10px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    line-height: 1.4;
+    min-width: 16px;
+    text-align: center;
+}

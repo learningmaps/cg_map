@@ -306,6 +306,60 @@ const kmlLayerScreenBenPlant = omnivore.kml(
     })
 );
 
+/* ── Police/Military Camps (merged, clustered) ── */
+const kmlLayerPoliceCamps = L.markerClusterGroup({
+    zoomToBoundsOnClick: false,
+    iconCreateFunction: cluster => L.divIcon({
+        html: `<div class="police-cluster-icon">${cluster.getChildCount()}</div>`,
+        className: '',
+        iconSize: L.point(24, 24),
+    }),
+});
+
+const geoLayerPoliceCamps = L.geoJson(null, {
+    pointToLayer: (feature, latlng) => L.marker(latlng, {
+        icon: L.divIcon({
+            className: '',
+            html: '<div class="police-marker-icon"></div>',
+            iconSize: [12, 12],
+            iconAnchor: [6, 6],
+        }),
+    }),
+    onEachFeature: (feature, layer) => {
+        layer.bindPopup(kmlPopup(feature.properties || {}, "police_camps"));
+    },
+});
+
+omnivore.kml("data/police_military_camps/merged.kml", null, geoLayerPoliceCamps)
+    .on("ready", function () {
+        geoLayerPoliceCamps.eachLayer(l => kmlLayerPoliceCamps.addLayer(l));
+    });
+
+kmlLayerPoliceCamps.on("clusterclick", function (a) {
+    const markers = a.layer.getAllChildMarkers();
+    const items = markers.map(m => {
+        const p = (m.feature && m.feature.properties) || {};
+        return `<div class="cluster-item">
+            <strong>${p.name || "Unknown"}</strong><br/>
+            <span class="cluster-item-type">${extractForceType(p.name)}</span>
+        </div>`;
+    }).join("");
+
+    L.popup()
+        .setLatLng(a.latlng)
+        .setContent(`
+            <div class="popup-inner cluster-popup">
+                <div class="popup-layer-badge" style="background:rgba(107,142,35,0.2);border:1px solid #6B8E23;color:#3a4e0a;">
+                    <span class="badge-dot" style="background:#6B8E23;"></span>
+                    Police/Military Camps
+                </div>
+                <div class="popup-title">${markers.length} camps in this area</div>
+                ${items}
+            </div>
+        `)
+        .openOn(map);
+});
+
 /* ── Chittalnar–Kumakoleng Tin Ore Block ── */
 let chittalnarTinOre;
 fetch('data/chittalnar_tin_ore.geojson')

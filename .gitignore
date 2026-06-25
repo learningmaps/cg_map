@@ -3,3 +3,14 @@ copernicus.txt
 GEMINI.md
 *.Zone.Identifier
 tests/
+
+# IDE / Editor
+.gemini/
+
+# Test artifacts
+.playwright-mcp/
+test-results/
+
+# Python cache
+__pycache__/
+*.pyc

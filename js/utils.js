@@ -54,6 +54,13 @@ function kmlPopup(p, type) {
             ['RF', p.RF]
         ], 'dep4');
     }
+    if (type === "police_camps") {
+        return buildPopup(p.name || "Police/Military Camp", [
+            ["Type", extractForceType(p.name)],
+            ["Description", p.description && p.description.replace(/<[^>]+>/g, '')]
+        ], 'police_camps');
+    }
+
     if (type === 'comp') {
         return buildPopup(p.Facility || 'Overburden/Waste dumping', [
             ['Area (ha)', p.AREA],
@@ -108,6 +115,23 @@ function kmlPopup(p, type) {
             ["Others", p.OTHERS]
         ], 'forest');
     }
+}
+
+function extractForceType(name) {
+    if (!name) return 'Unknown';
+    const u = name.toUpperCase();
+    if (u.includes('CRPF')) return 'CRPF';
+    if (u.includes('STF')) return 'STF';
+    if (u.includes('DRG')) return 'DRG';
+    if (u.includes('ITBP')) return 'ITBP';
+    if (u.includes('BSF')) return 'BSF';
+    if (u.includes('COBRA')) return 'COBRA';
+    if (u.includes('POLICE') || u.includes('PI TRG')) return 'Police';
+    if (u.includes('ARMY')) return 'Army';
+    if (u.includes('CAMP')) return 'Camp';
+    if (u.includes('BN') || u.includes('BATTALION')) return 'Battalion';
+    if (u.includes('HQ')) return 'HQ';
+    return 'Unknown';
 }
 
 function zoomToLayer(e, target) {

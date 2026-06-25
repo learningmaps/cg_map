@@ -29,7 +29,8 @@ const layerMap = {
     dist: cgDistrictsWMS, vil: cgVillagesWMS, bhuvan: bhuvanVillages, shrug: shrugCensus,
     impacted: impactedVillages,
     dep4photos: undefined,
-    forest: forestCompartments, forest_bijapur: kmlLayercgforc_bijapur
+    forest: forestCompartments, forest_bijapur: kmlLayercgforc_bijapur,
+    police_camps: kmlLayerPoliceCamps
 };
 
 const labelStyles = {
