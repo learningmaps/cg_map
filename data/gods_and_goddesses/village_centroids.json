@@ -1,0 +1,450 @@
+{
+  "Daler (near Marh)": {
+    "centroid": [
+      19.067804,
+      81.03185
+    ],
+    "code": "451236",
+    "approximate": false
+  },
+  "Omalwar/Samalwar": {
+    "centroid": [
+      18.597295,
+      81.318004
+    ],
+    "code": "450255",
+    "approximate": false
+  },
+  "Gorgonda": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Benpal/Bayampal": {
+    "centroid": [
+      18.558551,
+      81.200107
+    ],
+    "code": "450258",
+    "approximate": true
+  },
+  "Bhansi": {
+    "centroid": [
+      18.809752,
+      81.265326
+    ],
+    "code": "450093",
+    "approximate": true
+  },
+  "Hiroli": {
+    "centroid": [
+      18.582953,
+      81.261951
+    ],
+    "code": "450250",
+    "approximate": true
+  },
+  "Nendra": {
+    "centroid": [
+      18.662427,
+      81.002896
+    ],
+    "code": "451071",
+    "approximate": false
+  },
+  "Ukur": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Malipad": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Dilla": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Itawar": {
+    "centroid": [
+      18.712872,
+      81.406696
+    ],
+    "code": "450233",
+    "approximate": false
+  },
+  "Pidiya": {
+    "centroid": [
+      18.645504,
+      81.095872
+    ],
+    "code": "451001",
+    "approximate": false
+  },
+  "Tamodi": {
+    "centroid": [
+      18.839646,
+      81.144459
+    ],
+    "code": "451335",
+    "approximate": true
+  },
+  "Palnar": {
+    "centroid": [
+      18.616502,
+      81.372201
+    ],
+    "code": "450279",
+    "approximate": true
+  },
+  "Kuwe": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Gongpal": {
+    "centroid": [
+      18.68691,
+      81.41464
+    ],
+    "code": "450235",
+    "approximate": false
+  },
+  "Shyamgiri": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Kunjampara, near Ganjenar": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Kuper/Kudper": {
+    "centroid": [
+      18.868741,
+      81.308908
+    ],
+    "code": "450082",
+    "approximate": false
+  },
+  "Kodoli": {
+    "centroid": [
+      18.984938,
+      81.172328
+    ],
+    "code": "451314",
+    "approximate": true
+  },
+  "Markagudem": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Dugeli": {
+    "centroid": [
+      18.696033,
+      81.317938
+    ],
+    "code": "450101",
+    "approximate": false
+  },
+  "Pharaspal": {
+    "centroid": [
+      18.93605,
+      81.250635
+    ],
+    "code": "450161",
+    "approximate": false
+  },
+  "Dhurli": {
+    "centroid": [
+      18.812621,
+      81.276285
+    ],
+    "code": "450090",
+    "approximate": false
+  },
+  "Madpal": {
+    "centroid": [
+      18.852916,
+      81.124565
+    ],
+    "code": "451338",
+    "approximate": true
+  },
+  "Mirtulnar/Midkulnar": {
+    "centroid": [
+      18.917665,
+      81.255564
+    ],
+    "code": "450073",
+    "approximate": false
+  },
+  "Manganar": {
+    "centroid": [
+      19.023174,
+      81.095863
+    ],
+    "code": "451229",
+    "approximate": false
+  },
+  "Jhirka": {
+    "centroid": [
+      18.834578,
+      81.264266
+    ],
+    "code": "450085",
+    "approximate": false
+  },
+  "Baregunda": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Renganar": {
+    "centroid": [
+      18.785256,
+      81.384232
+    ],
+    "code": "450228",
+    "approximate": false
+  },
+  "Pendvela, Alnar": {
+    "centroid": [
+      18.976962,
+      81.273884
+    ],
+    "code": "450162",
+    "approximate": true
+  },
+  "Katural, Pumbad (near Gangalur)": {
+    "centroid": [
+      19.102726,
+      80.682261
+    ],
+    "code": "451108",
+    "approximate": false
+  },
+  "Kondapal": {
+    "centroid": [
+      18.8334,
+      81.189762
+    ],
+    "code": "451349",
+    "approximate": false
+  },
+  "Metapal": {
+    "centroid": [
+      18.855551,
+      81.525653
+    ],
+    "code": "450115",
+    "approximate": true
+  },
+  "Gumiyapal (Guyempad)": {
+    "centroid": [
+      18.553049,
+      81.282152
+    ],
+    "code": "450261",
+    "approximate": true
+  },
+  "Vengpal (Vengur)": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Tikanpal": {
+    "centroid": [
+      18.666547,
+      81.357723
+    ],
+    "code": "450242",
+    "approximate": true
+  },
+  "Madadi": {
+    "centroid": [
+      18.647555,
+      81.29902
+    ],
+    "code": "450246",
+    "approximate": false
+  },
+  "Jhadka (Orcha Block)": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Kadampal": {
+    "centroid": [
+      18.66367,
+      81.287981
+    ],
+    "code": "450245",
+    "approximate": false
+  },
+  "Vechapal": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Kesapur": {
+    "centroid": [
+      18.908781,
+      81.264695
+    ],
+    "code": "450080",
+    "approximate": true
+  },
+  "Pandewar": {
+    "centroid": [
+      18.867775,
+      81.356708
+    ],
+    "code": "450083",
+    "approximate": false
+  },
+  "Etlapad": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Rekavaya": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Kamkajojor": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Pinkonda": {
+    "centroid": [
+      18.936872,
+      81.146922
+    ],
+    "code": "451317",
+    "approximate": false
+  },
+  "Tamirguda": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Vengur": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Tadopadar": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Kamalnar? Kamalur": {
+    "centroid": [
+      18.850231,
+      81.273933
+    ],
+    "code": "450086",
+    "approximate": false
+  },
+  "Cholnar": {
+    "centroid": [
+      18.624428,
+      81.313487
+    ],
+    "code": "450247",
+    "approximate": true
+  },
+  "Bododi": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Pondum": {
+    "centroid": [
+      18.899965,
+      81.467945
+    ],
+    "code": "450060",
+    "approximate": true
+  },
+  "Jawanga": {
+    "centroid": [
+      19.0,
+      81.35
+    ],
+    "code": null,
+    "approximate": true
+  },
+  "Kamkanar": {
+    "centroid": [
+      18.823562,
+      81.01818
+    ],
+    "code": "450989",
+    "approximate": false
+  }
+}

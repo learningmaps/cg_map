@@ -30,7 +30,8 @@ const layerMap = {
     impacted: impactedVillages,
     dep4photos: undefined,
     forest: forestCompartments, forest_bijapur: kmlLayercgforc_bijapur,
-    police_camps: kmlLayerPoliceCamps
+    police_camps: kmlLayerPoliceCamps,
+    clan_gods: undefined  // populated async by clan-gods.js
 };
 
 const labelStyles = {
@@ -152,6 +153,15 @@ window.baseLayers = {
     }),
     satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
         maxZoom: 22, maxNativeZoom: 18, attribution: '© Esri'
+    }),
+    stamen_terrain: L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain_background/{z}/{x}/{y}{r}.png', {
+        minZoom: 0, maxZoom: 18,
+        attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }),
+    thunderforest_dark: L.tileLayer('https://api.thunderforest.com/transport-dark/{z}/{x}/{y}{r}.png?apikey={apikey}', {
+        attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        apikey: '<your apikey>',
+        maxZoom: 22
     })
 };
 

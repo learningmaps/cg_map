@@ -46,6 +46,14 @@
                             <div class="legend-swatch" style="background:#e0e0e0; border-color:#999;"></div>
                             <span class="legend-item-label">OpenTopoMap</span>
                         </div>
+                        <div class="legend-item inactive" id="base-stamen_terrain" onclick="switchBaseLayer('stamen_terrain')">
+                            <div class="legend-swatch" style="background:#c8d9c0; border-color:#7a9a6e;"></div>
+                            <span class="legend-item-label">Stamen Terrain</span>
+                        </div>
+                        <div class="legend-item inactive" id="base-thunderforest_dark" onclick="switchBaseLayer('thunderforest_dark')">
+                            <div class="legend-swatch" style="background:#1a1a2e; border-color:#444;"></div>
+                            <span class="legend-item-label">Thunderforest Transport Dark</span>
+                        </div>
                     </div>
                 </div>
 
@@ -238,6 +246,41 @@
 
                 <div class="legend-divider"></div>
 
+                <div class="legend-group" id="grp-clan-gods">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-clan-gods')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Clan Gods</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item inactive" id="item-clan_gods" onclick="toggleLayer('clan_gods')">
+                            <div class="legend-swatch"
+                                style="background:rgba(204,41,54,0.5); border-color:#8b0000;"></div>
+                            <span class="legend-item-label">Village Overlay (by Phratry)</span>
+                        </div>
+                        <div class="legend-item phratry-filter active" data-phratry="kuhrami_kadiari" onclick="togglePhratryFilter(this)" style="padding-left:48px;">
+                            <div class="legend-swatch" style="background:#cc2936;border-color:#8b0000;"></div>
+                            <span class="legend-item-label">Kuhrami / Kadiari</span>
+                        </div>
+                        <div class="legend-item phratry-filter active" data-phratry="markami" onclick="togglePhratryFilter(this)" style="padding-left:48px;">
+                            <div class="legend-swatch" style="background:#2a6f97;border-color:#003f5c;"></div>
+                            <span class="legend-item-label">Markami</span>
+                        </div>
+                        <div class="legend-item phratry-filter active" data-phratry="madvi" onclick="togglePhratryFilter(this)" style="padding-left:48px;">
+                            <div class="legend-swatch" style="background:#2d6a4f;border-color:#1b4332;"></div>
+                            <span class="legend-item-label">Madvi</span>
+                        </div>
+                        <div class="legend-item phratry-filter active" data-phratry="kawasi" onclick="togglePhratryFilter(this)" style="padding-left:48px;">
+                            <div class="legend-swatch" style="background:#e76f00;border-color:#9a4d00;"></div>
+                            <span class="legend-item-label">Kawasi</span>
+                        </div>
+                        <div class="legend-item" style="cursor:default;padding-left:48px;opacity:0.6;font-style:italic;font-size:10px;">
+                            <span class="legend-item-label">Click phratry to toggle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
                 <div class="legend-group" id="grp-police">
                     <div class="legend-group-header" onclick="toggleGroup('grp-police')">
                         <span class="group-chevron">▼</span>
@@ -262,12 +305,12 @@
     </a>
 
     <div id="zoom-controls">
-        <button onclick="map.zoomIn()" title="Zoom In">
+        <button onclick="map.zoomIn(0.5)" title="Zoom In">
             <svg viewBox="0 0 24 24" width="20" height="20">
                 <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
             </svg>
         </button>
-        <button onclick="map.zoomOut()" title="Zoom Out">
+        <button onclick="map.zoomOut(0.5)" title="Zoom Out">
             <svg viewBox="0 0 24 24" width="20" height="20">
                 <path fill="currentColor" d="M19,13H5V11H19V13Z" />
             </svg>
@@ -280,10 +323,12 @@
 
     <!-- External Scripts -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
     <script src="https://unpkg.com/leaflet.vectorgrid@1.3.0/dist/Leaflet.VectorGrid.bundled.js"></script>
     <script src="https://unpkg.com/@mapbox/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
     <script src="https://unpkg.com/leaflet-control-geocoder@2.4.0/dist/Control.Geocoder.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="https://unpkg.com/rbush@3.0.1/rbush.js"></script>
 
     <!-- Project Scripts -->
     <script src="js/config.js"></script>
@@ -292,6 +337,7 @@
     <script src="js/layers.js"></script>
     <script src="js/ui.js"></script>
     <script src="js/geo-images.js"></script>
+    <script src="js/clan-gods.js"></script>
 
     <!-- Lightbox library -->
     <script type="module">

@@ -361,6 +361,28 @@ body {
     box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
 }
 
+.rel-label {
+    background: none;
+    border: none;
+}
+
+.phratry-filter {
+    cursor: pointer;
+    opacity: 0.85;
+}
+.phratry-filter:not(.active) {
+    opacity: 0.35;
+    text-decoration: line-through;
+}
+.phratry-filter:hover {
+    opacity: 1;
+}
+
+.cg-mixed-marker {
+    background: none;
+    border: none;
+} 
+
 .legend-divider {
     height: 1px;
     background: #CFD8B3;
@@ -833,4 +855,12 @@ body {
     line-height: 1.4;
     min-width: 16px;
     text-align: center;
+}
+
+@keyframes dashmove {
+    to { stroke-dashoffset: -24; }
+}
+.rel-line {
+    stroke-dasharray: 8 6 !important;
+    animation: dashmove 0.8s linear infinite;
 }

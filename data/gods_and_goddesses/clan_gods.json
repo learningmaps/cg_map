@@ -1,0 +1,2214 @@
+{
+  "metadata": {
+    "title": "List of Clan Gods and Villages in Dantewada",
+    "source_file": "Clan Gods Data.xlsx (analyst workbook)",
+    "extraction_date": "2026-06-29",
+    "phratry_colors": {
+      "kuhrami_kadiari": {
+        "fill": "#cc2936",
+        "label": "Kuhrami/Kadiari"
+      },
+      "markami": {
+        "fill": "#2a6f97",
+        "label": "Markami Kutumb"
+      },
+      "madvi": {
+        "fill": "#2d6a4f",
+        "label": "Madvi"
+      },
+      "kawasi": {
+        "fill": "#e76f00",
+        "label": "Kawasi"
+      }
+    }
+  },
+  "phratries": [
+    {
+      "id": "kuhrami_kadiari",
+      "name": "Kuhrami/Kadiari",
+      "source": "Grigson, p. 301",
+      "clan_ids": [
+        "kunjam"
+      ]
+    },
+    {
+      "id": "markami",
+      "name": "Markami Kutumb",
+      "source": "",
+      "clan_ids": [
+        "markami",
+        "kalmu",
+        "bhogam",
+        "telam_bade",
+        "telam_chote",
+        "icham",
+        "punem",
+        "kadiyam",
+        "midiyam",
+        "undam",
+        "tati",
+        "kadti",
+        "rengo"
+      ]
+    },
+    {
+      "id": "madvi",
+      "name": "Madvi",
+      "source": "",
+      "clan_ids": [
+        "oyam",
+        "barse",
+        "madvi",
+        "hemla",
+        "tamo",
+        "padami",
+        "ujji_dodi"
+      ]
+    },
+    {
+      "id": "kawasi",
+      "name": "Kawasi",
+      "source": "",
+      "clan_ids": [
+        "kawasi"
+      ]
+    },
+    {
+      "id": "sodi",
+      "name": "Sodi",
+      "source": "",
+      "clan_ids": [
+        "sodi"
+      ]
+    }
+  ],
+  "clans": [
+    {
+      "id": "kunjam",
+      "name": "Kunjam",
+      "phratry_id": "kuhrami_kadiari",
+      "notes": ""
+    },
+    {
+      "id": "markami",
+      "name": "Markami",
+      "phratry_id": "markami",
+      "notes": ""
+    },
+    {
+      "id": "kalmu",
+      "name": "Kalmu/Karma",
+      "phratry_id": "markami",
+      "notes": ""
+    },
+    {
+      "id": "bhogam",
+      "name": "Bhogam/Chote Telam",
+      "phratry_id": "markami",
+      "notes": ""
+    },
+    {
+      "id": "telam_chote",
+      "name": "Chote Telam/Bhogam",
+      "phratry_id": "markami",
+      "notes": ""
+    },
+    {
+      "id": "telam_bade",
+      "name": "Bade Telam",
+      "phratry_id": "markami",
+      "notes": ""
+    },
+    {
+      "id": "icham",
+      "name": "Icham",
+      "phratry_id": "markami",
+      "notes": ""
+    },
+    {
+      "id": "punem",
+      "name": "Punem",
+      "phratry_id": "markami",
+      "notes": ""
+    },
+    {
+      "id": "kadiyam",
+      "name": "Kadiyam",
+      "phratry_id": "markami",
+      "notes": ""
+    },
+    {
+      "id": "midiyam",
+      "name": "Midiyam",
+      "phratry_id": "markami",
+      "notes": ""
+    },
+    {
+      "id": "undam",
+      "name": "Undam",
+      "phratry_id": "markami",
+      "notes": ""
+    },
+    {
+      "id": "tati",
+      "name": "Tati",
+      "phratry_id": "markami",
+      "notes": ""
+    },
+    {
+      "id": "kadti",
+      "name": "Kadti",
+      "phratry_id": "markami",
+      "notes": ""
+    },
+    {
+      "id": "rengo",
+      "name": "Rengo",
+      "phratry_id": "markami",
+      "notes": ""
+    },
+    {
+      "id": "oyam",
+      "name": "Oyam",
+      "phratry_id": "madvi",
+      "notes": ""
+    },
+    {
+      "id": "hemla",
+      "name": "Hemla",
+      "phratry_id": "madvi",
+      "notes": ""
+    },
+    {
+      "id": "tamo",
+      "name": "Tamo",
+      "phratry_id": "madvi",
+      "notes": ""
+    },
+    {
+      "id": "padami",
+      "name": "Padami",
+      "phratry_id": "madvi",
+      "notes": ""
+    },
+    {
+      "id": "ujji_dodi",
+      "name": "Ujji/Dodi",
+      "phratry_id": "madvi",
+      "notes": ""
+    },
+    {
+      "id": "barse",
+      "name": "Barse",
+      "phratry_id": "madvi",
+      "notes": ""
+    },
+    {
+      "id": "madvi",
+      "name": "Madvi",
+      "phratry_id": "madvi",
+      "notes": ""
+    },
+    {
+      "id": "kawasi",
+      "name": "Kawasi",
+      "phratry_id": "kawasi",
+      "notes": ""
+    },
+    {
+      "id": "sodi",
+      "name": "Sodi",
+      "phratry_id": "sodi",
+      "notes": ""
+    }
+  ],
+  "pens": [
+    {
+      "id": "punga_rungi",
+      "name": "Punga Rungi",
+      "aliases": [],
+      "clan_id": "kunjam",
+      "phratry_id": "kuhrami_kadiari",
+      "gender": "female",
+      "village_ids": [
+        "450100"
+      ],
+      "gudi_village_id": "450100",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Telam wife, married to Mai Sunga Kunjam pen husband, now ghar jamai in Bhansi",
+      "villages": [
+        "Benpal/Bayampal"
+      ],
+      "gudi_village": "Benpal/Bayampal"
+    },
+    {
+      "id": "urru_mara_huru_mara",
+      "name": "Urru Mara (Huru Mara)",
+      "aliases": [
+        "Hura Mara",
+        "Huru Mara"
+      ],
+      "clan_id": "telam_bade",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "450093"
+      ],
+      "gudi_village_id": "450093",
+      "palli": [
+        "Jhirka",
+        "Dokometta",
+        "Dhanora",
+        "Tumnar",
+        "Bhansi"
+      ],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Mawe Lungo is d/o Nandraj and Mawli. Also cross-referenced in Table 0 (Kunjam phratry). Gudi in Omalwar with Urru Dokri. Palli: Jhirka, Dokometta, Dhanora, Tumnar, Bhansi.",
+      "villages": [
+        "Bhansi"
+      ],
+      "gudi_village": "Bhansi"
+    },
+    {
+      "id": "lug_unga",
+      "name": "Lug Unga",
+      "aliases": [],
+      "clan_id": "telam_bade",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "450093"
+      ],
+      "gudi_village_id": "450093",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "subordinate",
+      "notes": "s/o Huru Mara and Mawe Lungo",
+      "villages": [
+        "Bhansi"
+      ],
+      "gudi_village": "Bhansi"
+    },
+    {
+      "id": "mai_sunga",
+      "name": "Mai Sunga",
+      "aliases": [],
+      "clan_id": "telam_bade",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "450093"
+      ],
+      "gudi_village_id": "450093",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "subordinate",
+      "notes": "Ghar jamai, married to Punga Rungi d/o Huru Mara and Urru Dokri. Has his palli and dhaniya in Jaraloha.",
+      "villages": [
+        "Bhansi"
+      ],
+      "gudi_village": "Bhansi"
+    },
+    {
+      "id": "palenda",
+      "name": "Palenda",
+      "aliases": [],
+      "clan_id": "madvi",
+      "phratry_id": "madvi",
+      "gender": "male",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "s/o Handa Kosa",
+      "gudi_village": "Bododi"
+    },
+    {
+      "id": "handa_andal_kosa",
+      "name": "Handa (Andal) Kosa",
+      "aliases": [
+        "Andal Kosa"
+      ],
+      "clan_id": "madvi",
+      "phratry_id": "madvi",
+      "gender": "male",
+      "village_ids": [
+        "450247"
+      ],
+      "gudi_village_id": "450247",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Married to Pal Hadme, d/o Hirma Raj of Markamiras",
+      "villages": [
+        "Cholnar"
+      ],
+      "gudi_village": "Cholnar"
+    },
+    {
+      "id": "vedmo_moitor",
+      "name": "Vedmo Moitor",
+      "aliases": [],
+      "clan_id": "kunjam",
+      "phratry_id": "kuhrami_kadiari",
+      "gender": "male",
+      "village_ids": [
+        "451236"
+      ],
+      "gudi_village_id": "451236",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Younger brother of Urru Moitor",
+      "villages": [
+        "Daler (near Marh)"
+      ],
+      "gudi_village": "Daler (near Marh)"
+    },
+    {
+      "id": "sungal",
+      "name": "Sungal",
+      "aliases": [],
+      "clan_id": "kalmu",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "450090"
+      ],
+      "gudi_village_id": "450090",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "",
+      "villages": [
+        "Dhurli"
+      ],
+      "gudi_village": "Dhurli"
+    },
+    {
+      "id": "hunga_moitor",
+      "name": "Hunga Moitor",
+      "aliases": [],
+      "clan_id": "kalmu",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "450101"
+      ],
+      "gudi_village_id": "450101",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "At the Cholnar karsad there was also Budi Moyo who had come with Hunga Moitor",
+      "villages": [
+        "Dugeli"
+      ],
+      "gudi_village": "Dugeli"
+    },
+    {
+      "id": "gal_dullo",
+      "name": "Gal Dullo",
+      "aliases": [],
+      "clan_id": "oyam",
+      "phratry_id": "madvi",
+      "gender": "male",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Child of Gaddi Kama",
+      "gudi_village": null
+    },
+    {
+      "id": "gal_bomda",
+      "name": "Gal Bomda",
+      "aliases": [],
+      "clan_id": "oyam",
+      "phratry_id": "madvi",
+      "gender": "male",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Child of Gaddi Kama",
+      "gudi_village": null
+    },
+    {
+      "id": "unnamed_son_of_punga_rungi_and_mai_sunga",
+      "name": "(unnamed son of Punga Rungi and Mai Sunga)",
+      "aliases": [],
+      "clan_id": "kunjam",
+      "phratry_id": "kuhrami_kadiari",
+      "gender": "male",
+      "village_ids": [
+        "450235",
+        "450271"
+      ],
+      "gudi_village_id": "450235",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Name not given in source",
+      "villages": [
+        "Gongpal",
+        "Kunjampara, near Ganjenar"
+      ],
+      "gudi_village": "Gongpal"
+    },
+    {
+      "id": "peda_hadma",
+      "name": "Peda Hadma",
+      "aliases": [],
+      "clan_id": "midiyam",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "450261"
+      ],
+      "gudi_village_id": "450261",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "",
+      "villages": [
+        "Gumiyapal (Guyempad)"
+      ],
+      "gudi_village": "Gumiyapal (Guyempad)"
+    },
+    {
+      "id": "chinna_hadma",
+      "name": "Chinna Hadma",
+      "aliases": [],
+      "clan_id": "midiyam",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "450261"
+      ],
+      "gudi_village_id": "450261",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "",
+      "villages": [
+        "Gumiyapal (Guyempad)"
+      ],
+      "gudi_village": "Gumiyapal (Guyempad)"
+    },
+    {
+      "id": "chichur_unga",
+      "name": "Chichur Unga",
+      "aliases": [
+        "Chichur Urra"
+      ],
+      "clan_id": "kunjam",
+      "phratry_id": "kuhrami_kadiari",
+      "gender": "male",
+      "village_ids": [
+        "450250"
+      ],
+      "gudi_village_id": "450250",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Bachelor. To get married to Pal Urre, d/o Andal Kosa Madvi pen of Cholnar",
+      "villages": [
+        "Hiroli"
+      ],
+      "gudi_village": "Hiroli"
+    },
+    {
+      "id": "babo_harma_pen",
+      "name": "Babo Harma Pen",
+      "aliases": [],
+      "clan_id": "kawasi",
+      "phratry_id": "kawasi",
+      "gender": "male",
+      "village_ids": [
+        "450175"
+      ],
+      "gudi_village_id": "450175",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Source: Grigson",
+      "villages": [
+        "Jawanga"
+      ],
+      "gudi_village": "Jawanga"
+    },
+    {
+      "id": "pal_hadmal",
+      "name": "Pal Hadmal",
+      "aliases": [],
+      "clan_id": "rengo",
+      "phratry_id": "markami",
+      "gender": "male",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "",
+      "gudi_village": "Jhadka (Orcha Block)"
+    },
+    {
+      "id": "godar_hunga",
+      "name": "Godar Hunga",
+      "aliases": [],
+      "clan_id": "telam_bade",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "450085"
+      ],
+      "gudi_village_id": "450085",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "s/o Huru Mara and Katte Bodke. See case study of Jhirka on phallis.",
+      "villages": [
+        "Jhirka"
+      ],
+      "gudi_village": "Jhirka"
+    },
+    {
+      "id": "markaraj_marka_moitor",
+      "name": "Markaraj (Marka Moitor)",
+      "aliases": [
+        "Marka Moitor"
+      ],
+      "clan_id": "barse",
+      "phratry_id": "madvi",
+      "gender": "male",
+      "village_ids": [
+        "450086"
+      ],
+      "gudi_village_id": "450086",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Palli: Dantewada jail, Markanar, Kumharras, Matenar, Kondoli (son lives), Gamawada (son also called Markaraj), Ganjenar (son/bro), Mulasnar (Gumorongo s/o Markaraj), Balod, Kuper (chud inga, bro), Veesro, Kundundel",
+      "villages": [
+        "Kamalnar/Kamalur"
+      ],
+      "gudi_village": "Kamalnar/Kamalur"
+    },
+    {
+      "id": "hadma_iriyal",
+      "name": "Hadma Iriyal",
+      "aliases": [],
+      "clan_id": "oyam",
+      "phratry_id": "madvi",
+      "gender": "male",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Brother of Gaddi Kama",
+      "gudi_village": "Kamkajojor"
+    },
+    {
+      "id": "tal_muttai",
+      "name": "Tal Muttai",
+      "aliases": [],
+      "clan_id": "sodi",
+      "phratry_id": "sodi",
+      "gender": "male",
+      "village_ids": [
+        "450989"
+      ],
+      "gudi_village_id": "450989",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "",
+      "villages": [
+        "Kamkanar"
+      ],
+      "gudi_village": "Kamkanar"
+    },
+    {
+      "id": "vidi_iriyal_panda_hadma",
+      "name": "Vidi Iriyal Panda Hadma",
+      "aliases": [],
+      "clan_id": "oyam",
+      "phratry_id": "madvi",
+      "gender": "male",
+      "village_ids": [
+        "450080"
+      ],
+      "gudi_village_id": "450080",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Third and youngest unmarried brother of Gaddi Kama",
+      "villages": [
+        "Kesapur"
+      ],
+      "gudi_village": "Kesapur"
+    },
+    {
+      "id": "unnamed_pen",
+      "name": "(unnamed pen)",
+      "aliases": [],
+      "clan_id": "kunjam",
+      "phratry_id": "kuhrami_kadiari",
+      "gender": "male",
+      "village_ids": [
+        "451314"
+      ],
+      "gudi_village_id": "451314",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Either a son of Punga Rungi & Mai Sunga or a son of Urru Moitor",
+      "villages": [
+        "Kodoli"
+      ],
+      "gudi_village": "Kodoli"
+    },
+    {
+      "id": "raibandal",
+      "name": "Raibandal",
+      "aliases": [],
+      "clan_id": "kadiyam",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "451349"
+      ],
+      "gudi_village_id": "451349",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "",
+      "villages": [
+        "Kondapal"
+      ],
+      "gudi_village": "Kondapal"
+    },
+    {
+      "id": "hadma_raj",
+      "name": "Hadma Raj",
+      "aliases": [],
+      "clan_id": "kunjam",
+      "phratry_id": "kuhrami_kadiari",
+      "gender": "male",
+      "village_ids": [
+        "450279"
+      ],
+      "gudi_village_id": "450279",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "s/o Urru Moitor (same pen as Palnar)",
+      "villages": [
+        "Palnar"
+      ],
+      "gudi_village": "Palnar"
+    },
+    {
+      "id": "bhum_iriyal",
+      "name": "Bhum Iriyal",
+      "aliases": [],
+      "clan_id": "kadti",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "450246"
+      ],
+      "gudi_village_id": "450246",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "His daughter Kohli Dokri is married to Gaddi Kama, Oyam Pen of Pandewar",
+      "villages": [
+        "Madadi"
+      ],
+      "gudi_village": "Madadi"
+    },
+    {
+      "id": "bhimaraj",
+      "name": "Bhimaraj",
+      "aliases": [],
+      "clan_id": "bhogam",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "451338"
+      ],
+      "gudi_village_id": "451338",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Brothers of Huru Mara of Bhansi (needs clarification)",
+      "villages": [
+        "Madpal"
+      ],
+      "gudi_village": "Madpal"
+    },
+    {
+      "id": "biriya_bhima",
+      "name": "Biriya Bhima",
+      "aliases": [],
+      "clan_id": "telam_chote",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "451338"
+      ],
+      "gudi_village_id": "451338",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Mudde Dokri is d/o Muddaraj. Biriya Bhima, Mudde Dokri and Urru Ponde counted as Chote Telam. Bhogams also known as Chote Telams.",
+      "villages": [
+        "Madpal"
+      ],
+      "gudi_village": "Madpal"
+    },
+    {
+      "id": "godar_bhima",
+      "name": "Godar Bhima",
+      "aliases": [],
+      "clan_id": "telam_chote",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "451229"
+      ],
+      "gudi_village_id": "451229",
+      "palli": [
+        "Palnar",
+        "Teknar",
+        "Chitalur",
+        "Kawalnar",
+        "Mangnar",
+        "Midkulnar",
+        "Pharaspal",
+        "Kesapur",
+        "Turparas",
+        "Idodpara"
+      ],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Chaikut = small, Godar = one who crossed Godavari. Son across Godavari; daughter Inge Dokri has pen in Kuper. Palli: Palnar, Teknar, Chitalur, Kawalnar, Mangnar, Midkulnar, bits of Pharaspal, Kesapur, Turparas, Idodpara. Offerings at Diwad and Bijja Pandum.",
+      "villages": [
+        "Manganar"
+      ],
+      "gudi_village": "Manganar"
+    },
+    {
+      "id": "iram_raj",
+      "name": "Iram Raj",
+      "aliases": [
+        "Irma Raj"
+      ],
+      "clan_id": "markami",
+      "phratry_id": "markami",
+      "gender": "male",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Also called Irma Raj",
+      "gudi_village": "Markagudem"
+    },
+    {
+      "id": "kohla_kosu",
+      "name": "Kohla Kosu",
+      "aliases": [],
+      "clan_id": "kadiyam",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "450115"
+      ],
+      "gudi_village_id": "450115",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "s/o Raibandal",
+      "villages": [
+        "Metapal"
+      ],
+      "gudi_village": "Metapal"
+    },
+    {
+      "id": "bomul_ungal",
+      "name": "Bomul Ungal",
+      "aliases": [],
+      "clan_id": "telam_chote",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "450073"
+      ],
+      "gudi_village_id": "450073",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "s/o Biriya Bhima",
+      "villages": [
+        "Mirtulnar/Midkulnar"
+      ],
+      "gudi_village": "Mirtulnar/Midkulnar"
+    },
+    {
+      "id": "urru_moitor",
+      "name": "Urru Moitor",
+      "aliases": [],
+      "clan_id": "kunjam",
+      "phratry_id": "kuhrami_kadiari",
+      "gender": "male",
+      "village_ids": [
+        "450255"
+      ],
+      "gudi_village_id": "450255",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Gudi in Omalwar. Urru Moitor and Urru Dokri have their gudi in Omalwar",
+      "villages": [
+        "Omalwar/Samalwar"
+      ],
+      "gudi_village": "Omalwar/Samalwar"
+    },
+    {
+      "id": "perambhoi_raj",
+      "name": "Perambhoi Raj",
+      "aliases": [],
+      "clan_id": "kunjam",
+      "phratry_id": "kuhrami_kadiari",
+      "gender": "male",
+      "village_ids": [
+        "450255"
+      ],
+      "gudi_village_id": "450255",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "subordinate",
+      "notes": "Younger brother of Urru Moitor",
+      "villages": [
+        "Omalwar/Samalwar"
+      ],
+      "gudi_village": "Omalwar/Samalwar"
+    },
+    {
+      "id": "gaddi_kama",
+      "name": "Gaddi Kama",
+      "aliases": [
+        "Ghadi Kama"
+      ],
+      "clan_id": "oyam",
+      "phratry_id": "madvi",
+      "gender": "male",
+      "village_ids": [
+        "450083"
+      ],
+      "gudi_village_id": "450083",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Also written as Ghadi Kama. Children with Murke Nango: Gal Dullo (Etlapad), Gal Bomda (Etlapad), Hingal Devo (Korre Kongdam), 1 more boy. With Kohli Dokri: Chenna Kama, Ghanta Kama, Ukud Kama (all in Pandewar). Murke Nango is d/o Huru Mara of Bhansi. Kohli Dokri is d/o Bhum Iriya (Kadti pen, Madadi).",
+      "villages": [
+        "Pandewar"
+      ],
+      "gudi_village": "Pandewar"
+    },
+    {
+      "id": "gujje_dokri",
+      "name": "Gujje Dokri",
+      "aliases": [],
+      "clan_id": "kalmu",
+      "phratry_id": "markami",
+      "gender": "female",
+      "village_ids": [
+        "450161"
+      ],
+      "gudi_village_id": "450161",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Made of irirom mada in Songunda above Kondanpal. Married to Hunga Moitor in Dugeli. Visit each other at karsads.",
+      "villages": [
+        "Pharaspal"
+      ],
+      "gudi_village": "Pharaspal"
+    },
+    {
+      "id": "bande_boyo",
+      "name": "Bande Boyo",
+      "aliases": [],
+      "clan_id": "oyam",
+      "phratry_id": "madvi",
+      "gender": "male",
+      "village_ids": [
+        "451001"
+      ],
+      "gudi_village_id": "451001",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "May or may not be brother of Gaddi Kama",
+      "villages": [
+        "Pidiya"
+      ],
+      "gudi_village": "Pidiya"
+    },
+    {
+      "id": "vange_vunge_dokri",
+      "name": "Vange (Vunge) Dokri",
+      "aliases": [
+        "Vunge Dokri"
+      ],
+      "clan_id": "hemla",
+      "phratry_id": "madvi",
+      "gender": "female",
+      "village_ids": [
+        "451317"
+      ],
+      "gudi_village_id": "451317",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Married to Nanga Bhima in Gangalur village",
+      "villages": [
+        "Pinkonda"
+      ],
+      "gudi_village": "Pinkonda"
+    },
+    {
+      "id": "chudanda",
+      "name": "Chudanda",
+      "aliases": [],
+      "clan_id": "madvi",
+      "phratry_id": "madvi",
+      "gender": "male",
+      "village_ids": [
+        "450060"
+      ],
+      "gudi_village_id": "450060",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Younger brother of Handa Kosa",
+      "villages": [
+        "Pondum"
+      ],
+      "gudi_village": "Pondum"
+    },
+    {
+      "id": "bade_vidi_iriyal",
+      "name": "Bade Vidi Iriyal",
+      "aliases": [],
+      "clan_id": "oyam",
+      "phratry_id": "madvi",
+      "gender": "male",
+      "village_ids": [
+        "451267"
+      ],
+      "gudi_village_id": "451267",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Second brother of Gaddi Kama. No sisters.",
+      "villages": [
+        "Rekavaya"
+      ],
+      "gudi_village": "Rekavaya"
+    },
+    {
+      "id": "daro_moitor_darrem_modka",
+      "name": "Daro Moitor (Darrem Modka)",
+      "aliases": [
+        "Darrem Modka"
+      ],
+      "clan_id": "telam_bade",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "450228"
+      ],
+      "gudi_village_id": "450228",
+      "palli": [
+        "Chandenar",
+        "Renganar"
+      ],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Elder brother of Huru Mara of Bhansi. Palli: Chandenar, Renganar.",
+      "villages": [
+        "Renganar"
+      ],
+      "gudi_village": "Renganar"
+    },
+    {
+      "id": "kundel_ganga",
+      "name": "Kundel Ganga",
+      "aliases": [
+        "Jalsingo"
+      ],
+      "clan_id": "kunjam",
+      "phratry_id": "kuhrami_kadiari",
+      "gender": "male",
+      "village_ids": [
+        "450239"
+      ],
+      "gudi_village_id": "450239",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Also called Jalsingo. Brother of Hadma Raj, s/o Urru Moitor",
+      "villages": [
+        "Shyamgiri"
+      ],
+      "gudi_village": "Shyamgiri"
+    },
+    {
+      "id": "morka_moitor",
+      "name": "Morka Moitor",
+      "aliases": [],
+      "clan_id": "ujji_dodi",
+      "phratry_id": "madvi",
+      "gender": "male",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "",
+      "gudi_village": "Tadopadar"
+    },
+    {
+      "id": "uraal_gundal",
+      "name": "Uraal Gundal",
+      "aliases": [],
+      "clan_id": "tamo",
+      "phratry_id": "madvi",
+      "gender": "male",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "",
+      "gudi_village": null
+    },
+    {
+      "id": "gariaram",
+      "name": "Gariaram",
+      "aliases": [],
+      "clan_id": "kunjam",
+      "phratry_id": "kuhrami_kadiari",
+      "gender": "male",
+      "village_ids": [
+        "451335"
+      ],
+      "gudi_village_id": "451335",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Younger brother of Chichur Unga",
+      "villages": [
+        "Tamodi"
+      ],
+      "gudi_village": "Tamodi"
+    },
+    {
+      "id": "pind_hadmal",
+      "name": "Pind Hadmal",
+      "aliases": [],
+      "clan_id": "tati",
+      "phratry_id": "markami",
+      "gender": "male",
+      "village_ids": [
+        "450242"
+      ],
+      "gudi_village_id": "450242",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "",
+      "villages": [
+        "Tikanpal"
+      ],
+      "gudi_village": "Tikanpal"
+    },
+    {
+      "id": "muddaraj",
+      "name": "Muddaraj",
+      "aliases": [],
+      "clan_id": "oyam",
+      "phratry_id": "madvi",
+      "gender": "male",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "Father of Mudde Dokri who is married to Biriya Bhima (Chote Telam) of Madpal. Phalli extends to Madpal.",
+      "gudi_village": "Vechapal"
+    },
+    {
+      "id": "murde_muyal",
+      "name": "Murde Muyal",
+      "aliases": [],
+      "clan_id": "undam",
+      "phratry_id": "markami",
+      "gender": "male",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "",
+      "gudi_village": "Vengpal (Vengur)"
+    },
+    {
+      "id": "hunga_bhimal",
+      "name": "Hunga Bhimal",
+      "aliases": [],
+      "clan_id": "undam",
+      "phratry_id": "markami",
+      "gender": "male",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "",
+      "gudi_village": "Vengpal (Vengur)"
+    },
+    {
+      "id": "barra_bujja",
+      "name": "Barra Bujja",
+      "aliases": [],
+      "clan_id": "padami",
+      "phratry_id": "madvi",
+      "gender": "male",
+      "palli": [],
+      "perma": "",
+      "karsad": "",
+      "type": "main",
+      "notes": "",
+      "gudi_village": "Vengur"
+    }
+  ],
+  "villages": [
+    {
+      "name": "Benpal/Bayampal",
+      "aliases": [],
+      "phratry_id": "kuhrami_kadiari",
+      "clan_id": "kunjam",
+      "main_pen_id": "punga_rungi",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450100"
+    },
+    {
+      "name": "Bhansi",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "telam_bade",
+      "main_pen_id": "urru_mara_huru_mara",
+      "subordinate_pen_ids": [
+        "lug_unga",
+        "mai_sunga"
+      ],
+      "notes": "",
+      "population_info": "",
+      "id": "450093"
+    },
+    {
+      "name": "Bododi",
+      "aliases": [],
+      "phratry_id": "madvi",
+      "clan_id": "madvi",
+      "main_pen_id": "palenda",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": null
+    },
+    {
+      "name": "Cholnar",
+      "aliases": [],
+      "phratry_id": "madvi",
+      "clan_id": "madvi",
+      "main_pen_id": "handa_andal_kosa",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450247"
+    },
+    {
+      "name": "Daler (near Marh)",
+      "aliases": [],
+      "phratry_id": "kuhrami_kadiari",
+      "clan_id": "kunjam",
+      "main_pen_id": "vedmo_moitor",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "451236"
+    },
+    {
+      "name": "Dhurli",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "kalmu",
+      "main_pen_id": "sungal",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450090"
+    },
+    {
+      "name": "Dugeli",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "kalmu",
+      "main_pen_id": "hunga_moitor",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450101"
+    },
+    {
+      "name": "Etlapad",
+      "aliases": [],
+      "phratry_id": "madvi",
+      "clan_id": "oyam",
+      "main_pen_id": "gal_dullo",
+      "subordinate_pen_ids": [
+        "gal_bomda"
+      ],
+      "notes": "",
+      "population_info": "",
+      "id": null
+    },
+    {
+      "name": "Gongpal",
+      "aliases": [],
+      "phratry_id": "kuhrami_kadiari",
+      "clan_id": "kunjam",
+      "main_pen_id": "unnamed_son_of_punga_rungi_and_mai_sunga",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450235"
+    },
+    {
+      "name": "Gumiyapal (Guyempad)",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "midiyam",
+      "main_pen_id": "peda_hadma",
+      "subordinate_pen_ids": [
+        "chinna_hadma"
+      ],
+      "notes": "",
+      "population_info": "",
+      "id": "450261"
+    },
+    {
+      "name": "Hiroli",
+      "aliases": [],
+      "phratry_id": "kuhrami_kadiari",
+      "clan_id": "kunjam",
+      "main_pen_id": "chichur_unga",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450250"
+    },
+    {
+      "name": "Jawanga",
+      "aliases": [],
+      "phratry_id": "kawasi",
+      "clan_id": "kawasi",
+      "main_pen_id": "babo_harma_pen",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450175"
+    },
+    {
+      "name": "Jhadka (Orcha Block)",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "rengo",
+      "main_pen_id": "pal_hadmal",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": null
+    },
+    {
+      "name": "Jhirka",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "telam_bade",
+      "main_pen_id": "godar_hunga",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450085"
+    },
+    {
+      "name": "Kamalnar/Kamalur",
+      "aliases": [],
+      "phratry_id": "madvi",
+      "clan_id": "barse",
+      "main_pen_id": "markaraj_marka_moitor",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450086"
+    },
+    {
+      "name": "Kamkajojor",
+      "aliases": [],
+      "phratry_id": "madvi",
+      "clan_id": "oyam",
+      "main_pen_id": "hadma_iriyal",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": null
+    },
+    {
+      "name": "Kamkanar",
+      "aliases": [],
+      "phratry_id": "sodi",
+      "clan_id": "sodi",
+      "main_pen_id": "tal_muttai",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450989"
+    },
+    {
+      "name": "Kesapur",
+      "aliases": [],
+      "phratry_id": "madvi",
+      "clan_id": "oyam",
+      "main_pen_id": "vidi_iriyal_panda_hadma",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450080"
+    },
+    {
+      "name": "Kodoli",
+      "aliases": [],
+      "phratry_id": "kuhrami_kadiari",
+      "clan_id": "kunjam",
+      "main_pen_id": "unnamed_pen",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "451314"
+    },
+    {
+      "name": "Kondapal",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "kadiyam",
+      "main_pen_id": "raibandal",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "451349"
+    },
+    {
+      "name": "Kunjampara, near Ganjenar",
+      "aliases": [],
+      "phratry_id": "kuhrami_kadiari",
+      "clan_id": "kunjam",
+      "main_pen_id": "unnamed_son_of_punga_rungi_and_mai_sunga",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450271"
+    },
+    {
+      "name": "Kuwe",
+      "aliases": [],
+      "phratry_id": "kuhrami_kadiari",
+      "clan_id": "kunjam",
+      "main_pen_id": "hadma_raj",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": null
+    },
+    {
+      "name": "Madadi",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "kadti",
+      "main_pen_id": "bhum_iriyal",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450246"
+    },
+    {
+      "name": "Madpal",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "bhogam",
+      "main_pen_id": "bhimaraj",
+      "subordinate_pen_ids": [
+        "biriya_bhima"
+      ],
+      "notes": "",
+      "population_info": "",
+      "id": "451338"
+    },
+    {
+      "name": "Manganar",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "telam_chote",
+      "main_pen_id": "godar_bhima",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "451229"
+    },
+    {
+      "name": "Markagudem",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "markami",
+      "main_pen_id": "iram_raj",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": null
+    },
+    {
+      "name": "Metapal",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "kadiyam",
+      "main_pen_id": "kohla_kosu",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450115"
+    },
+    {
+      "name": "Mirtulnar/Midkulnar",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "telam_chote",
+      "main_pen_id": "bomul_ungal",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450073"
+    },
+    {
+      "name": "Omalwar/Samalwar",
+      "aliases": [],
+      "phratry_id": "kuhrami_kadiari",
+      "clan_id": "kunjam",
+      "main_pen_id": "urru_moitor",
+      "subordinate_pen_ids": [
+        "perambhoi_raj"
+      ],
+      "notes": "",
+      "population_info": "",
+      "id": "450255"
+    },
+    {
+      "name": "Palnar",
+      "aliases": [],
+      "phratry_id": "kuhrami_kadiari",
+      "clan_id": "kunjam",
+      "main_pen_id": "hadma_raj",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450279"
+    },
+    {
+      "name": "Pandewar",
+      "aliases": [],
+      "phratry_id": "madvi",
+      "clan_id": "oyam",
+      "main_pen_id": "gaddi_kama",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450083"
+    },
+    {
+      "name": "Pharaspal",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "kalmu",
+      "main_pen_id": "gujje_dokri",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450161"
+    },
+    {
+      "name": "Pidiya",
+      "aliases": [],
+      "phratry_id": "madvi",
+      "clan_id": "oyam",
+      "main_pen_id": "bande_boyo",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "451001"
+    },
+    {
+      "name": "Pinkonda",
+      "aliases": [],
+      "phratry_id": "madvi",
+      "clan_id": "hemla",
+      "main_pen_id": "vange_vunge_dokri",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "451317"
+    },
+    {
+      "name": "Pondum",
+      "aliases": [],
+      "phratry_id": "madvi",
+      "clan_id": "madvi",
+      "main_pen_id": "chudanda",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450060"
+    },
+    {
+      "name": "Rekavaya",
+      "aliases": [],
+      "phratry_id": "madvi",
+      "clan_id": "oyam",
+      "main_pen_id": "bade_vidi_iriyal",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "451267"
+    },
+    {
+      "name": "Renganar",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "telam_bade",
+      "main_pen_id": "daro_moitor_darrem_modka",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450228"
+    },
+    {
+      "name": "Shyamgiri",
+      "aliases": [],
+      "phratry_id": "kuhrami_kadiari",
+      "clan_id": "kunjam",
+      "main_pen_id": "kundel_ganga",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450239"
+    },
+    {
+      "name": "Tadopadar",
+      "aliases": [],
+      "phratry_id": "madvi",
+      "clan_id": "ujji_dodi",
+      "main_pen_id": "morka_moitor",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": null
+    },
+    {
+      "name": "Tamirguda",
+      "aliases": [],
+      "phratry_id": "madvi",
+      "clan_id": "tamo",
+      "main_pen_id": "uraal_gundal",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": null
+    },
+    {
+      "name": "Tamodi",
+      "aliases": [],
+      "phratry_id": "kuhrami_kadiari",
+      "clan_id": "kunjam",
+      "main_pen_id": "gariaram",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "451335"
+    },
+    {
+      "name": "Tikanpal",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "tati",
+      "main_pen_id": "pind_hadmal",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": "450242"
+    },
+    {
+      "name": "Vechapal",
+      "aliases": [],
+      "phratry_id": "madvi",
+      "clan_id": "oyam",
+      "main_pen_id": "muddaraj",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": null
+    },
+    {
+      "name": "Vengpal (Vengur)",
+      "aliases": [],
+      "phratry_id": "markami",
+      "clan_id": "undam",
+      "main_pen_id": "murde_muyal",
+      "subordinate_pen_ids": [
+        "hunga_bhimal"
+      ],
+      "notes": "",
+      "population_info": "",
+      "id": null
+    },
+    {
+      "name": "Vengur",
+      "aliases": [],
+      "phratry_id": "madvi",
+      "clan_id": "padami",
+      "main_pen_id": "barra_bujja",
+      "subordinate_pen_ids": [],
+      "notes": "",
+      "population_info": "",
+      "id": null
+    }
+  ],
+  "relationships": [
+    {
+      "type": "marriage",
+      "from_pen_id": "punga_rungi",
+      "to_pen_id": "mai_sunga",
+      "details": "Punga Rungi married to Mai Sunga",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "parent",
+      "from_pen_id": "urru_mara_huru_mara",
+      "to_pen_id": "lug_unga",
+      "details": "Urru Mara (Huru Mara) parent of Lug Unga",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "parent",
+      "from_pen_id": "urru_mara_huru_mara",
+      "to_pen_id": "mai_sunga",
+      "details": "Urru Mara (Huru Mara) parent of Mai Sunga (ghar jamai)",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "marriage",
+      "from_pen_id": "mai_sunga",
+      "to_pen_id": "punga_rungi",
+      "details": "Mai Sunga married to Punga Rungi",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "handa_andal_kosa",
+      "to_pen_id": "chudanda",
+      "details": "Handa (Andal) Kosa sibling of Chudanda",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "parent",
+      "from_pen_id": "handa_andal_kosa",
+      "to_pen_id": "palenda",
+      "details": "Handa (Andal) Kosa parent of Palenda",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "vedmo_moitor",
+      "to_pen_id": "urru_moitor",
+      "details": "Vedmo Moitor sibling of Urru Moitor",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "marriage",
+      "from_pen_id": "hunga_moitor",
+      "to_pen_id": "gujje_dokri",
+      "details": "Hunga Moitor married to Gujje Dokri",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "gal_dullo",
+      "to_pen_id": "gal_bomda",
+      "details": "Gal Dullo sibling of Gal Bomda",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "parent",
+      "from_pen_id": "gaddi_kama",
+      "to_pen_id": "gal_dullo",
+      "details": "Gaddi Kama parent of Gal Dullo",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "gal_bomda",
+      "to_pen_id": "gal_dullo",
+      "details": "Gal Bomda sibling of Gal Dullo",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "parent",
+      "from_pen_id": "gaddi_kama",
+      "to_pen_id": "gal_bomda",
+      "details": "Gaddi Kama parent of Gal Bomda",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "parent",
+      "from_pen_id": "punga_rungi",
+      "to_pen_id": "unnamed_son_of_punga_rungi_and_mai_sunga",
+      "details": "Punga Rungi parent of (unnamed son of Punga Rungi and Mai Sunga)",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "parent",
+      "from_pen_id": "mai_sunga",
+      "to_pen_id": "unnamed_son_of_punga_rungi_and_mai_sunga",
+      "details": "Mai Sunga parent of (unnamed son of Punga Rungi and Mai Sunga)",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "peda_hadma",
+      "to_pen_id": "chinna_hadma",
+      "details": "Peda Hadma sibling of Chinna Hadma",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "chinna_hadma",
+      "to_pen_id": "peda_hadma",
+      "details": "Chinna Hadma sibling of Peda Hadma",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "parent",
+      "from_pen_id": "urru_mara_huru_mara",
+      "to_pen_id": "godar_hunga",
+      "details": "Huru Mara parent of Godar Hunga",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "hadma_iriyal",
+      "to_pen_id": "gaddi_kama",
+      "details": "Hadma Iriyal sibling of Gaddi Kama",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "hadma_iriyal",
+      "to_pen_id": "bade_vidi_iriyal",
+      "details": "Hadma Iriyal sibling of Bade Vidi Iriyal",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "vidi_iriyal_panda_hadma",
+      "to_pen_id": "gaddi_kama",
+      "details": "Vidi Iriyal Panda Hadma sibling of Gaddi Kama",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "parent",
+      "from_pen_id": "urru_moitor",
+      "to_pen_id": "hadma_raj",
+      "details": "Urru Moitor parent of Hadma Raj",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "bhimaraj",
+      "to_pen_id": "biriya_bhima",
+      "details": "Bhimaraj sibling of Biriya Bhima",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "bhimaraj",
+      "to_pen_id": "urru_mara_huru_mara",
+      "details": "Bhimaraj sibling of Huru Mara (needs clarification)",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "biriya_bhima",
+      "to_pen_id": "bhimaraj",
+      "details": "Biriya Bhima sibling of Bhimaraj",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "parent",
+      "from_pen_id": "raibandal",
+      "to_pen_id": "kohla_kosu",
+      "details": "Raibandal parent of Kohla Kosu",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "parent",
+      "from_pen_id": "biriya_bhima",
+      "to_pen_id": "bomul_ungal",
+      "details": "Biriya Bhima parent of Bomul Ungal",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "urru_moitor",
+      "to_pen_id": "perambhoi_raj",
+      "details": "Urru Moitor sibling of Perambhoi Raj",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "perambhoi_raj",
+      "to_pen_id": "urru_moitor",
+      "details": "Perambhoi Raj sibling of Urru Moitor",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "gaddi_kama",
+      "to_pen_id": "vidi_iriyal_panda_hadma",
+      "details": "Gaddi Kama sibling of Vidi Iriyal Panda Hadma",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "gaddi_kama",
+      "to_pen_id": "bade_vidi_iriyal",
+      "details": "Gaddi Kama sibling of Bade Vidi Iriyal",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "gaddi_kama",
+      "to_pen_id": "hadma_iriyal",
+      "details": "Gaddi Kama sibling of Hadma Iriyal",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "marriage",
+      "from_pen_id": "gujje_dokri",
+      "to_pen_id": "hunga_moitor",
+      "details": "Gujje Dokri married to Hunga Moitor",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "bande_boyo",
+      "to_pen_id": "gaddi_kama",
+      "details": "Bande Boyo sibling of Gaddi Kama",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "bade_vidi_iriyal",
+      "to_pen_id": "gaddi_kama",
+      "details": "Bade Vidi Iriyal sibling of Gaddi Kama",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "bade_vidi_iriyal",
+      "to_pen_id": "hadma_iriyal",
+      "details": "Bade Vidi Iriyal sibling of Hadma Iriyal",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "daro_moitor_darrem_modka",
+      "to_pen_id": "urru_mara_huru_mara",
+      "details": "Daro Moitor (Darrem Modka) sibling of Huru Mara",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "kundel_ganga",
+      "to_pen_id": "hadma_raj",
+      "details": "Kundel Ganga sibling of Hadma Raj",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "parent",
+      "from_pen_id": "urru_moitor",
+      "to_pen_id": "kundel_ganga",
+      "details": "Urru Moitor parent of Kundel Ganga",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "gariaram",
+      "to_pen_id": "chichur_unga",
+      "details": "Gariaram sibling of Chichur Unga",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "murde_muyal",
+      "to_pen_id": "hunga_bhimal",
+      "details": "Murde Muyal sibling of Hunga Bhimal",
+      "source": "Simple Excel"
+    },
+    {
+      "type": "sibling",
+      "from_pen_id": "hunga_bhimal",
+      "to_pen_id": "murde_muyal",
+      "details": "Hunga Bhimal sibling of Murde Muyal",
+      "source": "Simple Excel"
+    }
+  ],
+  "narrative_sources": [
+    {
+      "text": "The Kunjams brought all the pen from Daler and then distributed them to all the different clans at Nandraj mountain.",
+      "facts": [
+        {
+          "type": "origin",
+          "subject": "kunjam",
+          "object": null,
+          "details": "Brought pens from Daler, distributed at Nandraj mountain"
+        }
+      ]
+    },
+    {
+      "text": "Hura Mara, Bhim Iriya, Daro Modka, Bhimaraj and Godar Bhima are all brothers.",
+      "facts": [
+        {
+          "type": "sibling_group",
+          "members": [
+            "huru_mara",
+            "bhum_iriyal",
+            "daro_moitor",
+            "bhimaraj",
+            "godar_bhima"
+          ],
+          "details": "All are brothers"
+        }
+      ]
+    },
+    {
+      "text": "Biriya Bhima was originally from Mangnar, and is married to Mudde Dokri, the daughter of Muddaraj",
+      "facts": [
+        {
+          "type": "marriage",
+          "from": "biriya_bhima",
+          "to": "mudde_dokri"
+        },
+        {
+          "type": "parent",
+          "parent": "muddaraj",
+          "child": "mudde_dokri",
+          "details": "daughter"
+        }
+      ]
+    },
+    {
+      "text": "Dol Mutte was pregnant... gave birth to Bhogam",
+      "facts": [
+        {
+          "type": "parent",
+          "parent": "bhimaraj",
+          "child": "bhogam",
+          "details": "Dol Mutte gave birth to Bhogam, child of Bhimaraj"
+        },
+        {
+          "type": "relationship_note",
+          "subject": "bhogam",
+          "object": "telam_chote",
+          "details": "Bhogams are also known as Chote Telams"
+        }
+      ]
+    },
+    {
+      "text": "Huru Mara, elder wife Urru Dokri, second wife Mawe Lungo (daughter of Nandraj and Mawli)",
+      "facts": [
+        {
+          "type": "marriage",
+          "from": "huru_mara",
+          "to": "urru_dokri"
+        },
+        {
+          "type": "marriage",
+          "from": "huru_mara",
+          "to": "mawe_lungo"
+        },
+        {
+          "type": "parent",
+          "parent": "nandraj",
+          "child": "mawe_lungo"
+        },
+        {
+          "type": "parent",
+          "parent": "mawli",
+          "child": "mawe_lungo"
+        }
+      ]
+    },
+    {
+      "text": "Punga Rungi is daughter of Huru Mara and Urru Dokri; Lug Unga is son of Huru Mara and Mawe Lungo",
+      "facts": [
+        {
+          "type": "parent",
+          "parent": "huru_mara",
+          "child": "punga_rungi"
+        },
+        {
+          "type": "parent",
+          "parent": "urru_dokri",
+          "child": "punga_rungi"
+        },
+        {
+          "type": "parent",
+          "parent": "huru_mara",
+          "child": "lug_unga"
+        },
+        {
+          "type": "parent",
+          "parent": "mawe_lungo",
+          "child": "lug_unga"
+        }
+      ]
+    },
+    {
+      "text": "Mai Sunga married to Punga Rungi, ghar jamai in Bhansi",
+      "facts": [
+        {
+          "type": "ghar_jamai",
+          "from": "mai_sunga",
+          "to": "punga_rungi"
+        },
+        {
+          "type": "marriage",
+          "from": "mai_sunga",
+          "to": "punga_rungi"
+        }
+      ]
+    },
+    {
+      "text": "Godar Hunga, s/o Huru Mara and Katta Bodke (a third wife)",
+      "facts": [
+        {
+          "type": "parent",
+          "parent": "huru_mara",
+          "child": "godar_hunga"
+        },
+        {
+          "type": "parent",
+          "parent": "katta_bodke",
+          "child": "godar_hunga"
+        }
+      ]
+    },
+    {
+      "text": "3 brothers: Andal Kosa (Madvi), Gaddi Kama (Oyam), Madkaraj (Barse)",
+      "facts": [
+        {
+          "type": "sibling_group",
+          "members": [
+            "andalkosa",
+            "gaddi_kama",
+            "markaraj"
+          ],
+          "details": "Three brothers: Madvi, Oyam, Barse"
+        }
+      ]
+    },
+    {
+      "text": "Bros 2 & 3 (Bade Vidi and Vidi Iriyal) born in Pen Kokhra; Nos 4-6 born near Gangalur",
+      "facts": []
+    },
+    {
+      "text": "Markaraj married to Hinge Dokri. Lingal Denga is brother. Hingal Dokri represented by iron ring.",
+      "facts": [
+        {
+          "type": "marriage",
+          "from": "markaraj",
+          "to": "hinge_dokri"
+        }
+      ]
+    },
+    {
+      "text": "Ural Gunda, biggest brother, left Hingal Dokri, then Markaraj brought her",
+      "facts": [
+        {
+          "type": "sibling",
+          "from": "ural_gunda",
+          "to": "markaraj",
+          "details": "Ural Gunda is biggest brother"
+        }
+      ]
+    }
+  ]
+}

@@ -14,3 +14,10 @@ test-results/
 # Python cache
 __pycache__/
 *.pyc
+
+# Bhuvan tile scrape output (30 MB, regenerate via scripts/scrape_bhuvan_tiles.py)
+data/bhuvan_villages_merged.geojson
+
+# LibreOffice lock files
+.~lock.*#
+*.~lock.*
