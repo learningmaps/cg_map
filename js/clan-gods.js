@@ -11,13 +11,14 @@ const CG_BHUVAN_NAME = {};  // v_code → Bhuvan v_name
 const CG_RELATION_LINES = L.layerGroup([]);
 const CG_PEN_MARKER_POS = {}; // penId → [lat, lng] (actual offset position)
 const CG_APPROXIMATE = new Set();
-const ACTIVE_PHRATRIES = new Set(['kuhrami_kadiari', 'markami', 'madvi', 'kawasi']);
+const ACTIVE_PHRATRIES = new Set(['kuhrami_kadiari', 'markami', 'madvi', 'kawasi', 'sodi']);
 
 const CG_COLORS = {
     kuhrami_kadiari: { fill: '#cc2936', border: '#8b0000', label: 'Kuhrami / Kadiari' },
     markami:        { fill: '#2a6f97', border: '#003f5c', label: 'Markami' },
     madvi:          { fill: '#2d6a4f', border: '#1b4332', label: 'Madvi' },
     kawasi:         { fill: '#e76f00', border: '#9a4d00', label: 'Kawasi' },
+    sodi:           { fill: '#9b59b6', border: '#6c3483', label: 'Sodi' },
 };
 const CG_GRAY = { fill: '#999', border: '#666' };
 
@@ -154,7 +155,8 @@ function resolvePenRelations(penId) {
         );
         if (sharesVillage) continue;
         // Use pen marker position (offset circle) if available, fall back to village centroid
-        const coord = CG_PEN_MARKER_POS[otherPenId] || coordForVillage(primaryVillage.name, primaryVillage.id);
+        const markerKey = primaryVillage.name.toLowerCase() + ':' + otherPenId;
+        const coord = CG_PEN_MARKER_POS[markerKey] || coordForVillage(primaryVillage.name, primaryVillage.id);
         results.push({
             pen: otherPen,
             village: primaryVillage.name,
@@ -174,9 +176,13 @@ window.showRelationsForPen = function(penIdEncoded, btn) {
     if (!pen) return;
 
     // Use pen marker position (offset circle) if available, fall back to village centroid
-    const fromCoord = CG_PEN_MARKER_POS[penId] || (() => {
+    const fromCoord = (() => {
         const penVillages = CG_PEN_VILLAGE[penId] || [];
         const primaryVillage = penVillages.length > 0 ? penVillages[0] : null;
+        if (primaryVillage) {
+            const markerKey = primaryVillage.name.toLowerCase() + ':' + penId;
+            if (CG_PEN_MARKER_POS[markerKey]) return CG_PEN_MARKER_POS[markerKey];
+        }
         return primaryVillage
             ? coordForVillage(primaryVillage.name, primaryVillage.id)
             : coordForVillage(pen.gudi_village, pen.gudi_village_id);
@@ -355,7 +361,8 @@ function rebuildCircleMarkers() {
 
             // Store marker position for relation arrow targeting
             if (entry.penId) {
-                CG_PEN_MARKER_POS[entry.penId] = pt;
+                const key = entry.name.toLowerCase() + ':' + entry.penId;
+                CG_PEN_MARKER_POS[key] = pt;
             }
         }
     }
@@ -370,6 +377,7 @@ function rebuildLabels() {
 
     const seenVillage = new Set();
     const zoom = (map && typeof map.getZoom === 'function') ? map.getZoom() : 10;
+    const bounds = (map && typeof map.getBounds === 'function') ? map.getBounds().pad(0.05) : null;
 
     for (const key in CG_VILLAGE_ENTRIES) {
         const active = CG_VILLAGE_ENTRIES[key].filter(e =>
@@ -379,8 +387,10 @@ function rebuildLabels() {
 
         // Add pen labels at all zoom levels
         for (const entry of active) {
-            const pos = CG_PEN_MARKER_POS[entry.penId];
+            const key = entry.name.toLowerCase() + ':' + entry.penId;
+            const pos = CG_PEN_MARKER_POS[key];
             if (!pos) continue;
+            if (bounds && !bounds.contains(pos)) continue;
             CG_LABEL_ENTRIES.push({
                 text: entry.penName || entry.penId,
                 anchor: pos,
@@ -395,6 +405,7 @@ function rebuildLabels() {
             const first = active[0];
             const cinfo = CG_CENTROIDS[first.name];
             if (!cinfo) continue;
+            if (bounds && !bounds.contains(cinfo.centroid)) continue;
             const ck = cinfo.centroid[0].toFixed(6) + ',' + cinfo.centroid[1].toFixed(6);
             if (seenVillage.has(ck)) continue;
             seenVillage.add(ck);
@@ -412,17 +423,14 @@ function rebuildLabels() {
     placeAllLabels();
 }
 
-const CG_LABEL_DRAG = {};
-
 function createLabel(entry, containerPt, labelW, labelH) {
     const latlng = map.containerPointToLatLng(containerPt);
-    const dragKey = entry.type + ':' + entry.text;
 
     const makeMarker = (latlng, pane, style, w, h) => {
         const m = L.marker(latlng, {
             pane,
-            draggable: true,
-            interactive: true,
+            draggable: false,
+            interactive: false,
             icon: L.divIcon({
                 className: '',
                 html: `<div style="${style}; text-align: center; width: ${w}px; height: ${h}px; line-height: ${h}px;">${entry.text}</div>`,
@@ -430,24 +438,6 @@ function createLabel(entry, containerPt, labelW, labelH) {
                 iconAnchor: [w / 2, h / 2],
             }),
         }).addTo(penLabelLayer);
-
-        m.on('dragend', () => {
-            const newPos = m.getLatLng();
-            const newPt = map.latLngToContainerPoint(newPos);
-            const anchorPt = map.latLngToContainerPoint(entry.anchor);
-            CG_LABEL_DRAG[dragKey] = {
-                dx: newPt.x - anchorPt.x,
-                dy: newPt.y - anchorPt.y,
-            };
-            if (entry.type !== 'village') {
-                updateLeaderLine(entry, newPos, m);
-            }
-        });
-
-        m.on('dblclick', () => {
-            delete CG_LABEL_DRAG[dragKey];
-            rebuildLabels();
-        });
 
         return m;
     };
@@ -520,22 +510,13 @@ function placeAllLabels() {
     const nodes = [];
     for (const entry of CG_LABEL_ENTRIES) {
         const anchorPt = map.latLngToContainerPoint(entry.anchor);
-        const dragKey = entry.type + ':' + entry.text;
-        const fixed = dragKey in CG_LABEL_DRAG;
         const w = Math.max(entry.text.length * 8 + 12, 50);
         const h = 18;
 
-        let x, y;
-        if (fixed) {
-            const drag = CG_LABEL_DRAG[dragKey];
-            x = anchorPt.x + drag.dx;
-            y = anchorPt.y + drag.dy;
-        } else {
-            x = anchorPt.x + (Math.random() - 0.5) * 6;
-            y = anchorPt.y - h / 2 - 8 + (Math.random() - 0.5) * 6;
-        }
+        const x = anchorPt.x + (Math.random() - 0.5) * 6;
+        const y = anchorPt.y - h / 2 - 8 + (Math.random() - 0.5) * 6;
 
-        nodes.push({ entry, x, y, anchorX: anchorPt.x, anchorY: anchorPt.y, w, h, fixed, dragKey });
+        nodes.push({ entry, x, y, anchorX: anchorPt.x, anchorY: anchorPt.y, w, h });
     }
 
     // Force simulation
@@ -544,8 +525,6 @@ function placeAllLabels() {
         const alpha = 1 - iter / ITER;
 
         for (const a of nodes) {
-            if (a.fixed) continue;
-
             let fx = 0, fy = 0;
 
             // Repulsion from markers (labels must not cover circle markers)
@@ -607,36 +586,16 @@ function placeLabelsFallback() {
         const anchorPt = map.latLngToContainerPoint(entry.anchor);
         const labelW = Math.max(entry.text.length * 8 + 12, 50);
         const labelH = 18;
-        const dragKey = entry.type + ':' + entry.text;
 
-        let pt;
-        if (dragKey in CG_LABEL_DRAG) {
-            const drag = CG_LABEL_DRAG[dragKey];
-            pt = L.point(anchorPt.x + drag.dx, anchorPt.y + drag.dy);
-        } else {
-            const dx = entry.type === 'village' ? 18 : 0;
-            const dy = entry.type === 'village' ? 0 : (entry.type === 'sub_pen' ? 18 : 20);
-            pt = L.point(anchorPt.x + dx, anchorPt.y + dy);
-        }
+        const dx = entry.type === 'village' ? 18 : 0;
+        const dy = entry.type === 'village' ? 0 : (entry.type === 'sub_pen' ? 18 : 20);
+        const pt = L.point(anchorPt.x + dx, anchorPt.y + dy);
+
         createLabel(entry, pt, labelW, labelH);
     }
 }
 
-window.setPhratryFilter = function(phratryId, enabled) {
-    if (enabled) {
-        ACTIVE_PHRATRIES.add(phratryId);
-    } else {
-        ACTIVE_PHRATRIES.delete(phratryId);
-    }
-    rebuildPhratryStyle();
-};
 
-window.togglePhratryFilter = function(el) {
-    const phratryId = el.dataset.phratry;
-    const isActive = el.classList.contains('active');
-    window.setPhratryFilter(phratryId, !isActive);
-    el.classList.toggle('active', !isActive);
-};
 
 Promise.all([
     fetch('data/gods_and_goddesses/clan_gods.json').then(r => r.json()),
@@ -799,6 +758,15 @@ Promise.all([
     if (typeof layerMap !== 'undefined') {
         const clanGodsGroup = L.layerGroup([clanGodsLayer, penCircleMarkers, penLabelLayer, leaderLineLayer, CG_RELATION_LINES]);
         layerMap.clan_gods = clanGodsGroup;
+
+        // Sync initial visibility based on config activeState
+        if (activeState.clan_gods) {
+            if (!map.hasLayer(clanGodsGroup)) map.addLayer(clanGodsGroup);
+        } else {
+            if (map.hasLayer(clanGodsGroup)) map.removeLayer(clanGodsGroup);
+        }
+
+
 
         // Trigger updates when the layer is toggled visible
         map.on('layeradd', (e) => {

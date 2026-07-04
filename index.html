@@ -52,7 +52,7 @@
                         </div>
                         <div class="legend-item inactive" id="base-thunderforest_dark" onclick="switchBaseLayer('thunderforest_dark')">
                             <div class="legend-swatch" style="background:#1a1a2e; border-color:#444;"></div>
-                            <span class="legend-item-label">Thunderforest Transport Dark</span>
+                            <span class="legend-item-label">CartoDB Dark Matter</span>
                         </div>
                     </div>
                 </div>
@@ -218,6 +218,25 @@
 
                 <div class="legend-divider"></div>
 
+                <div class="legend-group" id="grp-police">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-police')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Police/Military Camps</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item" id="item-police_camps" onclick="toggleLayer('police_camps')">
+                            <div class="legend-swatch"
+                                style="background:#6B8E23; border-color:#6B8E23;"></div>
+                            <span class="legend-item-label">
+                                Police/Mil Camps
+                                <button class="zoom-btn" id="toggle-camp-view-btn" onclick="togglePoliceCampView(event)" title="Switch to Individual View">⛶</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
                 <div class="legend-group" id="grp-forest">
                     <div class="legend-group-header" onclick="toggleGroup('grp-forest')">
                         <span class="group-chevron">▼</span>
@@ -257,41 +276,7 @@
                                 style="background:rgba(204,41,54,0.5); border-color:#8b0000;"></div>
                             <span class="legend-item-label">Village Overlay (by Phratry)</span>
                         </div>
-                        <div class="legend-item phratry-filter active" data-phratry="kuhrami_kadiari" onclick="togglePhratryFilter(this)" style="padding-left:48px;">
-                            <div class="legend-swatch" style="background:#cc2936;border-color:#8b0000;"></div>
-                            <span class="legend-item-label">Kuhrami / Kadiari</span>
-                        </div>
-                        <div class="legend-item phratry-filter active" data-phratry="markami" onclick="togglePhratryFilter(this)" style="padding-left:48px;">
-                            <div class="legend-swatch" style="background:#2a6f97;border-color:#003f5c;"></div>
-                            <span class="legend-item-label">Markami</span>
-                        </div>
-                        <div class="legend-item phratry-filter active" data-phratry="madvi" onclick="togglePhratryFilter(this)" style="padding-left:48px;">
-                            <div class="legend-swatch" style="background:#2d6a4f;border-color:#1b4332;"></div>
-                            <span class="legend-item-label">Madvi</span>
-                        </div>
-                        <div class="legend-item phratry-filter active" data-phratry="kawasi" onclick="togglePhratryFilter(this)" style="padding-left:48px;">
-                            <div class="legend-swatch" style="background:#e76f00;border-color:#9a4d00;"></div>
-                            <span class="legend-item-label">Kawasi</span>
-                        </div>
-                        <div class="legend-item" style="cursor:default;padding-left:48px;opacity:0.6;font-style:italic;font-size:10px;">
-                            <span class="legend-item-label">Click phratry to toggle</span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="legend-divider"></div>
-
-                <div class="legend-group" id="grp-police">
-                    <div class="legend-group-header" onclick="toggleGroup('grp-police')">
-                        <span class="group-chevron">▼</span>
-                        <span class="group-label">Police/Military Camps</span>
-                    </div>
-                    <div class="legend-group-items">
-                        <div class="legend-item" id="item-police_camps" onclick="toggleLayer('police_camps')">
-                            <div class="legend-swatch"
-                                style="background:#6B8E23; border-color:#6B8E23;"></div>
-                            <span class="legend-item-label">Police/Military Camps</span>
-                        </div>
                     </div>
                 </div>
             </div>

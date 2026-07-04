@@ -76,6 +76,38 @@ function toggleLayer(key) {
     }
 }
 
+/* ── Police/Military Camps View Toggle ── */
+let currentPoliceCampView = 'cluster'; // 'cluster' or 'individual'
+
+function togglePoliceCampView(event) {
+    if (event) event.stopPropagation();
+
+    const btn = document.getElementById('toggle-camp-view-btn');
+    const isLayerActive = activeState.police_camps;
+
+    if (currentPoliceCampView === 'cluster') {
+        currentPoliceCampView = 'individual';
+        btn.title = 'Switch to Cluster View';
+        btn.classList.add('active');
+        layerMap.police_camps = geoLayerPoliceCamps;
+
+        if (isLayerActive) {
+            map.removeLayer(kmlLayerPoliceCamps);
+            map.addLayer(geoLayerPoliceCamps);
+        }
+    } else {
+        currentPoliceCampView = 'cluster';
+        btn.title = 'Switch to Individual View';
+        btn.classList.remove('active');
+        layerMap.police_camps = kmlLayerPoliceCamps;
+
+        if (isLayerActive) {
+            map.removeLayer(geoLayerPoliceCamps);
+            map.addLayer(kmlLayerPoliceCamps);
+        }
+    }
+}
+
 L.DomEvent.disableClickPropagation(document.getElementById('legend'));
 L.DomEvent.disableScrollPropagation(document.getElementById('legend'));
 
@@ -158,10 +190,9 @@ window.baseLayers = {
         minZoom: 0, maxZoom: 18,
         attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }),
-    thunderforest_dark: L.tileLayer('https://api.thunderforest.com/transport-dark/{z}/{x}/{y}{r}.png?apikey={apikey}', {
-        attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        apikey: '<your apikey>',
-        maxZoom: 22
+    thunderforest_dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        maxZoom: 20
     })
 };
 

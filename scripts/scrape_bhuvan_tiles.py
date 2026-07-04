@@ -88,14 +88,11 @@ def main():
         'Accept': 'application/x-protobuf',
     })
 
-    features = []
-    # Use v_code as dedup key to handle same-named villages
-    seen_vcodes = set()
-    # Also track villages for the centroids output
-    centroids_out = {}
+    # Group features by v_code to merge split polygons
+    vcode_to_slices = {}
+    no_code_features = []
     tile_count = 0
     feat_total = 0
-    skipped = 0
 
     for x in x_range:
         for y in y_range:
@@ -111,52 +108,22 @@ def main():
                     for feat in layer_features:
                         props = feat.get('properties', {})
                         v_code = props.get('v_code', '')
-                        v_name = props.get('v_name', '').strip()
 
                         # Skip features without valid geometry
                         raw_geom = feat.get('geometry')
                         if not raw_geom:
                             continue
 
-                        # Dedup by v_code (village code is unique per village)
-                        if v_code and v_code in seen_vcodes:
-                            skipped += 1
-                            continue
-                        if v_code:
-                            seen_vcodes.add(v_code)
-
                         # Convert geometry to WGS84
                         wgs84_geom = convert_geometry(raw_geom, x, y, Z, extent)
+                        geom_shape = shape(wgs84_geom)
 
-                        # Build GeoJSON feature
-                        feature = {
-                            'type': 'Feature',
-                            'properties': {
-                                'v_name': v_name,
-                                'v_code': v_code,
-                                'd_name': props.get('d_name', ''),
-                                'd_code': props.get('d_code', ''),
-                                'b_name': props.get('b_name', ''),
-                                'b_code': props.get('b_code', ''),
-                                'gp_name': props.get('gp_name', ''),
-                                'gp_code': props.get('gp_code', ''),
-                                's_name': props.get('s_name', ''),
-                                's_code': props.get('s_code', ''),
-                            },
-                            'geometry': wgs84_geom,
-                        }
-                        features.append(feature)
+                        if v_code:
+                            vcode_to_slices.setdefault(v_code, []).append((props, geom_shape))
+                        else:
+                            no_code_features.append((props, geom_shape))
+                        
                         feat_total += 1
-
-                        # Compute centroid for clan_gods
-                        if v_name:
-                            try:
-                                shp = shape(raw_geom)
-                                c = shp.centroid
-                                lat, lng = tile_local_to_wgs84(c.x, c.y, x, y, Z, extent)
-                                centroids_out[v_name] = [round(lat, 6), round(lng, 6)]
-                            except Exception:
-                                pass
 
                     tile_count += 1
             except requests.Timeout:
@@ -165,10 +132,67 @@ def main():
                 print(f'  [error] ({x},{y}): {e}')
 
             if tile_count > 0 and tile_count % 20 == 0:
-                print(f'  ... {tile_count}/{total_tiles} tiles, {feat_total} features')
+                print(f'  ... {tile_count}/{total_tiles} tiles, {feat_total} features raw')
 
     print()
-    print(f'Done: {tile_count} tiles, {feat_total} features, {skipped} duplicates skipped')
+    print(f'Done scanning: {tile_count} tiles, {feat_total} raw features collected.')
+    print("Merging sliced geometries...")
+    
+    from shapely.ops import unary_union
+    from shapely.geometry import mapping
+
+    features = []
+    centroids_out = {}
+
+    # 1. Process features with v_code (merge duplicate slices)
+    for v_code, slices in vcode_to_slices.items():
+        base_props = slices[0][0]
+        v_name = base_props.get('v_name', '').strip()
+        shapes = [item[1] for item in slices]
+        
+        try:
+            merged_shape = unary_union(shapes)
+        except Exception as e:
+            print(f"Error merging slices for {v_name} ({v_code}): {e}")
+            merged_shape = shapes[0]
+
+        merged_geom = mapping(merged_shape)
+
+        feature = {
+            'type': 'Feature',
+            'properties': {
+                'v_name': v_name,
+                'v_code': v_code,
+                'd_name': base_props.get('d_name', ''),
+                'd_code': base_props.get('d_code', ''),
+                'b_name': base_props.get('b_name', ''),
+                'b_code': base_props.get('b_code', ''),
+                'gp_name': base_props.get('gp_name', ''),
+                'gp_code': base_props.get('gp_code', ''),
+                's_name': base_props.get('s_name', ''),
+                's_code': base_props.get('s_code', ''),
+            },
+            'geometry': merged_geom,
+        }
+        features.append(feature)
+
+        # Compute centroid for clan_gods on merged geometry
+        if v_name:
+            c = merged_shape.centroid
+            centroids_out[v_name] = [round(c.y, 6), round(c.x, 6)]
+
+    # 2. Process features without v_code
+    for props, geom_shape in no_code_features:
+        v_name = props.get('v_name', '').strip()
+        feature = {
+            'type': 'Feature',
+            'properties': props,
+            'geometry': mapping(geom_shape),
+        }
+        features.append(feature)
+        if v_name:
+            c = geom_shape.centroid
+            centroids_out[v_name] = [round(c.y, 6), round(c.x, 6)]
 
     # Build GeoJSON FeatureCollection
     fc = {
@@ -186,7 +210,7 @@ def main():
     with open(OUT_PATH, 'w') as f:
         json.dump(fc, f)
     file_mb = os.path.getsize(OUT_PATH) / 1_000_000
-    print(f'Wrote {OUT_PATH} ({file_mb:.1f} MB)')
+    print(f'Wrote {OUT_PATH} ({file_mb:.1f} MB, {len(features)} merged features)')
 
     # Write clan_gods centroids separately
     centroid_count = len(centroids_out)

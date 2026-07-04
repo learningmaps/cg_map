@@ -23,9 +23,43 @@ def compute_polygon_centroid(geom):
         ring = geom['coordinates'][0]
     elif geom['type'] == 'MultiPolygon':
         ring = geom['coordinates'][0][0]
-    lngs = [c[0] for c in ring]
-    lats = [c[1] for c in ring]
-    return [round(sum(lats) / len(lats), 6), round(sum(lngs) / len(lngs), 6)]
+
+    n = len(ring)
+    if n < 3:
+        lngs = [c[0] for c in ring]
+        lats = [c[1] for c in ring]
+        return [round(sum(lats) / len(lats), 6), round(sum(lngs) / len(lngs), 6)]
+
+    area = 0.0
+    cx = 0.0
+    cy = 0.0
+
+    for i in range(n - 1):
+        x0, y0 = ring[i][0], ring[i][1]
+        x1, y1 = ring[i+1][0], ring[i+1][1]
+        factor = (x0 * y1 - x1 * y0)
+        area += factor
+        cx += (x0 + x1) * factor
+        cy += (y0 + y1) * factor
+
+    if ring[0] != ring[-1]:
+        x0, y0 = ring[-1][0], ring[-1][1]
+        x1, y1 = ring[0][0], ring[0][1]
+        factor = (x0 * y1 - x1 * y0)
+        area += factor
+        cx += (x0 + x1) * factor
+        cy += (y0 + y1) * factor
+
+    area *= 0.5
+    if abs(area) < 1e-10:
+        lngs = [c[0] for c in ring]
+        lats = [c[1] for c in ring]
+        return [round(sum(lats) / len(lats), 6), round(sum(lngs) / len(lngs), 6)]
+
+    cx = cx / (6.0 * area)
+    cy = cy / (6.0 * area)
+
+    return [round(cy, 6), round(cx, 6)]
 
 
 def extract_base_names(name):

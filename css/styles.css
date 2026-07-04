@@ -321,6 +321,10 @@ body {
     color: #4a3520;
     flex: 1;
     line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
 }
 
 .legend-item-extra {

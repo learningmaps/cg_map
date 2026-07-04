@@ -15,6 +15,7 @@ The application is structured as a client-side only static web application using
 *   **`js/layers.js`**: Map layer definitions. Loads and sets up layer configurations for WMS, Vector Grid PBF Tiles (like the Impacted Villages layer), GeoJSON, and KML files.
 *   **`js/ui.js`**: Handlers for UI interactions (Legend checkboxes/toggles, coordinate mouse displays, search functionality, and zooming to specific layers).
 *   **`js/utils.js`**: Helper functions, including the centralized popup builder `buildPopup` which renders consistent metadata tables inside Leaflet popups.
+*   **`js/clan-gods.js`**: Implements the Clan Gods layer, featuring dynamic phratry filtering, zoom-dependent details, collision-avoiding HTML labels (via `rbush`), and dynamic pixel-to-LatLng marker offsets.
 
 ---
 
@@ -48,3 +49,29 @@ graph TD
 2.  **Zoom-To-Layer**: Clicking the zoom icon on any legend item triggers `zoomToLayer(...)` to focus the map viewport directly on that feature's bounding box.
 3.  **Map Click Interactivity**: Clicking on an active vector feature resolves the correct layer properties, queries the matching metadata, and displays an information popup with styled badges and data tables.
 4.  **Responsive Layout**: On desktop screens, the Legend is docked as a sidebar. On mobile screens (width ≤ 768px), it switches to a touch-optimized bottom-sheet drawer with 44x44px target buttons.
+
+---
+
+## 🔱 Clan Gods Layer & Decluttering Strategy
+
+### 🔄 Data Flow
+The Clan Gods layer aggregates data from three asynchronous local files:
+1. `data/gods_and_goddesses/clan_gods.json`: Holds primary pens, clans, phratries, village relationships, and subordinate pen IDs.
+2. `data/gods_and_goddesses/village_centroids.json`: Provides lat/lng coordinates for village centroids.
+3. `data/gods_and_goddesses/vcode_bhuvan_name.json`: Maps standard village codes to census names.
+
+### 🗺 Decluttering and Collision Avoidance
+To prevent overlapping village labels, circle markers, and pen names, the layer uses a multi-faceted rendering strategy:
+
+1. **Zoom-Dependent Level of Detail (LoD)**
+   * **Zoom < 12**: Detailed pen circle markers, pen/sub-pen labels, and relation lines are hidden. Only Bhuvan village polygons (colored by phratry) and village name labels are displayed.
+   * **Zoom >= 12**: Circle markers, pen labels, leader lines, and relation lines are fully rendered.
+
+2. **Dynamic Pixel-Based Marker Offsets**
+   * Multiple pens at the same village centroid are arranged in an offset circle. The offset is calculated dynamically in screen pixel space (e.g., `16.5px` radius) and projected back to geographic coordinates on map move/zoom events. This keeps markers at a constant visual spacing at any zoom level.
+
+3. **Collision Detection via Spatial Indexing (`rbush`)**
+   * When drawing labels, the bounding box of each active circle marker is seeded into a 2D spatial index (`rbush`).
+   * Label placements are tried in 8 symmetric directions (Above, Below, Right, Left, and diagonals) at expanding margins (`4px`, `16px`, `28px`, `40px`) centered around their anchors.
+   * Village name labels have the highest priority and are placed first. Main pen labels have medium priority, and sub-pen labels have lowest priority.
+   * Labels that collide with markers or previously placed labels are strictly hidden (rather than forced to render on top of each other), automatically reappearing as the user zooms in.

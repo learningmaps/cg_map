@@ -188,59 +188,98 @@ shrugCensus.on('click', e => {
         ], 'shrug')).openOn(map);
 });
 
-/* ── Impacted villages (Filtered Bhuvan) ── */
-const impactedVillages = L.vectorGrid.protobuf(
-    "https://indianopenmaps.com/not-so-open/villages/bhuvan/{z}/{x}/{y}.pbf",
-    {
-        maxNativeZoom: 11, maxZoom: 22,
-        rendererFactory: L.svg.tile,
-        vectorTileLayerStyles: {
-            'bhuvan_villages': properties => {
-                const vName = (properties.v_name || "").toUpperCase();
-                const dName = (properties.d_name || "").toUpperCase();
-                
-                const target = IMPACTED_VILLAGES.find(t => {
-                    if (t.id) {
-                        return properties.v_code === t.id;
-                    }
-                    return t.v === vName && dName.includes(t.d);
-                });
-
-                if (target) {
-                    const isPartial = target.remarks === 'To be displaced partially';
-                    const isNoPop = target.remarks === 'Population not affected';
-                    
-                    let fillColor = '#b33939'; // Default: Deep Crimson (Fully displaced)
-                    if (isPartial) {
-                        fillColor = '#e67e22'; // Medium: Warm Terracotta Orange (Partially displaced)
-                    } else if (isNoPop) {
-                        fillColor = '#ffd255'; // Low: Soft Golden Yellow (Population not affected)
-                    }
-
-                    return {
-                        fillColor: fillColor, fill: true, fillOpacity: 0.5,
-                        stroke: true, color: 'rgba(255, 235, 235, 0.8)', weight: 0.1,
-                        nonScalingStroke: true
-                    };
-                }
-                // Hide other villages in this specific layer
-                return { fill: false, stroke: false, opacity: 0 };
+/* ── Impacted villages (GeoJSON with Dynamic Centroid Labels) ── */
+const impactedLabelLayer = L.layerGroup([]);
+const geoJsonImpactedLayer = L.geoJson(null, {
+    style: feature => {
+        const target = feature.properties.impact_data;
+        if (target) {
+            const isPartial = target.remarks === 'To be displaced partially';
+            const isNoPop = target.remarks === 'Population not affected';
+            
+            let fillColor = '#b33939'; // Default: Deep Crimson (Fully displaced)
+            if (isPartial) {
+                fillColor = '#e67e22'; // Medium: Warm Terracotta Orange (Partially displaced)
+            } else if (isNoPop) {
+                fillColor = '#ffd255'; // Low: Soft Golden Yellow (Population not affected)
             }
-        },
-        interactive: true,
-        detectRetina: true,
-        getFeatureId: f => f.properties?.village_id || f.properties?.v_name || Math.random()
-    }
-);
 
-impactedVillages.on('click', e => {
-    const p = e.layer?.properties || e.propagatedFrom?.properties || {};
+            return {
+                fillColor: fillColor, fill: true, fillOpacity: 0.45,
+                stroke: true, color: 'rgba(255, 235, 235, 0.8)', weight: 0.8,
+                nonScalingStroke: true
+            };
+        }
+        return { fill: false, stroke: false, opacity: 0 };
+    }
+});
+
+// Load the filtered GeoJSON file asynchronously
+fetch("data/bodhghat_impacted_villages.geojson")
+    .then(r => r.json())
+    .then(data => {
+        geoJsonImpactedLayer.addData(data);
+        rebuildImpactedLabels();
+    })
+    .catch(err => console.error("Error loading impacted GeoJSON:", err));
+
+const impactedVillages = L.layerGroup([geoJsonImpactedLayer, impactedLabelLayer]);
+
+function rebuildImpactedLabels() {
+    if (typeof map === 'undefined' || !map || !impactedLabelLayer) return;
+    impactedLabelLayer.clearLayers();
+
+    const zoom = map.getZoom();
+    if (zoom < 11.5) return; // Only display labels when zoomed in (Z11.5+)
+
+    geoJsonImpactedLayer.eachLayer(layer => {
+        if (typeof layer.getBounds !== 'function') return;
+        
+        const props = layer.feature?.properties || {};
+        const rawName = props.v_name || '';
+        // Format to Title Case (Proper Noun)
+        const vName = rawName.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+        
+        // Use true precomputed centroid to prevent label collisions/off-polygon placement
+        const center = props.centroid || layer.getBounds().getCenter();
+
+        const style = 'color:#5c2500; font-size:9.5px; font-weight:600; white-space:nowrap; text-shadow:-1px -1px 0 #FEFBE3, 1px -1px 0 #FEFBE3, -1px 1px 0 #FEFBE3, 1px 1px 0 #FEFBE3; text-align:center; width:120px;';
+        
+        const labelMarker = L.marker(center, {
+            interactive: false,
+            icon: L.divIcon({
+                className: '',
+                html: `<div style="${style}">${vName}</div>`,
+                iconSize: [120, 20],
+                iconAnchor: [60, 10]
+            })
+        });
+        impactedLabelLayer.addLayer(labelMarker);
+    });
+}
+
+// Bind zoom/pan events to rebuild labels dynamically when the layer is active
+map.on('moveend', () => {
+    if (map.hasLayer(impactedVillages)) {
+        rebuildImpactedLabels();
+    }
+});
+
+map.on('layeradd', (e) => {
+    if (e.layer === impactedVillages) {
+        rebuildImpactedLabels();
+    }
+});
+
+// Bind click handler directly to geoJsonImpactedLayer to guarantee correct polygon resolution
+geoJsonImpactedLayer.on('click', e => {
+    const p = e.layer?.feature?.properties || e.layer?.properties || e.propagatedFrom?.properties || {};
     const vName = (p.v_name || "").toUpperCase();
     const dName = (p.d_name || "").toUpperCase();
     
     const target = IMPACTED_VILLAGES.find(t => {
         if (t.id) {
-            return p.v_code === t.id;
+            return String(p.v_code) === String(t.id);
         }
         return t.v === vName && dName.includes(t.d);
     }) || {};

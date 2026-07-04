@@ -12,7 +12,7 @@ const LAYER_META = {
     impacted: { label: 'Impacted Villages', color: 'rgba(255,0,50,0.25)', border: 'rgba(255, 235, 235, 0.8)', text: '#8b0000' },
     tin: { label: 'Tin Ore Block', color: 'rgba(255, 215, 0, 0.2)', border: '#FFD700', text: '#6b5a00' },
     dep4photos: { label: 'Geotagged Photos', color: 'rgba(100,200,255,0.2)', border: 'rgba(44,95,138,0.7)', text: '#1a3d5c' },
-    police_camps: { label: 'Police/Military Camps', color: 'rgba(107,142,35,0.2)', border: '#6B8E23', text: '#3a4e0a' },
+    police_camps: { label: 'Police/Mil Camps', color: 'rgba(107,142,35,0.2)', border: '#6B8E23', text: '#3a4e0a' },
     clan_gods: { label: 'Clan Gods Villages', color: 'rgba(204,41,54,0.25)', border: '#8b0000', text: '#8b0000' },
 };
 
