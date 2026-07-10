@@ -1,0 +1,5434 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.78190781578948,
+          18.73204780584795
+        ]
+      },
+      "properties": {
+        "id": 231113231,
+        "osm_type": "way",
+        "name": "Naval Armament Depot",
+        "barrier": "wall",
+        "landuse": "military",
+        "natural": "scrub"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.97250796,
+          21.471273000000004
+        ]
+      },
+      "properties": {
+        "id": 330941471,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.47875961999999,
+          20.6866324
+        ]
+      },
+      "properties": {
+        "id": 334710249,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.6080035,
+          18.334684683333332
+        ]
+      },
+      "properties": {
+        "id": 418272308,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.16847481666666,
+          18.4490909
+        ]
+      },
+      "properties": {
+        "id": 553330001,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "barrier": "fence",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.34195134827586,
+          18.93501283103448
+        ]
+      },
+      "properties": {
+        "id": 740771956,
+        "osm_type": "way",
+        "name": "111 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.28409531951219,
+          21.52933758780488
+        ]
+      },
+      "properties": {
+        "id": 1003542938,
+        "osm_type": "way",
+        "name": "State Reserve Police Force, Gondia",
+        "alt_name": "SRPF",
+        "barrier": "wall",
+        "landuse": "military",
+        "police": "academy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.90169755238095,
+          21.41269797142857
+        ]
+      },
+      "properties": {
+        "id": 1042957731,
+        "osm_type": "way",
+        "name": "CRPF Camp Goshala",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.41550687486034,
+          17.864813579888267
+        ]
+      },
+      "properties": {
+        "id": 1087463467,
+        "osm_type": "way",
+        "name": "INS Kalinga",
+        "landuse": "military",
+        "military": "base",
+        "wikidata": "Q15227667",
+        "wikipedia": "en:INS Kalinga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.40327309037036,
+          17.824637605185185
+        ]
+      },
+      "properties": {
+        "id": 1087512580,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.07330170526316,
+          22.100136105263157
+        ]
+      },
+      "properties": {
+        "id": 1096063290,
+        "osm_type": "way",
+        "name": "Chhattisgarh Armed Forces",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.04250508571428,
+          22.13996809142857
+        ]
+      },
+      "properties": {
+        "id": 1096065367,
+        "osm_type": "way",
+        "name": "Central Reserve Police Force Bharni",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.01843651428571,
+          22.24353006666667
+        ]
+      },
+      "properties": {
+        "id": 1096350077,
+        "osm_type": "way",
+        "name": "Kargi Road Airstrip",
+        "aeroway": "aerodrome",
+        "description": "World War II airstrip of Royal Air Force",
+        "landuse": "military",
+        "military": "airfield"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.1808008392,
+          19.3181651512
+        ]
+      },
+      "properties": {
+        "id": 1183753435,
+        "osm_type": "way",
+        "name": "DRDO",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.14504663267327,
+          19.11823561881188
+        ]
+      },
+      "properties": {
+        "id": 1288390732,
+        "osm_type": "way",
+        "name": "201 and 204 CoBRA Complex",
+        "landuse": "military",
+        "military": "base",
+        "military_service": "cobra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.14839239999999,
+          19.112377375
+        ]
+      },
+      "properties": {
+        "id": 1288390753,
+        "osm_type": "way",
+        "name": "Baffle Firing Range CoBRA",
+        "landuse": "military",
+        "military": "range"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.14501172,
+          19.11611902
+        ]
+      },
+      "properties": {
+        "id": 1288390762,
+        "osm_type": "way",
+        "name": "OSM Military (Range)",
+        "landuse": "military",
+        "military": "range"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.14684039298245,
+          19.11765507894737
+        ]
+      },
+      "properties": {
+        "id": 1288390763,
+        "osm_type": "way",
+        "name": "CoBRA Traning Center",
+        "landuse": "military",
+        "military": "training_area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.1493339,
+          19.1112616
+        ]
+      },
+      "properties": {
+        "id": 1288390764,
+        "osm_type": "way",
+        "name": "OSM Military (Obstacle Course)",
+        "landuse": "military",
+        "military": "obstacle_course"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.46554046666667,
+          18.03398492222222
+        ]
+      },
+      "properties": {
+        "id": 1330134600,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.51720508571428,
+          18.25879882857143
+        ]
+      },
+      "properties": {
+        "id": 1330134615,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.68668265625,
+          18.4533242
+        ]
+      },
+      "properties": {
+        "id": 1330183514,
+        "osm_type": "way",
+        "name": "226 BN CPF",
+        "addr:city": "Geedam Nala",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.00725935833334,
+          21.097759616666668
+        ]
+      },
+      "properties": {
+        "id": 1360345541,
+        "osm_type": "way",
+        "name": "Police Training Grounds",
+        "landuse": "military",
+        "military": "training_area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.61073455,
+          22.404868450000002
+        ]
+      },
+      "properties": {
+        "id": 1393006554,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.70589635,
+          18.58912898
+        ]
+      },
+      "properties": {
+        "id": 1414349805,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.18178086,
+          19.79376112
+        ]
+      },
+      "properties": {
+        "id": 1429057086,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "barrier": "wall",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.0046023076923,
+          18.775210715384613
+        ]
+      },
+      "properties": {
+        "id": 1429670180,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.91821250000001,
+          18.564614380000002
+        ]
+      },
+      "properties": {
+        "id": 1429932893,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.779045175,
+          18.410034275
+        ]
+      },
+      "properties": {
+        "id": 1429932905,
+        "osm_type": "way",
+        "name": "CRPF FOB",
+        "landuse": "military",
+        "official_name": "Forward Operating Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.76589092,
+          18.44467972
+        ]
+      },
+      "properties": {
+        "id": 1429932916,
+        "osm_type": "way",
+        "name": "CRPF FOB",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.32884271428573,
+          19.08881034285714
+        ]
+      },
+      "properties": {
+        "id": 1430570527,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.98746442000001,
+          19.91842492
+        ]
+      },
+      "properties": {
+        "id": 1430876944,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.98032157142858,
+          19.888840742857145
+        ]
+      },
+      "properties": {
+        "id": 1430876948,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.96931935,
+          18.6083265625
+        ]
+      },
+      "properties": {
+        "id": 1434646738,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.97056389,
+          18.61007202
+        ]
+      },
+      "properties": {
+        "id": 1434646739,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.99664369,
+          18.68908913
+        ]
+      },
+      "properties": {
+        "id": 1434646743,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.00470008571428,
+          18.784949957142857
+        ]
+      },
+      "properties": {
+        "id": 1434646747,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.98561425714286,
+          18.736146242857142
+        ]
+      },
+      "properties": {
+        "id": 1434646751,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.11556256666667,
+          18.6785914
+        ]
+      },
+      "properties": {
+        "id": 1434646759,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.13898825999999,
+          18.72534064
+        ]
+      },
+      "properties": {
+        "id": 1434646772,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.88344596249999,
+          18.1136464
+        ]
+      },
+      "properties": {
+        "id": 1434934197,
+        "osm_type": "way",
+        "name": "COB MPV 21",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.78929287142857,
+          18.054619057142855
+        ]
+      },
+      "properties": {
+        "id": 1434934207,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.90524613636363,
+          18.208244436363636
+        ]
+      },
+      "properties": {
+        "id": 1435072251,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.68767572499999,
+          18.6055035125
+        ]
+      },
+      "properties": {
+        "id": 1435081321,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.81763848333333,
+          18.571598633333334
+        ]
+      },
+      "properties": {
+        "id": 1435081323,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.76717513999999,
+          18.65429464
+        ]
+      },
+      "properties": {
+        "id": 1435081324,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75503866,
+          18.69795012
+        ]
+      },
+      "properties": {
+        "id": 1435081325,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.74529145714287,
+          18.73786658571429
+        ]
+      },
+      "properties": {
+        "id": 1435081326,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.78618768999999,
+          18.77866546
+        ]
+      },
+      "properties": {
+        "id": 1435081328,
+        "osm_type": "way",
+        "name": "196 BN CRPF",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8123260173913,
+          18.78102694347826
+        ]
+      },
+      "properties": {
+        "id": 1435081329,
+        "osm_type": "way",
+        "name": "229 BN CRPF",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.805320775,
+          18.801259325
+        ]
+      },
+      "properties": {
+        "id": 1435081332,
+        "osm_type": "way",
+        "name": "170 BN CRPF",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.74885944545454,
+          18.772484318181817
+        ]
+      },
+      "properties": {
+        "id": 1435081335,
+        "osm_type": "way",
+        "name": "153 BN CRPF",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.71087142857142,
+          18.752822799999997
+        ]
+      },
+      "properties": {
+        "id": 1435081337,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.65774048,
+          18.73643552
+        ]
+      },
+      "properties": {
+        "id": 1435081339,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.58112492857143,
+          18.727503214285715
+        ]
+      },
+      "properties": {
+        "id": 1435081340,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.61724315714285,
+          18.747996714285712
+        ]
+      },
+      "properties": {
+        "id": 1435081343,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.43655605,
+          19.992809166666664
+        ]
+      },
+      "properties": {
+        "id": 1435255298,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.56150926000001,
+          19.75014012
+        ]
+      },
+      "properties": {
+        "id": 1435255316,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.56562663333334,
+          19.686536516666667
+        ]
+      },
+      "properties": {
+        "id": 1435255323,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.5444588625,
+          19.8331456375
+        ]
+      },
+      "properties": {
+        "id": 1435255329,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.31462415,
+          19.754215183333333
+        ]
+      },
+      "properties": {
+        "id": 1435305073,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.25951040000001,
+          19.868832666666666
+        ]
+      },
+      "properties": {
+        "id": 1435305104,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4393643,
+          17.986162723076923
+        ]
+      },
+      "properties": {
+        "id": 1435349962,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.06214733333333,
+          20.032380916666664
+        ]
+      },
+      "properties": {
+        "id": 1435499760,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.13486918333334,
+          20.149826683333334
+        ]
+      },
+      "properties": {
+        "id": 1435499771,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.13637275,
+          20.090879066666666
+        ]
+      },
+      "properties": {
+        "id": 1435499776,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.15404824285714,
+          20.016955757142856
+        ]
+      },
+      "properties": {
+        "id": 1435499788,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.1427887,
+          20.041797728571428
+        ]
+      },
+      "properties": {
+        "id": 1435499789,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.15161026,
+          19.983695160000003
+        ]
+      },
+      "properties": {
+        "id": 1435499794,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.128898775,
+          19.9657966875
+        ]
+      },
+      "properties": {
+        "id": 1435499796,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.10815629999999,
+          19.93751192
+        ]
+      },
+      "properties": {
+        "id": 1435499798,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.13425618571429,
+          19.896098842857146
+        ]
+      },
+      "properties": {
+        "id": 1435499799,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.14050857999999,
+          19.85927668
+        ]
+      },
+      "properties": {
+        "id": 1435499802,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.18271605714287,
+          19.867610071428572
+        ]
+      },
+      "properties": {
+        "id": 1435499804,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.19471175999999,
+          19.859510280000002
+        ]
+      },
+      "properties": {
+        "id": 1435499805,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.20125794,
+          19.87459578
+        ]
+      },
+      "properties": {
+        "id": 1435499807,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.14999878,
+          19.88344984
+        ]
+      },
+      "properties": {
+        "id": 1435499814,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.2058096,
+          19.879811659999998
+        ]
+      },
+      "properties": {
+        "id": 1435499818,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.22173875454546,
+          19.818795209090908
+        ]
+      },
+      "properties": {
+        "id": 1435499819,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.21852961818182,
+          19.762450036363635
+        ]
+      },
+      "properties": {
+        "id": 1435499821,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.56886423088235,
+          19.18008911176471
+        ]
+      },
+      "properties": {
+        "id": 1435708759,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.50358573448275,
+          20.238434700000003
+        ]
+      },
+      "properties": {
+        "id": 1435710903,
+        "osm_type": "way",
+        "name": "Counter Terrorism and Jungle Warfare College, Kanker",
+        "barrier": "wall",
+        "landuse": "military",
+        "operator": "Chhattisgarh Police",
+        "operator:type": "government",
+        "short_name": "CTJW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.000309,
+          19.028565620000002
+        ]
+      },
+      "properties": {
+        "id": 1435927842,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.93246288571429,
+          18.99614037142857
+        ]
+      },
+      "properties": {
+        "id": 1435927844,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.88783175714286,
+          18.95543012857143
+        ]
+      },
+      "properties": {
+        "id": 1435927845,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.84472017,
+          18.90949803
+        ]
+      },
+      "properties": {
+        "id": 1435927846,
+        "osm_type": "way",
+        "name": "222 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8165578,
+          18.87373626
+        ]
+      },
+      "properties": {
+        "id": 1435927847,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.80447183999999,
+          18.85805848
+        ]
+      },
+      "properties": {
+        "id": 1435927848,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8060919625,
+          18.8123719875
+        ]
+      },
+      "properties": {
+        "id": 1435927852,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.84989851666667,
+          18.782124
+        ]
+      },
+      "properties": {
+        "id": 1435927853,
+        "osm_type": "way",
+        "name": "85 BN CRPF",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.90772545555555,
+          18.775733377777776
+        ]
+      },
+      "properties": {
+        "id": 1435927857,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.86825926363636,
+          18.936206572727272
+        ]
+      },
+      "properties": {
+        "id": 1435927861,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.1645482,
+          18.9171498
+        ]
+      },
+      "properties": {
+        "id": 1435927862,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.99491988,
+          17.92973894
+        ]
+      },
+      "properties": {
+        "id": 1435966368,
+        "osm_type": "way",
+        "name": "212 BN CRPF",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.06997491111112,
+          17.929515955555555
+        ]
+      },
+      "properties": {
+        "id": 1435966376,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0385208,
+          17.79699474
+        ]
+      },
+      "properties": {
+        "id": 1435966378,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.11382661111111,
+          18.149615766666667
+        ]
+      },
+      "properties": {
+        "id": 1435966397,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.05379335714285,
+          18.01320027142857
+        ]
+      },
+      "properties": {
+        "id": 1435966403,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.05149954444444,
+          18.012368277777778
+        ]
+      },
+      "properties": {
+        "id": 1435966404,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.13422524,
+          18.19114446
+        ]
+      },
+      "properties": {
+        "id": 1435993951,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.103316875,
+          18.0717586375
+        ]
+      },
+      "properties": {
+        "id": 1435993972,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.10859834,
+          18.11333506
+        ]
+      },
+      "properties": {
+        "id": 1435993974,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.08378162857143,
+          18.229026692857143
+        ]
+      },
+      "properties": {
+        "id": 1435993976,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.11260063636364,
+          18.21494432727273
+        ]
+      },
+      "properties": {
+        "id": 1435993977,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.17427035789474,
+          18.25654986842105
+        ]
+      },
+      "properties": {
+        "id": 1435993981,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.19497782,
+          18.28057640666667
+        ]
+      },
+      "properties": {
+        "id": 1435993982,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.24696995625,
+          18.24907511875
+        ]
+      },
+      "properties": {
+        "id": 1435993985,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.2489751,
+          18.201065644444444
+        ]
+      },
+      "properties": {
+        "id": 1435993987,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.27458143636363,
+          18.17739398181818
+        ]
+      },
+      "properties": {
+        "id": 1435993989,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.26843125384616,
+          18.13137821538462
+        ]
+      },
+      "properties": {
+        "id": 1435993991,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0737827375,
+          18.046665275
+        ]
+      },
+      "properties": {
+        "id": 1435993994,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.03977736249999,
+          17.9781562
+        ]
+      },
+      "properties": {
+        "id": 1435994003,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0183993,
+          17.949720555555555
+        ]
+      },
+      "properties": {
+        "id": 1435994004,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.42285168333333,
+          18.409107233333334
+        ]
+      },
+      "properties": {
+        "id": 1436002676,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.55467823333333,
+          18.377621633333334
+        ]
+      },
+      "properties": {
+        "id": 1436002677,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.51239694444445,
+          18.22042972222222
+        ]
+      },
+      "properties": {
+        "id": 1436002680,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.52384210000001,
+          18.270009471428573
+        ]
+      },
+      "properties": {
+        "id": 1436002681,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.41844122857142,
+          18.32634391428571
+        ]
+      },
+      "properties": {
+        "id": 1436002685,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.1744608,
+          18.391307975
+        ]
+      },
+      "properties": {
+        "id": 1436002688,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.18220145714285,
+          18.34023087142857
+        ]
+      },
+      "properties": {
+        "id": 1436002692,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.17921194285714,
+          18.30592095
+        ]
+      },
+      "properties": {
+        "id": 1436002693,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.29903332,
+          18.10288751
+        ]
+      },
+      "properties": {
+        "id": 1436002696,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.3915865857143,
+          18.1919392
+        ]
+      },
+      "properties": {
+        "id": 1436002698,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.35392311000001,
+          18.21914258
+        ]
+      },
+      "properties": {
+        "id": 1436002702,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.31904213333333,
+          18.237825925
+        ]
+      },
+      "properties": {
+        "id": 1436002703,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.28308296666667,
+          18.249383344444443
+        ]
+      },
+      "properties": {
+        "id": 1436002704,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5089641125,
+          18.1451769625
+        ]
+      },
+      "properties": {
+        "id": 1436002705,
+        "osm_type": "way",
+        "name": "223 BN CRPF",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.15077236666666,
+          18.214698033333335
+        ]
+      },
+      "properties": {
+        "id": 1436210999,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.29897451000001,
+          18.201115870000002
+        ]
+      },
+      "properties": {
+        "id": 1436211009,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.29523016,
+          18.1529567
+        ]
+      },
+      "properties": {
+        "id": 1436211011,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.56597983,
+          18.765156179999998
+        ]
+      },
+      "properties": {
+        "id": 1436219459,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.7258828,
+          19.44328993
+        ]
+      },
+      "properties": {
+        "id": 1436228334,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.63968575833333,
+          19.412243341666667
+        ]
+      },
+      "properties": {
+        "id": 1436228337,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.47495496666666,
+          19.42334341666667
+        ]
+      },
+      "properties": {
+        "id": 1436228341,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.84898321666667,
+          19.760285341666666
+        ]
+      },
+      "properties": {
+        "id": 1436243399,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.901196,
+          19.753669344444447
+        ]
+      },
+      "properties": {
+        "id": 1436243400,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0445399375,
+          19.612959687500002
+        ]
+      },
+      "properties": {
+        "id": 1436243401,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.93395697272727,
+          19.50923188181818
+        ]
+      },
+      "properties": {
+        "id": 1436243402,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.97246229,
+          19.523913909999997
+        ]
+      },
+      "properties": {
+        "id": 1436243403,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.02371871111112,
+          19.5256775
+        ]
+      },
+      "properties": {
+        "id": 1436243405,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.17900491111112,
+          19.5925288
+        ]
+      },
+      "properties": {
+        "id": 1436243418,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.096979825,
+          19.56324340833333
+        ]
+      },
+      "properties": {
+        "id": 1436243419,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.03888846666666,
+          19.54714457142857
+        ]
+      },
+      "properties": {
+        "id": 1436243422,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.02775308,
+          19.58331167
+        ]
+      },
+      "properties": {
+        "id": 1436243425,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.07218548750001,
+          19.6394967875
+        ]
+      },
+      "properties": {
+        "id": 1436243430,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.95034534,
+          19.746289819999998
+        ]
+      },
+      "properties": {
+        "id": 1436243431,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.96773139,
+          19.71245834
+        ]
+      },
+      "properties": {
+        "id": 1436243432,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.08430683333334,
+          19.7057535
+        ]
+      },
+      "properties": {
+        "id": 1436243434,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.15145981111111,
+          19.703640800000002
+        ]
+      },
+      "properties": {
+        "id": 1436243436,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.00190856363636,
+          19.70682758181818
+        ]
+      },
+      "properties": {
+        "id": 1436243437,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.3022552,
+          19.461560028571427
+        ]
+      },
+      "properties": {
+        "id": 1436248476,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.24828456666667,
+          19.447717233333332
+        ]
+      },
+      "properties": {
+        "id": 1436248481,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.2871156,
+          19.4492222875
+        ]
+      },
+      "properties": {
+        "id": 1436248485,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.38412009999999,
+          17.8848707
+        ]
+      },
+      "properties": {
+        "id": 1436258134,
+        "osm_type": "way",
+        "name": "50 BN CRPF",
+        "alt_name": "50 Batallion CRPF",
+        "barrier": "wall",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.38746135714287,
+          17.880067228571427
+        ]
+      },
+      "properties": {
+        "id": 1436258135,
+        "osm_type": "way",
+        "name": "219 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.85867472857142,
+          18.020294157142857
+        ]
+      },
+      "properties": {
+        "id": 1436258136,
+        "osm_type": "way",
+        "name": "151 BN CRPF",
+        "addr:district": "Bhadradri-Kothagudem",
+        "addr:street": "Kaliveru",
+        "alt_name": "151 Batallion CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.37187413333334,
+          17.810920275
+        ]
+      },
+      "properties": {
+        "id": 1436258137,
+        "osm_type": "way",
+        "name": "217 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.83453025,
+          18.2264287
+        ]
+      },
+      "properties": {
+        "id": 1436258140,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.388783225,
+          17.8487144125
+        ]
+      },
+      "properties": {
+        "id": 1436258141,
+        "osm_type": "way",
+        "name": "228 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.65961630909091,
+          18.383659045454547
+        ]
+      },
+      "properties": {
+        "id": 1436258142,
+        "osm_type": "way",
+        "name": "02 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.50361756666666,
+          18.152240166666665
+        ]
+      },
+      "properties": {
+        "id": 1436258143,
+        "osm_type": "way",
+        "name": "74 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.34941552857143,
+          17.826594699999998
+        ]
+      },
+      "properties": {
+        "id": 1436258144,
+        "osm_type": "way",
+        "name": "131 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.13355175555556,
+          19.007356955555554
+        ]
+      },
+      "properties": {
+        "id": 1436258145,
+        "osm_type": "way",
+        "name": "165 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.51198406666667,
+          18.156044633333334
+        ]
+      },
+      "properties": {
+        "id": 1436258146,
+        "osm_type": "way",
+        "name": "150 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.09665034615385,
+          18.996752592307693
+        ]
+      },
+      "properties": {
+        "id": 1436266406,
+        "osm_type": "way",
+        "name": "199 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.04561517777778,
+          18.96938172777778
+        ]
+      },
+      "properties": {
+        "id": 1436266407,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.258985325,
+          18.74442255625
+        ]
+      },
+      "properties": {
+        "id": 1436266411,
+        "osm_type": "way",
+        "name": "230 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.449937525,
+          18.97179149375
+        ]
+      },
+      "properties": {
+        "id": 1436266415,
+        "osm_type": "way",
+        "name": "231 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.01651646666667,
+          19.075256
+        ]
+      },
+      "properties": {
+        "id": 1436266416,
+        "osm_type": "way",
+        "name": "80 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.67068957142858,
+          19.5676392
+        ]
+      },
+      "properties": {
+        "id": 1436266417,
+        "osm_type": "way",
+        "name": "188 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.82017465999999,
+          18.72966883
+        ]
+      },
+      "properties": {
+        "id": 1436266418,
+        "osm_type": "way",
+        "name": "227 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.90955310000001,
+          18.99291616
+        ]
+      },
+      "properties": {
+        "id": 1436266419,
+        "osm_type": "way",
+        "name": "241 BN CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0352697,
+          18.38566126
+        ]
+      },
+      "properties": {
+        "id": 1436398204,
+        "osm_type": "way",
+        "name": "CRPF FOB Tumpalpad",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.00596558571429,
+          18.411500142857143
+        ]
+      },
+      "properties": {
+        "id": 1436398205,
+        "osm_type": "way",
+        "name": "CRPF",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.988262,
+          18.52054228
+        ]
+      },
+      "properties": {
+        "id": 1436398208,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9694785,
+          18.53463545
+        ]
+      },
+      "properties": {
+        "id": 1436398209,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.94193198571429,
+          18.549012857142856
+        ]
+      },
+      "properties": {
+        "id": 1436398212,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.87089766666666,
+          18.563210299999998
+        ]
+      },
+      "properties": {
+        "id": 1436398213,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.96206988571429,
+          18.46028737142857
+        ]
+      },
+      "properties": {
+        "id": 1436431982,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9761007125,
+          18.4899154
+        ]
+      },
+      "properties": {
+        "id": 1436431984,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9422767,
+          18.425652850000002
+        ]
+      },
+      "properties": {
+        "id": 1436431987,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.93516958571429,
+          18.380202314285714
+        ]
+      },
+      "properties": {
+        "id": 1436431989,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0275048,
+          18.440458983333333
+        ]
+      },
+      "properties": {
+        "id": 1436431993,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.97298479999999,
+          18.39837108
+        ]
+      },
+      "properties": {
+        "id": 1436431994,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.09379246666667,
+          18.4560034
+        ]
+      },
+      "properties": {
+        "id": 1436431996,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.05657559999999,
+          18.47256158571429
+        ]
+      },
+      "properties": {
+        "id": 1436431997,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.13936387142857,
+          18.3754344
+        ]
+      },
+      "properties": {
+        "id": 1436432003,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.05154774,
+          18.35552144
+        ]
+      },
+      "properties": {
+        "id": 1436432005,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9471872,
+          18.313915079999997
+        ]
+      },
+      "properties": {
+        "id": 1436432006,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.935552,
+          18.27777738
+        ]
+      },
+      "properties": {
+        "id": 1436432008,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.89561494545454,
+          18.187964363636365
+        ]
+      },
+      "properties": {
+        "id": 1436432010,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.1318087111111,
+          18.46106921111111
+        ]
+      },
+      "properties": {
+        "id": 1436432013,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.30552114,
+          18.721792880000002
+        ]
+      },
+      "properties": {
+        "id": 1436454142,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.32429099999999,
+          18.68756908
+        ]
+      },
+      "properties": {
+        "id": 1436454144,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.37656034999999,
+          18.857316783333335
+        ]
+      },
+      "properties": {
+        "id": 1436454145,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.43754336250001,
+          18.831976
+        ]
+      },
+      "properties": {
+        "id": 1436454146,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.66281404,
+          19.04467032
+        ]
+      },
+      "properties": {
+        "id": 1436509345,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.7241971,
+          19.238758766666667
+        ]
+      },
+      "properties": {
+        "id": 1436509347,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.86355403636364,
+          19.066071
+        ]
+      },
+      "properties": {
+        "id": 1436509348,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.17815698333334,
+          19.362825816666668
+        ]
+      },
+      "properties": {
+        "id": 1436610033,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.37088062000001,
+          19.4925834
+        ]
+      },
+      "properties": {
+        "id": 1436610034,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.37022440625,
+          19.56291276875
+        ]
+      },
+      "properties": {
+        "id": 1436610035,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.16599713846153,
+          18.882428761538463
+        ]
+      },
+      "properties": {
+        "id": 1436644317,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.1604365,
+          18.83947844
+        ]
+      },
+      "properties": {
+        "id": 1436644319,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.1634967875,
+          18.792650275
+        ]
+      },
+      "properties": {
+        "id": 1436644322,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.17166141666667,
+          18.753225816666667
+        ]
+      },
+      "properties": {
+        "id": 1436644323,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0793993625,
+          18.750951337500002
+        ]
+      },
+      "properties": {
+        "id": 1436644324,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.38119173333332,
+          20.072026283333333
+        ]
+      },
+      "properties": {
+        "id": 1436893847,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.27783780909091,
+          20.14360149090909
+        ]
+      },
+      "properties": {
+        "id": 1436893850,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.51267205555556,
+          20.29681022222222
+        ]
+      },
+      "properties": {
+        "id": 1436893851,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.06693398333333,
+          20.033505616666666
+        ]
+      },
+      "properties": {
+        "id": 1436893852,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.33193417999999,
+          20.4000312
+        ]
+      },
+      "properties": {
+        "id": 1436893853,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.31946826666668,
+          20.341382366666668
+        ]
+      },
+      "properties": {
+        "id": 1436893854,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.88170035,
+          18.879889733333332
+        ]
+      },
+      "properties": {
+        "id": 1442312755,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.89381782222222,
+          18.829619433333335
+        ]
+      },
+      "properties": {
+        "id": 1442312757,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.73392943333333,
+          18.914427866666667
+        ]
+      },
+      "properties": {
+        "id": 1442312761,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.71654487142857,
+          19.086292585714286
+        ]
+      },
+      "properties": {
+        "id": 1442312777,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.71464912857142,
+          19.1912436
+        ]
+      },
+      "properties": {
+        "id": 1442312780,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.39464717333334,
+          19.17444533333333
+        ]
+      },
+      "properties": {
+        "id": 1442323145,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.40467435833334,
+          19.186640133333334
+        ]
+      },
+      "properties": {
+        "id": 1442323146,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.4191754625,
+          19.2185526375
+        ]
+      },
+      "properties": {
+        "id": 1442323148,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.39224573846153,
+          19.262977715384615
+        ]
+      },
+      "properties": {
+        "id": 1442323150,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.38276747142856,
+          19.31227012857143
+        ]
+      },
+      "properties": {
+        "id": 1442323151,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.40529572,
+          19.35665535
+        ]
+      },
+      "properties": {
+        "id": 1442323154,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.30540222222221,
+          19.0774505
+        ]
+      },
+      "properties": {
+        "id": 1442323161,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.54349743076924,
+          19.93159673846154
+        ]
+      },
+      "properties": {
+        "id": 1442405432,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.5337575076923,
+          19.631801784615384
+        ]
+      },
+      "properties": {
+        "id": 1442405433,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.70277770999999,
+          19.964453119999998
+        ]
+      },
+      "properties": {
+        "id": 1442405436,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75623011,
+          20.06721822
+        ]
+      },
+      "properties": {
+        "id": 1442405442,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0534037,
+          20.22673977857143
+        ]
+      },
+      "properties": {
+        "id": 1442405451,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0810052625,
+          20.2210551
+        ]
+      },
+      "properties": {
+        "id": 1442405454,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.06903635714286,
+          20.365341757142858
+        ]
+      },
+      "properties": {
+        "id": 1442434907,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.06019077777779,
+          20.338944033333334
+        ]
+      },
+      "properties": {
+        "id": 1442434908,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8696836,
+          20.359520216666667
+        ]
+      },
+      "properties": {
+        "id": 1442434914,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.78499601666667,
+          20.22417185
+        ]
+      },
+      "properties": {
+        "id": 1442434916,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.74632638571428,
+          20.21373134285714
+        ]
+      },
+      "properties": {
+        "id": 1442434917,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.77143954285714,
+          20.094948928571426
+        ]
+      },
+      "properties": {
+        "id": 1442434918,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.7337557625,
+          19.987560225
+        ]
+      },
+      "properties": {
+        "id": 1442434922,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.98228399999999,
+          19.85687808
+        ]
+      },
+      "properties": {
+        "id": 1442434926,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.92956706666666,
+          19.96960436666667
+        ]
+      },
+      "properties": {
+        "id": 1442434930,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.7945698,
+          19.976475275
+        ]
+      },
+      "properties": {
+        "id": 1442434932,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.8283856,
+          19.9913555125
+        ]
+      },
+      "properties": {
+        "id": 1442434933,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.89251484285714,
+          19.971553914285714
+        ]
+      },
+      "properties": {
+        "id": 1442434938,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.85329094166667,
+          18.790653266666666
+        ]
+      },
+      "properties": {
+        "id": 1442560468,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.79603054,
+          18.68891826
+        ]
+      },
+      "properties": {
+        "id": 1442560470,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.77067708333333,
+          18.670842383333333
+        ]
+      },
+      "properties": {
+        "id": 1442560471,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.71615202000001,
+          18.4897027
+        ]
+      },
+      "properties": {
+        "id": 1442560473,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.85956609,
+          18.82092515
+        ]
+      },
+      "properties": {
+        "id": 1442560474,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.89420038,
+          18.94284038
+        ]
+      },
+      "properties": {
+        "id": 1442560475,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.1722067,
+          18.90357052222222
+        ]
+      },
+      "properties": {
+        "id": 1442560476,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.24846226666666,
+          18.5745613
+        ]
+      },
+      "properties": {
+        "id": 1442614098,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.36830684615384,
+          18.487845446153845
+        ]
+      },
+      "properties": {
+        "id": 1442614105,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.20386862000001,
+          18.48427214666667
+        ]
+      },
+      "properties": {
+        "id": 1442614116,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.2628253375,
+          18.4876223375
+        ]
+      },
+      "properties": {
+        "id": 1442614119,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.24640757,
+          18.4892914
+        ]
+      },
+      "properties": {
+        "id": 1442614122,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.28473966666667,
+          18.484704711111114
+        ]
+      },
+      "properties": {
+        "id": 1442614123,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.30183118095238,
+          18.50273789047619
+        ]
+      },
+      "properties": {
+        "id": 1442614125,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.35283226,
+          18.55914306
+        ]
+      },
+      "properties": {
+        "id": 1442614128,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.38925558,
+          18.607623620000002
+        ]
+      },
+      "properties": {
+        "id": 1442614129,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.3284430625,
+          18.627997075
+        ]
+      },
+      "properties": {
+        "id": 1442614132,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.38786458,
+          18.61754702
+        ]
+      },
+      "properties": {
+        "id": 1442614134,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.50139602666667,
+          18.631480953333334
+        ]
+      },
+      "properties": {
+        "id": 1442614139,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5346109888889,
+          18.606051477777775
+        ]
+      },
+      "properties": {
+        "id": 1442614142,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.54215546363638,
+          18.555142200000002
+        ]
+      },
+      "properties": {
+        "id": 1442614144,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.15129282857143,
+          20.14303257142857
+        ]
+      },
+      "properties": {
+        "id": 1443233545,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.27301835714286,
+          20.160619785714285
+        ]
+      },
+      "properties": {
+        "id": 1443233556,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.33762178,
+          17.913564876666666
+        ]
+      },
+      "properties": {
+        "id": 1443738294,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.37210166666667,
+          18.61813025
+        ]
+      },
+      "properties": {
+        "id": 1443993767,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.35849797,
+          18.81260716
+        ]
+      },
+      "properties": {
+        "id": 1443993768,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.3426638,
+          18.85042876
+        ]
+      },
+      "properties": {
+        "id": 1443993772,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.83736748571428,
+          18.990474857142857
+        ]
+      },
+      "properties": {
+        "id": 1443998164,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.2181013,
+          18.904496020000003
+        ]
+      },
+      "properties": {
+        "id": 1444668607,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.59893901428572,
+          20.23792297142857
+        ]
+      },
+      "properties": {
+        "id": 1445453219,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.47742467,
+          20.215201490000002
+        ]
+      },
+      "properties": {
+        "id": 1445453221,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.63112571666666,
+          19.858267
+        ]
+      },
+      "properties": {
+        "id": 1445453224,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.51582513333334,
+          19.857912844444442
+        ]
+      },
+      "properties": {
+        "id": 1445453226,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.46798951666666,
+          19.825615966666668
+        ]
+      },
+      "properties": {
+        "id": 1445453227,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.3488868,
+          19.83765416
+        ]
+      },
+      "properties": {
+        "id": 1445453237,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.41316983333334,
+          19.725333266666667
+        ]
+      },
+      "properties": {
+        "id": 1445453243,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.29275701666667,
+          19.5752863
+        ]
+      },
+      "properties": {
+        "id": 1445453250,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.32845426,
+          19.51200358
+        ]
+      },
+      "properties": {
+        "id": 1445453259,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.52842769,
+          19.51621195
+        ]
+      },
+      "properties": {
+        "id": 1445453264,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.61630158888889,
+          19.54261057777778
+        ]
+      },
+      "properties": {
+        "id": 1445453268,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.67664792000001,
+          20.180027619999997
+        ]
+      },
+      "properties": {
+        "id": 1445470376,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.58868856666666,
+          20.134810733333335
+        ]
+      },
+      "properties": {
+        "id": 1445470377,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.70684046,
+          20.30177784
+        ]
+      },
+      "properties": {
+        "id": 1445470378,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.89921438,
+          20.27501324
+        ]
+      },
+      "properties": {
+        "id": 1445470380,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.6292833,
+          20.3299242
+        ]
+      },
+      "properties": {
+        "id": 1445470382,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.52464379999999,
+          20.226010783333333
+        ]
+      },
+      "properties": {
+        "id": 1445470384,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.6970825875,
+          20.2470722875
+        ]
+      },
+      "properties": {
+        "id": 1445470386,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.60955456,
+          20.33421898
+        ]
+      },
+      "properties": {
+        "id": 1445470390,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.66916828,
+          20.67996054
+        ]
+      },
+      "properties": {
+        "id": 1445707027,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.71082676,
+          20.49203752
+        ]
+      },
+      "properties": {
+        "id": 1445707036,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.56303837,
+          20.435834370000002
+        ]
+      },
+      "properties": {
+        "id": 1445707037,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.64474595,
+          20.47102035
+        ]
+      },
+      "properties": {
+        "id": 1445707041,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.44570345454545,
+          18.17956608181818
+        ]
+      },
+      "properties": {
+        "id": 1445928651,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.54978015,
+          18.286519187499998
+        ]
+      },
+      "properties": {
+        "id": 1445928658,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.29812879090909,
+          18.0622613
+        ]
+      },
+      "properties": {
+        "id": 1445928671,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.48510181428571,
+          18.08418544285714
+        ]
+      },
+      "properties": {
+        "id": 1445928674,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.31091188461538,
+          18.017305184615385
+        ]
+      },
+      "properties": {
+        "id": 1445957993,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.335448325,
+          17.9851601875
+        ]
+      },
+      "properties": {
+        "id": 1445957997,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.344637925,
+          17.9477308875
+        ]
+      },
+      "properties": {
+        "id": 1445957999,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.36459857777778,
+          17.918326999999998
+        ]
+      },
+      "properties": {
+        "id": 1445958002,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.05824256000001,
+          17.87817648
+        ]
+      },
+      "properties": {
+        "id": 1445958006,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.28354592,
+          17.86032208
+        ]
+      },
+      "properties": {
+        "id": 1445958007,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.23713946000001,
+          17.88363
+        ]
+      },
+      "properties": {
+        "id": 1445958008,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.33365483333334,
+          17.834391755555558
+        ]
+      },
+      "properties": {
+        "id": 1445958025,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.80185236666667,
+          18.368426466666666
+        ]
+      },
+      "properties": {
+        "id": 1446834398,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.87052224,
+          18.52518774
+        ]
+      },
+      "properties": {
+        "id": 1446834399,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9325435,
+          18.34904782
+        ]
+      },
+      "properties": {
+        "id": 1446834400,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75146382,
+          18.48563954
+        ]
+      },
+      "properties": {
+        "id": 1446834401,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.82070612,
+          18.32409293
+        ]
+      },
+      "properties": {
+        "id": 1446834402,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.85857951428571,
+          18.1511332
+        ]
+      },
+      "properties": {
+        "id": 1446834410,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.83247778333333,
+          18.2706633
+        ]
+      },
+      "properties": {
+        "id": 1446834412,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.87652326666667,
+          18.107650216666666
+        ]
+      },
+      "properties": {
+        "id": 1446834417,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.89025043000001,
+          18.15865042
+        ]
+      },
+      "properties": {
+        "id": 1446834419,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.88797316666667,
+          18.13667325
+        ]
+      },
+      "properties": {
+        "id": 1446834422,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.04327368,
+          18.31779148
+        ]
+      },
+      "properties": {
+        "id": 1446834424,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.0320234,
+          18.2228783
+        ]
+      },
+      "properties": {
+        "id": 1446834426,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.91243803333333,
+          18.245234033333332
+        ]
+      },
+      "properties": {
+        "id": 1446834428,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.5696531375,
+          18.9744537375
+        ]
+      },
+      "properties": {
+        "id": 1446836156,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.3756302125,
+          19.2329164
+        ]
+      },
+      "properties": {
+        "id": 1447184137,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.37159201666667,
+          19.5913192
+        ]
+      },
+      "properties": {
+        "id": 1456059857,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.649814325,
+          19.8060775875
+        ]
+      },
+      "properties": {
+        "id": 1456059871,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.75717424,
+          19.78932553
+        ]
+      },
+      "properties": {
+        "id": 1456059880,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.80937216,
+          19.77860506
+        ]
+      },
+      "properties": {
+        "id": 1456059881,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.4214533,
+          17.86008416
+        ]
+      },
+      "properties": {
+        "id": 1474506862,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.03518729999999,
+          18.051892379999998
+        ]
+      },
+      "properties": {
+        "id": 1528854350,
+        "osm_type": "way",
+        "name": "F42 BN CRPF",
+        "barrier": "wall",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.46844895333334,
+          18.091385713333334
+        ]
+      },
+      "properties": {
+        "id": 1529329832,
+        "osm_type": "way",
+        "name": "OSM Military Area",
+        "barrier": "wall",
+        "landuse": "military"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.3413230857143,
+          18.276814221428573
+        ]
+      },
+      "properties": {
+        "id": 1529336231,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "barrier": "wall",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.4557268,
+          18.29356291818182
+        ]
+      },
+      "properties": {
+        "id": 1529341346,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.34666005714286,
+          18.000313852380952
+        ]
+      },
+      "properties": {
+        "id": 1529341347,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.26120921333333,
+          17.787947106666667
+        ]
+      },
+      "properties": {
+        "id": 1529341348,
+        "osm_type": "way",
+        "name": "OSM Military (Base)",
+        "landuse": "military",
+        "military": "base"
+      }
+    }
+  ]
+}

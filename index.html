@@ -229,7 +229,15 @@
                                 style="background:#6B8E23; border-color:#6B8E23;"></div>
                             <span class="legend-item-label">
                                 Police/Mil Camps
-                                <button class="zoom-btn" id="toggle-camp-view-btn" onclick="togglePoliceCampView(event)" title="Switch to Individual View">⛶</button>
+                                <button class="zoom-btn" id="toggle-camp-view-btn" onclick="togglePoliceCampView(event)" title="Switch to Cluster View">⛶</button>
+                            </span>
+                        </div>
+                        <div class="legend-item inactive" id="item-osm_military" onclick="toggleLayer('osm_military')">
+                            <div class="legend-swatch"
+                                style="background:#4682B4; border-color:#4682B4;"></div>
+                            <span class="legend-item-label">
+                                OSM Landuse Military
+                                <button class="zoom-btn" id="toggle-osm-view-btn" onclick="toggleOsmMilitaryView(event)" title="Switch to Cluster View">⛶</button>
                             </span>
                         </div>
                     </div>

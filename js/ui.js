@@ -30,7 +30,8 @@ const layerMap = {
     impacted: impactedVillages,
     dep4photos: undefined,
     forest: forestCompartments, forest_bijapur: kmlLayercgforc_bijapur,
-    police_camps: kmlLayerPoliceCamps,
+    police_camps: geoLayerPoliceCamps,
+    osm_military: geoLayerOsmMilitary,
     clan_gods: undefined  // populated async by clan-gods.js
 };
 
@@ -77,7 +78,7 @@ function toggleLayer(key) {
 }
 
 /* ── Police/Military Camps View Toggle ── */
-let currentPoliceCampView = 'cluster'; // 'cluster' or 'individual'
+let currentPoliceCampView = 'individual'; // 'individual' or 'cluster'
 
 function togglePoliceCampView(event) {
     if (event) event.stopPropagation();
@@ -85,28 +86,61 @@ function togglePoliceCampView(event) {
     const btn = document.getElementById('toggle-camp-view-btn');
     const isLayerActive = activeState.police_camps;
 
-    if (currentPoliceCampView === 'cluster') {
-        currentPoliceCampView = 'individual';
-        btn.title = 'Switch to Cluster View';
-        btn.classList.add('active');
-        layerMap.police_camps = geoLayerPoliceCamps;
-
-        if (isLayerActive) {
-            map.removeLayer(kmlLayerPoliceCamps);
-            map.addLayer(geoLayerPoliceCamps);
-        }
-    } else {
+    if (currentPoliceCampView === 'individual') {
         currentPoliceCampView = 'cluster';
         btn.title = 'Switch to Individual View';
-        btn.classList.remove('active');
+        btn.classList.add('active');
         layerMap.police_camps = kmlLayerPoliceCamps;
 
         if (isLayerActive) {
             map.removeLayer(geoLayerPoliceCamps);
             map.addLayer(kmlLayerPoliceCamps);
         }
+    } else {
+        currentPoliceCampView = 'individual';
+        btn.title = 'Switch to Cluster View';
+        btn.classList.remove('active');
+        layerMap.police_camps = geoLayerPoliceCamps;
+
+        if (isLayerActive) {
+            map.removeLayer(kmlLayerPoliceCamps);
+            map.addLayer(geoLayerPoliceCamps);
+        }
     }
 }
+
+/* ── OSM Landuse Military View Toggle ── */
+let currentOsmMilitaryView = 'individual'; // 'individual' or 'cluster'
+
+function toggleOsmMilitaryView(event) {
+    if (event) event.stopPropagation();
+
+    const btn = document.getElementById('toggle-osm-view-btn');
+    const isLayerActive = activeState.osm_military;
+
+    if (currentOsmMilitaryView === 'individual') {
+        currentOsmMilitaryView = 'cluster';
+        btn.title = 'Switch to Individual View';
+        btn.classList.add('active');
+        layerMap.osm_military = osmMilitaryCluster;
+
+        if (isLayerActive) {
+            map.removeLayer(geoLayerOsmMilitary);
+            map.addLayer(osmMilitaryCluster);
+        }
+    } else {
+        currentOsmMilitaryView = 'individual';
+        btn.title = 'Switch to Cluster View';
+        btn.classList.remove('active');
+        layerMap.osm_military = geoLayerOsmMilitary;
+
+        if (isLayerActive) {
+            map.removeLayer(osmMilitaryCluster);
+            map.addLayer(geoLayerOsmMilitary);
+        }
+    }
+}
+
 
 L.DomEvent.disableClickPropagation(document.getElementById('legend'));
 L.DomEvent.disableScrollPropagation(document.getElementById('legend'));

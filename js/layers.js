@@ -399,6 +399,73 @@ kmlLayerPoliceCamps.on("clusterclick", function (a) {
         .openOn(map);
 });
 
+/* ── OSM Landuse Military (downloaded, clustered) ── */
+const osmMilitaryCluster = L.markerClusterGroup({
+    zoomToBoundsOnClick: false,
+    iconCreateFunction: cluster => L.divIcon({
+        html: `<div class="osm-military-cluster-icon">${cluster.getChildCount()}</div>`,
+        className: '',
+        iconSize: L.point(24, 24),
+    }),
+});
+
+const geoLayerOsmMilitary = L.geoJson(null, {
+    pointToLayer: (feature, latlng) => L.marker(latlng, {
+        icon: L.divIcon({
+            className: '',
+            html: '<div class="osm-military-marker-icon"></div>',
+            iconSize: [12, 12],
+            iconAnchor: [6, 6],
+        }),
+    }),
+    onEachFeature: (feature, layer) => {
+        const p = feature.properties || {};
+        const rows = [
+            ['OSM ID', p.id],
+            ['OSM Type', p.osm_type],
+            ['Military', p.military || '—'],
+            ['Landuse', p.landuse || '—'],
+        ];
+        if (p.barrier) rows.push(['Barrier', p.barrier]);
+        if (p.notes) rows.push(['Notes', p.notes]);
+        layer.bindPopup(buildPopup(p.name || 'OSM Military Area', rows, 'osm_military'));
+    },
+});
+
+fetch("data/osm_landuse_military.geojson")
+    .then(r => r.json())
+    .then(data => {
+        geoLayerOsmMilitary.addData(data);
+        geoLayerOsmMilitary.eachLayer(l => osmMilitaryCluster.addLayer(l));
+    })
+    .catch(err => console.error("Error loading OSM military GeoJSON:", err));
+
+osmMilitaryCluster.on("clusterclick", function (a) {
+    const markers = a.layer.getAllChildMarkers();
+    const items = markers.map(m => {
+        const p = (m.feature && m.feature.properties) || {};
+        return `<div class="cluster-item">
+            <strong>${p.name || "OSM Military Area"}</strong><br/>
+            <span class="cluster-item-type-osm">${p.military || p.landuse || "Military"}</span>
+        </div>`;
+    }).join("");
+
+    L.popup()
+        .setLatLng(a.latlng)
+        .setContent(`
+            <div class="popup-inner cluster-popup">
+                <div class="popup-layer-badge" style="background:rgba(70,130,180,0.2);border:1px solid #4682B4;color:#1b4d75;">
+                    <span class="badge-dot" style="background:#4682B4;"></span>
+                    OSM Landuse Military
+                </div>
+                <div class="popup-title">${markers.length} military locations in this area</div>
+                ${items}
+            </div>
+        `)
+        .openOn(map);
+});
+
+
 /* ── Chittalnar–Kumakoleng Tin Ore Block ── */
 let chittalnarTinOre;
 fetch('data/chittalnar_tin_ore.geojson')

@@ -75,3 +75,16 @@ To prevent overlapping village labels, circle markers, and pen names, the layer 
    * Label placements are tried in 8 symmetric directions (Above, Below, Right, Left, and diagonals) at expanding margins (`4px`, `16px`, `28px`, `40px`) centered around their anchors.
    * Village name labels have the highest priority and are placed first. Main pen labels have medium priority, and sub-pen labels have lowest priority.
    * Labels that collide with markers or previously placed labels are strictly hidden (rather than forced to render on top of each other), automatically reappearing as the user zooms in.
+
+---
+
+## 🪖 OSM Landuse Military Layer
+
+### 🔄 Data Flow & Extraction
+1. **Query Definition**: The layer maps military areas using the Overpass Turbo query `nwr["landuse"="military"]` inside the Chhattisgarh bounding box.
+2. **Local Caching**: The data is fetched and processed via python scripts into a clean local GeoJSON dataset (`data/osm_landuse_military.geojson`) where polygon features are converted to point centroids to allow rendering point-based dot markers.
+3. **Clustering & View Toggle**:
+   * The layer renders individual point markers (`geoLayerOsmMilitary`) showing independent dot markers with steel blue styling by default.
+   * A view toggle button in the legend allows users to switch to a clustered layout (`osmMilitaryCluster`) to group locations, changing the button styling to active (green).
+
+
