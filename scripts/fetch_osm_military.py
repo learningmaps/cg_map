@@ -91,7 +91,7 @@ out geom;"""
         "features": features
     }
     
-    output_path = "data/osm_landuse_military.geojson"
+    output_path = "data/police_military_camps/osm_landuse_military.geojson"
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(geojson, f, indent=2, ensure_ascii=False)
         

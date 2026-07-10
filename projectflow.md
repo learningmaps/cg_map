@@ -82,7 +82,7 @@ To prevent overlapping village labels, circle markers, and pen names, the layer 
 
 ### 🔄 Data Flow & Extraction
 1. **Query Definition**: The layer maps military areas using the Overpass Turbo query `nwr["landuse"="military"]` inside the Chhattisgarh bounding box.
-2. **Local Caching**: The data is fetched and processed via python scripts into a clean local GeoJSON dataset (`data/osm_landuse_military.geojson`) where polygon features are converted to point centroids to allow rendering point-based dot markers.
+2. **Local Caching**: The data is fetched and processed via python scripts. The raw JSON query dump is stored under `data/Extra Data/osm_landuse_military_raw.json` and the processed GeoJSON dataset containing centroids is saved to `data/police_military_camps/osm_landuse_military.geojson`.
 3. **Clustering & View Toggle**:
    * The layer renders individual point markers (`geoLayerOsmMilitary`) showing independent dot markers with steel blue styling by default.
    * A view toggle button in the legend allows users to switch to a clustered layout (`osmMilitaryCluster`) to group locations, changing the button styling to active (green).

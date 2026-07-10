@@ -432,7 +432,7 @@ const geoLayerOsmMilitary = L.geoJson(null, {
     },
 });
 
-fetch("data/osm_landuse_military.geojson")
+fetch("data/police_military_camps/osm_landuse_military.geojson")
     .then(r => r.json())
     .then(data => {
         geoLayerOsmMilitary.addData(data);

@@ -10,8 +10,8 @@ def calculate_centroid(geom):
     return [sum(lons) / len(lons), sum(lats) / len(lats)]
 
 def main():
-    raw_path = "data/osm_landuse_military_raw.json"
-    output_path = "data/osm_landuse_military.geojson"
+    raw_path = "data/Extra Data/osm_landuse_military_raw.json"
+    output_path = "data/police_military_camps/osm_landuse_military.geojson"
     
     if not os.path.exists(raw_path):
         print(f"Error: {raw_path} not found")
