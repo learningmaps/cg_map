@@ -115,6 +115,12 @@ function kmlPopup(p, type) {
             ["Others", p.OTHERS]
         ], 'forest');
     }
+
+    if (type === 'dep5') {
+        return buildPopup(p.name || 'Dep-05 ML Area', [
+            ['Area', p.AREA ? (parseFloat(p.AREA) / 10000).toFixed(2) + ' ha' : '540.05 ha']
+        ], 'dep5');
+    }
 }
 
 function extractForceType(name) {

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Dep-5</name>
+	<open>1</open>
+	<Schema name="qq" id="kml_schema_ft_qq000">
+		<SimpleField type="xsd:double" name="AREA"><displayName>AREA</displayName>
+</SimpleField>
+	</Schema>
+	<StyleMap id="msn_placemark_circle10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight001</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_placemark_circle_highlight001">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>0.827273</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_placemark_circle000">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>0.7</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.7</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark id="kml_10">
+		<name>Dep-5</name>
+		<snippet></snippet>
+		<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>540.05ha</td>
+</tr></table></center>]]></description>
+		<styleUrl>#msn_placemark_circle10</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#kml_schema_ft_qq000">
+				<SimpleData name="AREA">5400500.577707368</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						81.1842530790602,18.6668189549931,0 81.20095207061109,18.6811087088682,0 81.2088591089213,18.6967283186737,0 81.20080609173471,18.697329992817,0 81.1913618344401,18.6941463554966,0 81.1826960235379,18.6856105000868,0 81.17828731101071,18.6677437300916,0 81.1842530790602,18.6668189549931,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

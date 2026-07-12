@@ -345,6 +345,14 @@ const kmlLayerScreenBenPlant = omnivore.kml(
     })
 );
 
+const kmlLayerDep5 = omnivore.kml(
+    'data/deposit_5/Dep-5_Kml file.kml',
+    null, L.geoJson(null, {
+        style: () => ({ ...kmlStyle, fillColor: 'rgb(0,150,136)', color: 'rgb(0,150,136)' }),
+        onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup(feature.properties || {}, 'dep5'))
+    })
+);
+
 /* ── Police/Military Camps (merged, clustered) ── */
 const kmlLayerPoliceCamps = L.markerClusterGroup({
     zoomToBoundsOnClick: false,
