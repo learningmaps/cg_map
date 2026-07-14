@@ -801,6 +801,11 @@ body {
     background: #6B8E23;
     border: 2px solid #fff;
     box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, border-width 0.2s;
 }
 .police-cluster-icon {
     width: 24px;
@@ -824,7 +829,28 @@ body {
     background: #4682B4;
     border: 2px solid #fff;
     box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, border-width 0.2s;
 }
+
+/* Zoom-dependent sizes for individual police/military markers */
+.map-zoom-medium .police-marker-icon,
+.map-zoom-medium .osm-military-marker-icon {
+    width: 9px;
+    height: 9px;
+    border-width: 1.5px;
+}
+
+.map-zoom-far .police-marker-icon,
+.map-zoom-far .osm-military-marker-icon {
+    width: 6px;
+    height: 6px;
+    border-width: 1px;
+}
+
 .osm-military-cluster-icon {
     width: 24px;
     height: 24px;

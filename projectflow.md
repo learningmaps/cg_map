@@ -87,4 +87,17 @@ To prevent overlapping village labels, circle markers, and pen names, the layer 
    * The layer renders individual point markers (`geoLayerOsmMilitary`) showing independent dot markers with steel blue styling by default.
    * A view toggle button in the legend allows users to switch to a clustered layout (`osmMilitaryCluster`) to group locations, changing the button styling to active (green).
 
+---
+
+## 🔍 Zoom-Dependent Sizing for Police & OSM Military Markers
+To maintain visual clarity and prevent clutter at lower zoom levels, the individual markers for both **Police/Mil Camps** and **OSM Landuse Military** dynamically change their size according to the map's zoom level:
+1. **Zoom Tracking**: The map container is dynamically classed based on the current zoom level (`map-zoom-far` for zoom < 9.5, `map-zoom-medium` for 9.5 <= zoom < 13, and `map-zoom-close` for zoom >= 13) via a listener on the `'zoomend'` event in [js/map-init.js](file:///home/myuser/Projects/gis_map_v2/js/map-init.js).
+2. **Absolute Centering**: Both `.police-marker-icon` and `.osm-military-marker-icon` are styled with `position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);` to ensure they remain perfectly centered on their geographic coordinates as they resize.
+3. **Size Scaling**:
+   * **Zoom >= 13** (`map-zoom-close`): 12px diameter, 2px white border (for high visibility).
+   * **Zoom 9.5 to 13** (`map-zoom-medium`): 9px diameter, 1.5px white border.
+   * **Zoom < 9.5** (`map-zoom-far`): 6px diameter, 1px white border.
+4. **Transition**: CSS transitions are applied on the markers' `width`, `height`, and `border-width` properties for a smooth visual scaling animation when zooming.
+
+
 
