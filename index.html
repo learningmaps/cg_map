@@ -148,6 +148,25 @@
 
                 <div class="legend-divider"></div>
 
+                <div class="legend-group" id="grp-pekb">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-pekb')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">PEKB (Parsa East and Kanta Basan)</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item" id="item-pekb" onclick="toggleLayer('pekb')">
+                            <div class="legend-swatch"
+                                style="background:rgba(160,0,0,0.4); border-color:#a00000;"></div>
+                            <span class="legend-item-label">PEKB</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerPekb)">⊕ Zoom</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
                 <div class="legend-group" id="grp-chittalnar">
                     <div class="legend-group-header" onclick="toggleGroup('grp-chittalnar')">
                         <span class="group-chevron">▼</span>
@@ -317,6 +336,7 @@
     </a>
 
     <div id="zoom-controls">
+        <button id="clean-view-btn" onclick="toggleCleanView(event)" title="Clean View / Screenshot Mode (Esc)">📷</button>
         <button onclick="map.zoomIn(0.5)" title="Zoom In">
             <svg viewBox="0 0 24 24" width="20" height="20">
                 <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />

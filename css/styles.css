@@ -921,3 +921,61 @@ body {
     stroke-dasharray: 8 6 !important;
     animation: dashmove 0.8s linear infinite;
 }
+
+/* ── Clean Map View / Screenshot Mode ── */
+#clean-view-btn {
+    width: 40px;
+    height: 40px;
+    background: #FEFBE3;
+    border: 1px solid #CFD8B3;
+    border-radius: 50%;
+    color: #7a5530;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(130, 100, 60, 0.12);
+    outline: none;
+}
+
+#clean-view-btn:hover {
+    background: #EFE3C3;
+    color: #5c3d18;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(130, 100, 60, 0.18);
+}
+
+body.clean-map-mode #legend-container,
+body.clean-map-mode #search-box,
+body.clean-map-mode #time-panel,
+body.clean-map-mode #coords-bar,
+body.clean-map-mode #sentinel-fab,
+body.clean-map-mode .leaflet-control-container {
+    display: none !important;
+}
+
+body.clean-map-mode #zoom-controls button:not(#clean-view-btn) {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+body.clean-map-mode #zoom-controls {
+    display: flex !important;
+}
+
+body.clean-map-mode #clean-view-btn {
+    opacity: 0.45;
+    background: rgba(254, 251, 227, 0.85);
+    border-color: rgba(207, 216, 179, 0.7);
+    font-weight: bold;
+}
+
+body.clean-map-mode #clean-view-btn:hover {
+    opacity: 1;
+    background: #EFE3C3;
+}
+

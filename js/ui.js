@@ -24,7 +24,7 @@ function toggleGroup(id) {
 const layerMap = {
     major: majorMining, majorngdr: majorMiningNgdr, minor: minorMining,
     dep4: kmlLayer, dep4c: kmlLayerCompWise, dep4screenbenplant: kmlLayerScreenBenPlant,
-    dep5: kmlLayerDep5,
+    dep5: kmlLayerDep5, pekb: kmlLayerPekb,
     chittalnar: chittalnarTinOre,
     bacheli: kmlLayerBacheli,
     dist: cgDistrictsWMS, vil: cgVillagesWMS, bhuvan: bhuvanVillages, shrug: shrugCensus,
@@ -280,3 +280,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+/* ── Clean Map View / Screenshot Mode ── */
+function toggleCleanView(event) {
+    if (event) event.stopPropagation();
+    const isClean = document.body.classList.toggle('clean-map-mode');
+    const btn = document.getElementById('clean-view-btn');
+    if (btn) {
+        btn.title = isClean ? 'Exit Screenshot Mode (Esc)' : 'Clean View / Screenshot Mode';
+        btn.innerHTML = isClean ? '✕' : '📷';
+    }
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && document.body.classList.contains('clean-map-mode')) {
+        toggleCleanView();
+    }
+});
+

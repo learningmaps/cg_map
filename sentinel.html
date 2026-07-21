@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sentinel-2 Time Series | CG Map</title>
+    
+    <!-- External CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@2.4.0/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@duccanhole/lightbox@0.0.5/style/index.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    
     <style>
         :root {
             --primary: #7a5530;
@@ -44,13 +51,13 @@
             left: 50%;
             transform: translateX(-50%);
             z-index: 1000;
-            background: rgba(254, 251, 227, 0.9);
+            background: rgba(254, 251, 227, 0.92);
             backdrop-filter: blur(8px);
             border: 1px solid var(--border);
             border-radius: 40px;
             padding: 8px 24px;
             width: auto;
-            min-width: 600px;
+            min-width: 640px;
             max-width: 95%;
             box-shadow: 0 8px 32px rgba(130, 100, 60, 0.15);
             color: var(--primary);
@@ -65,20 +72,10 @@
             gap: 12px;
         }
 
-        .timeline-header {
-            margin-bottom: 0;
-            gap: 12px;
-        }
-
         .date-display {
             font-weight: 800;
             font-size: 13px;
             white-space: nowrap;
-        }
-
-        .stats {
-            font-size: 9px;
-            display: none; /* Hide on compact */
         }
 
         .play-btn {
@@ -86,6 +83,11 @@
             height: 32px;
             font-size: 14px;
             flex-shrink: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+            background: var(--primary);
+            color: white;
         }
 
         input[type="range"] {
@@ -124,6 +126,7 @@
                 min-width: 90%; 
                 border-radius: 20px;
                 padding: 10px;
+                bottom: 65px;
             }
             .settings-row { flex-wrap: wrap; justify-content: center; }
         }
@@ -132,7 +135,295 @@
 <body>
     <div id="map"></div>
     
-    <div id="loading-overlay">Scanning...</div>
+    <div id="loading-overlay">Scanning Copernicus Satellite Data...</div>
+
+    <!-- Common Legend Panel Structure -->
+    <div id="legend-container">
+        <div id="legend">
+            <div id="legend-header">
+                <span class="legend-title">Layers</span>
+                <span class="legend-toggle">▼</span>
+            </div>
+            <div id="legend-body">
+                <div class="legend-group" id="grp-basemaps">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-basemaps')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Base Maps</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item" id="base-satellite" onclick="switchBaseLayer('satellite')">
+                            <div class="legend-swatch" style="background:#222; border-color:#444;"></div>
+                            <span class="legend-item-label">ESRI Satellite</span>
+                            <div class="legend-item-extra">
+                                <button class="label-btn" onclick="toggleLabels(event, 'google')" title="Google Hybrid Labels">Labels</button>
+                            </div>
+                        </div>
+                        <div class="legend-item inactive" id="base-osm" onclick="switchBaseLayer('osm')">
+                            <div class="legend-swatch" style="background:#fff; border-color:#ccc;"></div>
+                            <span class="legend-item-label">OpenStreetMap</span>
+                        </div>
+                        <div class="legend-item inactive" id="base-topo" onclick="switchBaseLayer('topo')">
+                            <div class="legend-swatch" style="background:#e0e0e0; border-color:#999;"></div>
+                            <span class="legend-item-label">OpenTopoMap</span>
+                        </div>
+                        <div class="legend-item inactive" id="base-stamen_terrain" onclick="switchBaseLayer('stamen_terrain')">
+                            <div class="legend-swatch" style="background:#c8d9c0; border-color:#7a9a6e;"></div>
+                            <span class="legend-item-label">Stamen Terrain</span>
+                        </div>
+                        <div class="legend-item inactive" id="base-thunderforest_dark" onclick="switchBaseLayer('thunderforest_dark')">
+                            <div class="legend-swatch" style="background:#1a1a2e; border-color:#444;"></div>
+                            <span class="legend-item-label">CartoDB Dark Matter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
+                <div class="legend-group" id="grp-mining">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-mining')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Mining Leases (NCOG/NGDR Data)</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item inactive" id="item-major" onclick="toggleLayer('major')">
+                            <div class="legend-swatch" style="background:rgba(255,165,0,0.5); border-color:rgba(255,165,0,0.5);"></div>
+                            <span class="legend-item-label">Major Mining NCOG</span>
+                        </div>
+                        <div class="legend-item" id="item-majorngdr" onclick="toggleLayer('majorngdr')">
+                            <div class="legend-swatch" style="background:rgba(255,81,0,0.5); border-color:rgba(255,81,0,0.5);"></div>
+                            <span class="legend-item-label">Major Mining NGDR 2022</span>
+                        </div>
+                        <div class="legend-item inactive" id="item-minor" onclick="toggleLayer('minor')">
+                            <div class="legend-swatch" style="background:rgba(0,0,255,0.5); border-color:rgba(0,0,255,0.5);"></div>
+                            <span class="legend-item-label">Minor Mining NCOG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
+                <div class="legend-group" id="grp-dep4">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-dep4')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Deposit 4</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item" id="item-dep4" onclick="toggleLayer('dep4')">
+                            <div class="legend-swatch" style="background:rgba(255,255,255,0.12); border-color:rgba(41,41,41,0.685);"></div>
+                            <span class="legend-item-label">Dep-04 ML Area</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayer)">⊕ Zoom</button>
+                            </div>
+                        </div>
+                        <div class="legend-item" id="item-dep4c" onclick="toggleLayer('dep4c')">
+                            <div class="legend-swatch" style="background:rgb(255,251,41); border-color:rgb(255,251,41);"></div>
+                            <span class="legend-item-label">Component wise Breakdown</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerCompWise)">⊕ Zoom</button>
+                            </div>
+                        </div>
+                        <div class="legend-item" id="item-dep4screenbenplant" onclick="toggleLayer('dep4screenbenplant')">
+                            <div class="legend-swatch" style="background:rgb(255,161,106); border-color:rgb(255,161,106);"></div>
+                            <span class="legend-item-label">Screening Cum Beneficiation Plant</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerScreenBenPlant)">⊕ Zoom</button>
+                            </div>
+                        </div>
+                        <div class="legend-item" id="item-dep4photos" onclick="toggleLayer('dep4photos')">
+                            <div class="legend-swatch" style="background:rgba(100,200,255,0.4); border-color:rgba(44,95,138,0.8);"></div>
+                            <span class="legend-item-label">Geotagged Photos</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="event.stopPropagation(); if (geoImagesLayer && geoImagesLayer.getBounds) map.fitBounds(geoImagesLayer.getBounds(), {padding:[40,40], maxZoom:17})">⊕ Zoom</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
+                <div class="legend-group" id="grp-dep5">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-dep5')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Deposit 5</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item" id="item-dep5" onclick="toggleLayer('dep5')">
+                            <div class="legend-swatch" style="background:rgba(0,150,136,0.15); border-color:rgba(0,150,136,0.6);"></div>
+                            <span class="legend-item-label">Dep-05 ML Area</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerDep5)">⊕ Zoom</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
+                <div class="legend-group" id="grp-pekb">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-pekb')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">PEKB (Parsa East and Kanta Basan)</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item" id="item-pekb" onclick="toggleLayer('pekb')">
+                            <div class="legend-swatch" style="background:rgba(160,0,0,0.4); border-color:#a00000;"></div>
+                            <span class="legend-item-label">PEKB</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerPekb)">⊕ Zoom</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
+                <div class="legend-group" id="grp-chittalnar">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-chittalnar')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Chittalnar–Kumakoleng Tin Ore Block</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item" id="item-chittalnar" onclick="toggleLayer('chittalnar')">
+                            <div class="legend-swatch" style="background:rgba(255, 215, 0, 0.5); border-color:#FFD700;"></div>
+                            <span class="legend-item-label">Tin Ore Block</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="zoomToLayer(event, chittalnarTinOre)">⊕ Zoom</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
+                <div class="legend-group" id="grp-bacheli">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-bacheli')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Bacheli Airport</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item" id="item-bacheli" onclick="toggleLayer('bacheli')">
+                            <div class="legend-swatch" style="background:rgba(120, 250, 200, 0.884); border-color:rgba(120, 250, 200, 0.884);"></div>
+                            <span class="legend-item-label">Bacheli Airport</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerBacheli)">⊕ Zoom</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
+                <div class="legend-group" id="grp-bodhghat">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-bodhghat')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Bodhghat Hydro</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item" id="item-impacted" onclick="toggleLayer('impacted')">
+                            <div class="legend-swatch" style="background:rgba(255,0,50,0.5); border-color:rgba(255, 235, 235, 0.8);"></div>
+                            <span class="legend-item-label">Impacted Villages</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="zoomToLayer(event, [19.21, 81.58])">⊕ Zoom</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
+                <div class="legend-group" id="grp-admin">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-admin')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Administrative</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item inactive" id="item-dist" onclick="toggleLayer('dist')">
+                            <div class="legend-swatch line" style="background:#888; width:14px; height:2px;"></div>
+                            <span class="legend-item-label">Districts (ATREE)</span>
+                        </div>
+                        <div class="legend-item inactive" id="item-vil" onclick="toggleLayer('vil')">
+                            <div class="legend-swatch line" style="background:#e55; width:14px; height:2px;"></div>
+                            <span class="legend-item-label">Villages (ATREE)</span>
+                        </div>
+                        <div class="legend-item inactive" id="item-bhuvan" onclick="toggleLayer('bhuvan')">
+                            <div class="legend-swatch" style="background:yellow; border-color:rgba(255,255,0,0.5);"></div>
+                            <span class="legend-item-label">Villages (Bhuvan)</span>
+                        </div>
+                        <div class="legend-item inactive" id="item-shrug" onclick="toggleLayer('shrug')">
+                            <div class="legend-swatch" style="background:rgba(0,100,255,0.5); border-color:rgba(0,100,255,0.5);"></div>
+                            <span class="legend-item-label">Census of India 2011 (SHRUG)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
+                <div class="legend-group" id="grp-police">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-police')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Police/Military Camps</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item" id="item-police_camps" onclick="toggleLayer('police_camps')">
+                            <div class="legend-swatch" style="background:#6B8E23; border-color:#6B8E23;"></div>
+                            <span class="legend-item-label">
+                                Police/Mil Camps
+                                <button class="zoom-btn" id="toggle-camp-view-btn" onclick="togglePoliceCampView(event)" title="Switch to Cluster View">⛶</button>
+                            </span>
+                        </div>
+                        <div class="legend-item inactive" id="item-osm_military" onclick="toggleLayer('osm_military')">
+                            <div class="legend-swatch" style="background:#4682B4; border-color:#4682B4;"></div>
+                            <span class="legend-item-label">
+                                OSM Landuse Military
+                                <button class="zoom-btn" id="toggle-osm-view-btn" onclick="toggleOsmMilitaryView(event)" title="Switch to Cluster View">⛶</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
+                <div class="legend-group" id="grp-forest">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-forest')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Forest</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item inactive" id="item-forest" onclick="toggleLayer('forest')">
+                            <div class="legend-swatch line" style="background:rgb(36, 181, 56); width:14px; height:2px;"></div>
+                            <span class="legend-item-label">Forest Compartments (ATREE)</span>
+                        </div>
+                        <div class="legend-item inactive" id="item-forest_bijapur" onclick="toggleLayer('forest_bijapur')">
+                            <div class="legend-swatch line" style="background:rgb(164, 254, 131); width:14px; height:2px;"></div>
+                            <span class="legend-item-label">
+                                Bijapur Forest Compts (Chhattisgarh Forest Department)
+                                <a href="https://forest.cg.gov.in/FMIS_AllApp/Forest%20Working%20Plan/FWP_Indx.html" target="_blank">Source</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
+                <div class="legend-group" id="grp-clan-gods">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-clan-gods')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Clan Gods</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item inactive" id="item-clan_gods" onclick="toggleLayer('clan_gods')">
+                            <div class="legend-swatch" style="background:rgba(204,41,54,0.5); border-color:#8b0000;"></div>
+                            <span class="legend-item-label">Village Overlay (by Phratry)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="coords-bar">
+        <span id="coords-text">Move cursor over map</span>
+    </div>
 
     <div id="search-box">
         <input type="text" id="location-input" placeholder="Search location...">
@@ -156,101 +447,215 @@
         </div>
         
         <div class="settings-row">
+            <select id="provider" onchange="fetchImages()">
+                <option value="copernicus">Copernicus Direct</option>
+                <option value="mpc">Microsoft Fallback</option>
+            </select>
+            <div class="divider"></div>
             <input type="date" id="start-date" onchange="fetchImages()">
             <span>to</span>
             <input type="date" id="end-date" onchange="fetchImages()">
             <div class="divider"></div>
             <select id="frequency" onchange="fetchImages()">
-                <option value="all">All</option>
+                <option value="all">All flyovers</option>
                 <option value="weekly">Weekly</option>
                 <option value="monthly">Monthly</option>
                 <option value="yearly">Yearly</option>
             </select>
             <div class="divider"></div>
-            <select id="img-type" onchange="fetchImages()">
-                <option value="visual">True Color</option>
-                <option value="ndvi">NDVI</option>
+            <select id="img-type" onchange="renderActiveLayer()">
+                <option value="TRUE-COLOR">True Color</option>
+                <option value="NDVI">NDVI</option>
+                <option value="NDMI">NDMI</option>
+                <option value="NDWI">NDWI</option>
+                <option value="FALSE-COLOR">False Color</option>
+                <option value="TRUE-COLOR-HIGHLIGHT-OPTIMIZED">Mining Highlight</option>
             </select>
             <div class="divider"></div>
-            <a href="index.html" style="text-decoration: none; color: var(--accent); font-weight: 800;">CLOSE</a>
+            <span style="font-weight: 700; white-space: nowrap;">Exposure:</span>
+            <input type="range" id="exposure-slider" min="0.3" max="1.5" step="0.05" value="0.8" oninput="handleExposureChange(this.value)" style="width: 70px;" title="Adjust imagery exposure/brightness">
+            <span id="exposure-val" style="font-weight: 800; width: 28px; text-align: right;">80%</span>
+            <button onclick="resetExposure()" style="background: transparent; border: 1px solid var(--border); color: var(--primary); border-radius: 8px; padding: 1px 5px; font-size: 9px; font-weight: 700; cursor: pointer;" title="Reset exposure to 80%">Reset</button>
+            <div class="divider"></div>
+            <a href="index.html" style="text-decoration: none; color: var(--accent); font-weight: 800;">MAIN MAP</a>
         </div>
     </div>
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script>
-        const map = L.map('map', {
-            center: [18.58, 81.03],
-            zoom: 11,
-            zoomControl: false
-        });
+    <div id="zoom-controls">
+        <button id="clean-view-btn" onclick="toggleCleanView(event)" title="Clean View / Screenshot Mode (Esc)">📷</button>
+        <button onclick="map.zoomIn(0.5)" title="Zoom In">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+                <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+            </svg>
+        </button>
+        <button onclick="map.zoomOut(0.5)" title="Zoom Out">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+                <path fill="currentColor" d="M19,13H5V11H19V13Z" />
+            </svg>
+        </button>
+    </div>
 
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-            attribution: '© CARTO'
-        }).addTo(map);
+    <!-- External Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+    <script src="https://unpkg.com/leaflet.vectorgrid@1.3.0/dist/Leaflet.VectorGrid.bundled.js"></script>
+    <script src="https://unpkg.com/@mapbox/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder@2.4.0/dist/Control.Geocoder.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="https://unpkg.com/rbush@3.0.1/rbush.js"></script>
+
+    <!-- Project Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/map-init.js"></script>
+    <script src="js/layers.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/geo-images.js"></script>
+    <script src="js/clan-gods.js"></script>
+
+    <!-- Lightbox library -->
+    <script type="module">
+        import Lightbox from 'https://unpkg.com/@duccanhole/lightbox@0.0.5/index.js';
+        window.__lb = new Lightbox();
+        const lbJs = document.getElementById('lightbox-js');
+        if (lbJs) lbJs.style.zIndex = '10000';
+
+        function initGallery() {
+            if (!window.PHOTO_LIST) return;
+            window.__lb.setGallery(window.PHOTO_LIST.map(img => ({
+                type: 'image',
+                src: img.url,
+                thumbnail: img.url,
+                downloadUrl: img.url,
+            })));
+            window.openPhotoOverlay = (id) => {
+                const idx = window.PHOTO_LIST.findIndex(p => p.id === id);
+                if (idx >= 0) window.__lb.openGalleryItem(idx);
+            };
+        }
+
+        if (window.PHOTO_LIST && window.PHOTO_LIST.length > 0) {
+            initGallery();
+        } else {
+            window.addEventListener('photos-loaded', initGallery);
+        }
+    </script>
+
+    <script>
+        const COPERNICUS_INSTANCE_ID = 'ea2daede-5c18-4b48-8029-f681bcb3282b';
+        const COPERNICUS_WMS_URL = `https://sh.dataspace.copernicus.eu/ogc/wms/${COPERNICUS_INSTANCE_ID}`;
+        const COPERNICUS_STAC_API = 'https://stac.dataspace.copernicus.eu/v1/search';
+        const MPC_STAC_API = 'https://planetarycomputer.microsoft.com/api/stac/v1';
 
         let items = [];
         let currentIndex = 0;
         let isPlaying = false;
         let playInterval = null;
         let activeSatelliteLayer = null;
-        let preLoadLayers = {};
 
-        // MPC API Helpers
-        const STAC_API = 'https://planetarycomputer.microsoft.com/api/stac/v1';
-        
-        // Set default dates
-        document.getElementById('start-date').value = new Date(Date.now() - 365 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
-        document.getElementById('end-date').value = new Date().toISOString().split('T')[0];
+        // Set default dates (past 1 year to today)
+        const todayStr = new Date().toISOString().split('T')[0];
+        const pastYearStr = new Date(Date.now() - 365 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+        document.getElementById('start-date').value = pastYearStr;
+        document.getElementById('end-date').value = todayStr;
+
+        // Layer mapping dictionary for MPC fallback
+        const MPC_ASSET_MAP = {
+            'TRUE-COLOR': 'visual',
+            'NDVI': 'ndvi',
+            'NDMI': 'visual',
+            'NDWI': 'visual',
+            'FALSE-COLOR': 'visual',
+            'TRUE-COLOR-HIGHLIGHT-OPTIMIZED': 'visual'
+        };
 
         async function fetchImages() {
             const bounds = map.getBounds();
             const bbox = [bounds.getWest(), bounds.getSouth(), bounds.getEast(), bounds.getNorth()];
-            const startDate = document.getElementById('start-date').value;
-            const endDate = document.getElementById('end-date').value;
+            const startDate = document.getElementById('start-date').value || pastYearStr;
+            const endDate = document.getElementById('end-date').value || todayStr;
             const freq = document.getElementById('frequency').value;
+            const provider = document.getElementById('provider').value;
             
             document.getElementById('loading-overlay').style.display = 'block';
 
             try {
-                const response = await fetch(`${STAC_API}/search`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        collections: ['sentinel-2-l2a'],
-                        bbox: bbox,
-                        datetime: `${startDate}/${endDate}`,
-                        limit: 1000, // Maximum allowed limit to cover full 2015-2026 range
-                        sortby: [{ field: 'properties.datetime', direction: 'asc' }]
-                    })
-                });
+                let rawItems = [];
 
-                const data = await response.json();
-                let rawItems = data.features;
+                if (provider === 'copernicus') {
+                    try {
+                        const response = await fetch(COPERNICUS_STAC_API, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                collections: ['SENTINEL-2'],
+                                bbox: bbox,
+                                datetime: `${startDate}T00:00:00Z/${endDate}T23:59:59Z`,
+                                limit: 500,
+                                sortby: [{ field: 'properties.datetime', direction: 'asc' }]
+                            })
+                        });
 
-                // Frequency filtering
+                        const data = await response.json();
+                        rawItems = data.features || [];
+                    } catch (err) {
+                        console.warn("Copernicus STAC query failed, switching to MPC catalog fallback...", err);
+                    }
+                }
+
+                // Fallback to MPC STAC query if Copernicus empty or fallback selected
+                if (rawItems.length === 0) {
+                    const response = await fetch(`${MPC_STAC_API}/search`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            collections: ['sentinel-2-l2a'],
+                            bbox: bbox,
+                            datetime: `${startDate}T00:00:00Z/${endDate}T23:59:59Z`,
+                            query: { 'eo:cloud_cover': { 'lt': 40 } },
+                            limit: 1000,
+                            sortby: [{ field: 'properties.datetime', direction: 'asc' }]
+                        })
+                    });
+
+                    const data = await response.json();
+                    rawItems = data.features || [];
+                }
+
+                // Frequency filtering logic
                 if (freq === 'all') {
                     items = rawItems;
                 } else {
-                    items = [];
-                    const seen = new Set();
+                    const groups = new Map();
                     rawItems.forEach(item => {
                         const date = new Date(item.properties.datetime);
                         let key;
                         if (freq === 'weekly') {
-                            const start = new Date(date.getFullYear(), 0, 1);
-                            const week = Math.ceil((((date - start) / 86400000) + start.getDay() + 1) / 7);
-                            key = `${date.getFullYear()}-W${week}`;
+                            const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+                            const dayNum = d.getUTCDay() || 7;
+                            d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+                            const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+                            const weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+                            key = `${d.getUTCFullYear()}-W${String(weekNo).padStart(2, '0')}`;
                         } else if (freq === 'monthly') {
-                            key = `${date.getFullYear()}-${date.getMonth()}`;
+                            key = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
                         } else if (freq === 'yearly') {
                             key = `${date.getFullYear()}`;
                         }
                         
-                        if (!seen.has(key)) {
-                            items.push(item);
-                            seen.add(key);
+                        // Select scene with lowest cloud cover for each frequency bucket
+                        if (!groups.has(key)) {
+                            groups.set(key, item);
+                        } else {
+                            const existing = groups.get(key);
+                            const existingCloud = existing.properties['eo:cloud_cover'] ?? 100;
+                            const currentCloud = item.properties['eo:cloud_cover'] ?? 100;
+                            if (currentCloud < existingCloud) {
+                                groups.set(key, item);
+                            }
                         }
                     });
+                    items = Array.from(groups.values());
                 }
                 
                 const slider = document.getElementById('time-slider');
@@ -274,10 +679,35 @@
             }
         }
 
-        function getTileUrl(itemId) {
-            const type = document.getElementById('img-type').value;
-            return `https://planetarycomputer.microsoft.com/api/data/v1/item/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&item=${itemId}&assets=${type}`;
+        if (!map.getPane('sentinelPane')) {
+            map.createPane('sentinelPane');
+            map.getPane('sentinelPane').style.zIndex = 250;
         }
+
+        function handleExposureChange(val) {
+            const exp = parseFloat(val);
+            const percent = Math.round(exp * 100);
+            const valEl = document.getElementById('exposure-val');
+            if (valEl) valEl.textContent = `${percent}%`;
+            
+            const pane = map.getPane('sentinelPane');
+            if (pane) {
+                const brightness = exp;
+                const contrast = 0.5 + 0.5 * exp;
+                pane.style.filter = `brightness(${brightness}) contrast(${contrast})`;
+            }
+        }
+
+        function resetExposure() {
+            const slider = document.getElementById('exposure-slider');
+            if (slider) {
+                slider.value = 0.8;
+                handleExposureChange(0.8);
+            }
+        }
+
+        // Initialize default exposure at 80%
+        handleExposureChange(0.8);
 
         function renderActiveLayer() {
             if (activeSatelliteLayer) map.removeLayer(activeSatelliteLayer);
@@ -285,21 +715,42 @@
             const item = items[currentIndex];
             if (!item) return;
 
-            activeSatelliteLayer = L.tileLayer(getTileUrl(item.id), {
-                zIndex: 100,
+            const provider = document.getElementById('provider').value;
+            const layerType = document.getElementById('img-type').value;
+            const dateStr = item.properties.datetime ? item.properties.datetime.split('T')[0] : '';
+
+            if (provider === 'copernicus') {
+                // Direct Copernicus Sentinel Hub OGC WMS Layer (in sentinelPane above base map, below overlays)
+                activeSatelliteLayer = L.tileLayer.wms(COPERNICUS_WMS_URL, {
+                    layers: layerType,
+                    format: 'image/png',
+                    transparent: true,
+                    time: dateStr,
+                    maxcc: 30,
+                    tileSize: 512,
+                    pane: 'sentinelPane',
+                    zIndex: 250
+                }).addTo(map);
+
+                activeSatelliteLayer.on('tileerror', () => {
+                    console.warn("Copernicus tile load error, falling back to Microsoft Planetary Computer...");
+                    renderMpcLayer(item, layerType);
+                });
+            } else {
+                renderMpcLayer(item, layerType);
+            }
+        }
+
+        function renderMpcLayer(item, layerType) {
+            if (activeSatelliteLayer) map.removeLayer(activeSatelliteLayer);
+            const mpcAsset = MPC_ASSET_MAP[layerType] || 'visual';
+            const mpcUrl = `https://planetarycomputer.microsoft.com/api/data/v1/item/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&item=${item.id}&assets=${mpcAsset}`;
+            
+            activeSatelliteLayer = L.tileLayer(mpcUrl, {
+                pane: 'sentinelPane',
+                zIndex: 250,
                 opacity: 1
             }).addTo(map);
-
-            // Pre-load neighbors
-            [currentIndex - 1, currentIndex + 1].forEach(idx => {
-                if (items[idx]) {
-                    if (preLoadLayers[items[idx].id]) return;
-                    preLoadLayers[items[idx].id] = L.tileLayer(getTileUrl(items[idx].id), {
-                        opacity: 0.01,
-                        zIndex: 1
-                    }).addTo(map);
-                }
-            });
         }
 
         function updateUI() {
@@ -377,32 +828,25 @@
             const total = items.length;
 
             for (const item of items) {
-                if (preLoadLayers[item.id]) {
-                    loadedCount++;
-                    progressBar.style.width = `${(loadedCount / total) * 100}%`;
-                    continue;
-                }
-
+                const dateStr = item.properties.datetime ? item.properties.datetime.split('T')[0] : '';
                 await new Promise((resolve) => {
-                    const layer = L.tileLayer(getTileUrl(item.id), {
+                    const layer = L.tileLayer.wms(COPERNICUS_WMS_URL, {
+                        layers: document.getElementById('img-type').value,
+                        format: 'image/png',
+                        transparent: true,
+                        time: dateStr,
+                        maxcc: 30,
+                        tileSize: 512,
                         opacity: 0.01,
                         zIndex: 1
                     });
                     
-                    layer.on('load', () => {
+                    layer.on('load tileerror', () => {
                         loadedCount++;
                         progressBar.style.width = `${(loadedCount / total) * 100}%`;
                         resolve();
                     });
 
-                    layer.on('tileerror', () => {
-                        // Resolve anyway to keep progress moving
-                        loadedCount++;
-                        progressBar.style.width = `${(loadedCount / total) * 100}%`;
-                        resolve();
-                    });
-
-                    preLoadLayers[item.id] = layer;
                     layer.addTo(map);
                 });
             }
@@ -415,12 +859,14 @@
             }, 2000);
         }
 
+        let moveTimer = null;
         map.on('moveend', () => {
-            // Clear cache on move to prevent memory leak and force new load for new view
-            Object.values(preLoadLayers).forEach(l => map.removeLayer(l));
-            preLoadLayers = {};
-            fetchImages();
+            if (moveTimer) clearTimeout(moveTimer);
+            moveTimer = setTimeout(() => {
+                fetchImages();
+            }, 400);
         });
+
         fetchImages();
     </script>
 </body>

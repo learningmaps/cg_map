@@ -353,6 +353,14 @@ const kmlLayerDep5 = omnivore.kml(
     })
 );
 
+const kmlLayerPekb = omnivore.kml(
+    'data/PEKB/pekb.kml',
+    null, L.geoJson(null, {
+        style: () => ({ ...kmlStyle, fillColor: 'rgba(160,0,0,0.4)', color: '#a00000', weight: 2 }),
+        onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup(feature.properties || { name: 'Parsa East & Kanta Basan (PEKB)' }, 'pekb'))
+    })
+);
+
 /* ── Police/Military Camps (merged, clustered) ── */
 const kmlLayerPoliceCamps = L.markerClusterGroup({
     zoomToBoundsOnClick: false,
@@ -511,11 +519,11 @@ fetch('data/chittalnar_tin_ore.geojson')
 
 /* ── WMS layers ── */
 const cgDistrictsWMS = L.tileLayer.wms('https://cfr.atree.org/geoserver/cfr/wms', {
-    layers: 'cfr:cg_district_en', format: 'image/png', transparent: true, version: '1.3.0', opacity: 0.7
+    layers: 'cfr:cg_district_en', format: 'image/png', transparent: true, version: '1.3.0', opacity: 0.7, pane: 'wmsOverlayPane'
 });
 
 const cgVillagesWMS = L.tileLayer.wms('https://cfr.atree.org/geoserver/cfr/wms', {
-    layers: 'cfr:cg_village_en', format: 'image/png', transparent: true, version: '1.3.0', opacity: 0.6
+    layers: 'cfr:cg_village_en', format: 'image/png', transparent: true, version: '1.3.0', opacity: 0.6, pane: 'wmsOverlayPane'
 });
 
 /* ── Label Layers ── */
@@ -524,5 +532,5 @@ const googleLabels = L.tileLayer('https://{s}.google.com/vt/lyrs=h&x={x}&y={y}&z
 });
 
 const forestCompartments = L.tileLayer.wms('https://cfr.atree.org/geoserver/cfr/wms', {
-    layers: 'cfr:cg_forest_compartments', format: 'image/png', transparent: true, version: '1.3.0', CRS: 'EPSG:4326', opacity: 0.6
+    layers: 'cfr:cg_forest_compartments', format: 'image/png', transparent: true, version: '1.3.0', CRS: 'EPSG:4326', opacity: 0.6, pane: 'wmsOverlayPane'
 });

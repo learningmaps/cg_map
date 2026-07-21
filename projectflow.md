@@ -12,7 +12,7 @@ The application is structured as a client-side only static web application using
 *   **`css/styles.css`**: Central stylesheet. Houses all UI styling, including layout styles, control overlays, premium map UI elements, and a dedicated mobile overrides section at the bottom (`@media (max-width: 768px)`).
 *   **`js/config.js`**: Application configuration and state. Stores the active layers state (`activeState`), layer metadata formatting (`LAYER_META`), and the hardcoded `IMPACTED_VILLAGES` metadata array (populated from `tests/impacted_villages_sy.xlsx`).
 *   **`js/map-init.js`**: Leaflet map initialization, configuring the base maps (Google Satellite, Google Hybrid, OpenStreetMap, etc.) and zoom parameters.
-*   **`js/layers.js`**: Map layer definitions. Loads and sets up layer configurations for WMS, Vector Grid PBF Tiles (like the Impacted Villages layer), GeoJSON, and KML files (such as Deposit 4 and Deposit 5).
+*   **`js/layers.js`**: Map layer definitions. Loads and sets up layer configurations for WMS, Vector Grid PBF Tiles (like the Impacted Villages layer), GeoJSON, and KML files (such as Deposit 4, Deposit 5, and PEKB Parsa East & Kanta Basan).
 *   **`js/ui.js`**: Handlers for UI interactions (Legend checkboxes/toggles, coordinate mouse displays, search functionality, and zooming to specific layers).
 *   **`js/utils.js`**: Helper functions, including the centralized popup builder `buildPopup` which renders consistent metadata tables inside Leaflet popups.
 *   **`js/clan-gods.js`**: Implements the Clan Gods layer, featuring dynamic phratry filtering, zoom-dependent details, collision-avoiding HTML labels (via `rbush`), and dynamic pixel-to-LatLng marker offsets.
@@ -48,7 +48,7 @@ graph TD
 1.  **Layer Toggle**: The user interacts with the sidebar/bottom-sheet legend. Toggling a checkbox triggers `toggleLayer('layerKey')` in `js/ui.js`, adding or removing the layer from the Leaflet map.
 2.  **Zoom-To-Layer**: Clicking the zoom icon on any legend item triggers `zoomToLayer(...)` to focus the map viewport directly on that feature's bounding box.
 3.  **Map Click Interactivity**: Clicking on an active vector feature resolves the correct layer properties, queries the matching metadata, and displays an information popup with styled badges and data tables.
-4.  **Responsive Layout**: On desktop screens, the Legend is docked as a sidebar. On mobile screens (width ≤ 768px), it switches to a touch-optimized bottom-sheet drawer with 44x44px target buttons.
+4. **Responsive Layout & Screenshot Mode**: On desktop screens, the Legend is docked as a sidebar. On mobile screens (width ≤ 768px), it switches to a touch-optimized bottom-sheet drawer. A **Clean View (`📷 Clean View`) / Screenshot Mode** button hides all buttons, panels, and legends to allow uncluttered map screenshots, with an `Esc` key shortcut to restore controls.
 
 ---
 
@@ -98,6 +98,26 @@ To maintain visual clarity and prevent clutter at lower zoom levels, the individ
    * **Zoom 9.5 to 13** (`map-zoom-medium`): 9px diameter, 1.5px white border.
    * **Zoom < 9.5** (`map-zoom-far`): 6px diameter, 1px white border.
 4. **Transition**: CSS transitions are applied on the markers' `width`, `height`, and `border-width` properties for a smooth visual scaling animation when zooming.
+
+---
+
+## 🛰 Sentinel-2 Time Series Page (`sentinel.html`)
+
+### 🔄 Architecture & Data Flow
+1. **Shared Modular Architecture**: Imports core scripts (`config.js`, `map-init.js`, `layers.js`, `ui.js`, `utils.js`) and Leaflet plugins to provide identical layer toggling and popup interactivity as `index.html`.
+2. **Legend Panel Integration**: Houses the `#legend-container` panel directly, allowing users to toggle any GIS layer (Mining Leases, Deposit 4, Forests, Clan Gods, Camps) as vector overlays above Sentinel satellite imagery.
+3. **Copernicus Sentinel Direct Imagery & Layer Ordering**:
+   - Primary rendering via direct **Copernicus Sentinel Hub OGC WMS** endpoint (`https://sh.dataspace.copernicus.eu/ogc/wms/ea2daede-5c18-4b48-8029-f681bcb3282b`).
+   - Renders inside a custom `sentinelPane` (`z-index: 250`), placing Sentinel satellite tiles directly above base maps (`z-index: 200`).
+   - WMS tile overlays (ATREE Villages, ATREE Districts, ATREE Forest Compartments) render inside `wmsOverlayPane` (`z-index: 350`) strictly above Sentinel tiles, while Vector/KML overlays render in `overlayPane` (`z-index: 400+`).
+   - Supports configured instance layers: `TRUE-COLOR`, `NDVI`, `NDMI`, `NDWI`, `FALSE-COLOR`, and `TRUE-COLOR-HIGHLIGHT-OPTIMIZED`.
+   - Automatic fallback to Microsoft Planetary Computer STAC tile rendering if Copernicus tile loading encounters errors or rate limits.
+4. **Timeline, Frequency & Real-Time Exposure Control**:
+   - Queries Copernicus STAC search (`https://stac.dataspace.copernicus.eu/v1/search`) or MPC STAC API for flyover catalog dates.
+   - Groups scene items by target frequency (**All**, **Weekly**, **Monthly**, **Yearly**) and selects the scene with minimum cloud cover for each bucket.
+   - Real-time **Exposure & Brightness Slider** (`30%` - `170%`, default `80%`) applies GPU-accelerated CSS filter tuning (`brightness` & `contrast`) to `sentinelPane` with zero latency or re-download lag.
+
+
 
 
 

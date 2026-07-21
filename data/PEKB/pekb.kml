@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Parsa East and Kanta Basan (PEKB)</name>
+  <Placemark>
+    <name>PEKB Mine Block</name>
+    <Polygon>
+      <outerBoundaryIs>
+        <LinearRing>
+          <coordinates>
+            82.789722,22.853333,0
+            82.847311,22.832292,0
+            82.824731,22.793750,0
+            82.777222,22.815556,0
+            82.789722,22.853333,0
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+    <Style>
+      <PolyStyle>
+        <color>a00000ff</color>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+  </Placemark>
+</Document>
+</kml>

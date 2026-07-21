@@ -15,13 +15,14 @@ const LAYER_META = {
     police_camps: { label: 'Police/Mil Camps', color: 'rgba(107,142,35,0.2)', border: '#6B8E23', text: '#3a4e0a' },
     osm_military: { label: 'OSM Landuse Military', color: 'rgba(70,130,180,0.2)', border: '#4682B4', text: '#1b4d75' },
     clan_gods: { label: 'Clan Gods Villages', color: 'rgba(204,41,54,0.25)', border: '#8b0000', text: '#8b0000' },
-    dep5: { label: 'Dep-05 ML Area', color: 'rgba(0,150,136,0.15)', border: 'rgba(0,150,136,0.6)', text: '#004d40' }
+    dep5: { label: 'Dep-05 ML Area', color: 'rgba(0,150,136,0.15)', border: 'rgba(0,150,136,0.6)', text: '#004d40' },
+    pekb: { label: 'PEKB Mine Block', color: 'rgba(160,0,0,0.2)', border: '#a00000', text: '#800000' }
 };
 
 const activeState = {
     major: false, majorngdr: true, minor: false,
     dep4: true, dep4c: true, dep4screenbenplant: true,
-    dep5: true,
+    dep5: true, pekb: true,
     chittalnar: true,
     bacheli: true,
     dist: false, vil: false, bhuvan: false, shrug: false, forest: false,

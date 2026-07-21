@@ -6,7 +6,10 @@ var map = L.map('map', {
     zoomControl: false,
 });
 
-// Create a custom pane for labels to ensure they stay on top of everything
+// Create custom panes for ordering
+map.createPane('wmsOverlayPane');
+map.getPane('wmsOverlayPane').style.zIndex = 350;
+
 map.createPane('labels');
 map.getPane('labels').style.zIndex = 650;
 map.getPane('labels').style.pointerEvents = 'none';
