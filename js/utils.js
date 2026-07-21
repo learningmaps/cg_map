@@ -123,10 +123,16 @@ function kmlPopup(p, type) {
     }
 
     if (type === 'pekb') {
-        const rows = Object.entries(p)
-            .filter(([k]) => k !== 'styleUrl' && k !== 'styleHash' && k !== 'styleMapHash' && k !== 'name')
-            .map(([k, v]) => [k.charAt(0).toUpperCase() + k.slice(1), v]);
-        return buildPopup(p.name || 'PEKB / Parsa Feature', rows.length ? rows : [['Description', 'PEKB Mine Block / Parsa Coal Block']], 'pekb');
+        return buildPopup(p.name || 'PEKB / Parsa Coal Block', [
+            ['Coal Block', p.block],
+            ['Allottee (Owner)', p.allottee],
+            ['MDO (Operator)', p.operator],
+            ['Capacity', p.capacity],
+            ['Coalfield', p.coalfield],
+            ['District', p.district],
+            ['State', p.state],
+            ['Details / Location', p.details]
+        ], 'pekb');
     }
 }
 

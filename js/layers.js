@@ -357,7 +357,16 @@ const kmlLayerPekbBase = omnivore.kml(
     'data/PEKB/pekb.kml',
     null, L.geoJson(null, {
         style: () => ({ ...kmlStyle, fillColor: 'rgba(160,0,0,0.4)', color: '#a00000', weight: 2 }),
-        onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup(feature.properties || { name: 'Parsa East & Kanta Basan (PEKB)' }, 'pekb'))
+        onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup({
+            name: 'Parsa East & Kanta Basan (PEKB) Mine Block',
+            block: 'Parsa East & Kanta Basan (PEKB)',
+            operator: 'Adani Mining (MDO) / Parsa Kente Collieries Ltd',
+            allottee: 'Rajasthan Rajya Vidyut Utpadan Nigam Ltd (RRVUNL)',
+            capacity: '15 MTPA',
+            coalfield: 'Hasdeo-Arand Coalfield',
+            district: 'Surguja',
+            state: 'Chhattisgarh'
+        }, 'pekb'))
     })
 );
 
@@ -373,8 +382,20 @@ const kmlLayerParsaCoal = omnivore.kml(
             fillOpacity: 0.9
         }),
         onEachFeature: (feature, layer) => {
-            const props = feature.properties || {};
-            layer.bindPopup(kmlPopup(props, 'pekb'));
+            const isPolygon = feature.geometry && feature.geometry.type === 'Polygon';
+            const featureName = isPolygon ? 'Parsa Coal Block Boundary' : `Boundary Point ${feature.properties?.name || ''}`;
+            const featureDesc = feature.properties?.description || '';
+            layer.bindPopup(kmlPopup({
+                name: featureName,
+                block: 'Parsa Coal Block',
+                operator: 'Adani Group (MDO) / Parsa Kente Collieries Ltd',
+                allottee: 'Rajasthan Rajya Vidyut Utpadan Nigam Ltd (RRVUNL)',
+                capacity: '5 MTPA',
+                coalfield: 'Hasdeo-Arand Coalfield',
+                district: 'Surguja & Surajpur',
+                state: 'Chhattisgarh',
+                details: featureDesc
+            }, 'pekb'));
         }
     })
 );
