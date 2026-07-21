@@ -710,8 +710,6 @@
         handleExposureChange(0.8);
 
         function renderActiveLayer() {
-            if (activeSatelliteLayer) map.removeLayer(activeSatelliteLayer);
-            
             const item = items[currentIndex];
             if (!item) return;
 
@@ -719,9 +717,12 @@
             const layerType = document.getElementById('img-type').value;
             const dateStr = item.properties.datetime ? item.properties.datetime.split('T')[0] : '';
 
+            const oldLayer = activeSatelliteLayer;
+            let newLayer;
+
             if (provider === 'copernicus') {
                 // Direct Copernicus Sentinel Hub OGC WMS Layer (in sentinelPane above base map, below overlays)
-                activeSatelliteLayer = L.tileLayer.wms(COPERNICUS_WMS_URL, {
+                newLayer = L.tileLayer.wms(COPERNICUS_WMS_URL, {
                     layers: layerType,
                     format: 'image/png',
                     transparent: true,
@@ -730,27 +731,63 @@
                     tileSize: 512,
                     pane: 'sentinelPane',
                     zIndex: 250
-                }).addTo(map);
+                });
 
-                activeSatelliteLayer.on('tileerror', () => {
+                newLayer.on('tileerror', () => {
                     console.warn("Copernicus tile load error, falling back to Microsoft Planetary Computer...");
-                    renderMpcLayer(item, layerType);
+                    if (map.hasLayer(newLayer)) {
+                        map.removeLayer(newLayer);
+                    }
+                    renderMpcLayer(item, layerType, oldLayer);
                 });
             } else {
-                renderMpcLayer(item, layerType);
+                renderMpcLayer(item, layerType, oldLayer);
+                return;
             }
+
+            // Clean up old layer once the new one is fully loaded
+            newLayer.on('load', () => {
+                if (oldLayer && map.hasLayer(oldLayer)) {
+                    map.removeLayer(oldLayer);
+                }
+            });
+
+            // Safety timeout to prevent layers getting stuck if a tile fails to fire load
+            setTimeout(() => {
+                if (oldLayer && map.hasLayer(oldLayer)) {
+                    map.removeLayer(oldLayer);
+                }
+            }, 3000);
+
+            newLayer.addTo(map);
+            activeSatelliteLayer = newLayer;
         }
 
-        function renderMpcLayer(item, layerType) {
-            if (activeSatelliteLayer) map.removeLayer(activeSatelliteLayer);
+        function renderMpcLayer(item, layerType, oldLayer) {
             const mpcAsset = MPC_ASSET_MAP[layerType] || 'visual';
             const mpcUrl = `https://planetarycomputer.microsoft.com/api/data/v1/item/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a&item=${item.id}&assets=${mpcAsset}`;
             
-            activeSatelliteLayer = L.tileLayer(mpcUrl, {
+            const newLayer = L.tileLayer(mpcUrl, {
                 pane: 'sentinelPane',
                 zIndex: 250,
                 opacity: 1
-            }).addTo(map);
+            });
+
+            newLayer.on('load', () => {
+                if (oldLayer && map.hasLayer(oldLayer)) {
+                    map.removeLayer(oldLayer);
+                }
+            });
+
+            // Safety timeout
+            setTimeout(() => {
+                if (oldLayer && map.hasLayer(oldLayer)) {
+                    map.removeLayer(oldLayer);
+                }
+            }, 3000);
+
+            newLayer.addTo(map);
+            activeSatelliteLayer = newLayer;
         }
 
         function updateUI() {

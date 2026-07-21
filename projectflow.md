@@ -111,13 +111,9 @@ To maintain visual clarity and prevent clutter at lower zoom levels, the individ
    - Renders inside a custom `sentinelPane` (`z-index: 250`), placing Sentinel satellite tiles directly above base maps (`z-index: 200`).
    - WMS tile overlays (ATREE Villages, ATREE Districts, ATREE Forest Compartments) render inside `wmsOverlayPane` (`z-index: 350`) strictly above Sentinel tiles, while Vector/KML overlays render in `overlayPane` (`z-index: 400+`).
    - Supports configured instance layers: `TRUE-COLOR`, `NDVI`, `NDMI`, `NDWI`, `FALSE-COLOR`, and `TRUE-COLOR-HIGHLIGHT-OPTIMIZED`.
+   - **Double-Buffered Image Transitions**: Prevents screen flicker by retaining the active satellite layer on screen while the new layer loads behind the scenes. Once Leaflet fires the new layer's `'load'` event, the previous layer is removed.
    - Automatic fallback to Microsoft Planetary Computer STAC tile rendering if Copernicus tile loading encounters errors or rate limits.
 4. **Timeline, Frequency & Real-Time Exposure Control**:
-   - Queries Copernicus STAC search (`https://stac.dataspace.copernicus.eu/v1/search`) or MPC STAC API for flyover catalog dates.
-   - Groups scene items by target frequency (**All**, **Weekly**, **Monthly**, **Yearly**) and selects the scene with minimum cloud cover for each bucket.
-   - Real-time **Exposure & Brightness Slider** (`30%` - `170%`, default `80%`) applies GPU-accelerated CSS filter tuning (`brightness` & `contrast`) to `sentinelPane` with zero latency or re-download lag.
-
-
-
-
-
+    - Queries Copernicus STAC search (`https://stac.dataspace.copernicus.eu/v1/search`) or MPC STAC API for flyover catalog dates.
+    - Groups scene items by target frequency (**All**, **Weekly**, **Monthly**, **Yearly**) and selects the scene with minimum cloud cover for each bucket.
+    - Real-time **Exposure & Brightness Slider** (`30%` - `170%`, default `80%`) applies GPU-accelerated CSS filter tuning (`brightness` & `contrast`) to `sentinelPane` with zero latency or re-download lag.
