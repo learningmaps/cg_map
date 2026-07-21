@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Parsa Coal Block - Study Area</name>
+  <description>Boundary coordinates of the Parsa Coal Block, digitized from Figure-1.3 (Study Area Map) of the Environmental Impact Assessment for the Proposed Parsa Opencast Coal Mine Project (5 MTPA) and Pit Head Coal Washery (5 MTPA), Hasdeo-Arand Coal Field, Districts Surguja &amp; Surajpur, Chhattisgarh.</description>
+
+  <Style id="vertexPoint">
+    <IconStyle>
+      <color>ff0000ff</color>
+      <scale>1.1</scale>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+      </Icon>
+    </IconStyle>
+    <LabelStyle>
+      <color>ff0000ff</color>
+      <scale>1.0</scale>
+    </LabelStyle>
+  </Style>
+
+  <Style id="blockBoundary">
+    <LineStyle>
+      <color>ff0000ff</color>
+      <width>3</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>4d0000ff</color>
+    </PolyStyle>
+  </Style>
+
+  <Folder>
+    <name>Parsa Coal Block - Boundary Points</name>
+
+    <Placemark>
+      <name>A</name>
+      <description>22°51'11.58"N, 82°47'22.86"E</description>
+      <styleUrl>#vertexPoint</styleUrl>
+      <Point>
+        <coordinates>82.7896833,22.8532167,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>B</name>
+      <description>22°48'57.01"N, 82°46'38.33"E</description>
+      <styleUrl>#vertexPoint</styleUrl>
+      <Point>
+        <coordinates>82.7773139,22.8158361,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>C</name>
+      <description>22°49'25.25"N, 82°45'30.68"E</description>
+      <styleUrl>#vertexPoint</styleUrl>
+      <Point>
+        <coordinates>82.7585222,22.8236806,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>D</name>
+      <description>22°49'58.92"N, 82°45'30.26"E</description>
+      <styleUrl>#vertexPoint</styleUrl>
+      <Point>
+        <coordinates>82.7584056,22.8330333,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>E</name>
+      <description>22°50'14.70"N, 82°45'14.32"E</description>
+      <styleUrl>#vertexPoint</styleUrl>
+      <Point>
+        <coordinates>82.7539778,22.8374167,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>F</name>
+      <description>22°50'41.58"N, 82°45'10.50"E</description>
+      <styleUrl>#vertexPoint</styleUrl>
+      <Point>
+        <coordinates>82.7529167,22.8448833,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>G</name>
+      <description>22°50'57.73"N, 82°45'33.97"E</description>
+      <styleUrl>#vertexPoint</styleUrl>
+      <Point>
+        <coordinates>82.7594361,22.8493694,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>H</name>
+      <description>22°51'56.85"N, 82°45'37.52"E</description>
+      <styleUrl>#vertexPoint</styleUrl>
+      <Point>
+        <coordinates>82.7604222,22.8657917,0</coordinates>
+      </Point>
+    </Placemark>
+
+  </Folder>
+
+  <Placemark>
+    <name>Parsa Coal Block Boundary</name>
+    <description>Boundary polygon formed by connecting points A through H in the order labeled on the Study Area Map (Figure-1.3), closing back to A.</description>
+    <styleUrl>#blockBoundary</styleUrl>
+    <Polygon>
+      <extrude>0</extrude>
+      <altitudeMode>clampToGround</altitudeMode>
+      <outerBoundaryIs>
+        <LinearRing>
+          <coordinates>
+            82.7896833,22.8532167,0
+            82.7773139,22.8158361,0
+            82.7585222,22.8236806,0
+            82.7584056,22.8330333,0
+            82.7539778,22.8374167,0
+            82.7529167,22.8448833,0
+            82.7594361,22.8493694,0
+            82.7604222,22.8657917,0
+            82.7896833,22.8532167,0
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+
+</Document>
+</kml>

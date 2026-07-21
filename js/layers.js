@@ -353,13 +353,33 @@ const kmlLayerDep5 = omnivore.kml(
     })
 );
 
-const kmlLayerPekb = omnivore.kml(
+const kmlLayerPekbBase = omnivore.kml(
     'data/PEKB/pekb.kml',
     null, L.geoJson(null, {
         style: () => ({ ...kmlStyle, fillColor: 'rgba(160,0,0,0.4)', color: '#a00000', weight: 2 }),
         onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup(feature.properties || { name: 'Parsa East & Kanta Basan (PEKB)' }, 'pekb'))
     })
 );
+
+const kmlLayerParsaCoal = omnivore.kml(
+    'data/PEKB/Parsa_Coal_Block.kml',
+    null, L.geoJson(null, {
+        style: () => ({ ...kmlStyle, fillColor: 'rgba(180,40,40,0.25)', color: '#b02828', weight: 2 }),
+        pointToLayer: (feature, latlng) => L.circleMarker(latlng, {
+            radius: 5,
+            fillColor: '#b02828',
+            color: '#ffffff',
+            weight: 1,
+            fillOpacity: 0.9
+        }),
+        onEachFeature: (feature, layer) => {
+            const props = feature.properties || {};
+            layer.bindPopup(kmlPopup(props, 'pekb'));
+        }
+    })
+);
+
+const kmlLayerPekb = L.featureGroup([kmlLayerPekbBase, kmlLayerParsaCoal]);
 
 /* ── Police/Military Camps (merged, clustered) ── */
 const kmlLayerPoliceCamps = L.markerClusterGroup({
