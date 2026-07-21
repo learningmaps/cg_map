@@ -356,7 +356,7 @@ const kmlLayerDep5 = omnivore.kml(
 const kmlLayerPekbBase = omnivore.kml(
     'data/PEKB/pekb.kml',
     null, L.geoJson(null, {
-        style: () => ({ ...kmlStyle, fillColor: 'rgba(160,0,0,0.4)', color: '#a00000', weight: 2 }),
+        style: () => ({ ...kmlStyle, fillColor: 'rgba(255,140,0,0.3)', color: '#ff8c00', weight: 2 }),
         onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup({
             name: 'Parsa East & Kanta Basan (PEKB) Mine Block',
             block: 'Parsa East & Kanta Basan (PEKB)',
@@ -373,10 +373,10 @@ const kmlLayerPekbBase = omnivore.kml(
 const kmlLayerParsaCoal = omnivore.kml(
     'data/PEKB/Parsa_Coal_Block.kml',
     null, L.geoJson(null, {
-        style: () => ({ ...kmlStyle, fillColor: 'rgba(180,40,40,0.25)', color: '#b02828', weight: 2 }),
+        style: () => ({ ...kmlStyle, fillColor: 'rgba(255,140,0,0.2)', color: '#ff8c00', weight: 2 }),
         pointToLayer: (feature, latlng) => L.circleMarker(latlng, {
             radius: 5,
-            fillColor: '#b02828',
+            fillColor: '#ff8c00',
             color: '#ffffff',
             weight: 1,
             fillOpacity: 0.9
