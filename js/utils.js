@@ -121,6 +121,13 @@ function kmlPopup(p, type) {
             ['Area', p.AREA ? (parseFloat(p.AREA) / 10000).toFixed(2) + ' ha' : '540.05 ha']
         ], 'dep5');
     }
+
+    if (type === 'pekb') {
+        const rows = Object.entries(p)
+            .filter(([k]) => k !== 'styleUrl' && k !== 'styleHash' && k !== 'styleMapHash' && k !== 'name')
+            .map(([k, v]) => [k.charAt(0).toUpperCase() + k.slice(1), v]);
+        return buildPopup(p.name || 'PEKB / Parsa Feature', rows.length ? rows : [['Description', 'PEKB Mine Block / Parsa Coal Block']], 'pekb');
+    }
 }
 
 function extractForceType(name) {
