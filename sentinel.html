@@ -553,10 +553,10 @@
         let playInterval = null;
         let activeSatelliteLayer = null;
 
-        // Set default dates (past 1 year to today)
+        // Set default dates (past 6 months to today)
         const todayStr = new Date().toISOString().split('T')[0];
-        const pastYearStr = new Date(Date.now() - 365 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
-        document.getElementById('start-date').value = pastYearStr;
+        const pastSixMonthsStr = new Date(Date.now() - 180 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+        document.getElementById('start-date').value = pastSixMonthsStr;
         document.getElementById('end-date').value = todayStr;
 
         // Layer mapping dictionary for MPC fallback
@@ -572,7 +572,7 @@
         async function fetchImages() {
             const bounds = map.getBounds();
             const bbox = [bounds.getWest(), bounds.getSouth(), bounds.getEast(), bounds.getNorth()];
-            const startDate = document.getElementById('start-date').value || pastYearStr;
+            const startDate = document.getElementById('start-date').value || pastSixMonthsStr;
             const endDate = document.getElementById('end-date').value || todayStr;
             const freq = document.getElementById('frequency').value;
             const provider = document.getElementById('provider').value;
