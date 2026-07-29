@@ -106,14 +106,22 @@ To maintain visual clarity and prevent clutter at lower zoom levels, the individ
 ### 🔄 Architecture & Data Flow
 1. **Shared Modular Architecture**: Imports core scripts (`config.js`, `map-init.js`, `layers.js`, `ui.js`, `utils.js`) and Leaflet plugins to provide identical layer toggling and popup interactivity as `index.html`.
 2. **Legend Panel Integration**: Houses the `#legend-container` panel directly, allowing users to toggle any GIS layer (Mining Leases, Deposit 4, Forests, Clan Gods, Camps) as vector overlays above Sentinel satellite imagery.
-3. **Copernicus Sentinel Direct Imagery & Layer Ordering**:
-   - Primary rendering via direct **Copernicus Sentinel Hub OGC WMS** endpoint (`https://sh.dataspace.copernicus.eu/ogc/wms/ea2daede-5c18-4b48-8029-f681bcb3282b`).
-   - Renders inside a custom `sentinelPane` (`z-index: 250`), placing Sentinel satellite tiles directly above base maps (`z-index: 200`).
-   - WMS tile overlays (ATREE Villages, ATREE Districts, ATREE Forest Compartments) render inside `wmsOverlayPane` (`z-index: 350`) strictly above Sentinel tiles, while Vector/KML overlays render in `overlayPane` (`z-index: 400+`).
-   - Supports configured instance layers: `TRUE-COLOR`, `NDVI`, `NDMI`, `NDWI`, `FALSE-COLOR`, and `TRUE-COLOR-HIGHLIGHT-OPTIMIZED`.
-   - **Double-Buffered Image Transitions**: Prevents screen flicker by retaining the active satellite layer on screen while the new layer loads behind the scenes. Once Leaflet fires the new layer's `'load'` event, the previous layer is removed.
-   - Automatic fallback to Microsoft Planetary Computer STAC tile rendering if Copernicus tile loading encounters errors or rate limits.
-4. **Timeline, Frequency & Real-Time Exposure Control**:
-    - Queries Copernicus STAC search (`https://stac.dataspace.copernicus.eu/v1/search`) or MPC STAC API for flyover catalog dates.
-    - Groups scene items by target frequency (**All**, **Weekly**, **Monthly**, **Yearly**) and selects the scene with minimum cloud cover for each bucket.
-    - Real-time **Exposure & Brightness Slider** (`30%` - `170%`, default `80%`) applies GPU-accelerated CSS filter tuning (`brightness` & `contrast`) to `sentinelPane` with zero latency or re-download lag.
+3. **Multi-Provider Sentinel Imagery (Copernicus + Microsoft Planetary Computer)**:
+   - Primary rendering via direct **Copernicus Sentinel Hub OGC WMS** (`https://sh.dataspace.copernicus.eu/ogc/wms/ea2daede-5c18-4b48-8029-f681bcb3282b`) or fallback to **Microsoft Planetary Computer (MPC)** crop API (`/item/bbox`).
+   - Supports dual STAC catalogs (Copernicus and MPC) and auto-falls back to MPC STAC search if Copernicus is down/empty.
+   - Implements dynamic TiTiler rendering (band math expressions, rescales, and colormaps) on MPC to support identical options (True Color, NDVI, NDMI, NDWI, False Color).
+   - Renders inside a custom `sentinelPane` (`z-index: 250`), placing Sentinel satellite imagery directly above base maps (`z-index: 200`).
+   - WMS tile overlays (ATREE Villages, ATREE Districts, ATREE Forest Compartments) render inside `wmsOverlayPane` (`z-index: 350`) strictly above Sentinel imagery, while Vector/KML overlays render in `overlayPane` (`z-index: 400+`).
+   - Supports configured instance layers: `TRUE-COLOR`, `NDVI`, `NDMI`, `NDWI`, `FALSE-COLOR`, and a custom highlight-optimized `TRUE-COLOR-HIGHLIGHT-OPTIMIZED` layer (WMS `TRUE-COLOR` with custom `EVALSCRIPT`).
+   - Custom evaluation script (`TRUECOLOR_EVALSCRIPT`) provides highlight compression, gamma correction, and saturation enhancement for true-color layers to prevent over-exposure.
+4. **Timeline, Caching, and Streamlined Workflows**:
+    - Queries Copernicus STAC search (`https://stac.dataspace.copernicus.eu/v1/search`) or MPC STAC API for flyover catalog dates. Implements a **Date-Based Iterative Harvester** to loop through queries automatically (using datetime offsets) if the server's hard 1,000-page limit is reached, ensuring complete year ranges.
+    - Supports three optimized workflow modes:
+      1. **Year-over-Year Month Comparison (`yoy-month`)**: Filters flyovers to a single month (e.g., December) across a selected year range, choosing the cleanest image per year.
+      2. **Monthly Sequence (`monthly-sequence`)**: Extracts the clearest image for *every month* within a selected year-to-year range.
+      3. **Latest Clean Image (`latest-clean`)**: Automatically fetches the single most recent scene with `< 15%` cloud cover within a 6-month lookback window.
+    - Disconnects slider scrubbing and playback from the network using a **100MB LRU image cache**. Clicking "LOAD ALL" preloads WMS/Crop images into browser memory as Blob Object URLs and pools them as hidden Leaflet `L.imageOverlay` layers added to the map simultaneously. Active timeline items are protected from cache eviction to prevent loading errors.
+    - Implements a **GPU-Accelerated Layer Pooling Crossfade**: Transition opacities are toggled dynamically on existing layers (varying duration from `0.05s` for manual scrubbing to `0.6s` for slideshow playback) combined with stacking Z-indices to ensure zero rendering latency, zero base-map flashing, and fluid transitions.
+    - Preserves preloaded overlays on map movements (zoom/pan) by bypassing automatic STAC refreshes when active imagery overlays are present on screen.
+    - Implements **Dynamic Batch Download** using `JSZip`: Automatically bundles multi-frame timelines into a single organized ZIP archive named by parameters (e.g. `sentinel_yoy_December_2016-2026_TRUE-COLOR.zip`) or downloads the single image directly as a PNG in `latest-clean` mode.
+    - Real-time **Exposure & Brightness Slider** (`30%` - `150%`, default `90%`) applies GPU-accelerated CSS filter tuning (`brightness` & `contrast`) to `sentinelPane` with zero latency or re-download lag.
