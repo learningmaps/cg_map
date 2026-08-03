@@ -16,7 +16,8 @@ const LAYER_META = {
     osm_military: { label: 'OSM Landuse Military', color: 'rgba(70,130,180,0.2)', border: '#4682B4', text: '#1b4d75' },
     clan_gods: { label: 'Clan Gods Villages', color: 'rgba(204,41,54,0.25)', border: '#8b0000', text: '#8b0000' },
     dep5: { label: 'Dep-05 ML Area', color: 'rgba(0,150,136,0.15)', border: 'rgba(0,150,136,0.6)', text: '#004d40' },
-    pekb: { label: 'PEKB & Parsa Coal Block', color: 'rgba(255,140,0,0.2)', border: '#ff8c00', text: '#b35c00' }
+    pekb: { label: 'PEKB & Parsa Coal Block', color: 'rgba(255,140,0,0.2)', border: '#ff8c00', text: '#b35c00' },
+    alnar: { label: 'Alnar Iron Ore Mine', color: 'rgba(178,34,34,0.18)', border: 'rgba(178,34,34,0.7)', text: '#7a1515' }
 };
 
 const activeState = {
@@ -25,6 +26,7 @@ const activeState = {
     dep5: true, pekb: true,
     chittalnar: true,
     bacheli: true,
+    alnar: true,
     dist: false, vil: false, bhuvan: false, shrug: false, forest: false,
     forest_bijapur: false,
     impacted: true,

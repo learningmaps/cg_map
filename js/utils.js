@@ -91,6 +91,12 @@ function kmlPopup(p, type) {
         ], 'dep4screenbenplant');
     }
 
+    if (type === 'alnar') {
+        return buildPopup(p.name || 'Alnar Iron Ore Mine', [
+            ['Feature', p.description ? p.description.replace(/<[^>]+>/g, '') : '']
+        ], 'alnar');
+    }
+
     if (type === "bacheli") {
         return buildPopup(p.name || "Bacheli Airport", [
             ["Type", p.description || "Airport"],

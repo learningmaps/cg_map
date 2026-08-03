@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>Alnar77.KMZ</name>
+    <Style id="point1">
+      <IconStyle>
+        <Icon>
+          <href>kml_symbol_dot_0.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="area1">
+      <LineStyle>
+        <color>ff0000ff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>bf000000</color>
+        <fill>0</fill>
+      </PolyStyle>
+    </Style>
+    <Style id="line1">
+      <LineStyle>
+        <color>ff0000ff</color>
+      </LineStyle>
+    </Style>
+    <Style id="point2">
+      <IconStyle>
+        <Icon>
+          <href>kml_symbol_no symbol_0.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Point Features</name>
+      <description>Point Features</description>
+      <Placemark>
+        <description>0</description>
+        <styleUrl>#point1</styleUrl>
+        <Point>
+          <coordinates>81.2433821457,18.5494451585,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <description>0</description>
+        <styleUrl>#point1</styleUrl>
+        <Point>
+          <coordinates>81.23203441459999,18.5526903683,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>X = 523701.0761     Y =</name>
+        <description>0</description>
+        <styleUrl>#point1</styleUrl>
+        <Point>
+          <coordinates>81.224538185,18.5601312545,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>2052171.0260</name>
+        <description>0</description>
+        <styleUrl>#point1</styleUrl>
+        <Point>
+          <coordinates>81.22453721300001,18.5601068505,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>1688</name>
+        <description>TEXT</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.24146357239999,18.5499338959,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <description>0</description>
+        <styleUrl>#point1</styleUrl>
+        <Point>
+          <coordinates>81.24099529119999,18.5522371785,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <description>0</description>
+        <styleUrl>#point1</styleUrl>
+        <Point>
+          <coordinates>81.2319583885,18.5499879585,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <description>0</description>
+        <styleUrl>#point1</styleUrl>
+        <Point>
+          <coordinates>81.2319534904,18.5498138483,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>20</name>
+        <description>NUMBER</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.2409959957,18.5522482632,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>27</name>
+        <description>NUMBER</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.2434034864,18.5494314759,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>51</name>
+        <description>NUMBER</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.2318825035,18.5497832666,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>1</name>
+        <description>NUMBER</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.2319809617,18.5526942383,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lat:18° 33' 9.6788" N</name>
+        <description>LB</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.23148543009999,18.552838972,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lat:18° 33' 8.0532" N</name>
+        <description>LB</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.2411049153,18.5522878222,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lat:18° 32' 58.0033" N</name>
+        <description>LB</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.2435040097,18.5494338383,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lat:18° 32' 59.3323" N</name>
+        <description>LB</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.231055501,18.5497594645,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Long:81° 13' 55.3299"</name>
+        <description>LB</description>
+        <styleUrl>#point1</styleUrl>
+        <Point>
+          <coordinates>81.2314901451,18.5527618,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>E</name>
+        <description>LB</description>
+        <styleUrl>#point1</styleUrl>
+        <Point>
+          <coordinates>81.2322851057,18.5527608236,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Long:81° 14' 27.5836" E</name>
+        <description>LB</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.241106512,18.5522194158,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Long:81° 14' 36.1751" E</name>
+        <description>LB</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.2435062154,18.5493722179,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Long:81° 13' 55.0305" E</name>
+        <description>LB</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.2310518435,18.5496768027,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>1689</name>
+        <description>TEXT</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.2364475608,18.5506736787,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Area:1.4074Ha</name>
+        <description>LB</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.2414316592,18.549805022,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Area:30.14264Ha</name>
+        <description>LB</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.2366770396,18.5505437026,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lease Area:31.55ha</name>
+        <description>TEXT</description>
+        <styleUrl>#point2</styleUrl>
+        <Point>
+          <coordinates>81.23550722349999,18.5491374946,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Area Features</name>
+      <description>Area Features</description>
+      <Placemark>
+        <description>LB</description>
+        <styleUrl>#area1</styleUrl>
+        <Polygon>
+          <extrude>1</extrude>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+							81.2433821457,18.5494451585,0 81.2430860767,18.5496231256,0 81.2417810789,18.5502073578,0 81.2416684251,18.5503257275,0 81.2415640991,18.5505252166,0 81.2414378255,18.550893063,0 81.24099529119999,18.5522371785,0 81.23203441459999,18.5526903683,0 81.2319534904,18.5498138483,0 81.2433821457,18.5494451585,0 
+						</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Line Features</name>
+      <description>Line Features</description>
+      <Placemark>
+        <description>LB</description>
+        <styleUrl>#line1</styleUrl>
+        <LineString>
+          <coordinates>
+					81.241285187,18.5495128586,0 81.2415601645,18.5505366787,0 
+				</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

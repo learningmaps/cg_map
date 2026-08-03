@@ -27,6 +27,7 @@ const layerMap = {
     dep5: kmlLayerDep5, pekb: kmlLayerPekb,
     chittalnar: chittalnarTinOre,
     bacheli: kmlLayerBacheli,
+    alnar: kmlLayerAlnar,
     dist: cgDistrictsWMS, vil: cgVillagesWMS, bhuvan: bhuvanVillages, shrug: shrugCensus,
     impacted: impactedVillages,
     dep4photos: undefined,

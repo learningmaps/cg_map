@@ -186,6 +186,25 @@
 
                 <div class="legend-divider"></div>
 
+                <div class="legend-group" id="grp-alnar">
+                    <div class="legend-group-header" onclick="toggleGroup('grp-alnar')">
+                        <span class="group-chevron">▼</span>
+                        <span class="group-label">Alnar Iron Ore Mine</span>
+                    </div>
+                    <div class="legend-group-items">
+                        <div class="legend-item" id="item-alnar" onclick="toggleLayer('alnar')">
+                            <div class="legend-swatch"
+                                style="background:rgba(178,34,34,0.5); border-color:rgba(178,34,34,0.7);"></div>
+                            <span class="legend-item-label">Alnar Iron Ore Mine</span>
+                            <div class="legend-item-extra">
+                                <button class="zoom-btn" onclick="zoomToLayer(event, kmlLayerAlnar)">⊕ Zoom</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-divider"></div>
+
                 <div class="legend-group" id="grp-bacheli">
                     <div class="legend-group-header" onclick="toggleGroup('grp-bacheli')">
                         <span class="group-chevron">▼</span>

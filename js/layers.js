@@ -314,6 +314,14 @@ const kmlLayerBacheli = omnivore.kml("data/Bacheli Airport/site 1 - bacheli_airp
     }
 }));
 
+const kmlLayerAlnar = omnivore.kml(
+    "data/Alnar Iron Ore Mine/1211212351211zys37alnarkml.kml",
+    null, L.geoJson(null, {
+        style: () => ({ ...kmlStyle, fillColor: 'rgb(178,34,34)', color: 'rgb(178,34,34)' }),
+        onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup(feature.properties || {}, 'alnar'))
+    })
+);
+
 const kmlLayercgforc_bijapur = omnivore.kml("data/bijapur.kml", null, L.geoJson(null, {
     style: () => ({ ...kmlStyle, fillColor: 'rgb(164, 254, 131)', color: 'rgb(164, 254, 131)' }),
     onEachFeature: (feature, layer) => {
