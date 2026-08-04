@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Folder>
+	<name>Dep-04 ML Area</name>
+	<open>1</open>
+	<Document>
+		<name>Dep-04 ML Boundary</name>
+		<Schema name="ML_Boundary" id="S_ML_Boundary_SSSSSSSSSSSD">
+			<SimpleField type="string" name="NAME"><displayName>&lt;b&gt;NAME&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="GM_LAYER"><displayName>&lt;b&gt;GM_LAYER&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="MAP_NAME"><displayName>&lt;b&gt;MAP_NAME&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="AREA"><displayName>&lt;b&gt;AREA&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="KML_STYLE"><displayName>&lt;b&gt;KML_STYLE&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="long" name="ELEVATION"><displayName>&lt;b&gt;ELEVATION&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="_70_10ha"><displayName>&lt;b&gt;570_10ha&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="Details"><displayName>&lt;b&gt;Details&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="_4_047ha"><displayName>&lt;b&gt;74_047ha&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="Feature"><displayName>&lt;b&gt;Feature&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="__449ha"><displayName>&lt;b&gt;2_449ha&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="LAYER"><displayName>&lt;b&gt;LAYER&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="double" name="aaa"><displayName>&lt;b&gt;aaa&lt;/b&gt;</displayName>
+</SimpleField>
+		</Schema>
+		<StyleMap id="falseColor21">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#falseColor22</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#falseColor20</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id="falseColor20">
+			<BalloonStyle>
+				<text>Dep-04 ML Boundary</text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>ff0000ff</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<colorMode>random</colorMode>
+				<fill>0</fill>
+			</PolyStyle>
+		</Style>
+		<Style id="falseColor22">
+			<BalloonStyle>
+				<text>Dep-04 ML Boundary</text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>ff0000ff</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<colorMode>random</colorMode>
+				<fill>0</fill>
+			</PolyStyle>
+		</Style>
+		<Folder id="layer 0">
+			<name>Dep-04 ML Boundary</name>
+			<Placemark>
+				<name>RF ML Area 570.1ha</name>
+				<styleUrl>#falseColor21</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_ML_Boundary_SSSSSSSSSSSD">
+						<SimpleData name="NAME">RF ML Area 570.1ha</SimpleData>
+						<SimpleData name="GM_LAYER">Unknown Area Type</SimpleData>
+						<SimpleData name="MAP_NAME">KML File DEP-4.kml</SimpleData>
+						<SimpleData name="AREA">5700999.841123108</SimpleData>
+						<SimpleData name="KML_STYLE">m_ylw-pushpin00</SimpleData>
+						<SimpleData name="ELEVATION">0</SimpleData>
+						<SimpleData name="_70_10ha">Mine Lease area</SimpleData>
+						<SimpleData name="Details">Mine Lease area</SimpleData>
+						<SimpleData name="_4_047ha"></SimpleData>
+						<SimpleData name="Feature"></SimpleData>
+						<SimpleData name="__449ha"></SimpleData>
+						<SimpleData name="LAYER"></SimpleData>
+						<SimpleData name="aaa">570.1</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+81.2089571,18.6987796,0
+81.2088311,18.6976797,0
+81.2088903,18.6975958,0
+81.2085559,18.6974535,0
+81.2081734,18.6975249,0
+81.2079576,18.6974955,0
+81.2078446,18.6974063,0
+81.2074648,18.6976445,0
+81.2072404,18.6977853,0
+81.2072166,18.6977191,0
+81.2074257,18.6975879,0
+81.2169748,18.6915967,0
+81.2160250,18.7210665,0
+81.2167588,18.7210741,0
+81.2163683,18.7283570,0
+81.1992628,18.7283009,0
+81.1991647,18.6983207,0
+81.2072166,18.6977191,0
+81.2072404,18.6977853,0
+81.2069116,18.6978099,0
+81.2070107,18.6978655,0
+81.2070232,18.6980360,0
+81.2071451,18.6980542,0
+81.2072211,18.6980736,0
+81.2076225,18.6985129,0
+81.2076852,18.6985309,0
+81.2077200,18.6986529,0
+81.2077477,18.6987870,0
+81.2077492,18.6988000,0
+81.2077657,18.6988059,0
+81.2078951,18.6988344,0
+81.2080405,18.6988346,0
+81.2083149,18.6987121,0
+81.2086273,18.6988526,0
+81.2087099,18.6990950,0
+81.2087408,18.6993297,0
+81.2087552,18.6994388,0
+81.2089768,18.6994259,0
+81.2091090,18.6995185,0
+81.2090711,18.6995624,0
+81.2086921,18.6996622,0
+81.2085683,18.6994259,0
+81.2084938,18.6990897,0
+81.2083595,18.6989702,0
+81.2082591,18.6989291,0
+81.2080820,18.6990044,0
+81.2078988,18.6989967,0
+81.2077699,18.6989923,0
+81.2077767,18.6991091,0
+81.2077850,18.6992970,0
+81.2078223,18.6995394,0
+81.2078958,18.6997545,0
+81.2079397,18.6998763,0
+81.2080073,18.6999976,0
+81.2081149,18.7001411,0
+81.2082111,18.7002257,0
+81.2083110,18.7003144,0
+81.2083814,18.7003793,0
+81.2081736,18.7008122,0
+81.2095618,18.7060525,0
+81.2107273,18.7080683,0
+81.2108983,18.7110536,0
+81.2129394,18.7207249,0
+81.2144774,18.7221699,0
+81.2150948,18.7222000,0
+81.2151157,18.7220187,0
+81.2151194,18.7217748,0
+81.2151233,18.7215266,0
+81.2152349,18.7211402,0
+81.2152839,18.7209454,0
+81.2152909,18.7207136,0
+81.2152501,18.7205029,0
+81.2151794,18.7203229,0
+81.2150476,18.7200973,0
+81.2149000,18.7199650,0
+81.2148365,18.7197679,0
+81.2148634,18.7195769,0
+81.2149782,18.7194481,0
+81.2152563,18.7194400,0
+81.2154041,18.7194257,0
+81.2154900,18.7193984,0
+81.2141673,18.7125608,0
+81.2130364,18.7067011,0
+81.2127106,18.7046244,0
+81.2111409,18.7020593,0
+81.2091807,18.6978092,0
+81.2091137,18.6978092,0
+81.2091026,18.6978239,0
+81.2090923,18.6981076,0
+81.2091456,18.6983937,0
+81.2092397,18.6987311,0
+81.2091904,18.6989643,0
+81.2091458,18.6992062,0
+81.2091090,18.6995185,0
+81.2089768,18.6994259,0
+81.2089571,18.6987796,0
+</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+	</Document>
+	<Document>
+		<name>Forest Compartment MLArea</name>
+		<Schema name="Forest_Compartment_MLArea_Final" id="S_Forest_Compartment_MLArea_Final_SDSSSSSS">
+			<SimpleField type="string" name="Compartmen"><displayName>&lt;b&gt;Compartmen&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="double" name="Area_1"><displayName>&lt;b&gt;Area_1&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="Facility"><displayName>&lt;b&gt;Facility&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="ForestType"><displayName>&lt;b&gt;ForestType&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="Old_Compar"><displayName>&lt;b&gt;Old_Compar&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="Division"><displayName>&lt;b&gt;Division&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="Range"><displayName>&lt;b&gt;Range&lt;/b&gt;</displayName>
+</SimpleField>
+			<SimpleField type="string" name="RF"><displayName>&lt;b&gt;RF&lt;/b&gt;</displayName>
+</SimpleField>
+		</Schema>
+		<Style id="falseColor28">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:659 NewComp:1842</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<StyleMap id="falseColor26">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#falseColor271</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#falseColor286</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id="falseColor27">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:665 NewComp:1832</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<Style id="falseColor270">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:676 NewComp:1826</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<Style id="falseColor271">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:664 NewComp:1833</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<Style id="falseColor272">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:667 NewComp:1841</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<Style id="falseColor280">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:666 NewComp:1834</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<Style id="falseColor273">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:663 NewComp:1886</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<Style id="falseColor281">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:665 NewComp:1832</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<StyleMap id="falseColor260">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#falseColor276</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#falseColor28</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id="falseColor274">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:662 NewComp:1885</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<StyleMap id="falseColor261">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#falseColor274</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#falseColor283</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id="falseColor282">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:663 NewComp:1886</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<Style id="falseColor283">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:662 NewComp:1885</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<Style id="falseColor275">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:666 NewComp:1834</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<Style id="falseColor284">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:667 NewComp:1841</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<Style id="falseColor285">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:676 NewComp:1826</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<Style id="falseColor276">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:659 NewComp:1842</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<Style id="falseColor286">
+			<BalloonStyle>
+				<text><![CDATA[<table border="0">
+<b>DIV:Dantewada Range:Bacheli RF:Bailadila OldComp:664 NewComp:1833</b>
+  <tr><td><b>New Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Compartmen]</td></tr>
+ <tr><td><b>Old Compartment No</b></td><td>$[Forest_Compartment_MLArea_Final/Old_Compar]</td></tr>
+  <tr><td><b>Area (Ha.)</b></td><td>$[Forest_Compartment_MLArea_Final/Area_1]</td></tr>
+  <tr><td><b>Facility</b></td><td>$[Forest_Compartment_MLArea_Final/Facility]</td></tr>
+  <tr><td><b>ForestType</b></td><td>$[Forest_Compartment_MLArea_Final/ForestType]</td></tr>
+   <tr><td><b>Division</b></td><td>$[Forest_Compartment_MLArea_Final/Division]</td></tr>
+  <tr><td><b>Range</b></td><td>$[Forest_Compartment_MLArea_Final/Range]</td></tr>
+  <tr><td><b>RF</b></td><td>$[Forest_Compartment_MLArea_Final/RF]</td></tr>
+</table>]]></text>
+			</BalloonStyle>
+			<LineStyle>
+				<color>80ffffff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>80ffffff</color>
+				<colorMode>random</colorMode>
+			</PolyStyle>
+		</Style>
+		<StyleMap id="falseColor262">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#falseColor273</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#falseColor282</styleUrl>
+			</Pair>
+		</StyleMap>
+		<StyleMap id="falseColor263">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#falseColor275</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#falseColor280</styleUrl>
+			</Pair>
+		</StyleMap>
+		<StyleMap id="falseColor264">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#falseColor27</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#falseColor281</styleUrl>
+			</Pair>
+		</StyleMap>
+		<StyleMap id="falseColor265">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#falseColor270</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#falseColor285</styleUrl>
+			</Pair>
+		</StyleMap>
+		<StyleMap id="falseColor266">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#falseColor272</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#falseColor284</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Folder>
+			<name>1826</name>
+			<Placemark>
+				<name>1826</name>
+				<styleUrl>#falseColor265</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_Forest_Compartment_MLArea_Final_SDSSSSSS">
+						<SimpleData name="Compartmen">1826</SimpleData>
+						<SimpleData name="Area_1">0.512</SimpleData>
+						<SimpleData name="Facility">Dep-04 ML Area</SimpleData>
+						<SimpleData name="ForestType">Reserved Forest</SimpleData>
+						<SimpleData name="Old_Compar">676</SimpleData>
+						<SimpleData name="Division">Dantewada</SimpleData>
+						<SimpleData name="Range">Bacheli</SimpleData>
+						<SimpleData name="RF">Bailadila</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+81.2157834,18.7271366,0
+81.2164388,18.7270428,0
+81.2163776,18.7281835,0
+81.2158575,18.7274460,0
+81.2156888,18.7271523,0
+81.2157834,18.7271366,0
+</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>1832</name>
+			<Placemark>
+				<name>1832</name>
+				<styleUrl>#falseColor264</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_Forest_Compartment_MLArea_Final_SDSSSSSS">
+						<SimpleData name="Compartmen">1832</SimpleData>
+						<SimpleData name="Area_1">9.052</SimpleData>
+						<SimpleData name="Facility">Dep-04 ML Area</SimpleData>
+						<SimpleData name="ForestType">Reserved Forest</SimpleData>
+						<SimpleData name="Old_Compar">665</SimpleData>
+						<SimpleData name="Division">Dantewada</SimpleData>
+						<SimpleData name="Range">Bacheli</SimpleData>
+						<SimpleData name="RF">Bailadila</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+81.2123684,18.7274714,0
+81.2125826,18.7283446,0
+81.2125827,18.7283447,0
+81.2057256,18.7283223,0
+81.2057258,18.7283221,0
+81.2058337,18.7282034,0
+81.2079278,18.7282282,0
+81.2090300,18.7278759,0
+81.2098845,18.7264452,0
+81.2113861,18.7249036,0
+81.2123684,18.7274714,0
+</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>1886</name>
+			<Placemark>
+				<name>1886</name>
+				<styleUrl>#falseColor262</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_Forest_Compartment_MLArea_Final_SDSSSSSS">
+						<SimpleData name="Compartmen">1886</SimpleData>
+						<SimpleData name="Area_1">45.239</SimpleData>
+						<SimpleData name="Facility">Dep-04 ML Area</SimpleData>
+						<SimpleData name="ForestType">Reserved Forest</SimpleData>
+						<SimpleData name="Old_Compar">663</SimpleData>
+						<SimpleData name="Division">Dantewada</SimpleData>
+						<SimpleData name="Range">Bacheli</SimpleData>
+						<SimpleData name="RF">Bailadila</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+81.2074981,18.7193940,0
+81.2057438,18.7194362,0
+81.2041736,18.7200583,0
+81.2032513,18.7201494,0
+81.2017949,18.7197713,0
+81.2005387,18.7200384,0
+81.1992380,18.7207220,0
+81.1992140,18.7133891,0
+81.2008257,18.7139345,0
+81.2028538,18.7152557,0
+81.2046969,18.7155184,0
+81.2061604,18.7174590,0
+81.2075224,18.7176103,0
+81.2084589,18.7177346,0
+81.2085467,18.7194109,0
+81.2074981,18.7193940,0
+</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>1842</name>
+			<Placemark>
+				<name>1842</name>
+				<styleUrl>#falseColor260</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_Forest_Compartment_MLArea_Final_SDSSSSSS">
+						<SimpleData name="Compartmen">1842</SimpleData>
+						<SimpleData name="Area_1">31.126</SimpleData>
+						<SimpleData name="Facility">Dep-04 ML Area</SimpleData>
+						<SimpleData name="ForestType">Reserved Forest</SimpleData>
+						<SimpleData name="Old_Compar">659</SimpleData>
+						<SimpleData name="Division">Dantewada</SimpleData>
+						<SimpleData name="Range">Bacheli</SimpleData>
+						<SimpleData name="RF">Bailadila</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<MultiGeometry>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+81.2164576,18.6970536,0
+81.2154907,18.6970525,0
+81.2151711,18.6970521,0
+81.2136382,18.6970504,0
+81.2106482,18.6977110,0
+81.2094740,18.6984453,0
+81.2091807,18.6978092,0
+81.2091137,18.6978092,0
+81.2091026,18.6978239,0
+81.2090923,18.6981076,0
+81.2091456,18.6983937,0
+81.2092066,18.6986125,0
+81.2089559,18.6987693,0
+81.2088311,18.6976797,0
+81.2088903,18.6975958,0
+81.2085559,18.6974535,0
+81.2081734,18.6975249,0
+81.2079576,18.6974955,0
+81.2078446,18.6974063,0
+81.2074648,18.6976445,0
+81.2074516,18.6976528,0
+81.2074453,18.6976446,0
+81.2074257,18.6975879,0
+81.2169748,18.6915967,0
+81.2167996,18.6970330,0
+81.2167392,18.6970482,0
+81.2167009,18.6970520,0
+81.2164576,18.6970536,0
+</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+81.2085187,18.6990427,0
+81.2082777,18.6987288,0
+81.2083149,18.6987121,0
+81.2086273,18.6988526,0
+81.2086617,18.6989533,0
+81.2085187,18.6990427,0
+</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</MultiGeometry>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>1834</name>
+			<Placemark>
+				<name>1834</name>
+				<styleUrl>#falseColor263</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_Forest_Compartment_MLArea_Final_SDSSSSSS">
+						<SimpleData name="Compartmen">1834</SimpleData>
+						<SimpleData name="Area_1">115.739</SimpleData>
+						<SimpleData name="Facility">Dep-04 ML Area</SimpleData>
+						<SimpleData name="ForestType">Reserved Forest</SimpleData>
+						<SimpleData name="Old_Compar">666</SimpleData>
+						<SimpleData name="Division">Dantewada</SimpleData>
+						<SimpleData name="Range">Bacheli</SimpleData>
+						<SimpleData name="RF">Bailadila</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+81.2163683,18.7283570,0
+81.2125827,18.7283447,0
+81.2125826,18.7283446,0
+81.2123684,18.7274714,0
+81.2113861,18.7249036,0
+81.2104600,18.7234621,0
+81.2103681,18.7233190,0
+81.2100993,18.7229007,0
+81.2087084,18.7208533,0
+81.2085467,18.7194109,0
+81.2084589,18.7177346,0
+81.2086519,18.7162782,0
+81.2087053,18.7158750,0
+81.2087565,18.7154888,0
+81.2083574,18.7131191,0
+81.2082544,18.7092209,0
+81.2077088,18.7071643,0
+81.2076104,18.7067934,0
+81.2073503,18.7058129,0
+81.2069671,18.7045473,0
+81.2068207,18.7040639,0
+81.2066067,18.7033574,0
+81.2054532,18.7011331,0
+81.2030580,18.6983094,0
+81.2028468,18.6980456,0
+81.2072166,18.6977191,0
+81.2074257,18.6975879,0
+81.2074453,18.6976446,0
+81.2074516,18.6976528,0
+81.2072404,18.6977853,0
+81.2069116,18.6978099,0
+81.2070107,18.6978655,0
+81.2070232,18.6980360,0
+81.2071451,18.6980542,0
+81.2072211,18.6980736,0
+81.2076225,18.6985129,0
+81.2076852,18.6985309,0
+81.2077200,18.6986529,0
+81.2077477,18.6987870,0
+81.2077492,18.6988000,0
+81.2077657,18.6988059,0
+81.2078951,18.6988344,0
+81.2080405,18.6988346,0
+81.2082777,18.6987288,0
+81.2085187,18.6990427,0
+81.2087412,18.6993325,0
+81.2087552,18.6994388,0
+81.2088199,18.6994350,0
+81.2089435,18.6995960,0
+81.2086921,18.6996622,0
+81.2085683,18.6994259,0
+81.2084938,18.6990897,0
+81.2083595,18.6989702,0
+81.2082591,18.6989291,0
+81.2080820,18.6990044,0
+81.2078988,18.6989967,0
+81.2077699,18.6989923,0
+81.2077767,18.6991091,0
+81.2077850,18.6992970,0
+81.2078223,18.6995394,0
+81.2078958,18.6997545,0
+81.2079397,18.6998763,0
+81.2080073,18.6999976,0
+81.2081149,18.7001411,0
+81.2082111,18.7002257,0
+81.2083110,18.7003144,0
+81.2083814,18.7003793,0
+81.2081736,18.7008122,0
+81.2095618,18.7060525,0
+81.2107273,18.7080683,0
+81.2108983,18.7110536,0
+81.2129394,18.7207249,0
+81.2132811,18.7210459,0
+81.2131471,18.7212917,0
+81.2132583,18.7218146,0
+81.2133464,18.7222287,0
+81.2144901,18.7226761,0
+81.2150825,18.7232748,0
+81.2150458,18.7243622,0
+81.2150426,18.7260274,0
+81.2156876,18.7271503,0
+81.2158575,18.7274460,0
+81.2163776,18.7281835,0
+81.2163683,18.7283570,0
+</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>1885</name>
+			<Placemark>
+				<name>1885</name>
+				<styleUrl>#falseColor261</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_Forest_Compartment_MLArea_Final_SDSSSSSS">
+						<SimpleData name="Compartmen">1885</SimpleData>
+						<SimpleData name="Area_1">160.862</SimpleData>
+						<SimpleData name="Facility">Dep-04 ML Area</SimpleData>
+						<SimpleData name="ForestType">Reserved Forest</SimpleData>
+						<SimpleData name="Old_Compar">662</SimpleData>
+						<SimpleData name="Division">Dantewada</SimpleData>
+						<SimpleData name="Range">Bacheli</SimpleData>
+						<SimpleData name="RF">Bailadila</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+81.2030580,18.6983094,0
+81.2054532,18.7011331,0
+81.2066067,18.7033574,0
+81.2068207,18.7040639,0
+81.2069671,18.7045473,0
+81.2073503,18.7058129,0
+81.2076104,18.7067934,0
+81.2077088,18.7071643,0
+81.2082544,18.7092209,0
+81.2083574,18.7131191,0
+81.2087565,18.7154888,0
+81.2087053,18.7158750,0
+81.2086519,18.7162782,0
+81.2084589,18.7177346,0
+81.2075224,18.7176103,0
+81.2061604,18.7174590,0
+81.2046969,18.7155184,0
+81.2028538,18.7152557,0
+81.2008257,18.7139345,0
+81.1992140,18.7133891,0
+81.1991647,18.6983207,0
+81.2028468,18.6980456,0
+81.2030580,18.6983094,0
+</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>1841</name>
+			<Placemark>
+				<name>1841</name>
+				<styleUrl>#falseColor266</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_Forest_Compartment_MLArea_Final_SDSSSSSS">
+						<SimpleData name="Compartmen">1841</SimpleData>
+						<SimpleData name="Area_1">103.238</SimpleData>
+						<SimpleData name="Facility">Dep-04 ML Area</SimpleData>
+						<SimpleData name="ForestType">Reserved Forest</SimpleData>
+						<SimpleData name="Old_Compar">667</SimpleData>
+						<SimpleData name="Division">Dantewada</SimpleData>
+						<SimpleData name="Range">Bacheli</SimpleData>
+						<SimpleData name="RF">Bailadila</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<MultiGeometry>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+81.2087099,18.6990950,0
+81.2087408,18.6993297,0
+81.2087412,18.6993325,0
+81.2085187,18.6990427,0
+81.2086617,18.6989533,0
+81.2087099,18.6990950,0
+</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+81.2089768,18.6994259,0
+81.2089571,18.6987796,0
+81.2089559,18.6987693,0
+81.2092066,18.6986125,0
+81.2092397,18.6987311,0
+81.2091904,18.6989643,0
+81.2091458,18.6992062,0
+81.2091090,18.6995185,0
+81.2089768,18.6994259,0
+</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+81.2090711,18.6995624,0
+81.2089435,18.6995960,0
+81.2088199,18.6994350,0
+81.2089768,18.6994259,0
+81.2091090,18.6995185,0
+81.2090711,18.6995624,0
+</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+81.2150458,18.7243622,0
+81.2150825,18.7232748,0
+81.2144901,18.7226761,0
+81.2133464,18.7222287,0
+81.2132583,18.7218146,0
+81.2131471,18.7212917,0
+81.2132811,18.7210459,0
+81.2144774,18.7221699,0
+81.2150948,18.7222000,0
+81.2151157,18.7220187,0
+81.2151194,18.7217748,0
+81.2151233,18.7215266,0
+81.2152349,18.7211402,0
+81.2152839,18.7209454,0
+81.2152909,18.7207136,0
+81.2152501,18.7205029,0
+81.2151794,18.7203229,0
+81.2150476,18.7200973,0
+81.2149000,18.7199650,0
+81.2148365,18.7197679,0
+81.2148634,18.7195769,0
+81.2149782,18.7194481,0
+81.2152563,18.7194400,0
+81.2154041,18.7194257,0
+81.2154900,18.7193984,0
+81.2141673,18.7125608,0
+81.2130364,18.7067011,0
+81.2127106,18.7046244,0
+81.2111409,18.7020593,0
+81.2094740,18.6984453,0
+81.2106482,18.6977110,0
+81.2136382,18.6970504,0
+81.2151711,18.6970521,0
+81.2154907,18.6970525,0
+81.2164060,18.6970535,0
+81.2164576,18.6970536,0
+81.2164994,18.6970533,0
+81.2165013,18.6970533,0
+81.2166725,18.6970522,0
+81.2166736,18.6970522,0
+81.2167009,18.6970520,0
+81.2167392,18.6970482,0
+81.2167996,18.6970330,0
+81.2160250,18.7210665,0
+81.2167588,18.7210741,0
+81.2164388,18.7270428,0
+81.2158158,18.7271320,0
+81.2157834,18.7271366,0
+81.2156888,18.7271523,0
+81.2156876,18.7271503,0
+81.2150426,18.7260274,0
+81.2150458,18.7243622,0
+</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</MultiGeometry>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>1833</name>
+			<Placemark>
+				<name>1833</name>
+				<styleUrl>#falseColor26</styleUrl>
+				<ExtendedData>
+					<SchemaData schemaUrl="#S_Forest_Compartment_MLArea_Final_SDSSSSSS">
+						<SimpleData name="Compartmen">1833</SimpleData>
+						<SimpleData name="Area_1">104.332</SimpleData>
+						<SimpleData name="Facility">Dep-04 ML Area</SimpleData>
+						<SimpleData name="ForestType">Reserved Forest</SimpleData>
+						<SimpleData name="Old_Compar">664</SimpleData>
+						<SimpleData name="Division">Dantewada</SimpleData>
+						<SimpleData name="Range">Bacheli</SimpleData>
+						<SimpleData name="RF">Bailadila</SimpleData>
+					</SchemaData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+81.2098845,18.7264452,0
+81.2090300,18.7278759,0
+81.2079278,18.7282282,0
+81.2058337,18.7282034,0
+81.2057258,18.7283221,0
+81.2057256,18.7283223,0
+81.1992628,18.7283009,0
+81.1992380,18.7207220,0
+81.2005387,18.7200384,0
+81.2017949,18.7197713,0
+81.2032513,18.7201494,0
+81.2041736,18.7200583,0
+81.2057438,18.7194362,0
+81.2074981,18.7193940,0
+81.2085467,18.7194109,0
+81.2087084,18.7208533,0
+81.2100993,18.7229007,0
+81.2103681,18.7233190,0
+81.2104600,18.7234621,0
+81.2113861,18.7249036,0
+81.2098845,18.7264452,0
+</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+	</Document>
+</Folder>
+</kml>
