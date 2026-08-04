@@ -311,10 +311,7 @@ geoJsonImpactedLayer.on('click', e => {
 /* ── KML layers ── */
 const kmlStyle = { color: 'rgba(255,255,255,0.7)', weight: 1.5, fillColor: 'white', fillOpacity: 0.2 };
 
-const kmlLayerBacheli = omnivore.kml(
-    // "data/Bacheli Airport/site 1 - bacheli_airport_proposed_project_ec.kml",
-    "data/Bacheli Airport/site 1 - bacheli_airport_proposed_project_ec_WGS84.kml",
-    null, L.geoJson(null, {
+const kmlLayerBacheli = omnivore.kml("data/Bacheli Airport/site 1 - bacheli_airport_proposed_project_ec.kml", null, L.geoJson(null, {
     style: () => ({ ...kmlStyle, fillColor: 'rgba(120, 250, 200)', color: 'rgba(120, 250, 200)' }),
     onEachFeature: (feature, layer) => {
         const props = feature.properties || {};
@@ -323,18 +320,14 @@ const kmlLayerBacheli = omnivore.kml(
 }));
 
 const kmlLayerAlnar = omnivore.kml(
-    // "data/Alnar Iron Ore Mine/1211212351211zys37alnarkml.kml",
-    "data/Alnar Iron Ore Mine/1211212351211zys37alnarkml_WGS84.kml",
+    "data/Alnar Iron Ore Mine/1211212351211zys37alnarkml.kml",
     null, L.geoJson(null, {
         style: () => ({ ...kmlStyle, fillColor: 'rgb(178,34,34)', color: 'rgb(178,34,34)' }),
         onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup(feature.properties || {}, 'alnar'))
     })
 );
 
-const kmlLayercgforc_bijapur = omnivore.kml(
-    // "data/bijapur.kml",
-    "data/bijapur_WGS84.kml",
-    null, L.geoJson(null, {
+const kmlLayercgforc_bijapur = omnivore.kml("data/bijapur.kml", null, L.geoJson(null, {
     style: () => ({ ...kmlStyle, fillColor: 'rgb(164, 254, 131)', color: 'rgb(164, 254, 131)' }),
     onEachFeature: (feature, layer) => {
         const desc = feature.properties?.description || "";
@@ -344,17 +337,13 @@ const kmlLayercgforc_bijapur = omnivore.kml(
     }
 }));
 
-const kmlLayer = omnivore.kml(
-    // 'data/Dep4MLArea.kml',
-    'data/Dep4MLArea_WGS84.kml',
-    null, L.geoJson(null, {
+const kmlLayer = omnivore.kml('data/Dep4MLArea.kml', null, L.geoJson(null, {
     style: () => kmlStyle,
     onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup(feature.properties || {}, 'main'))
 }));
 
 const kmlLayerCompWise = omnivore.kml(
-    // 'data/dep4_segments/4112212521214727y5compartmentwiseandcomponentwiselandbreakupdep4.kml',
-    'data/dep4_segments/4112212521214727y5compartmentwiseandcomponentwiselandbreakupdep4_WGS84.kml',
+    'data/dep4_segments/4112212521214727y5compartmentwiseandcomponentwiselandbreakupdep4.kml',
     null, L.geoJson(null, {
         style: () => ({ ...kmlStyle, fillColor: 'rgb(255,251,41)', color: 'rgb(255,251,41)' }),
         onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup(feature.properties || {}, 'comp'))
@@ -362,8 +351,7 @@ const kmlLayerCompWise = omnivore.kml(
 );
 
 const kmlLayerScreenBenPlant = omnivore.kml(
-    // 'data/dep4_segments/Dep4OML_Screening Cum Beneficiation Plant.kml',
-    'data/dep4_segments/Dep4OML_Screening Cum Beneficiation Plant_WGS84.kml',
+    'data/dep4_segments/Dep4OML_Screening Cum Beneficiation Plant.kml',
     null, L.geoJson(null, {
         style: () => ({ ...kmlStyle, fillColor: 'rgb(255,161,106)', color: 'rgb(255,161,106)' }),
         onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup(feature.properties || {}, 'screenbenplant'))
@@ -371,8 +359,7 @@ const kmlLayerScreenBenPlant = omnivore.kml(
 );
 
 const kmlLayerDep5 = omnivore.kml(
-    // 'data/deposit_5/Dep-5_Kml file.kml',
-    'data/deposit_5/Dep-5_Kml file_WGS84.kml',
+    'data/deposit_5/Dep-5_Kml file.kml',
     null, L.geoJson(null, {
         style: () => ({ ...kmlStyle, fillColor: 'rgb(0,150,136)', color: 'rgb(0,150,136)' }),
         onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup(feature.properties || {}, 'dep5'))
