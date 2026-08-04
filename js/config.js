@@ -83,3 +83,114 @@ const IMPACTED_VILLAGES = [
 
 const dpr = window.devicePixelRatio || 1;
 const isRetina = dpr > 1;
+
+/* ── Legend Groups and Items Configuration ── */
+const LEGEND_CONFIG = [
+    {
+        id: 'grp-basemaps',
+        label: 'Base Maps',
+        isBaseMap: true,
+        items: [
+            { id: 'satellite', label: 'ESRI Satellite', swatch: { background: '#222', border: '#444' }, hasLabels: true },
+            { id: 'osm', label: 'OpenStreetMap', swatch: { background: '#fff', border: '#ccc' } },
+            { id: 'topo', label: 'OpenTopoMap', swatch: { background: '#e0e0e0', border: '#999' } },
+            { id: 'stamen_terrain', label: 'Stamen Terrain', swatch: { background: '#c8d9c0', border: '#7a9a6e' } },
+            { id: 'thunderforest_dark', label: 'CartoDB Dark Matter', swatch: { background: '#1a1a2e', border: '#444' } }
+        ]
+    },
+    {
+        id: 'grp-mining',
+        label: 'Mining Leases (NCOG/NGDR Data)',
+        items: [
+            { id: 'major', label: 'Major Mining NCOG', swatch: { background: 'rgba(255,165,0,0.5)', border: 'rgba(255,165,0,0.5)' } },
+            { id: 'majorngdr', label: 'Major Mining NGDR 2022', swatch: { background: 'rgba(255,81,0,0.5)', border: 'rgba(255,81,0,0.5)' } },
+            { id: 'minor', label: 'Minor Mining NCOG', swatch: { background: 'rgba(0,0,255,0.5)', border: 'rgba(0,0,255,0.5)' } }
+        ]
+    },
+    {
+        id: 'grp-dep4',
+        label: 'Deposit 4',
+        items: [
+            { id: 'dep4', label: 'Dep-04 ML Area', swatch: { background: 'rgba(255,255,255,0.12)', border: 'rgba(41,41,41,0.685)' }, zoomTarget: 'kmlLayer' },
+            { id: 'dep4c', label: 'Component wise Breakdown', swatch: { background: 'rgb(255,251,41)', border: 'rgb(255,251,41)' }, zoomTarget: 'kmlLayerCompWise' },
+            { id: 'dep4screenbenplant', label: 'Screening Cum Beneficiation Plant', swatch: { background: 'rgb(255,161,106)', border: 'rgb(255,161,106)' }, zoomTarget: 'kmlLayerScreenBenPlant' },
+            { id: 'dep4photos', label: 'Geotagged Photos', swatch: { background: 'rgba(100,200,255,0.4)', border: 'rgba(44,95,138,0.8)' }, zoomTarget: 'dep4photos_custom' }
+        ]
+    },
+    {
+        id: 'grp-dep5',
+        label: 'Deposit 5',
+        items: [
+            { id: 'dep5', label: 'Dep-05 ML Area', swatch: { background: 'rgba(0,150,136,0.15)', border: 'rgba(0,150,136,0.6)' }, zoomTarget: 'kmlLayerDep5' }
+        ]
+    },
+    {
+        id: 'grp-pekb',
+        label: 'PEKB (Parsa East and Kanta Basan)',
+        items: [
+            { id: 'pekb', label: 'PEKB & Parsa Coal Block', swatch: { background: 'rgba(255,140,0,0.3)', border: '#ff8c00' }, zoomTarget: 'kmlLayerPekb' }
+        ]
+    },
+    {
+        id: 'grp-chittalnar',
+        label: 'Chittalnar–Kumakoleng Tin Ore Block',
+        items: [
+            { id: 'chittalnar', label: 'Tin Ore Block', swatch: { background: 'rgba(255, 215, 0, 0.5)', border: '#FFD700' }, zoomTarget: 'chittalnarTinOre' }
+        ]
+    },
+    {
+        id: 'grp-alnar',
+        label: 'Alnar Iron Ore Mine',
+        items: [
+            { id: 'alnar', label: 'Alnar Iron Ore Mine', swatch: { background: 'rgba(178,34,34,0.5)', border: 'rgba(178,34,34,0.7)' }, zoomTarget: 'kmlLayerAlnar' }
+        ]
+    },
+    {
+        id: 'grp-bacheli',
+        label: 'Bacheli Airport',
+        items: [
+            { id: 'bacheli', label: 'Bacheli Airport', swatch: { background: 'rgba(120, 250, 200, 0.884)', border: 'rgba(120, 250, 200, 0.884)' }, zoomTarget: 'kmlLayerBacheli' }
+        ]
+    },
+    {
+        id: 'grp-bodhghat',
+        label: 'Bodhghat Hydro',
+        items: [
+            { id: 'impacted', label: 'Impacted Villages', swatch: { background: 'rgba(255,0,50,0.5)', border: 'rgba(255, 235, 235, 0.8)' }, zoomTarget: 'bodhghat_coords' }
+        ]
+    },
+    {
+        id: 'grp-admin',
+        label: 'Administrative',
+        items: [
+            { id: 'dist', label: 'Districts (ATREE)', swatch: { type: 'line', background: '#888' } },
+            { id: 'vil', label: 'Villages (ATREE)', swatch: { type: 'line', background: '#e55' } },
+            { id: 'bhuvan', label: 'Villages (Bhuvan)', swatch: { background: 'yellow', border: 'rgba(255,255,0,0.5)' } },
+            { id: 'shrug', label: 'Census of India 2011 (SHRUG)', swatch: { background: 'rgba(0,100,255,0.5)', border: 'rgba(0,100,255,0.5)' } }
+        ]
+    },
+    {
+        id: 'grp-police',
+        label: 'Police/Military Camps',
+        items: [
+            { id: 'police_camps', label: 'Police/Mil Camps', swatch: { background: '#6B8E23', border: '#6B8E23' }, isCamp: true },
+            { id: 'osm_military', label: 'OSM Landuse Military', swatch: { background: '#4682B4', border: '#4682B4' }, isOsmMilitary: true }
+        ]
+    },
+    {
+        id: 'grp-forest',
+        label: 'Forest',
+        items: [
+            { id: 'forest', label: 'Forest Compartments (ATREE)', swatch: { type: 'line', background: 'rgb(36, 181, 56)' } },
+            { id: 'forest_bijapur', label: 'Bijapur Forest Compts (Chhattisgarh Forest Department)', swatch: { type: 'line', background: 'rgb(164, 254, 131)' }, hasExternalLink: 'https://forest.cg.gov.in/FMIS_AllApp/Forest%20Working%20Plan/FWP_Indx.html' }
+        ]
+    },
+    {
+        id: 'grp-clan-gods',
+        label: 'Clan Gods',
+        items: [
+            { id: 'clan_gods', label: 'Village Overlay (by Phratry)', swatch: { background: 'rgba(204,41,54,0.5)', border: '#8b0000' } }
+        ]
+    }
+];
+

@@ -164,12 +164,185 @@ function initLayersFromConfig() {
     });
 }
 
+/* ── Dynamic Legend Rendering ── */
+function renderLegend() {
+    const legendBody = document.getElementById('legend-body');
+    if (!legendBody) return;
+    legendBody.innerHTML = '';
+
+    LEGEND_CONFIG.forEach((group, index) => {
+        // Create divider before every group except the first one
+        if (index > 0) {
+            const divider = document.createElement('div');
+            divider.className = 'legend-divider';
+            legendBody.appendChild(divider);
+        }
+
+        // Create group container
+        const grpDiv = document.createElement('div');
+        grpDiv.className = 'legend-group';
+        grpDiv.id = group.id;
+
+        // Create group header
+        const grpHeader = document.createElement('div');
+        grpHeader.className = 'legend-group-header';
+        grpHeader.onclick = () => toggleGroup(group.id);
+
+        const chevron = document.createElement('span');
+        chevron.className = 'group-chevron';
+        chevron.textContent = '▼';
+
+        const label = document.createElement('span');
+        label.className = 'group-label';
+        label.textContent = group.label;
+
+        grpHeader.appendChild(chevron);
+        grpHeader.appendChild(label);
+        grpDiv.appendChild(grpHeader);
+
+        // Create items container
+        const itemsContainer = document.createElement('div');
+        itemsContainer.className = 'legend-group-items';
+
+        group.items.forEach(item => {
+            const itemDiv = document.createElement('div');
+            itemDiv.className = 'legend-item';
+
+            if (group.isBaseMap) {
+                itemDiv.id = `base-${item.id}`;
+                itemDiv.onclick = () => switchBaseLayer(item.id);
+
+                // Create swatch
+                const swatch = document.createElement('div');
+                swatch.className = 'legend-swatch';
+                swatch.style.background = item.swatch.background;
+                swatch.style.borderColor = item.swatch.border || 'transparent';
+                itemDiv.appendChild(swatch);
+
+                // Label
+                const itemLabel = document.createElement('span');
+                itemLabel.className = 'legend-item-label';
+                itemLabel.textContent = item.label;
+                itemDiv.appendChild(itemLabel);
+
+                // Extra controls (e.g. labels button)
+                if (item.hasLabels) {
+                    const extra = document.createElement('div');
+                    extra.className = 'legend-item-extra';
+                    const btn = document.createElement('button');
+                    btn.className = 'label-btn';
+                    btn.title = 'Google Hybrid Labels';
+                    btn.textContent = 'Labels';
+                    btn.onclick = (e) => toggleLabels(e, 'google');
+                    extra.appendChild(btn);
+                    itemDiv.appendChild(extra);
+                }
+            } else {
+                itemDiv.id = `item-${item.id}`;
+                itemDiv.onclick = () => toggleLayer(item.id);
+
+                // Create swatch
+                const swatch = document.createElement('div');
+                if (item.swatch.type === 'line') {
+                    swatch.className = 'legend-swatch line';
+                    swatch.style.background = item.swatch.background;
+                    swatch.style.width = '14px';
+                    swatch.style.height = '2px';
+                } else {
+                    swatch.className = 'legend-swatch';
+                    swatch.style.background = item.swatch.background;
+                    swatch.style.borderColor = item.swatch.border || 'transparent';
+                }
+                itemDiv.appendChild(swatch);
+
+                // Label
+                const itemLabel = document.createElement('span');
+                itemLabel.className = 'legend-item-label';
+                itemLabel.textContent = item.label;
+
+                // Add special inline buttons or links
+                if (item.isCamp) {
+                    const btn = document.createElement('button');
+                    btn.className = 'zoom-btn';
+                    btn.id = 'toggle-camp-view-btn';
+                    btn.title = 'Switch to Cluster View';
+                    btn.textContent = '⛶';
+                    btn.onclick = (e) => togglePoliceCampView(e);
+                    itemLabel.appendChild(document.createTextNode(' '));
+                    itemLabel.appendChild(btn);
+                } else if (item.isOsmMilitary) {
+                    const btn = document.createElement('button');
+                    btn.className = 'zoom-btn';
+                    btn.id = 'toggle-osm-view-btn';
+                    btn.title = 'Switch to Cluster View';
+                    btn.textContent = '⛶';
+                    btn.onclick = (e) => toggleOsmMilitaryView(e);
+                    itemLabel.appendChild(document.createTextNode(' '));
+                    itemLabel.appendChild(btn);
+                } else if (item.hasExternalLink) {
+                    const link = document.createElement('a');
+                    link.href = item.hasExternalLink;
+                    link.target = '_blank';
+                    link.textContent = 'Source';
+                    link.onclick = (e) => e.stopPropagation();
+                    itemLabel.appendChild(document.createTextNode(' '));
+                    itemLabel.appendChild(link);
+                }
+
+                itemDiv.appendChild(itemLabel);
+
+                // Zoom controls
+                if (item.zoomTarget) {
+                    const extra = document.createElement('div');
+                    extra.className = 'legend-item-extra';
+                    const btn = document.createElement('button');
+                    btn.className = 'zoom-btn';
+                    btn.textContent = '⊕ Zoom';
+                    btn.onclick = (e) => {
+                        e.stopPropagation();
+                        if (item.zoomTarget === 'dep4photos_custom') {
+                            if (typeof geoImagesLayer !== 'undefined' && geoImagesLayer && geoImagesLayer.getBounds) {
+                                map.fitBounds(geoImagesLayer.getBounds(), {padding:[40,40], maxZoom:17});
+                            }
+                        } else if (item.zoomTarget === 'bodhghat_coords') {
+                            map.setView([19.21, 81.58], 11);
+                        } else {
+                            const targetVar = layerMap[item.id];
+                            if (targetVar) {
+                                zoomToLayer(e, targetVar);
+                            }
+                        }
+                    };
+                    extra.appendChild(btn);
+                    itemDiv.appendChild(extra);
+                }
+            }
+
+            itemsContainer.appendChild(itemDiv);
+        });
+
+        grpDiv.appendChild(itemsContainer);
+        legendBody.appendChild(grpDiv);
+    });
+}
+
 // Run init on DOM content load
 document.addEventListener('DOMContentLoaded', () => {
+    renderLegend();
     initLayersFromConfig();
     
     const satBtn = document.getElementById('base-satellite');
     if (satBtn) satBtn.classList.remove('inactive');
+
+    // Collapse all legend groups on default load
+    document.querySelectorAll('.legend-group').forEach(grp => {
+        const header = grp.querySelector('.legend-group-header');
+        const items = grp.querySelector('.legend-group-items');
+        if (header && items) {
+            header.classList.add('collapsed');
+            items.style.display = 'none';
+        }
+    });
 });
 
 /* ── Search Geocoder (Photon) ── */
@@ -262,25 +435,7 @@ window.switchBaseLayer = function(key) {
 // Initialize state
 window.switchBaseLayer('satellite');
 
-document.addEventListener('DOMContentLoaded', () => {
-    initLayersFromConfig();
-
-    const satBtn = document.getElementById('base-satellite');
-    if (satBtn) {
-        satBtn.classList.remove('inactive');
-        // Labels are off by default
-    }
-
-    // Collapse all legend groups on default load
-    document.querySelectorAll('.legend-group').forEach(grp => {
-        const header = grp.querySelector('.legend-group-header');
-        const items = grp.querySelector('.legend-group-items');
-        if (header && items) {
-            header.classList.add('collapsed');
-            items.style.display = 'none';
-        }
-    });
-});
+// Initialization runs in the DOMContentLoaded block registered earlier
 
 /* ── Clean Map View / Screenshot Mode ── */
 function toggleCleanView(event) {
