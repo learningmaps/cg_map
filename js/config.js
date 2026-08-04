@@ -92,6 +92,7 @@ const LEGEND_CONFIG = [
         isBaseMap: true,
         items: [
             { id: 'satellite', label: 'ESRI Satellite', swatch: { background: '#222', border: '#444' }, hasLabels: true },
+            { id: 'google_satellite', label: 'Google Satellite', swatch: { background: '#111', border: '#333' } },
             { id: 'osm', label: 'OpenStreetMap', swatch: { background: '#fff', border: '#ccc' } },
             { id: 'topo', label: 'OpenTopoMap', swatch: { background: '#e0e0e0', border: '#999' } },
             { id: 'stamen_terrain', label: 'Stamen Terrain', swatch: { background: '#c8d9c0', border: '#7a9a6e' } },
