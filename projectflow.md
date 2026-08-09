@@ -89,10 +89,10 @@ To prevent overlapping village labels, circle markers, and pen names, the layer 
 
 ---
 
-## 🔍 Zoom-Dependent Sizing for Police & OSM Military Markers
-To maintain visual clarity and prevent clutter at lower zoom levels, the individual markers for both **Police/Mil Camps** and **OSM Landuse Military** dynamically change their size according to the map's zoom level:
+## 🔍 Zoom-Dependent Sizing for Police, OSM Military, & Alnar Markers
+To maintain visual clarity and prevent clutter at lower zoom levels, the individual markers for **Police/Mil Camps**, **OSM Landuse Military**, and **Alnar Mine Points** dynamically change their size according to the map's zoom level:
 1. **Zoom Tracking**: The map container is dynamically classed based on the current zoom level (`map-zoom-far` for zoom < 9.5, `map-zoom-medium` for 9.5 <= zoom < 13, and `map-zoom-close` for zoom >= 13) via a listener on the `'zoomend'` event in [js/map-init.js](file:///home/myuser/Projects/gis_map_v2/js/map-init.js).
-2. **Absolute Centering**: Both `.police-marker-icon` and `.osm-military-marker-icon` are styled with `position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);` to ensure they remain perfectly centered on their geographic coordinates as they resize.
+2. **Absolute Centering**: The `.police-marker-icon`, `.osm-military-marker-icon`, and `.alnar-marker-icon` elements are styled with `position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);` to ensure they remain perfectly centered on their geographic coordinates as they resize.
 3. **Size Scaling**:
    * **Zoom >= 13** (`map-zoom-close`): 12px diameter, 2px white border (for high visibility).
    * **Zoom 9.5 to 13** (`map-zoom-medium`): 9px diameter, 1.5px white border.
@@ -126,3 +126,21 @@ To maintain visual clarity and prevent clutter at lower zoom levels, the individ
     - Provides a global **Reset Button** that stops timeline playback, clears all loaded map image overlays and the image memory cache, and triggers a metadata refetch (`fetchImages()`) to query available satellite dates for the new map bounds without automatically loading images.
     - Implements **Dynamic Batch Download** using `JSZip`: Automatically applies a client-side HTML5 Canvas overlay containing the human-readable date stamp (with a semi-transparent background box in the bottom-right corner) to each image before bundling them into a single organized ZIP archive or downloading a single image directly as a PNG.
     - Real-time **Exposure & Brightness Slider** (`30%` - `150%`, default `90%`) applies GPU-accelerated CSS filter tuning (`brightness` & `contrast`) to `sentinelPane` with zero latency or re-download lag.
+
+---
+
+## 🐯 Indravati Tiger Reserve Layer
+
+### 🔄 Data Flow & Verification
+1. **Source Data**: Village information is defined in [`affected_villages_indravati.xlsx`](file:///home/myuser/Projects/gis_map_v2/data/Indravati%20Tiger%20Reserve/affected_villages_indravati.xlsx).
+2. **Duplicate & Spelling Resolution**: 
+   * A Python script matches spreadsheet entries against Bhuvan villages in the **Bijapur** district.
+   * Spelling variations (e.g. *Gondanugur* to *Gondgugur*) were resolved.
+   * Duplicate names (such as *Dudme*, *Cherpalli*, and *Damaram*) were resolved by comparing the spreadsheet area against the geodesic calculation of the GeoJSON boundaries to match the correct polygon.
+3. **Local Cache**: The resolved villages and metadata are stored in [`indravati_affected_villages.geojson`](file:///home/myuser/Projects/gis_map_v2/data/Indravati%20Tiger%20Reserve/indravati_affected_villages.geojson) which is loaded asynchronously.
+
+### 🎨 Rendering & Popups
+* **Visual Style**: Styled as orange polygons (`#e07524`) with `fillOpacity: 0.45` and subtle borders.
+* **Centroid Labels**: Centroid positions are precomputed in Python, and labels are drawn dynamically using Leaflet markers and custom CSS styling at zoom levels 11.5+.
+* **Popup Info**: Information displays both the original Excel recording name and the officially matched GeoJSON name, code, block, and area comparison (Excel vs GeoJSON calculated area) inside a consistent metadata table.
+

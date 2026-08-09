@@ -835,17 +835,32 @@ body {
     transform: translate(-50%, -50%);
     transition: width 0.2s, height 0.2s, border-width 0.2s;
 }
+.alnar-marker-icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(178,34,34);
+    border: 2px solid #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, border-width 0.2s;
+}
 
-/* Zoom-dependent sizes for individual police/military markers */
+/* Zoom-dependent sizes for individual police/military/alnar markers */
 .map-zoom-medium .police-marker-icon,
-.map-zoom-medium .osm-military-marker-icon {
+.map-zoom-medium .osm-military-marker-icon,
+.map-zoom-medium .alnar-marker-icon {
     width: 9px;
     height: 9px;
     border-width: 1.5px;
 }
 
 .map-zoom-far .police-marker-icon,
-.map-zoom-far .osm-military-marker-icon {
+.map-zoom-far .osm-military-marker-icon,
+.map-zoom-far .alnar-marker-icon {
     width: 6px;
     height: 6px;
     border-width: 1px;

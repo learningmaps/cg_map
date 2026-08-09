@@ -308,6 +308,87 @@ geoJsonImpactedLayer.on('click', e => {
         ], 'impacted')).openOn(map);
 });
 
+/* ── Indravati Tiger Reserve (GeoJSON with Dynamic Centroid Labels) ── */
+const indravatiLabelLayer = L.layerGroup([]);
+const geoJsonIndravatiLayer = L.geoJson(null, {
+    style: () => ({
+        fillColor: '#e07524', fill: true, fillOpacity: 0.45,
+        stroke: true, color: 'rgba(255, 235, 235, 0.8)', weight: 0.8,
+        nonScalingStroke: true
+    })
+});
+
+// Load the filtered GeoJSON file asynchronously
+fetch("data/Indravati Tiger Reserve/indravati_affected_villages.geojson")
+    .then(r => r.json())
+    .then(data => {
+        geoJsonIndravatiLayer.addData(data);
+        rebuildIndravatiLabels();
+    })
+    .catch(err => console.error("Error loading Indravati GeoJSON:", err));
+
+const indravatiTigerReserve = L.layerGroup([geoJsonIndravatiLayer, indravatiLabelLayer]);
+
+function rebuildIndravatiLabels() {
+    if (typeof map === 'undefined' || !map || !indravatiLabelLayer) return;
+    indravatiLabelLayer.clearLayers();
+
+    const zoom = map.getZoom();
+    if (zoom < 11.5) return; // Only display labels when zoomed in (Z11.5+)
+
+    geoJsonIndravatiLayer.eachLayer(layer => {
+        const props = layer.feature?.properties || {};
+        const rawName = props.v_name || '';
+        // Format to Title Case (Proper Noun)
+        const vName = rawName.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+        
+        // Use precomputed centroid
+        const center = props.centroid || layer.getBounds().getCenter();
+
+        const style = 'color:#5c2500; font-size:9.5px; font-weight:600; white-space:nowrap; text-shadow:-1px -1px 0 #FEFBE3, 1px -1px 0 #FEFBE3, -1px 1px 0 #FEFBE3, 1px 1px 0 #FEFBE3; text-align:center; width:120px;';
+        
+        const labelMarker = L.marker(center, {
+            interactive: false,
+            icon: L.divIcon({
+                className: '',
+                html: `<div style="${style}">${vName}</div>`,
+                iconSize: [120, 20],
+                iconAnchor: [60, 10]
+            })
+        });
+        indravatiLabelLayer.addLayer(labelMarker);
+    });
+}
+
+// Bind zoom/pan events to rebuild labels dynamically when the layer is active
+map.on('moveend', () => {
+    if (map.hasLayer(indravatiTigerReserve)) {
+        rebuildIndravatiLabels();
+    }
+});
+
+map.on('layeradd', (e) => {
+    if (e.layer === indravatiTigerReserve) {
+        rebuildIndravatiLabels();
+    }
+});
+
+// Bind click handler directly to geoJsonIndravatiLayer to guarantee correct polygon resolution
+geoJsonIndravatiLayer.on('click', e => {
+    const p = e.layer?.feature?.properties || e.layer?.properties || e.propagatedFrom?.properties || {};
+    L.popup({ closeButton: true })
+        .setLatLng(e.latlng)
+        .setContent(buildPopup(p.v_name || 'Village', [
+            ['Original Name (Excel)', p.excel_name],
+            ['District', p.d_name],
+            ['Block', p.b_name],
+            ['Gram Panchayat', p.gp_name],
+            ['Village ID', p.v_code],
+            ['Village Area (Excel)', p.excel_area_ha ? `${p.excel_area_ha} Ha` : '—'],
+            ['Village Area (GeoJSON)', p.geojson_area_ha ? `${p.geojson_area_ha} Ha` : '—']
+        ], 'indravati_tiger_reserve')).openOn(map);
+});
+
 /* ── KML layers ── */
 const kmlStyle = { color: 'rgba(255,255,255,0.7)', weight: 1.5, fillColor: 'white', fillOpacity: 0.2 };
 
@@ -323,6 +404,14 @@ const kmlLayerAlnar = omnivore.kml(
     "data/Alnar Iron Ore Mine/1211212351211zys37alnarkml.kml",
     null, L.geoJson(null, {
         style: () => ({ ...kmlStyle, fillColor: 'rgb(178,34,34)', color: 'rgb(178,34,34)' }),
+        pointToLayer: (feature, latlng) => L.marker(latlng, {
+            icon: L.divIcon({
+                className: '',
+                html: '<div class="alnar-marker-icon"></div>',
+                iconSize: [12, 12],
+                iconAnchor: [6, 6],
+            }),
+        }),
         onEachFeature: (feature, layer) => layer.bindPopup(kmlPopup(feature.properties || {}, 'alnar'))
     })
 );

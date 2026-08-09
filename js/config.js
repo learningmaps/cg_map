@@ -17,7 +17,8 @@ const LAYER_META = {
     clan_gods: { label: 'Clan Gods Villages', color: 'rgba(204,41,54,0.25)', border: '#8b0000', text: '#8b0000' },
     dep5: { label: 'Dep-05 ML Area', color: 'rgba(0,150,136,0.15)', border: 'rgba(0,150,136,0.6)', text: '#004d40' },
     pekb: { label: 'PEKB & Parsa Coal Block', color: 'rgba(255,140,0,0.2)', border: '#ff8c00', text: '#b35c00' },
-    alnar: { label: 'Alnar Iron Ore Mine', color: 'rgba(178,34,34,0.18)', border: 'rgba(178,34,34,0.7)', text: '#7a1515' }
+    alnar: { label: 'Alnar Iron Ore Mine', color: 'rgba(178,34,34,0.18)', border: 'rgba(178,34,34,0.7)', text: '#7a1515' },
+    indravati_tiger_reserve: { label: 'Indravati Tiger Reserve', color: 'rgba(224,117,36,0.18)', border: 'rgba(224,117,36,0.5)', text: '#a04a00' }
 };
 
 const activeState = {
@@ -33,7 +34,8 @@ const activeState = {
     dep4photos: true,
     police_camps: false,
     osm_military: false,
-    clan_gods: false
+    clan_gods: false,
+    indravati_tiger_reserve: true
 };
 
 const IMPACTED_VILLAGES = [
@@ -158,6 +160,13 @@ const LEGEND_CONFIG = [
         label: 'Bodhghat Hydro',
         items: [
             { id: 'impacted', label: 'Impacted Villages', swatch: { background: 'rgba(255,0,50,0.5)', border: 'rgba(255, 235, 235, 0.8)' }, zoomTarget: 'bodhghat_coords' }
+        ]
+    },
+    {
+        id: 'grp-indravati',
+        label: 'Indravati Tiger Reserve',
+        items: [
+            { id: 'indravati_tiger_reserve', label: 'Affected Villages', swatch: { background: 'rgba(224,117,36,0.5)', border: 'rgba(224,117,36,0.5)' }, zoomTarget: 'indravati_coords' }
         ]
     },
     {

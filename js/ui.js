@@ -34,7 +34,8 @@ const layerMap = {
     forest: forestCompartments, forest_bijapur: kmlLayercgforc_bijapur,
     police_camps: geoLayerPoliceCamps,
     osm_military: geoLayerOsmMilitary,
-    clan_gods: undefined  // populated async by clan-gods.js
+    clan_gods: undefined,  // populated async by clan-gods.js
+    indravati_tiger_reserve: indravatiTigerReserve
 };
 
 const labelStyles = {
@@ -306,6 +307,15 @@ function renderLegend() {
                             }
                         } else if (item.zoomTarget === 'bodhghat_coords') {
                             map.setView([19.21, 81.58], 11);
+                        } else if (item.zoomTarget === 'indravati_coords') {
+                            if (typeof geoJsonIndravatiLayer !== 'undefined' && geoJsonIndravatiLayer.getBounds) {
+                                const bounds = geoJsonIndravatiLayer.getBounds();
+                                if (bounds && typeof bounds.isValid === 'function' && bounds.isValid()) {
+                                    map.fitBounds(bounds, {padding:[40,40], maxZoom:17});
+                                    return;
+                                }
+                            }
+                            map.setView([18.90, 80.85], 11);
                         } else {
                             const targetVar = layerMap[item.id];
                             if (targetVar) {
