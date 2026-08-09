@@ -21,3 +21,6 @@ data/bhuvan_villages_merged.geojson
 # LibreOffice lock files
 .~lock.*#
 *.~lock.*
+
+# Excel files
+*.xlsx
