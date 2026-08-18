@@ -1,0 +1,51 @@
+Rowghat
+177 KP Rowghat Iron Ore Mines Area 202880 of SAIL
+30CHG17001
+
+
+Surjagarh
+Surjagarh
+30MSH27002
+
+
+Niyamgiri Range
+No mines
+
+
+Sijimali
+kml file -> data/Extra Data/Sijimali Bauxite Mine/Sijimali bauxite mine KML.kml
+
+
+Biladila Range
+42_Area_66523_BACHELI DEPOSIT -4.tif
+30CHG03004
+
+40_Area_54004_BACHELI_5.tif
+30MPR02005
+
+43_Area_87492_BACHELI - 11C.tif
+30CHG03002
+
+96_Area_50674_KIRANDUL - 14 NMZ.tif
+30MPR02002
+
+97 KP NMDC VIll- Bacheli 10N Area 30934_modified.
+30MPR48001
+
+183 KP NARELI 1640 Ha PRECIOUS MINERALS AND SMELT
+BMCRAI22
+
+157 KP Nareli Area 497 of Precious Minerals Khasr
+60CHG03005
+
+95 KPPrecious Mineral Tin Bade bacheli 774 Ha_mod
+60CHG03001
+
+94 kp Precious Mineral Tin Bade bacheli 3601 Ha_m
+60CHG03004
+
+158 KP Badi Bacheli Area - 531 of Precious Minera
+60CHG03002
+
+156 KP Badi Bacheli Area - 1709 of Precious Miner
+60CHG03003

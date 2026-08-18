@@ -35,6 +35,8 @@ const layerMap = {
     police_camps: geoLayerPoliceCamps,
     osm_military: geoLayerOsmMilitary,
     clan_gods: undefined,  // populated async by clan-gods.js
+    sacred_geography: sacredGeographyGroup,
+    mines_sacred: minesSacredLayer,
     indravati_tiger_reserve: indravatiTigerReserve
 };
 
@@ -466,4 +468,17 @@ document.addEventListener('keydown', (e) => {
         toggleCleanView();
     }
 });
+
+/* ── Clear All Layers ── */
+window.clearAllLayers = function(event) {
+    if (event) event.stopPropagation(); // Prevents collapsing/expanding the legend header
+    
+    // Set all overlay activeStates to false
+    Object.keys(activeState).forEach(key => {
+        activeState[key] = false;
+    });
+    
+    // Sync the map and legend checkboxes
+    initLayersFromConfig();
+};
 

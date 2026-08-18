@@ -15,6 +15,8 @@ const LAYER_META = {
     police_camps: { label: 'Police/Mil Camps', color: 'rgba(107,142,35,0.2)', border: '#6B8E23', text: '#3a4e0a' },
     osm_military: { label: 'OSM Landuse Military', color: 'rgba(70,130,180,0.2)', border: '#4682B4', text: '#1b4d75' },
     clan_gods: { label: 'Clan Gods Villages', color: 'rgba(204,41,54,0.25)', border: '#8b0000', text: '#8b0000' },
+    sacred_geography: { label: 'Sacred Geography', color: 'rgba(46, 204, 113, 0.25)', border: '#2ecc71', text: '#1b7e42' },
+    mines_sacred: { label: 'Mines in Sacred Areas', color: 'rgba(231, 76, 60, 0.25)', border: '#e74c3c', text: '#922b21' },
     dep5: { label: 'Dep-05 ML Area', color: 'rgba(0,150,136,0.15)', border: 'rgba(0,150,136,0.6)', text: '#004d40' },
     pekb: { label: 'PEKB & Parsa Coal Block', color: 'rgba(255,140,0,0.2)', border: '#ff8c00', text: '#b35c00' },
     alnar: { label: 'Alnar Iron Ore Mine', color: 'rgba(178,34,34,0.18)', border: 'rgba(178,34,34,0.7)', text: '#7a1515' },
@@ -35,6 +37,8 @@ const activeState = {
     police_camps: false,
     osm_military: false,
     clan_gods: false,
+    sacred_geography: false,
+    mines_sacred: false,
     indravati_tiger_reserve: true
 };
 
@@ -196,10 +200,12 @@ const LEGEND_CONFIG = [
         ]
     },
     {
-        id: 'grp-clan-gods',
-        label: 'Clan Gods',
+        id: 'grp-sacred-geography',
+        label: 'Sacred Geography',
         items: [
-            { id: 'clan_gods', label: 'Village Overlay (by Phratry)', swatch: { background: 'rgba(204,41,54,0.5)', border: '#8b0000' } }
+            { id: 'clan_gods', label: 'Village Overlay (by Phratry)', swatch: { background: 'rgba(204,41,54,0.5)', border: '#8b0000' } },
+            { id: 'sacred_geography', label: 'Sacred Geography', swatch: { background: 'rgba(46, 204, 113, 0.5)', border: '#2ecc71' }, zoomTarget: 'sacredGeographyLayer' },
+            { id: 'mines_sacred', label: 'Mines in Sacred Areas', swatch: { background: 'rgba(231, 76, 60, 0.5)', border: '#e74c3c' }, zoomTarget: 'minesSacredLayer' }
         ]
     }
 ];

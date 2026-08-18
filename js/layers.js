@@ -392,6 +392,101 @@ geoJsonIndravatiLayer.on('click', e => {
 /* ── KML layers ── */
 const kmlStyle = { color: 'rgba(255,255,255,0.7)', weight: 1.5, fillColor: 'white', fillOpacity: 0.2 };
 
+const sacredGeographyLayer = omnivore.kml("data/gods_and_goddesses/sacred_geography_v1.kml", null, L.geoJson(null, {
+    style: () => ({ ...kmlStyle, fillColor: '#2ecc71', color: '#2ecc71', fillOpacity: 0.25 }),
+    onEachFeature: (feature, layer) => {
+        const props = feature.properties || {};
+        layer.bindPopup(kmlPopup(props, "sacred_geography"));
+    }
+}));
+
+const sacredGeographyLabelLayer = L.layerGroup([]);
+
+function rebuildSacredGeographyLabels() {
+    if (typeof map === 'undefined' || !map || !sacredGeographyLabelLayer) return;
+    sacredGeographyLabelLayer.clearLayers();
+
+    sacredGeographyLayer.eachLayer(layer => {
+        if (typeof layer.getBounds !== 'function') return;
+        
+        const props = layer.feature?.properties || {};
+        const name = props.name || '';
+        const center = layer.getBounds().getCenter();
+
+        const style = 'color:#1b7e42; font-size:10px; font-weight:700; white-space:nowrap; text-shadow:-1px -1px 0 #FEFBE3, 1px -1px 0 #FEFBE3, -1px 1px 0 #FEFBE3, 1px 1px 0 #FEFBE3; text-align:center; width:120px;';
+        
+        const labelMarker = L.marker(center, {
+            interactive: false,
+            icon: L.divIcon({
+                className: '',
+                html: `<div style="${style}">${name}</div>`,
+                iconSize: [120, 20],
+                iconAnchor: [60, 10]
+            })
+        });
+        sacredGeographyLabelLayer.addLayer(labelMarker);
+    });
+}
+
+sacredGeographyLayer.on('ready', () => {
+    rebuildSacredGeographyLabels();
+});
+
+const sacredGeographyGroup = L.featureGroup([sacredGeographyLayer, sacredGeographyLabelLayer]);
+
+map.on('moveend', () => {
+    if (map.hasLayer(sacredGeographyGroup)) {
+        rebuildSacredGeographyLabels();
+    }
+});
+
+map.on('layeradd', (e) => {
+    if (e.layer === sacredGeographyGroup) {
+        rebuildSacredGeographyLabels();
+    }
+});
+
+const minesSacredLayer = L.geoJson(null, {
+    style: () => ({ color: '#e74c3c', fillColor: '#e74c3c', fillOpacity: 0.35, weight: 1.5 }),
+    onEachFeature: (feature, layer) => {
+        const props = feature.properties || {};
+        
+        const rows = [
+            ['Mine Name', props.mine_name || props.name || props['Mine Name']],
+            ['Lessee', props.name_of_le || props.lessee || props['Lessee / Company']],
+            ['Area (Ha)', props.lease_area || props.area || props['Lease Area (ha)']],
+            ['Mineral', props.mineral_na || props.mineral || props['Mineral Name']],
+            ['Category', props.mineral_ca || props['Mineral Category']],
+            ['Method of Mining', props.method_of_ || props['Method of Mining']],
+            ['End Use', props.end_use || props['End Use']],
+            ['Sector', props.psu_privat || props['PSU / Private']],
+            ['District', props.district || props.District],
+            ['State', props.state || props.State],
+            ['Villages', props.village_na || props.villages || props.Villages],
+            ['Geological Reserves', props['Geological Reserves']],
+            ['Production Capacity', props['Production Capacity']],
+            ['Life of Mine', props['Life of Mine']],
+            ['Forest Land', props['Forest Land in Lease']],
+            ['Forest Clearance', props['Forest Clearance Status']],
+            ['EC Grant Date', props['EC Grant Date']],
+            ['EC Category', props['EC Category']],
+            ['Wildlife Sanctuary', props['Nearest Wildlife Sanctuary']],
+            ['Project Cost', props['Project Cost']],
+            ['Employment', props['Employment']],
+            ['PDFs (Displaced)', props['PDFs (Project Displaced Families)']],
+            ['R&R Budget', props['R&R Budget']],
+            ['Court Case', props['Court Case']]
+        ];
+
+        layer.bindPopup(buildPopup(props.mine_name || props.name || props['Mine Name'] || 'Mine in Sacred Area', rows, 'mines_sacred'));
+    }
+});
+
+fetch('data/gods_and_goddesses/mines_in_sacred_geography.geojson')
+    .then(res => res.json())
+    .then(data => minesSacredLayer.addData(data))
+    .catch(err => console.error("Error loading mines in sacred geography:", err));
+
 const kmlLayerBacheli = omnivore.kml("data/Bacheli Airport/site 1 - bacheli_airport_proposed_project_ec.kml", null, L.geoJson(null, {
     style: () => ({ ...kmlStyle, fillColor: 'rgba(120, 250, 200)', color: 'rgba(120, 250, 200)' }),
     onEachFeature: (feature, layer) => {

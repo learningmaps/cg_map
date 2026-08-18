@@ -140,6 +140,17 @@ function kmlPopup(p, type) {
             ['Details / Location', p.details]
         ], 'pekb');
     }
+
+    if (type === 'sacred_geography') {
+        return buildPopup(p.name || 'Sacred Geography Site', [
+            ['Local Name', p.local_name],
+            ['District', p.district],
+            ['State', p.state],
+            ['Deity', p.deity],
+            ['Significance', p.significance],
+            ['Mining Company', p.mining_company]
+        ], 'sacred_geography');
+    }
 }
 
 function extractForceType(name) {

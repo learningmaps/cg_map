@@ -13,155 +13,9 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
     
-    <style>
-        :root {
-            --primary: #7a5530;
-            --bg-creme: #FEFBE3;
-            --border: #CFD8B3;
-            --accent: #CD9C69;
-        }
 
-        #search-box {
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1000;
-            width: 90%;
-            max-width: 500px;
-            display: flex;
-            gap: 10px;
-        }
-
-        #search-box input {
-            flex: 1;
-            padding: 10px 20px;
-            border-radius: 25px;
-            border: 1px solid var(--border);
-            background: var(--bg-creme);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            font-family: inherit;
-            font-size: 13px;
-            outline: none;
-        }
-
-        #map-date-badge {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            background: rgba(254, 251, 227, 0.95);
-            border: 1px solid var(--border);
-            color: var(--primary);
-            padding: 8px 16px;
-            border-radius: 12px;
-            font-family: inherit;
-            font-size: 12px;
-            font-weight: 800;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            pointer-events: none;
-            display: none;
-            letter-spacing: 0.5px;
-        }
-
-        .sentinel-fade-overlay {
-            transition: opacity var(--fade-duration, 0.4s) ease-in-out !important;
-            will-change: opacity;
-        }
-
-        #time-panel {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1000;
-            background: rgba(254, 251, 227, 0.92);
-            backdrop-filter: blur(8px);
-            border: 1px solid var(--border);
-            border-radius: 40px;
-            padding: 8px 24px;
-            width: auto;
-            min-width: 640px;
-            max-width: 95%;
-            box-shadow: 0 8px 32px rgba(130, 100, 60, 0.15);
-            color: var(--primary);
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-        }
-
-        .compact-row {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .date-display {
-            font-weight: 800;
-            font-size: 13px;
-            white-space: nowrap;
-        }
-
-        .play-btn {
-            width: 32px;
-            height: 32px;
-            font-size: 14px;
-            flex-shrink: 0;
-            cursor: pointer;
-            border-radius: 50%;
-            border: 1px solid var(--border);
-            background: var(--primary);
-            color: white;
-        }
-
-        input[type="range"] {
-            flex-grow: 1;
-            height: 4px;
-        }
-
-        .settings-row {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 10px;
-            border-top: 1px solid rgba(207, 216, 179, 0.3);
-            padding-top: 4px;
-        }
-
-        .settings-row input, .settings-row select {
-            background: transparent;
-            border: none;
-            font-size: 10px;
-            color: var(--primary);
-            font-weight: 600;
-            padding: 2px;
-            cursor: pointer;
-        }
-
-        .divider {
-            width: 1px;
-            height: 12px;
-            background: var(--border);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            #time-panel { 
-                min-width: 90%; 
-                border-radius: 20px;
-                padding: 10px;
-                bottom: 65px;
-            }
-            .settings-row { flex-wrap: wrap; justify-content: center; }
-            #map-date-badge {
-                bottom: 120px;
-                right: 10px;
-                padding: 6px 12px;
-                font-size: 11px;
-            }
-        }
-    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gifshot/0.4.5/gifshot.min.js"></script>
 </head>
 <body>
     <div id="map"></div>
@@ -174,6 +28,7 @@
         <div id="legend">
             <div id="legend-header">
                 <span class="legend-title">Layers</span>
+                <button id="clear-all-btn" onclick="clearAllLayers(event)">Clear All</button>
                 <span class="legend-toggle">▼</span>
             </div>
             <div id="legend-body"></div>
@@ -185,88 +40,103 @@
     </div>
 
     <div id="search-box">
-        <input type="text" id="location-input" placeholder="Search location...">
-        <button onclick="handleSearch()" style="background: var(--primary); color: white; border: none; padding: 0 15px; border-radius: 25px; cursor: pointer; font-weight: 600; font-size: 12px;">Search</button>
+        <div class="search-input-wrapper">
+            <input type="text" id="location-input" placeholder="Search location..." autocomplete="off">
+            <div id="search-suggestions" class="suggestions-dropdown"></div>
+        </div>
+        <button onclick="handleSearch()" class="search-btn">Search</button>
     </div>
 
     <div id="time-panel">
         <!-- Progress Bar -->
-        <div id="preload-progress-container" style="display: none; height: 3px; background: rgba(0,0,0,0.1); border-radius: 3px; margin-bottom: 8px; overflow: hidden;">
-            <div id="preload-progress-bar" style="width: 0%; height: 100%; background: var(--primary); transition: width 0.3s;"></div>
+        <div id="preload-progress-container">
+            <div id="preload-progress-bar"></div>
         </div>
 
         <div class="compact-row">
-            <button class="play-btn" id="play-btn" onclick="togglePlay()">▶</button>
-            <div class="date-display" id="current-date">Loading...</div>
-            <input type="range" id="time-slider" min="0" max="0" value="0" oninput="handleSliderChange(this.value)">
-            <div style="font-size: 10px; font-weight: 800; color: var(--accent); white-space: nowrap;">
-                <span id="start-label">--</span> / <span id="end-label">--</span>
+            <div class="mobile-play-row">
+                <button class="play-btn" id="play-btn" onclick="togglePlay()">▶</button>
+                <div class="date-display" id="current-date">No Imagery Loaded</div>
             </div>
-            <button id="preload-btn" onclick="loadAllImages()" style="background: var(--primary); color: white; border: none; padding: 4px 10px; border-radius: 12px; font-size: 9px; font-weight: 800; cursor: pointer; white-space: nowrap;">LOAD ALL</button>
-            <button id="download-all-btn" onclick="downloadAllImages()" style="background: transparent; border: 1px solid var(--border); color: var(--primary); padding: 4px 10px; border-radius: 12px; font-size: 9px; font-weight: 800; cursor: pointer; white-space: nowrap; display: none;">DOWNLOAD IMAGES</button>
+            
+            <div class="mobile-slider-row">
+                <input type="range" id="time-slider" min="0" max="0" value="0" oninput="handleSliderChange(this.value)">
+                <div class="timeline-years">
+                    <span id="start-label">--</span> / <span id="end-label">--</span>
+                </div>
+            </div>
+
+            <div class="mobile-action-row">
+                <button id="preload-btn" onclick="loadAllImages()">LOAD ALL</button>
+                <button id="download-all-btn" onclick="downloadAllImages()">DOWNLOAD IMAGES</button>
+            </div>
         </div>
         
         <div class="settings-row">
-            <select id="provider" onchange="fetchImages()">
-                <option value="copernicus">Copernicus Direct</option>
-                <option value="mpc">Microsoft Fallback</option>
-            </select>
-            <div class="divider"></div>
-            <select id="workflow-mode" onchange="handleWorkflowChange()">
-                <option value="latest-clean">Get Latest Clean Image</option>
-                <option value="monthly-sequence">Monthly Sequence</option>
-                <option value="yoy-month">Year-over-Year Month Comparison</option>
-            </select>
-            <div class="divider" id="div-filters"></div>
-            
-            <select id="month-filter" onchange="fetchImages()">
-                <option value="0">January</option>
-                <option value="1">February</option>
-                <option value="2">March</option>
-                <option value="3">April</option>
-                <option value="4">May</option>
-                <option value="5">June</option>
-                <option value="6">July</option>
-                <option value="7">August</option>
-                <option value="8">September</option>
-                <option value="9">October</option>
-                <option value="10">November</option>
-                <option value="11" selected>December</option>
-            </select>
+            <div class="mobile-settings-grp">
+                <select id="provider">
+                    <option value="copernicus">Copernicus Direct</option>
+                    <option value="mpc">Microsoft Fallback</option>
+                </select>
+                <div class="divider"></div>
+                <select id="workflow-mode" onchange="handleWorkflowChange()">
+                    <option value="latest-clean">Get Latest Clean Image</option>
+                    <option value="monthly-sequence">Monthly Sequence</option>
+                    <option value="yoy-month">Year-over-Year Month Comparison</option>
+                </select>
+                <div class="divider" id="div-filters"></div>
+                
+                <select id="month-filter">
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11" selected>December</option>
+                </select>
+            </div>
 
-            <span id="label-years" style="margin: 0 4px; font-weight: 600;">Years:</span>
-            <select id="start-year" onchange="fetchImages()">
-                <option value="2015">2015</option>
-                <option value="2016" selected>2016</option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-                <option value="2026">2026</option>
-            </select>
-            <span id="label-to" style="margin: 0 4px; font-weight: 600;">to</span>
-            <select id="end-year" onchange="fetchImages()">
-                <option value="2015">2015</option>
-                <option value="2016">2016</option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-                <option value="2026" selected>2026</option>
-            </select>
+            <div class="mobile-years-row">
+                <span id="label-years" style="margin: 0 4px; font-weight: 600;">Years:</span>
+                <select id="start-year">
+                    <option value="2015">2015</option>
+                    <option value="2016" selected>2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                </select>
+                <span id="label-to" style="margin: 0 4px; font-weight: 600;">to</span>
+                <select id="end-year">
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026" selected>2026</option>
+                </select>
+            </div>
             
             <div class="divider"></div>
-            <select id="img-type" onchange="fetchImages()">
+            <select id="img-type">
                 <option value="TRUE-COLOR">True Color</option>
                 <option value="NDVI">NDVI</option>
                 <option value="NDMI">NDMI</option>
@@ -274,13 +144,21 @@
                 <option value="FALSE-COLOR">False Color</option>
                 <option value="TRUE-COLOR-HIGHLIGHT-OPTIMIZED">Mining Highlight</option>
             </select>
+            
             <div class="divider"></div>
-            <span style="font-weight: 700; white-space: nowrap;">Exposure:</span>
-            <input type="range" id="exposure-slider" min="0.3" max="1.5" step="0.05" value="0.9" oninput="handleExposureChange(this.value)" style="width: 70px;" title="Adjust imagery exposure/brightness">
-            <span id="exposure-val" style="font-weight: 800; width: 28px; text-align: right;">90%</span>
-            <button onclick="resetTimeline()" style="background: transparent; border: 1px solid var(--border); color: var(--primary); border-radius: 8px; padding: 1px 5px; font-size: 9px; font-weight: 700; cursor: pointer;" title="Reset timeline and clear loaded images">Reset</button>
+            
+            <div class="mobile-exposure-row">
+                <span style="font-weight: 700; white-space: nowrap;">Exposure:</span>
+                <input type="range" id="exposure-slider" min="0.3" max="1.5" step="0.05" value="0.9" oninput="handleExposureChange(this.value)" style="width: 70px;" title="Adjust imagery exposure/brightness">
+                <span id="exposure-val" style="font-weight: 800; width: 28px; text-align: right;">90%</span>
+            </div>
+            
             <div class="divider"></div>
-            <a href="index.html" style="text-decoration: none; color: var(--accent); font-weight: 800;">MAIN MAP</a>
+            
+            <div class="mobile-nav-row">
+                <button onclick="resetTimeline()" class="mobile-reset-btn" title="Reset timeline and clear loaded images">Reset</button>
+                <a href="index.html" class="mobile-map-link">MAIN MAP</a>
+            </div>
         </div>
     </div>
 
@@ -401,7 +279,9 @@
                 labelTo.style.display = 'none';
                 divFilters.style.display = 'none';
             }
-            fetchImages();
+            if (items.length > 0) {
+                fetchImages();
+            }
         }
 
         // Initialize state on page load
@@ -793,13 +673,115 @@
             const res = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}`);
             const data = await res.json();
             if (data.length > 0) {
-                map.setView([data[0].lat, data[0].lon], 12);
+                const result = data[0];
+                if (result.boundingbox) {
+                    const bbox = result.boundingbox; // ["south", "north", "west", "east"]
+                    const bounds = L.latLngBounds(
+                        [parseFloat(bbox[0]), parseFloat(bbox[2])],
+                        [parseFloat(bbox[1]), parseFloat(bbox[3])]
+                    );
+                    map.fitBounds(bounds);
+                } else {
+                    map.setView([parseFloat(result.lat), parseFloat(result.lon)], 14);
+                }
                 setTimeout(fetchImages, 500);
             }
         }
 
+        // Search Suggestions & Keyboard Support
+        let debounceTimer;
+        let activeSuggestions = [];
+        const locationInput = document.getElementById('location-input');
+        const suggestionsBox = document.getElementById('search-suggestions');
+
+        locationInput.addEventListener('input', () => {
+            clearTimeout(debounceTimer);
+            const query = locationInput.value.trim();
+            if (query.length < 3) {
+                suggestionsBox.innerHTML = '';
+                suggestionsBox.style.display = 'none';
+                return;
+            }
+
+            debounceTimer = setTimeout(async () => {
+                try {
+                    const res = await fetch(`https://photon.komoot.io/api/?q=${encodeURIComponent(query)}&limit=5`);
+                    if (!res.ok) throw new Error("Failed to fetch suggestions");
+                    const data = await res.json();
+                    renderSuggestions(data.features || []);
+                } catch (err) {
+                    console.error("Suggestions error:", err);
+                }
+            }, 300);
+        });
+
+        // Trigger search on Enter key
+        locationInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                suggestionsBox.style.display = 'none';
+                handleSearch();
+            }
+        });
+
+        function renderSuggestions(features) {
+            activeSuggestions = features;
+            if (features.length === 0) {
+                suggestionsBox.innerHTML = '';
+                suggestionsBox.style.display = 'none';
+                return;
+            }
+
+            suggestionsBox.innerHTML = features.map((f, idx) => {
+                const props = f.properties || {};
+                const name = props.name || '';
+                const city = props.city || props.town || props.village || '';
+                const state = props.state || '';
+                const country = props.country || '';
+                
+                const details = [city, state, country].filter(x => x && x !== name).join(', ');
+                const label = details ? `<strong>${name}</strong>, <span style="font-size: 10px; color: #a08a60;">${details}</span>` : `<strong>${name}</strong>`;
+                
+                return `<div class="suggestion-item" onclick="selectSuggestion(${idx})">${label}</div>`;
+            }).join('');
+            suggestionsBox.style.display = 'block';
+        }
+
+        window.selectSuggestion = function(idx) {
+            const feature = activeSuggestions[idx];
+            if (!feature) return;
+
+            const name = feature.properties.name || '';
+            locationInput.value = name;
+            suggestionsBox.style.display = 'none';
+
+            const coords = feature.geometry.coordinates; // [lon, lat]
+            const lat = coords[1];
+            const lon = coords[0];
+
+            if (feature.properties.extent) {
+                const ext = feature.properties.extent; // [min_lon, min_lat, max_lon, max_lat]
+                const bounds = L.latLngBounds([ext[1], ext[0]], [ext[3], ext[2]]);
+                map.fitBounds(bounds);
+            } else {
+                map.setView([lat, lon], 14);
+            }
+
+            setTimeout(fetchImages, 500);
+        };
+
+        // Close suggestions dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!locationInput.contains(e.target) && !suggestionsBox.contains(e.target)) {
+                suggestionsBox.style.display = 'none';
+            }
+        });
+
         async function loadAllImages() {
-            if (items.length === 0) return;
+            if (items.length === 0) {
+                await fetchImages();
+                if (items.length === 0) return;
+            }
 
             const btn = document.getElementById('preload-btn');
             const progressContainer = document.getElementById('preload-progress-container');
@@ -943,13 +925,8 @@
         }
 
         map.on('moveend', () => {
-            // Only search for new dates if the user has not preloaded/displayed images yet.
-            // This prevents clearing or disrupting the loaded timeline when panning/zooming.
-            const hasLoadedImages = Array.from(imageCache.values()).some(entry => entry.overlay && map.hasLayer(entry.overlay));
-            if (!hasLoadedImages) {
-                loadingCancelled = true;
-                fetchImages();
-            }
+            // Cancel active preloads when panning/zooming to prevent loading images outside the new viewport
+            loadingCancelled = true;
         });
 
         async function addDatestampToBlob(blob, dateString) {
@@ -1008,15 +985,31 @@
             });
         }
 
+        function blobToBase64(blob) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onloadend = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(blob);
+            });
+        }
+
         async function downloadAllImages() {
             if (items.length === 0) return;
             const layerType = document.getElementById('img-type').value;
             const mode = document.getElementById('workflow-mode').value;
             const btn = document.getElementById('download-all-btn');
             const originalText = btn.textContent;
+            const progressContainer = document.getElementById('preload-progress-container');
+            const progressBar = document.getElementById('preload-progress-bar');
             
             btn.disabled = true;
             btn.textContent = 'DOWNLOADING...';
+
+            if (progressContainer && progressBar) {
+                progressContainer.style.display = 'block';
+                progressBar.style.width = '0%';
+            }
 
             try {
                 if (items.length === 1) {
@@ -1034,6 +1027,8 @@
                         const stampedBlob = await addDatestampToBlob(entry.blob, dateText);
                         const stampedUrl = URL.createObjectURL(stampedBlob);
 
+                        if (progressBar) progressBar.style.width = '100%';
+
                         const a = document.createElement('a');
                         a.href = stampedUrl;
                         a.download = fileName;
@@ -1046,6 +1041,7 @@
                     // Mode 1 & 2: Multiple images - Bundle into a single ZIP archive
                     const zip = new JSZip();
                     let addedFilesCount = 0;
+                    const base64Urls = [];
 
                     for (let i = 0; i < items.length; i++) {
                         const item = items[i];
@@ -1061,10 +1057,50 @@
                             const stampedBlob = await addDatestampToBlob(entry.blob, dateText);
                             zip.file(fileName, stampedBlob);
                             addedFilesCount++;
+
+                            // Store base64 URL for GIF creation
+                            const base64Url = await blobToBase64(stampedBlob);
+                            base64Urls.push(base64Url);
+                        }
+                        if (progressBar) {
+                            progressBar.style.width = `${((i + 1) / items.length) * 50}%`;
                         }
                     }
 
                     if (addedFilesCount > 0) {
+                        btn.textContent = 'GENERATING GIF...';
+                        if (progressBar) progressBar.style.width = '70%';
+                        
+                        // Calculate dimensions matching current viewport aspect ratio
+                        const size = map.getSize();
+                        const gifWidth = Math.min(800, Math.round(size.x));
+                        const gifHeight = Math.round(gifWidth * (size.y / size.x));
+
+                        try {
+                            const gifBase64 = await new Promise((resolve, reject) => {
+                                gifshot.createGIF({
+                                    images: base64Urls,
+                                    interval: 0.8, // 800ms per frame
+                                    gifWidth: gifWidth,
+                                    gifHeight: gifHeight,
+                                    numWorkers: 0,
+                                    sampleInterval: 10
+                                }, function(obj) {
+                                    if (obj.error) {
+                                        reject(new Error(obj.errorMsg));
+                                    } else {
+                                        resolve(obj.image);
+                                    }
+                                });
+                            });
+
+                            // Strip the base64 prefix so JSZip can parse it
+                            const base64Data = gifBase64.replace(/^data:image\/gif;base64,/, "");
+                            zip.file("timelapse.gif", base64Data, { base64: true });
+                        } catch (gifErr) {
+                            console.warn("GIF generation failed, compiling ZIP without it...", gifErr);
+                        }
+
                         // Generate descriptive ZIP filename based on active mode
                         let zipName = `sentinel_${mode}_${layerType}.zip`;
                         if (mode === 'yoy-month') {
@@ -1080,8 +1116,12 @@
                         }
 
                         btn.textContent = 'COMPILING ZIP...';
+                        if (progressBar) progressBar.style.width = '90%';
+                        
                         const content = await zip.generateAsync({ type: 'blob' });
                         const zipUrl = URL.createObjectURL(content);
+
+                        if (progressBar) progressBar.style.width = '100%';
 
                         const a = document.createElement('a');
                         a.href = zipUrl;
@@ -1097,10 +1137,16 @@
             } finally {
                 btn.disabled = false;
                 btn.textContent = originalText;
+                if (progressContainer && progressBar) {
+                    setTimeout(() => {
+                        progressContainer.style.display = 'none';
+                        progressBar.style.width = '0%';
+                    }, 800);
+                }
             }
         }
 
-        fetchImages();
+
     </script>
 </body>
 </html>

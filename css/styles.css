@@ -197,6 +197,26 @@ body {
     background: #CFD8B3;
 }
 
+#clear-all-btn {
+    background: #7a5530;
+    color: #fefbe3;
+    border: 1px solid #7a5530;
+    padding: 2px 8px;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 12px;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+}
+
+#clear-all-btn:hover {
+    background: #fefbe3;
+    color: #7a5530;
+}
+
 #legend-header .legend-title {
     font-size: 12px;
     font-weight: 600;
@@ -630,6 +650,16 @@ body {
         transform: translateY(-50%);
     }
 
+    #clear-all-btn {
+        position: absolute;
+        right: 48px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+
     #legend-body {
         max-height: 50vh;
         padding-bottom: 30px; /* Extra space for bottom safe area */
@@ -994,3 +1024,463 @@ body.clean-map-mode #clean-view-btn:hover {
     background: #EFE3C3;
 }
 
+
+/* ── Sentinel-2 Time Series Page Styles ── */
+.mobile-play-row,
+.mobile-slider-row,
+.mobile-action-row,
+.mobile-settings-grp,
+.mobile-years-row,
+.mobile-exposure-row,
+.mobile-nav-row {
+    display: contents;
+}
+
+.mobile-reset-btn {
+    background: transparent;
+    border: 1px solid #CFD8B3;
+    color: #7a5530;
+    border-radius: 8px;
+    padding: 1px 5px;
+    font-size: 9px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.mobile-reset-btn:hover {
+    background: rgba(207, 216, 179, 0.2);
+}
+
+.mobile-map-link {
+    text-decoration: none;
+    color: #CD9C69;
+    font-weight: 800;
+    transition: color 0.15s;
+}
+
+.mobile-map-link:hover {
+    color: #b08454;
+}
+
+.timeline-years {
+    font-size: 10px;
+    font-weight: 800;
+    color: #CD9C69;
+    white-space: nowrap;
+}
+
+#preload-btn {
+    background: #7a5530;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 9px;
+    font-weight: 800;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s;
+}
+
+#preload-btn:hover {
+    background: #5c3d18;
+}
+
+#preload-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#download-all-btn {
+    background: transparent;
+    border: 1px solid #CFD8B3;
+    color: #7a5530;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 9px;
+    font-weight: 800;
+    cursor: pointer;
+    white-space: nowrap;
+    display: none;
+    transition: background 0.15s;
+}
+
+#download-all-btn:hover {
+    background: rgba(207, 216, 179, 0.2);
+}
+
+.search-btn {
+    background: #7a5530;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    transition: background 0.15s;
+}
+
+.search-btn:hover {
+    background: #5c3d18;
+}
+
+#preload-progress-container {
+    display: none;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+#preload-progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #7a5530;
+    transition: width 0.3s;
+}
+
+#search-box {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-input-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+#search-box input {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #CFD8B3;
+    background: #FEFBE3;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+}
+
+.suggestions-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    background: #FEFBE3;
+    border: 1px solid #CFD8B3;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(130, 100, 60, 0.15);
+    max-height: 220px;
+    overflow-y: auto;
+    z-index: 1050;
+    padding: 6px 0;
+}
+
+.suggestion-item {
+    padding: 10px 16px;
+    font-size: 12px;
+    color: #4a3520;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.15s;
+}
+
+.suggestion-item:hover {
+    background: #EAEECD;
+}
+
+.suggestion-item:not(:last-child) {
+    border-bottom: 1px solid rgba(207, 216, 179, 0.3);
+}
+
+#map-date-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(254, 251, 227, 0.95);
+    border: 1px solid #CFD8B3;
+    color: #7a5530;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 800;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    pointer-events: none;
+    display: none;
+    letter-spacing: 0.5px;
+}
+
+.sentinel-fade-overlay {
+    transition: opacity var(--fade-duration, 0.4s) ease-in-out !important;
+    will-change: opacity;
+}
+
+#time-panel {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(254, 251, 227, 0.92);
+    backdrop-filter: blur(8px);
+    border: 1px solid #CFD8B3;
+    border-radius: 40px;
+    padding: 8px 24px;
+    width: auto;
+    min-width: 640px;
+    max-width: 95%;
+    box-shadow: 0 8px 32px rgba(130, 100, 60, 0.15);
+    color: #7a5530;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.compact-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.date-display {
+    font-weight: 800;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.play-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #CFD8B3;
+    background: #7a5530;
+    color: white;
+}
+
+.play-btn:hover {
+    background: #5c3d18;
+}
+
+input[type="range"] {
+    flex-grow: 1;
+    height: 4px;
+}
+
+.settings-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+    border-top: 1px solid rgba(207, 216, 179, 0.3);
+    padding-top: 4px;
+}
+
+.settings-row input, .settings-row select {
+    background: transparent;
+    border: none;
+    font-size: 10px;
+    color: #7a5530;
+    font-weight: 600;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.settings-row select:hover {
+    color: #5c3d18;
+}
+
+.divider {
+    width: 1px;
+    height: 12px;
+    background: #CFD8B3;
+}
+
+/* ── Mobile Overrides for Sentinel Page ── */
+@media (max-width: 768px) {
+    #time-panel { 
+        min-width: 90%; 
+        border-radius: 20px;
+        padding: 12px 16px;
+        bottom: 65px;
+        gap: 8px;
+    }
+
+    .compact-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .mobile-play-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        min-height: 44px;
+    }
+
+    .mobile-slider-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-height: 44px;
+    }
+
+    .mobile-slider-row input[type="range"] {
+        height: 44px;
+    }
+
+    .mobile-action-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .mobile-action-row button {
+        flex: 1;
+        min-height: 44px;
+        border-radius: 8px;
+        font-size: 11px;
+        font-weight: 800;
+        cursor: pointer;
+    }
+
+    #time-panel .play-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 16px;
+    }
+
+    .date-display {
+        font-size: 14px;
+    }
+
+    .settings-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding-top: 8px;
+        border-top: 1px solid rgba(207, 216, 179, 0.4);
+    }
+
+    .mobile-settings-grp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .mobile-settings-grp select {
+        background: #FEFBE3;
+        border: 1px solid #CFD8B3;
+        border-radius: 8px;
+        height: 44px;
+        padding: 8px 12px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #7a5530;
+        width: 100%;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .mobile-years-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        min-height: 44px;
+    }
+
+    .mobile-years-row select {
+        flex: 1;
+        background: #FEFBE3;
+        border: 1px solid #CFD8B3;
+        border-radius: 8px;
+        height: 44px;
+        padding: 8px 12px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #7a5530;
+    }
+
+    .mobile-exposure-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        min-height: 44px;
+    }
+
+    .mobile-exposure-row input[type="range"] {
+        flex: 1;
+        height: 44px;
+    }
+
+    #exposure-val {
+        font-size: 12px;
+        min-width: 35px;
+    }
+
+    .mobile-nav-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        margin-top: 4px;
+    }
+
+    .mobile-nav-row .mobile-reset-btn {
+        flex: 1;
+        height: 44px;
+        border-radius: 8px;
+        background: transparent;
+        border: 1px solid #CFD8B3;
+        color: #7a5530;
+        font-weight: 700;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .mobile-nav-row .mobile-map-link {
+        flex: 1;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        background: #CD9C69;
+        color: white;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 12px;
+    }
+
+    .settings-row .divider,
+    #label-years,
+    #label-to {
+        display: none !important;
+    }
+
+    #map-date-badge {
+        bottom: 120px;
+        right: 10px;
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+}
