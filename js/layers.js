@@ -151,48 +151,6 @@ bhuvanVillages.on('click', e => {
         ], 'bhuvan')).openOn(map);
 });
 
-/* ── SHRUG Census 2011 ── */
-const shrugCensus = L.vectorGrid.protobuf(
-    "https://indianopenmaps.com/shrug-census2011/villages/{z}/{x}/{y}.pbf",
-    {
-        maxNativeZoom: 9, maxZoom: 22,
-        rendererFactory: L.svg.tile,
-        vectorTileLayerStyles: {
-            'shrug': {
-                fillColor: 'rgba(0,100,255,0.5)', fill: true, fillOpacity: 0.3,
-                stroke: true, color: 'rgba(0,100,255, 0.5)', weight: 0.1,
-                nonScalingStroke: true
-            },
-            'village': {
-                fillColor: 'rgba(0,100,255,0.5)', fill: true, fillOpacity: 0.3,
-                stroke: true, color: 'rgba(0,100,255, 0.5)', weight: 0.1,
-                nonScalingStroke: true
-            },
-            'pc11': {
-                fillColor: 'rgba(0,100,255,0.5)', fill: true, fillOpacity: 0.3,
-                stroke: true, color: 'rgba(0,100,255, 0.5)', weight: 0.1,
-                nonScalingStroke: true
-            }
-        },
-        interactive: true,
-        detectRetina: true,
-        pane: 'overlayPane',
-        getFeatureId: f => f.properties?.pc11_tv_id || f.properties?.id || Math.random()
-    }
-);
-
-shrugCensus.on('click', e => {
-    const p = e.layer?.properties || e.propagatedFrom?.properties || {};
-    L.popup({ closeButton: true })
-        .setLatLng(e.latlng)
-        .setContent(buildPopup(p.tv_name || 'Village (Census 2011)', [
-            ['Village ID', p.pc11_tv_id],
-            ['Sub-Dist ID', p.pc11_sd_id],
-            ['District ID', p.pc11_d_id],
-            ['State ID', p.pc11_s_id]
-        ], 'shrug')).openOn(map);
-});
-
 /* ── Impacted villages (GeoJSON with Dynamic Centroid Labels) ── */
 const impactedLabelLayer = L.layerGroup([]);
 const geoJsonImpactedLayer = L.geoJson(null, {

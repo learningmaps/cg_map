@@ -28,7 +28,7 @@ const layerMap = {
     chittalnar: chittalnarTinOre,
     bacheli: kmlLayerBacheli,
     alnar: kmlLayerAlnar,
-    dist: cgDistrictsWMS, vil: cgVillagesWMS, bhuvan: bhuvanVillages, shrug: shrugCensus,
+    dist: cgDistrictsWMS, vil: cgVillagesWMS, bhuvan: bhuvanVillages,
     impacted: impactedVillages,
     dep4photos: undefined,
     forest: forestCompartments, forest_bijapur: kmlLayercgforc_bijapur,
@@ -417,6 +417,11 @@ window.baseLayers = {
     thunderforest_dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
         maxZoom: 20
+    }),
+    soi_topo: L.tileLayer('https://indianopenmaps.com/soi/osm/{z}/{x}/{y}.webp', {
+        maxZoom: 18,
+        maxNativeZoom: 14,
+        attribution: '© Survey of India | OpenStreetMap contributors'
     })
 };
 

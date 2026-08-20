@@ -11,9 +11,9 @@ The application is structured as a client-side only static web application using
 *   **`index.html`**: Entry point. Contains the DOM layout, including the Leaflet map container (`#map`) and the empty placeholder for the dynamically-rendered Legend UI.
 *   **`css/styles.css`**: Central stylesheet. Houses all UI styling, including layout styles, control overlays, premium map UI elements, and a dedicated mobile overrides section at the bottom (`@media (max-width: 768px)`).
 *   **`js/config.js`**: Application configuration and state. Stores the active layers state (`activeState`), layer metadata formatting (`LAYER_META`), the hardcoded `IMPACTED_VILLAGES` metadata array, and the `LEGEND_CONFIG` layout definition used for dynamic legend rendering.
-*   **`js/map-init.js`**: Leaflet map initialization, configuring the base maps (Google Satellite, Google Hybrid, OpenStreetMap, etc.) and zoom parameters.
+*   **`js/map-init.js`**: Leaflet map initialization, configuring map boundaries, custom panes, scale overlay, and zoom parameters.
 *   **`js/layers.js`**: Map layer definitions. Loads and sets up layer configurations for WMS, Vector Grid PBF Tiles (like the Impacted Villages layer), GeoJSON, and KML files (such as Deposit 4, Deposit 5, and the PEKB group containing both Parsa East & Kanta Basan and Parsa Coal Block).
-*   **`js/ui.js`**: Dynamic legend builder (`renderLegend`) and handlers for UI interactions (Legend checkboxes/toggles, coordinate mouse displays, search functionality, and zooming to specific layers).
+*   **`js/ui.js`**: Dynamic legend builder (`renderLegend`), base map options configuration (including Google Satellite, ESRI Satellite, OpenStreetMap, OpenTopoMap, Stadia Stamen Terrain, CartoDB Dark Matter, and Survey of India Topo with zoom auto-scaling), and handlers for UI interactions (toggles, mouse coordinate tracking, search, and layer zooming).
 *   **`js/utils.js`**: Helper functions, including the centralized popup builder `buildPopup` which renders consistent metadata tables inside Leaflet popups.
 *   **`js/clan-gods.js`**: Implements the Clan Gods layer, featuring dynamic phratry filtering, zoom-dependent details, collision-avoiding HTML labels (via `rbush`), and dynamic pixel-to-LatLng marker offsets.
 

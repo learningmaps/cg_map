@@ -8,7 +8,6 @@ const LAYER_META = {
     dep4screenbenplant: { label: 'Screening Cum Ben. Plant', color: 'rgba(255,161,106,0.25)', border: 'rgba(200,100,40,0.7)', text: '#6a3200' },
     bacheli: { label: 'Bacheli Airport', color: 'rgba(120, 250, 200, 0.25)', border: 'rgba(120, 250, 200, 0.85)', text: '#064d2c' },
     bhuvan: { label: 'Villages (Bhuvan)', color: 'rgba(255,255,0,0.18)', border: 'rgba(255,255,0,0.5)', text: '#545400' },
-    shrug: { label: 'Census 2011 (SHRUG)', color: 'rgba(0,100,255,0.15)', border: 'rgba(0,100,255,0.5)', text: '#004080' },
     impacted: { label: 'Impacted Villages', color: 'rgba(255,0,50,0.25)', border: 'rgba(255, 235, 235, 0.8)', text: '#8b0000' },
     tin: { label: 'Tin Ore Block', color: 'rgba(255, 215, 0, 0.2)', border: '#FFD700', text: '#6b5a00' },
     dep4photos: { label: 'Geotagged Photos', color: 'rgba(100,200,255,0.2)', border: 'rgba(44,95,138,0.7)', text: '#1a3d5c' },
@@ -30,7 +29,7 @@ const activeState = {
     chittalnar: true,
     bacheli: true,
     alnar: true,
-    dist: false, vil: false, bhuvan: false, shrug: false, forest: false,
+    dist: false, vil: false, bhuvan: false, forest: false,
     forest_bijapur: false,
     impacted: true,
     dep4photos: true,
@@ -102,7 +101,8 @@ const LEGEND_CONFIG = [
             { id: 'osm', label: 'OpenStreetMap', swatch: { background: '#fff', border: '#ccc' } },
             { id: 'topo', label: 'OpenTopoMap', swatch: { background: '#e0e0e0', border: '#999' } },
             { id: 'stamen_terrain', label: 'Stamen Terrain', swatch: { background: '#c8d9c0', border: '#7a9a6e' } },
-            { id: 'thunderforest_dark', label: 'CartoDB Dark Matter', swatch: { background: '#1a1a2e', border: '#444' } }
+            { id: 'thunderforest_dark', label: 'CartoDB Dark Matter', swatch: { background: '#1a1a2e', border: '#444' } },
+            { id: 'soi_topo', label: 'Survey of India (Topo)', swatch: { background: '#f5deb3', border: '#8b4513' } }
         ]
     },
     {
@@ -177,10 +177,9 @@ const LEGEND_CONFIG = [
         id: 'grp-admin',
         label: 'Administrative',
         items: [
-            { id: 'dist', label: 'Districts (ATREE)', swatch: { type: 'line', background: '#888' } },
-            { id: 'vil', label: 'Villages (ATREE)', swatch: { type: 'line', background: '#e55' } },
-            { id: 'bhuvan', label: 'Villages (Bhuvan)', swatch: { background: 'yellow', border: 'rgba(255,255,0,0.5)' } },
-            { id: 'shrug', label: 'Census of India 2011 (SHRUG)', swatch: { background: 'rgba(0,100,255,0.5)', border: 'rgba(0,100,255,0.5)' } }
+            { id: 'dist', label: 'CG Districts (ATREE)', swatch: { type: 'line', background: '#888' } },
+            { id: 'vil', label: 'CG Villages (ATREE)', swatch: { type: 'line', background: '#e55' } },
+            { id: 'bhuvan', label: 'Villages (Bhuvan)', swatch: { background: 'yellow', border: 'rgba(255,255,0,0.5)' } }
         ]
     },
     {
