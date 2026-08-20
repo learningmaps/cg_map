@@ -29,6 +29,7 @@ const layerMap = {
     bacheli: kmlLayerBacheli,
     alnar: kmlLayerAlnar,
     dist: cgDistrictsWMS, vil: cgVillagesWMS, bhuvan: bhuvanVillages,
+    bhuvan_states: bhuvanStates, bhuvan_districts: bhuvanDistricts,
     impacted: impactedVillages,
     dep4photos: undefined,
     forest: forestCompartments, forest_bijapur: kmlLayercgforc_bijapur,

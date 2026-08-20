@@ -19,7 +19,9 @@ const LAYER_META = {
     dep5: { label: 'Dep-05 ML Area', color: 'rgba(0,150,136,0.15)', border: 'rgba(0,150,136,0.6)', text: '#004d40' },
     pekb: { label: 'PEKB & Parsa Coal Block', color: 'rgba(255,140,0,0.2)', border: '#ff8c00', text: '#b35c00' },
     alnar: { label: 'Alnar Iron Ore Mine', color: 'rgba(178,34,34,0.18)', border: 'rgba(178,34,34,0.7)', text: '#7a1515' },
-    indravati_tiger_reserve: { label: 'Indravati Tiger Reserve', color: 'rgba(224,117,36,0.18)', border: 'rgba(224,117,36,0.5)', text: '#a04a00' }
+    indravati_tiger_reserve: { label: 'Indravati Tiger Reserve', color: 'rgba(224,117,36,0.18)', border: 'rgba(224,117,36,0.5)', text: '#a04a00' },
+    bhuvan_states: { label: 'States (Bhuvan)', color: 'rgba(63,81,181,0.12)', border: 'rgba(63,81,181,0.7)', text: '#1a237e' },
+    bhuvan_districts: { label: 'Districts (Bhuvan)', color: 'rgba(0,188,212,0.12)', border: 'rgba(0,188,212,0.7)', text: '#006064' }
 };
 
 const activeState = {
@@ -38,7 +40,9 @@ const activeState = {
     clan_gods: false,
     sacred_geography: false,
     mines_sacred: false,
-    indravati_tiger_reserve: true
+    indravati_tiger_reserve: true,
+    bhuvan_states: false,
+    bhuvan_districts: false
 };
 
 const IMPACTED_VILLAGES = [
@@ -177,6 +181,8 @@ const LEGEND_CONFIG = [
         id: 'grp-admin',
         label: 'Administrative',
         items: [
+            { id: 'bhuvan_states', label: 'States (Bhuvan)', swatch: { type: 'line', background: '#3f51b5' } },
+            { id: 'bhuvan_districts', label: 'Districts (Bhuvan)', swatch: { type: 'line', background: '#00bcd4' } },
             { id: 'dist', label: 'CG Districts (ATREE)', swatch: { type: 'line', background: '#888' } },
             { id: 'vil', label: 'CG Villages (ATREE)', swatch: { type: 'line', background: '#e55' } },
             { id: 'bhuvan', label: 'Villages (Bhuvan)', swatch: { background: 'yellow', border: 'rgba(255,255,0,0.5)' } }

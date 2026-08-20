@@ -119,6 +119,70 @@ minorMining.on('click', e => {
         ], 'minor')).openOn(map);
 });
 
+/* ── Bhuvan states ── */
+const bhuvanStates = L.vectorGrid.protobuf(
+    "https://indianopenmaps.com/not-so-open/states/bhuvan/{z}/{x}/{y}.pbf",
+    {
+        maxNativeZoom: 11, maxZoom: 22,
+        rendererFactory: L.svg.tile,
+        vectorTileLayerStyles: {
+            'bhuvan_states': {
+                fill: true,
+                fillColor: 'rgba(0,0,0,0)',
+                fillOpacity: 0,
+                stroke: true, color: '#3f51b5', weight: 1.8,
+                nonScalingStroke: true
+            }
+        },
+        interactive: true,
+        detectRetina: true,
+        pane: 'overlayPane',
+        getFeatureId: f => f.properties?.s_code || Math.random()
+    }
+);
+
+bhuvanStates.on('click', e => {
+    const p = e.layer?.properties || e.propagatedFrom?.properties || {};
+    L.popup({ closeButton: true })
+        .setLatLng(e.latlng)
+        .setContent(buildPopup(p.s_name || 'State', [
+            ['State ID', p.s_code]
+        ], 'bhuvan_states')).openOn(map);
+});
+
+/* ── Bhuvan districts ── */
+const bhuvanDistricts = L.vectorGrid.protobuf(
+    "https://indianopenmaps.com/not-so-open/districts/bhuvan/{z}/{x}/{y}.pbf",
+    {
+        maxNativeZoom: 11, maxZoom: 22,
+        rendererFactory: L.svg.tile,
+        vectorTileLayerStyles: {
+            'bhuvan_districts': {
+                fill: true,
+                fillColor: 'rgba(0,0,0,0)',
+                fillOpacity: 0,
+                stroke: true, color: '#00bcd4', weight: 1.0,
+                nonScalingStroke: true
+            }
+        },
+        interactive: true,
+        detectRetina: true,
+        pane: 'overlayPane',
+        getFeatureId: f => f.properties?.d_code || Math.random()
+    }
+);
+
+bhuvanDistricts.on('click', e => {
+    const p = e.layer?.properties || e.propagatedFrom?.properties || {};
+    L.popup({ closeButton: true })
+        .setLatLng(e.latlng)
+        .setContent(buildPopup(p.d_name || 'District', [
+            ['District ID', p.d_code],
+            ['State Name', p.s_name],
+            ['State ID', p.s_code]
+        ], 'bhuvan_districts')).openOn(map);
+});
+
 /* ── Bhuvan villages ── */
 const bhuvanVillages = L.vectorGrid.protobuf(
     "https://indianopenmaps.com/not-so-open/villages/bhuvan/{z}/{x}/{y}.pbf",

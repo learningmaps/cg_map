@@ -159,3 +159,20 @@ To maintain visual clarity and prevent clutter at lower zoom levels, the individ
 * **Centroid Labels**: Centroid positions are precomputed in Python, and labels are drawn dynamically using Leaflet markers and custom CSS styling at zoom levels 11.5+.
 * **Popup Info**: Information displays both the original Excel recording name and the officially matched GeoJSON name, code, block, and area comparison (Excel vs GeoJSON calculated area) inside a consistent metadata table.
 
+---
+
+## 🏛 Bhuvan Administrative Layers (States & Districts)
+
+### 🔄 Data Flow & Vector Tile Sources
+1. **States Source**: Vector tiles loaded via Protobuf from `https://indianopenmaps.com/not-so-open/states/bhuvan/{z}/{x}/{y}.pbf`.
+2. **Districts Source**: Vector tiles loaded via Protobuf from `https://indianopenmaps.com/not-so-open/districts/bhuvan/{z}/{x}/{y}.pbf`.
+
+### 🎨 Rendering & Popups
+* **Visual Style**: Styled with transparent, interactive fills (`fill: true`, `fillColor: 'rgba(0,0,0,0)'`, `fillOpacity: 0`) to allow clicking anywhere within the polygon while keeping the interior visually transparent.
+  * **States**: Styled with a solid dark blue line (`#3f51b5`, weight 1.8).
+  * **Districts**: Styled with a solid teal line (`#00bcd4`, weight 1.0).
+* **Popup Info**:
+  * **States**: Displays the state name and State ID badge.
+  * **Districts**: Displays the district name, District ID, State Name, and State ID.
+
+
